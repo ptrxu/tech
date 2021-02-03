@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>Mooze Z2000 Zone Type Programming</title>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+
+			<script type="text/javascript" language="javascript1.2" src="whver.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+    			<script type="text/javascript" language="javascript1.2" src="whlang.js"></script> 
+    <meta name="generator" content="Adobe RoboHelp 9" />
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+	      //<!--
+	      RH_Document_Write("<p style=\"text-align:right\"> ");
+RH_AddMasterBreadcrumbs( "Tech_2010.htm", "", "/", "Home", "Tech_2010Main.htm");
+RH_Document_Write("<\/p>");
+//-->
+</script>
+<font face="Arial" color="#0000FF" size="2">Mooze Z2000 Zone Type Programming</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Digit 1 Zone Type</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 = Null (Not used)</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Burglary</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Fire 24 Hour</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Holdup 24 Hour</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Auxiliary 24 Hour</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Keyswitch (Momentary only)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= CCM Communicator Report 24 Hour</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Tamper (24 Hour Burglary)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Burglary Chime (Chime always on regardless of panel)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Verified Fire (Report if 2 alarms within 2 minute window)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>(A) = Fire Supervisory</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>(B) = Activate Universal Output (Use Digit 2 to specify which Output activates)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>(C) = Universal Logged</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>(D) = Sentry Test Burglar</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>(E) = Listen-In Module Input</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>(F) = Momentary Keyswitch Arm</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>Digit 2 Zone Response</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 = Perimeter Instant (Activates Output 0 if Digit 1 = B)</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Perimeter Delay 1 (Activates Output 1 if Digit 1 = B)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Perimeter Delay 2</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Interior Instant (Bypassed in Stay Mode)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Interior Follower (Bypassed in Stay Mode)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Interior Nite (Bypasses when armed in Stay or Nite Mode)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Interior Delay 1</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Interior Delay 2</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Verified Interior Instant (2 activations within 60 seconds)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Self-Verifying Interior Instant</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>(A) = Verifying Interior Follower</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>(B) = Self-Verifying Interior Follower</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>(C) = Verifying Interior Night Follower</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>(D) = Self-Verifying Interior Night Follower</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>Digit 3 Bypassing</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 = Not Bypassable (Fire Zones)</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Bypassable</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>Digit 4 Troubles/Supervision</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 = Supervised, No Trouble Output (Use for standard Burg Zones)</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= 24 Hr Trouble on Open/Alarm on Short (Use for Fire/Smoke Detectors)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 24 Hr Trouble on Short/Alarm on Open</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Burg Day Alert on Open/Alarm on Open/Short if Armed</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Burg Day Alert on Short/Alarm on Open/Short if Armed</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Non-Supervised (Closed Circuit contacts only, no EOL)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Non-Supervised (Open Circuit contacts only, no EOL)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Two-Wire Smoke (Zone 16 only)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Trouble on Open &amp; Short, No Alarm</b></font>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</li>
+</ol>
+</body>
+</html>

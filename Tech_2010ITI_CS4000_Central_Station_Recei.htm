@@ -1,0 +1,667 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>ITI CS4000 Central Station Receiver</title>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+
+			<script type="text/javascript" language="javascript1.2" src="whver.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+    			<script type="text/javascript" language="javascript1.2" src="whlang.js"></script> 
+    <meta name="generator" content="Adobe RoboHelp 9" />
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+	      //<!--
+	      RH_Document_Write("<p style=\"text-align:right\"> ");
+RH_AddMasterBreadcrumbs( "Tech_2010.htm", "", "/", "Home", "Tech_2010Main.htm");
+RH_Document_Write("<\/p>");
+//-->
+</script>
+<font face="Arial" color="#0000FF" size="2">ITI CS4000 Central Station Receiver</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1">Connecting</font> <font face="Arial" color="#000000" size="1">1. Type on downloader keypad ANS 1</font>
+<p></p>
+<font face="Arial" color="#000000" size="1">2. Call home, customer must be there</font>
+<p></p>
+<font face="Arial" color="#000000" size="1">3. Have customer press CODE + 8 to perform Phone Test with phone off hook</font>
+<p></p>
+<font face="Arial" color="#000000" size="1">4. Should hear panel pulse or tone dial, when it finishes press ENTER on keypad</font>
+<p></p>
+<font face="Arial" color="#000000" size="1">OR</font>
+<p></p>
+<font face="Arial" color="#000000" size="1">Transfer call from another phone to extension downloader is on, ANS 1 is not needed</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1">Panel will stay online only a short time before disconnecting, type ZONES to keep online</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1">Unlock</font> <font face="Arial" color="#000000" size="1">&amp;cmem b609 (1st 4 digits)</font>
+<p></p>
+<font face="Arial" color="#000000" size="1">plock &lt;Installer Code&gt; %43214321</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1">PLOCK &lt;Old Code&gt; %&lt;New Code twice&gt; Changes Installer Code</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><i>Note:</i></font> <font face="Arial" color="#000000" size="1"><b>to change Installer Code from 4321 to 1234 enter PLOCK 4321 %12341234</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>Panel Specific Commands</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ACCESS Displays Master Code</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ACCESS xxxx Programs Master Code</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ACCOUNT &lt;5-digits&gt; Last 5 digits of Account</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ACTIVITY &lt;1 to 24&gt; Sets activity time in Hours</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ALARMQ Views last 6 events of Alarm history</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>AVACCESS &lt;4 digits&gt; Sets UltraGard's AVM Access Code (not used)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>AVBEEPDLY &lt;30-300 Seconds&gt; Sets UltraGard's AVM BEEP Delay</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>AVMMODE &lt;01/02/03/09/10/11&gt; Sets UltraGard AVM operation mode</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= 1 ring callback mode</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 1 ring silent callback mode</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Instant Activation mode</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>09 = 1 Ring, Fire siren Shutdown</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>10 = One Ring Silent Fire Shutdown</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>11 = Instant Activation, Fire Siren Shutdown</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>AVTIMEOUT &lt;0-300 seconds&gt; Sets UltraGard AVM Timeout</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>BATTLIFE &lt;2 to 255&gt; Hours for panel to run on battery (Default = 4)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>BYPASS &lt;01 to 76&gt; Bypass Sensors (01 to 18)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>CPUTIME (SET/STATUS) SET Sets panel time, STATUS reads panel time</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>DELETE &lt;1 to 99&gt; Deletes a Sensor (1 to 18)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>DIALBACK &lt;10 to 2,550 minutes&gt; Tells panel to call back in (minutes)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>DURESS &lt;00 to 99&gt; Hostage/Duress Code (usually 99)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ENERGY &lt;LL/HH&gt; Sets UltraGard Energy Saver Module</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Low (LL) &amp; High (HH) Limits</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ENTRY &lt;8 to 120&gt; Entry Delay (seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ENTRY &lt;1 to 8&gt; 2 Secondary Entry Delay (minutes)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ERASE Erases all changes to panel</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ESOFFSET &lt;000-255&gt; Sets UltraGard Energy Saver Module Temp Offset</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>EVENT &lt;1 to 32/ALL/CLEAR&gt; Displays Event Buffer (on UltraGard v2 only)</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>to 32 previous events</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>EVENT ALL displays all events</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>EVENT CLEAR clears event buffer</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>EXIT &lt;8 to 88&gt; Exit Delay (seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>EXIT &lt;1 to 8&gt; 2 Exit Delay 2 (minutes)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>GROUP &lt;zone&gt; &lt;zone type&gt; Changes Zone type</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Freeze GROUP &lt;zone&gt; 01 L</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Fire GROUP &lt;zone&gt; 02 D</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Delay GROUP &lt;zone&gt; 04 L</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Instant GROUP &lt;zone&gt; 05 L</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Interior Inst Follower GROUP &lt;zone&gt; 06 L</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Interior Follower GROUP &lt;zone&gt; 06 I</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Interior Follower SX-V GROUP &lt;zone&gt; 07 I</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Silent Police Panic GROUP &lt;zone&gt; 12 A</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Audible Medical Panic GROUP &lt;zone&gt; 01 B</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>HOUSE &lt;1 to 255&gt; Views House Code</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>IACCESS &lt;Code&gt; Sets UltraGard Installer Code</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Last 2 digits must be different)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ID BUFFER (SX-V only) Displays all house codes of other SX-V's near panel</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>INIT or INITIALIZE &lt;zone&gt; Initialize (Add) Zone</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>INSTALLMODE &lt;ON/OFF&gt; Enables/Disables Programming (FonSafe Only)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>MACCESS Displays Secondary Codes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>To Erase code enter MACCESS ?? OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>SX-V = Hi &amp; Lo levels, delete then re-add to change</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>MACCESS &lt;1 to 15&gt; &lt;4 digits&gt; Programs Secondary Codes</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>MDELETE &lt;01 to 96&gt; Deletes multiple sensors</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>MGROUP &lt;01 to 76&gt; &lt;Group 00 to 32&gt; Assigns multiple sensors to a group</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OPTION &lt;20 to 27&gt; &lt;ON or OFF&gt; Turns Functions ON/OFF (xx = 20 to 27)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PFORMAT &lt;0 to 2&gt; Report Format (0=ITI, 1=4x2, 1400hz, 2=4/2, 2300hz)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PHONE &lt;1800etc / ON / OFF) Receiver 1 Phone Number (Up to 18 Digits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(D = Pause) PHONE ON to enable Communicator</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PHONE OFF disables Communicator</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PHONE2 &lt;xxxxxxx / OFF&gt; Receiver 2 Phone Number (Up to 18 Digits)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PHONEDL &lt;xxxxxxx / OFF&gt; Set Download Phone Number, OFF disables</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PLEVEL &lt;1 to 3 or 8 to 9&gt; 1=Disarm, 2=Arm Stay, 3=Arm Away, 8=Phone Test</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>SX-V systems use Level 0 for Disarm</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PLOCK &lt;Old Code&gt; %&lt;New Code twice&gt; Changes Installer Code</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b><i>Note:</i></b></font> <font face="Arial" color="#000000" size="1"><b>to change Installer Code from 4321 to 1234 enter PLOCK 4321 %12341234</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PMODE &lt;0 to 5&gt; Phone Direction</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 = All to Phone 1, Phone 2 not used</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>1 = All to Phone 1, if Fail report to Phone 2</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 = Alarm/Cancels Phone 1, Supervisory to Phone 2</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3 = Alarm/Cancels Phone 1, All Phone 2</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4 = Alarm/Cancels Phone 1 (No OC), All to Phone 2</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5 = Alarm/Cancels Phone 1 (4x2), All Phone 2</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PNUM &lt;A to J&gt; &lt; Phone Number&gt; Stores up to 10 phone numbers in CS4000 memory</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PILLTIME &lt;1 to 4&gt; &lt;HH:MM&gt; Sets Pill Timer 1 to 4 (LifeGard only)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PTIME ON / OFF Shows last time Access code used during alarm</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PTFREQ &lt;1 to 255&gt; Assigns Phone Test in Days</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>RECALL Tells panel to hangup and immediately call back</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>REL or RELEASE Releases Downloader from Panel</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>REPEAT Repeats Alarm Information</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>RESTORE &lt;1 to 76&gt; Removes bypasses</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>REVLEVEL &lt;ON/OFF&gt; Shows ID and Revision of Panel</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>SIREN &lt;2 to 30&gt; Assigns Siren Timeout</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>STIME &lt;0000 to 2399&gt; Assigns next 24hr Supervisory</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>SUPSYNC &lt;2 to 24&gt; Assigns Supervisory Check-In Period in Hours</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>TEST ON / OFF Enable/Disable Siren on successful Phone Test</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>TRIPTIME &lt;1 to 12 seconds&gt; Sets UltraGard's HOM Module trip time</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>TIMEZONE &lt;0 to 23&gt;</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>UPD Sends updated programming to panel</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>XACCESS View Upper Secondary User Codes in SX-V</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>XTENDELAY &lt;X-10 Unit 2 to 9 / ON / OFF&gt; Sets X-10 Unit to turn on for 5 minutes of E/E delay</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ZONES Displays all programmed Zone information</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ZONES STATUS Displays all Zones</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>ITI FonSafe CS-4000 Programming Commands</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ACCOUNT &lt;??-???&gt; Sets Account Number</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ACCESS &lt;???&gt; Sets Master Code</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ALARMQ Views last 6 events of Alarm history</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ARMLEV &lt;ZZ&gt; &lt;X&gt; Set Zone Arm Level (ZZ=Zone, X=Arm Level 1, 2 or 3)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>BYPASS &lt;01 to 32&gt; Bypasses Sensor</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>CPUTIME SET Sets FonSafe to CS4000 Time</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>CUSTCODE &lt;????&gt; Customer Code/Home ID Code (no idea what this is)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>DELAY &lt;1 to 32&gt; &lt;ON/OFF&gt; Programs Sensor as Delay/Instant</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>DELETE &lt;01 to 32&gt; Deletes Sensor</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>DESCRIPTION &lt;ZZ&gt; &lt;XX&gt; Add Voice Description (ZZ=Zone, XX=Description (0-29)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ENTRY &lt;30 to 60&gt; Sets Entry Delay</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>EXIT &lt;30 to 60&gt; Sets Exit Delay</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>INSTALLMODE ON Enable local access to Phone &amp; Download options</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>INSTALLMODE OFF Disables local access to Phone &amp; Download options</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PHONE &lt;1800 etc&gt; Sets Primary Receiver Number</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PHONE2 Secondary Receiver Number</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PLEVEL &lt;1, 2, 3&gt; Arming Modes 1 = OFF, 2 = HOME, 3 = AWAY</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>RESTORE &lt;1 to 32&gt; Restores Bypassed Zones</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>SIREN &lt;10 to 20&gt; Sets Siren Timeout</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>STIME &lt;HHMM&gt; Sets daily supervisory reports (Optional)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>TTONE &lt;ON/OFF&gt; Sets Panel for Tone/Pulse</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ZONES List all Sensors</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>Receiver Specific Commands</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ALERT</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ANSWER or ANS &lt;1 to 4&gt; Answers selected line card</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>AUDIO &lt;OFF/INSTANT/DIALOUT/ONERING) Enables/Disables 2-way voice option</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ATIME &lt;5 to 60 seconds&gt; Assigns 2-way timeout</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>BATTERY Forces Receiver to do 5 minute battery test</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>CHANNEL Sets RS-232 port for computer or Printer</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>COMMAND &lt;P, R, A&gt; P = Lists all Panel Commands</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>R = Lists Receiver Configuration</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>A = Lists Commands for Operator Levels</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>CHANNEL &lt;LINE&gt; FORMAT &lt;EPSON&gt; Selects Epson Printer Format</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>CPUTIME &lt;SET/STATUS&gt; SET=Send Time to Panel, STATUS=View Time</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>CPUTYPE &lt;ON/OFF&gt; Displays Panel Type, CSLOCK, COMMLOCK status</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>CSDATE &lt;mm/dd/yy&gt; Sets Month/Date/Year</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>CSFORMAT &lt;Line 1 to 4&gt; &lt;ITI/OTHER/ALL&gt; Defines line card formats</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>CSLOCK &lt;DEFINE/SET/REMOVE/OFF&gt; DEFINE %???????? sets lock code (4 digits repeated twice)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>SET = Sets CS-4000 to lock all incoming panels</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>SELECT ??-??? = Selects panel or panels to lock/unlock</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>REMOVE = Removes CSLOCK from incoming panels</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF = Sends defined CS code but does not lock panel</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>RESET OKAY = Resets CS-4000's lock code to default</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>CSLOCK SELECT Displays CSLOCK table</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>CSLOCK RESET OKAY Resets CS-4000's lock to default, turns CSLOCK off</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>CSTIME &lt;hh:mm&gt; Sets Receiver Time</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>CSTZONE &lt;0 to 23/EASTERN etc&gt; Sets Panel Time by Time Zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>EASTERN, CENTRAL, MOUNTAIN or PACIFIC</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>CTIME &lt;ON/OFF/ALL&gt; Displays SX-V CPU clock at end of each report</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>FAULT Displays AC Power, Line Fault &amp; Ring Conditions</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>BATTERY ON / OFF Disable/Enable Low Battery Trouble</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>A/C ON / OFF Disable/Enable No AC Trouble</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>FUSE ON / OFF Disable/Enable Fuse Trouble</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>&lt;1 to 4&gt; Disable/Enable Line 1 to 4 Fault Trouble</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>FLASH &lt;ON/OFF&gt; Places 2-way on hold</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>FULLRESTART &lt;OKAY&gt; Resets CS-4000 to default settings</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>HELP &lt;Option&gt; Selects help info on any option</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>RECEIVER = Lists commands that affect CS-4000 Receiver</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>INTERACTIVE = Lists commands that affect panel</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>I/O = List commands for RS-232 Interface</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>CPUPROG = How to program an unprogrammed CPU</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>MSTATUS Shows all receiver options</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OPERATOR Sets each Operator's (up to 20) Password &amp; Level</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OTHER &lt;1&gt; &lt;1400/2300&gt; Sets 2nd Handshake Baud Rate (non ITI Format)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OTHER &lt; 2&gt; &lt;RADIONICS/OFF&gt; Enables/Disables 2nd Handshake as Radionics</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PASSWORD Sets privilege level of operator</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PINS Displays condition of RS-232 I/O Port</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PTIME Shows time since CPU was armed during uncanceled alarm</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>QUIET ON / OFF Turns off CS-400 beeps on incoming phone calls</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>RELEASE or REL Releases trapped system from CS-4000 (hangup)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>RESTART &lt;OKAY&gt; Restarts CS-4000</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>RID Sets Receiver ID for RS-232 output</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>RING &lt;1 to ?&gt; ON / OFF Enable/Disable Line Card Rings before answer</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>SILENT ON/OFF Disable/Enable sounds except for Receiver faults</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>STATUS Displays CS-4000 hardware status</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>TEST &lt;ON/OFF&gt; Enable/Disable CS-4000 Auto Phone Test feature</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>TIMEZONE &lt;01 to 23&gt; Sets Panel Time by Time Zone</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b><i>Note:</i></b></font> <font face="Arial" color="#000000" size="1"><b>Time can also be entered as EASTERN, CENTRAL, MOUNTAIN or PACIFIC</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>TRAP &lt;ALL/ON/OFF/Account Number&gt; Traps Panel (remember to remove trap when done)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>UNIT Sets Unit ID Character for Printer (Default is A)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>VERSION Shows current CS-4000 software version</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>VERIFY Verifies each table of ram memory</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Sensor Printed Out As Specifics</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 Buddy Alarm SX-V Only</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>Bad Sensor SX-V Only</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>32 Zone Alarms ALL Supported ITI Panels</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>30 Police Panic Simon v1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>77 AlarmTamper Caretaker Plus, SX-IVB, SX-V, Ultraguard</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>78 Freeze Sensor Caretaker Plus, Ultraguard Only</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>79 No Activity Alarm Caretaker Plus, Ultraguard Only</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>80 Keypad Fire Panic ALL Supported ITI Panels</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>81 Keypad Police Panic ALL Supported ITI Panels</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>82 Keypad Medical Panic ALL Supported ITI Panels</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>83 PhoneTest ALL Supported ITI Panels</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>84 Opening Report User xx ALL Supported ITI Panels</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>85 Closing Report Usr xx ALL Supported ITI Panels</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>86 Duress ALL Supported ITI Panels</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>87 Force Arm, Auto Force Arm ALL Supported ITI Panels</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>88 Energy Saver Module Caretaker Plus, Ultraguard Only</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>89 RF Touchpad Caretaker Plus, Ultraguard Only</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>90 AC Fail ALL Supported ITI Panels</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>91 Low Battery ALL Supported ITI Panels</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>92 Alarm Tamper Loop ALL Supported ITI Panels</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>93 Auto PhoneTest ALL Supported ITI Panels</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>94 Receiver Failure ALL Supported ITI Panels</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>94 Invalid Sensor* ALL Supported ITI Panels</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>95 CPU Back Online (AC Restore) ALL Supported ITI Panels</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>96 Failure to Communicate Simon v1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>97 Dead or Missing Phone Line SX-V only</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>98 Event Dump Report Commander 2000/UltraGard</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>99 Latchkey Report Simon v1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>101 Invalid Sensor* Commander 8/17</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(*Sensor has same house code but is not programmed into system)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>Keypad Commands</b></font> <font face="Arial" color="#000000" size="1"><b>1 END = Scrolls to current screen</b></font>
+<p></p>
+<ol start="2">
+<li><font face="Arial" color="#000000" size="1"><b>DOWN ARROW = Scroll forward 1 line</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>PAGE DOWN = Scrolls down 1/2 screen</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>LEFT ARROW = Scroll back to last report</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>STOP (5) = Stops scrolling screen</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>RIGHT ARROW = Scroll forward to next report</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>HOME = Go to earliest info in screen memory</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>UP ARROW = Scroll back one line</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>PAGE UP = Sroll back one screen</b></font>
+<p></p>
+</li>
+</ol>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>= Prints out message you input</b></font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>+ = Stop auto listing of certain commands</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>F1 = Hang Up Line 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>F2 = Hang Up Line 2</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>F3 = Hang Up Line 3</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>F4 = Hang Up Line 4</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>F5 = Scrolls back to last command entered</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>F6 = Scrolls forward to next command (if F5 is used)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>F7 = Not Used</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>F8 = Not Used</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>F9 = Prints Time/Date and performs system check</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>F10 = Displays Help Message</b></font>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>

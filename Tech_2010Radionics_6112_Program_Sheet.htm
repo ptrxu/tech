@@ -1,0 +1,813 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>Radionics 6112 Program Sheet</title>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+
+			<script type="text/javascript" language="javascript1.2" src="whver.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+    			<script type="text/javascript" language="javascript1.2" src="whlang.js"></script> 
+    <meta name="generator" content="Adobe RoboHelp 9" />
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+	      //<!--
+	      RH_Document_Write("<p style=\"text-align:right\"> ");
+RH_AddMasterBreadcrumbs( "Tech_2010.htm", "", "/", "Home", "Tech_2010Main.htm");
+RH_Document_Write("<\/p>");
+//-->
+</script>
+<font face="Arial" color="#0000FF" size="2">Radionics D6112 Program Sheet</font> <font face="Arial" color="#008000" size="2">Click HERE for D5200 Programmer</font>
+<p></p>
+<p></p>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Basics" onclick="self.location='Tech_2010Radionics_6112_Basic_Commands.htm'" /> <input type="button" value="Codes" onclick="self.location='Tech_2010Radionics_6112_User_Codes.htm'" /> <input type="button" value="Trouble" onclick="self.location='Tech_2010Radionics_6112_Trouble_Display.htm'" /> <input type="button" value="Keypad" onclick="self.location='Tech_2010Radionics_6112_LED_Keypad.htm'" /> <input type="button" value="LCD Keypad" onclick="self.location='Tech_2010Radionics_6112_LCD_Keypad.htm'" /> <input type="button" value="Wiring" onclick="self.location='Tech_2010Radionics_6112_Wiring.htm'" /> <input type="button" value="Program" onclick="self.location='Tech_2010Radionics_6112_Program_Sheet.htm'" /> <input type="button" value="Sensors" onclick="self.location='Tech_2010Radionics_6112_Sensors.htm'" /></b></font></form>
+<p></p>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Power Ratings</b></font> <font face="Arial" color="#000000" size="1"><b>450mA Aux output</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>5A Siren output</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>Formats</b></font> <font face="Arial" color="#000000" size="1"><b>Modem II, BFSK, 4x2 1400 or 2300Hz</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Modem Account numbers can be 4 digits, all other formats must be 3 digits</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Download Info</b></font> <font face="Arial" color="#000000" size="1"><b>Panel will pick up depending on how many rings AnsArmRings and AnsDisRings are set at</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>or</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Press Command 43 to cause panel to answer (if enabled)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Program Info</b></font> <font face="Arial" color="#000000" size="1"><b>Programming only by downloading, 5200 Programmer or 5100 "Wand" Programmer</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Plug programmer in and momentarily short Reset Pin to Terminal 27 to enable program mode</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Receiver Info</b></font> <font face="Arial" color="#000000" size="1"><b>If Radionics receiver C1 to C6 use Modem II Format with 4-digit Account</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>If Virtual Receiver use BFSK with 3-digit Account</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Download Answer</b></font> <font face="Arial" color="#000000" size="1"><b>Command 43 will cause Panel to answer downloader call (if enabled)</b></font>
+<p></p>
+<p></p>
+<ol>
+<li><font face="Arial" color="#0000FF" size="2"><b>Globals</b></font> <font face="Arial" color="#000000" size="1"><b>Variables/Defaults</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>1 Tbl</b> I _<b>F</b> _I <b>0 to 9, B to F, Blank Blank = No Report</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>F is automatic if BFSK or Modem II used</b></font>
+<p></p>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>2 Res</b> I _ _I <b>0 to 9, B to F, Blank Blank = No Report</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>E is automatic if BFSK or Modem II used</b></font>
+<p></p>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>3 Open</b> I _ _I <b>0 to 9, B to F, Blank Blank = No Report</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>F is automatic if BFSK or Modem II used</b></font>
+<p></p>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>4 Close</b> I _ _I <b>0 to 9, B to F, Blank Blank = No Report</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>F is automatic if BFSK or Modem II used</b></font>
+<p></p>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>5 Cancel</b> I _ _I <b>0 to 9, B to F, Blank Blank = No Report</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>F is automatic if BFSK or Modem II used</b></font>
+<p></p>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>6 Duress</b> I _<b>D</b> _I <b>0 to 9, B to F, Blank Blank = No Report</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>D is automatic if BFSK or Modem II used</b></font>
+<p></p>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>7 BatSupv</b> I _ _I <b>0 to 9, B to F, Blank Blank = No Report</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>If needed use 9 (Trouble Zone 9)</b></font>
+<p></p>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>8 Bell (timeout)</b> I _<b>0</b> _I _<b>6</b> _I <b>0 to 63, Blank In minutes, Blank = No Bell Output</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>9 BzPhFail</b> I <b>NO</b> I <b>Yes/No No = No Pulse Buzzer for Comm Failure</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>10 BzACFail</b> I <b>NO</b> I <b>Yes/No No = No Pulse Buzzer for AC Failure</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>11 DTMF</b> I <b>YES</b> I <b>Yes/No Yes = TouchTone Dial, No = Pulse Dial</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>12 CSPrg</b> I <b>YES</b> I <b>Yes/No Yes = Enable Remote Downloading</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>13 Cmd43</b> I <b>YES</b> I <b>Yes/No Yes = Enable COMMAND 43 for downloading</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>14 Pass</b> I _<b>9</b> _I _<b>9</b> _I _<b>9</b> _I _<b>9</b> _I <b>0 to 9, B to F, Blank Remote Programming Passcode</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>15 AnsArm</b> I _<b>0</b> _I _<b>5</b> _I <b>0 to 14, Blank # of Rings to Answer Downloader if Armed</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>16 AnsDis</b> I _<b>1</b> _I _<b>2</b> _I <b>0 to 14, Blank # of Rings to Answer Downloader if Disarmed</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>17 AuxRlyTim</b> I _ _I _ _I <b>2, 5, 10, 15 Aux Relay Contact closure time in seconds</b></font>
+<p></p>
+<p></p>
+</li>
+<li><font face="Arial" color="#0000FF" size="2"><b>PriPhone (Primary Phone)</b></font> <font face="Arial" color="#000000" size="1"><b>Variables/Defaults</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>2.1 P</b> I _<b>1</b> _I _<b>8</b> _I _<b>0</b> _I _<b>0</b> _I_ _I _ _I _ _I <b>8-digits</b> <b>0 to 9, C to D, Blank (Phone Prefix)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>C = 3 second pause D = 7 second Dial Tone pause</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2.2 Ph</b> I _<b>?</b> I _<b>?</b> I _<b>?</b> I _<b>?</b> I _<b>?</b> I _<b>?</b> I <b>?</b> I <b>7-digits</b> <b>0 to 9, C to D, Blank (Rest of Phone Number)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2.3 Modem</b> I <b>YES</b> I <b>Yes/No Yes = Modem Format, if No see section 2.4</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2.4 CS</b> I _<b>6</b> _I <b>1 to 6 Alternate Format if Modem not selected in 2.3</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Silent Knight Low Speed Double Round</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Ademco Low Speed Double Round</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Silent Knight High Speed Double Round</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Ademco High Speed Double Round</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Radionics Single Round with Parity Digit</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Radionics BFSK Superfast Single Round</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>Blank = Sescoa, Franklin Hi Speed Double Round</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2.5 Ack14</b> I <b>NO</b> I <b>Yes/No Yes = 1400Hz Ack tone, No if Modem Format used</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2.6 EXT/R</b> I <b>YES</b> I <b>Yes/No Expanded Trouble/Restoral by Zone</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2.7 Ack23</b> I <b>NO</b> I <b>Yes/No Yes = 2300Hz Ack tone, No if Modem Format used</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>3. AltPhone (Alternate Phone)</b></font> <font face="Arial" color="#000000" size="1"><b>Variables/Defaults</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3.1 AP</b> I_ _I _ _I _ _I_ _I _ _I _ _I _ _I <b>8-digits</b> <b>0 to 9, C to D, Blank (Do not use)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3.2 APh</b> I_ _I _ _I _ _I_ _I _ _I _ _I _ _I <b>7-digits</b> <b>0 to 9, Blank (Do not use)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3.3 Modem</b> I <b>YES</b> I <b>Yes/No Yes = Modem Format, if No see section 3.4</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3.4 ACS</b> I _<b>7</b> _I <b>1 to 6 Alternate Format if Modem not selected in 3.3</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3.5 AAck14</b> I <b>NO</b> I <b>Yes/No Yes = 1400Hz Ack tone, No if Modem Format used</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3.6 AExT/R</b> I <b>YES</b> I <b>Yes/No Expanded Trouble/Restoral by Zone</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3.7 AlarmRoute</b> I _<b>0</b> _I <b>0 to 3 0 = Primary Phone Only</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Primary then Alternate Phone</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>3.8 OpClRoute</b> I _<b>0</b> _I <b>0 to 3 2 = Alternate then Primary Phone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3 = Non-Designated Zones to Primary Phone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3.9 TblRoute</b> I _<b>0</b> _I <b>0 to 3 Designated Zones to Alternate Phone</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3.10 ResRoute</b> I _<b>0</b> _I <b>0 to 3</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3.11 AAck23</b> I <b>YES</b> I <b>Yes/No Yes = 2300Hz Ack tone, No if Modem Format used</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>4. Devices (Keypads)</b></font> <font face="Arial" color="#000000" size="1"><b>Variables/Defaults</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4.1 Device#</b> I _<b>?</b> _I <b>1 to 4 Enter Device Address Number here to select</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4.2 D1Model</b> I _<b>1</b> _I <b>1 to 4 Enter Model of Device selected in 4.1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>1 = D610/D611</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 = D620/D626</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3 = D630/D636</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4 = D640</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4.3 D1Cmd</b> I <b>YES</b> I <b>Yes/No Enables COMMAND key on selected Device</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4.4 D1Acct1</b> I <b>YES</b> I <b>Yes/No Yes = Device uses Account 1, No = Account 2</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>5. CommandKeys (Function Keys)</b></font> <font face="Arial" color="#000000" size="1"><b>Variables/Defaults</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5.1 Comb9</b> I _<b>9</b> _I _ _I _ _I _ _I <b>0 to 9, Blank Command Key Security Passcode</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Not used, 1st digit is hardcoded as 9)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5.2 Cmd1</b> I <b>YES</b> I <b>Yes/No Enable Command 1 to Master Arm system</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5.3 Cmd2</b> I <b>YES</b> I <b>Yes/No Enable Command 2 to Instant Perimeter Arm</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5.4 Cmd3</b> I <b>YES</b> I <b>Yes/No Enable Command 3 to Delay Perimeter Arm</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5.5 FA123</b> I <b>YES</b> I <b>Yes/No Commands 1, 2 and 3 will Force Arm system</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5.6 Cmd0</b> I <b>YES</b> I <b>Yes/No Enable Command 0 for shunting in exit delay</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5.7 FAMax</b> I _<b>1</b> _I <b>0 to 9 Maximum number of Zones allowed by Force Arming</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5.8 Cmd8</b> I <b>YES</b> I <b>Yes/No Enable Command 8 for Delay Perimeter arming</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5.9 Cmd41</b> I <b>NO</b> I <b>Yes/No Enable Command 41 for unexpanded Restorals</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5.10 Cmd42</b> I <b>YES</b> I <b>Yes/No Enable Command 42 for System Trouble Reports</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5.11 Cmd44</b> I <b>YES</b> I <b>Yes/No Enable Command 44 for Local system test</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5.12 Cmd47</b> I <b>YES</b> I <b>Yes/No Enable Command 47 to reset Smoke Detectors</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5.13 C47Shrt</b> I <b>YES</b> I <b>Yes/No Yes = 2-second Reset Time, No = 4 seconds</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5.14 Cmd5</b> I <b>YES</b> I <b>Yes/No Enable Command 5 for Passcode Change Mode</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5.15 Cmd6</b> I <b>YES</b> I <b>Yes/No Enable Command 6 for Watch Mode (Door Chimes)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5.16 C7RptCd</b> I _<b>7</b> _I <b>0 to 9, Blank (if using 4/2 BFSK) Command 7 Medical Report Code</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 to 9, B to F, Blank (if using Modem II)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5.17 C7Bell</b> I <b>NO</b> I <b>Yes/No Disable Siren during Command 7 Medical Alarm</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5.18 C7PisBel</b> I <b>NO</b> I <b>Yes/No Pulse Siren during Command 7 Medical Alarm</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5.19 C7AuxRly</b> I <b>NO</b> I <b>Yes/No Activate Aux Relay during Command 7 Medical Alarm</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5.20 C7DsgZn</b> I <b>NO</b> I <b>Yes/No Enable Command 7 as a Desginated Zone</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5.21 C9RptCd</b> I _<b>9</b> _I <b>0 to 9, Blank (if using 4/2 BFSK) Command 9 Fire Report Code</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 to 9, B to F, Blank (if using Modem II)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5.22 C9Bell</b> I <b>YES</b> I <b>Yes/No Enable Siren during Command 9 Fire Alarm</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5.23 C9PisBel</b> I <b>NO</b> I <b>Yes/No Pulse Siren during Command 9 Fire Alarm</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5.24 C9AuxRly</b> I <b>NO</b> I <b>Yes/No Activate Aux Relay during Command 9 Fire Alarm</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5.25 C9DsgZn</b> I <b>NO</b> I <b>Yes/No Enable Command 9 as a Desginated Zone</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5.26 AKey</b> I _ _I _ _I <b>01 to 09, Blank "A" Function Key Operation</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5.27 BKey</b> I _ _I _ _I <b>01 to 09, Blank "B" Function Key Operation</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5.28 CKey</b> I _ _I _ _I <b>01 to 09, Blank "C" Function Key Operation</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= CMD 41 Unexpanded Test Report 06 = CMD 5 Passcode Change Mode</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= CMD 42 System Trouble Report 07 = CMD 6 Perimeter Watch Mode</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= CMD 43 Initiate Remote Program 08 = CMD 7 Keypad Medical Alarm</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= CMD 44 Local system Test 09 = Keypad Police Alarm</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= CMD 47 Sensor Reset</b></font>
+<p></p>
+<p></p>
+</li>
+<li><font face="Arial" color="#0000FF" size="2"><b>Combinations (User Codes)</b></font> <font face="Arial" color="#000000" size="1"><b>Variables/Defaults</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>_ = Passcode Number</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6.1 Comb#</b> I _<b>?</b> _I <b>1 to 7 Enter Passcode to program</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6.2 Comb_</b> I _<b>1</b> _I <b>?</b> I <b>?</b> I <b>?</b> I <b>?</b> I <b>0 to 9, Blank Enter 1 to 4 digit Passcode</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Program last 3 digits of passcode here, passcode 1st digit will be passcode number (1 to 7)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Example: If you enter 973 here for passcode #1 then the actual user code would be 1973</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>If you enter 334 here for passcode #7 then the actual user code would be 7334</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6.3 C_Ovrd</b> I <b>NO</b> I <b>Yes/No Passcode overrides Opening/Closing Restrictions</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6.4 C_Acct1</b> I <b>YES</b> I <b>Yes/No Passcode Arms/Disarms for Account #1</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6.5 C_Acct2</b> I <b>NO</b> I <b>Yes/No Passcode Arms/Disarms for Account #2</b></font>
+<p></p>
+<p></p>
+<ol start="7">
+<li><font face="Arial" color="#0000FF" size="2"><b>Account #1 (Partition 1)</b></font> <font face="Arial" color="#000000" size="1"><b>Variables/Defaults</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>7.1 1Acct</b> I _ I _ I _ I _ I <b>0 to 9, B to F, Blank Enter 3 digit Account if BFSK or 4/2 used (Virtual)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(1st digit Blank if 3-digit account) Enter 4 digit Account if Modem II used (Radionics)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7.2 1Off</b> I <b>NO</b> I <b>Yes/No Yes = Disable all Functions except Remote Program</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>No = Normal operation</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7.3 1Local</b> I <b>NO</b> I <b>Yes/No Yes = Disable Central Station Reports (Local System)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>No = Enable Central Station Reports</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7.4 1DlyIn</b> I <b>30</b> _I <b>10 to 120, Blank Entry Delay in 10 second increments</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7.5 1DlyOut</b> I <b>60</b> _I <b>10 to 120, Blank Exit Delay in 10 second increments</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7.6 1Prwrn</b> I <b>YES</b> I <b>Yes/No Sound Prewarning buzzer during Entry Delay</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7.7 1Op/Cl</b> I <b>NO</b> I <b>Yes/No Enable Opening/Closing Reports for this Account</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7.8 1ReOp</b> I <b>NO</b> I <b>Yes/No Enable Restricted Opening Reports (Disarm on Alarm)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7.9 1ReCl</b> I <b>NO</b> I <b>Yes/No Enable Restricted Closing Reports</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Send on Force Arm or if Command 0 used to Shunt)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7.10 1CombID</b> I <b>NO</b> I <b>Yes/No Identify Opening/Closing Reports by User Passcode</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Combination 1 = Zone 1 Combination 5 = Zone 5</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Combination 2 = Zone 2 Combination 6 = Zone 6</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Combination 3 = Zone 3 Combination 7 = Zone 7</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Combination 4 = Zone 4 Download or CMD 1 Arming = Zone 9</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7.11 1CnclRpt</b> I <b>NO</b> I <b>Yes/No Enable Cancel Reports for this Account</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7.12 1Duress</b> I <b>NO</b> I <b>Yes/No Enable Duress Reports for this Account</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Duress = 1 digit above User Passcode)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7.13 1DlyRes</b> I <b>NO</b> I <b>Yes/No Delay Restoral Reports until Bell Timeout</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7.14 1Ring1</b> I <b>YES</b> I <b>Yes/No 1 Alarm Output per Zone (Swinger Shutdown)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7.15 1TsBell</b> I <b>NO</b> I <b>Yes/No Automatic Bell Test after Arming</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7.16 1Show</b> I <b>YES</b> I <b>Yes/No Show Zone Status while Disarmed</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7.17 Acct1Zns</b> I _<b>8</b> _I <b>1 to 16 Total Number of Zones for this Account (Partition)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>( _ = Zone Number)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7.18 1Zone#</b> I _<b>?</b> _I <b>1 to 16 Enter the Zone to Program</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7.19 Z+Loc</b> I _<b>0</b> _I <b>A</b> I <b>1st Digit = 0 to 4 1st Digit = Device/Zone Address Location</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2nd Digit = A to H 0 = D6112 Onboard Zones</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>to 4 = D630/D640 Zone Expander Address</b></font>
+<p></p>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>nd Digit = Physical Location of Zone on Device</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>A = "Zone 1" E = "Zone 5" _A = Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>B = "Zone 2" F = "Zone 6"</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>C = "Zone 3" G = "Zone 7"</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>D = "Zone 4" H = "Zone 8"</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7.20 1Zn1</b> I _ I _ I _ I _ I _ I <b>0 to 9, B to F Enter 5 digit Zone Type, 00000 = Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Typical Zone Programming</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Delay Zone N/C (No Trouble or Restoral Reporting, Swinger Shunt) 24130</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Delay Zone N/O (No Trouble or Restoral Reporting, Swinger Shunt) 28130</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Instant Zone N/C or N/O (No Trouble or Restoral Reporting, Swinger Shunt) 20130</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Interior Delay Zone N/C (No Trouble or Restoral Reporting, Swinger Shunt) 14130</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Interior Delay Zone N/O (No Trouble or Restoral Reporting, Swinger Shunt) 18130</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Interior Instant Zone N/O or N/C (No Trouble or Restoral Reporting, Swinger Shunt) 10130</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Glassbreak Zone (No Trouble or Restoral Reporting) 20114</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Window Foil Zone (No Trouble or Restoral Reporting) 20114</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Fire Zone (Trouble Reporting, no Restoral Reporting) 01414</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Audible Panic N/C or N/O (No Trouble or Restoral Reporting, Invisible Zone) 00111</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Silent Panic N/C or N/O (No Trouble or Restoral Reporting, Invisible Zone) 00011</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Independent Zone Control (If D268, D269 and D279 Expander Module is Used) 01150</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Digit 1 = Zone Response Digit 3 = Zone Local Alarm Response</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 = 24Hr Zone 0 = Silent Alarm, No Alarm Output</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Interior Zone 1 = Steady Alarm Output for Bells/Sirens</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Perimeter Zone 2 = Aux Relay Activation for Bell Timeout</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Priority 24Hr Zone 3 = Aux Relay Activation/Steady Alarm Output</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Priority Interior Zone 4 = Pulsing Alarm Output for Bells/Sirens</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Priority Perimeter Zone 5 = Aux Relay Activation</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>(Priority Zones can't be Bypaaed or Force Armed) 6 = Aux Relay Activation, Pulsing Alarm Output</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Digit 2 = Zone Response to Open or Short Digit 4 = Central Station Reporting Options</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 = No Trouble, No Delay, Instant on Open or Short 0 = Non-Reporting, Local Zone Only</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Trouble on Open, Instant on Open or Short 1 = Standard Reporting Zone</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Trouble on Short, Instant on Open or Short 2 = Designated Zone</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Trouble on Open or Short, Instant on Open or Short 3 = Swinger Shunt Zone</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Delay on Open, Instant on Short, No Troubles 4 = Swinger Shunt, Designated Zone</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Delay on Open, Instant on Short, Trouble on Open 5 = Standard Reporting, includes Restorals</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Delay on Open, Trouble on Short, Instant on Short 6 = Restoral Reports, Designated Zone</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Delay on Open, Trouble on Open/Short, instant on Short 7 = Restoral Reports, Swinger Shunt Zone</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Delay on Short, Instant on Open, No Troubles 8 = Restoral Reports, Designated &amp; Swinger</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Delay on Short, Instant on Open, Trouble on Open</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>A = Delay on Short, Instant on Open, Trouble on Short Digit 5 = Local Annunciation Zones &amp; Options</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>B = Delay on Short, Instant on Open, Trouble on Open/Short 0 = No Options</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>C = Delay on Open or Short, No Troubles 1 = Invisible Zone (Doesn't display on Keypad)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>D = Delay on Open or Short, Trouble on Open 2 = Siren until Zone Restoral</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>E = Delay on Open or Short, Trouble on Short 3 = Siren until Zone Restoral, Invisible Zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>F = Delay on Open or Short, Trouble on Open/Short 4 = Sound Buzzer on Fault</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5 = Sound Buzzer on Fault, Invisible Zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 = Sound Buzzer on Fault, Rings Sirens</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7 = Sound Buzzer on Fault, Ring Bell until</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Restoral, Invisible Zone</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>8. Account #2 (Partition 2)</b></font> <font face="Arial" color="#000000" size="1"><b>Variables/Defaults</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8.1 1Acct</b> I _ I _ I _ I _ I <b>0 to 9, B to F, Blank Enter 3 digit Account if BFSK or 4/2 used (Virtual)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Enter 4 digit Account if Modem II used (Radionics)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8.2 2Off</b> I <b>NO</b> I <b>Yes/No Yes = Disable all Functions except Remote Program</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>No = Normal operation</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8.3 2Local</b> I <b>NO</b> I <b>Yes/No Yes = Disable Central Station Reports (Local System)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>No = Enable Central Station Reports</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8.4 2DlyIn</b> I <b>30</b> _I <b>10 to 120, Blank Entry Delay in 10 second increments</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8.5 2DlyOut</b> I <b>60</b> _I <b>10 to 120, Blank Entry Delay in 10 second increments</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8.6 2Prwrn</b> I <b>YES</b> I <b>Yes/No Sound Prewarning buzzer during Entry Delay</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8.7 2Op/Cl</b> I <b>NO</b> I <b>Yes/No Enable Opening/Closing Reports for this Account</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8.8 2ReOp</b> I <b>NO</b> I <b>Yes/No Enable Restricted Opening Reports (Disarm on Alarm)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8.9 2ReCl</b> I <b>NO</b> I <b>Yes/No Enable Restricted Closing Reports</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Send on Force Arm or if Command 0 used to Shunt)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8.10 2CombID</b> I <b>NO</b> I <b>Yes/No Identify Opening/Closing Reports by User Passcode</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Combination 1 = Zone 1 Combination 5 = Zone 5</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Combination 2 = Zone 2 Combination 6 = Zone 6</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Combination 3 = Zone 3 Combination 7 = Zone 7</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Combination 4 = Zone 4 Download or CMD 1 Arming = Zone 9</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8.11 2CnclRpt</b> I <b>NO</b> I <b>Yes/No Enable Cancel Reports for this Account</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8.12 2Duress</b> I <b>NO</b> I <b>Yes/No Enable Duress Reports for this Account</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Duress = 1 digit above User Passcode)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8.13 2DlyRes</b> I <b>NO</b> I <b>Yes/No Delay Restoral Reports until Bell Timeout</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8.14 2Ring1</b> I <b>YES</b> I <b>Yes/No 1 Alarm Output per Zone (Swinger Shutdown)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8.15 2TsBell</b> I <b>NO</b> I <b>Yes/No Automatic Bell Test after Arming</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8.16 2Show</b> I <b>YES</b> I <b>Yes/No Show Zone Status while Disarmed</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8.17 Acct2Zns</b> I _<b>8</b> _I <b>1 to 16 Total Number of Zones for this Account (Partition)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>( _ = Zone Number)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8.18 2Zone#</b> I _<b>?</b> _I <b>1 to 16 Enter the Zone to Program</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8.19 2Z_Loc</b> I _<b>0</b> _I <b>A</b> I <b>1st Digit = 0 to 4 1st Digit = Device/Zone Address Location</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2nd Digit = A to H 0 = D6112 Onboard Zones</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>to 4 = D630/D640 Zone Expander Address</b></font>
+<p></p>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>nd Digit = Physical Location of Zone on Device</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>A = "Zone 1" E = "Zone 5" _A = Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>B = "Zone 2" F = "Zone 6"</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>C = "Zone 3" G = "Zone 7"</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>D = "Zone 4" H = "Zone 8"</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8.20 1Zn_</b> I _ I _ I _ I _ I _ I <b>0 to 9, B to F Enter 5 digit Zone Type, 00000 = Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(See Zone 1 Programming)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>9. Test Timer</b></font> <font face="Arial" color="#000000" size="1"><b>Variables/Defaults</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>9.1 TsPPh</b> I <b>NO</b> I <b>Yes/No Transmit Auto-Test Report to Primary Phone</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>9.2 TsAPh</b> I <b>NO</b> I <b>Yes/No Transmit Auto-Test Report to Alternate Phone</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>9.3 Days</b> I <b>YES</b> I <b>Yes/No Yes = Interval in Days, No = Interval in Hours</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>9.4 Intvl</b> I <b>0</b> _I <b>0 to 63 Automatic Test Time Interval Days or Hours</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>9.5 DysRpt</b> I <b>0</b> _I <b>0 to 63 Number of Days until first Automatic Test Report</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>9.6 HrsRpt</b> I <b>0</b> _I <b>0 to 63 Number of Hours until first Automatic Test Report</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>9.7 TsCode</b> I _I <b>0 to 9, Blank (BFSK or Pulse Format) Automatic Test Code</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 to 9, B to F, Blank (Modem II Format)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>9.8 TsE</b> I <b>NO</b> I <b>Yes/No Transmit Restoral Code E at Auto Test Report Time</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>9.9 TsDef</b> I <b>NO</b> I <b>Yes/No Defer Test Report when System Report Generated</b></font>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>

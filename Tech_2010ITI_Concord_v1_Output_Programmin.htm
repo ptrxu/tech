@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>ITI Concord v1 Output Programming</title>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+
+			<script type="text/javascript" language="javascript1.2" src="whver.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+    			<script type="text/javascript" language="javascript1.2" src="whlang.js"></script> 
+    <meta name="generator" content="Adobe RoboHelp 9" />
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+	      //<!--
+	      RH_Document_Write("<p style=\"text-align:right\"> ");
+RH_AddMasterBreadcrumbs( "Tech_2010.htm", "", "/", "Home", "Tech_2010Main.htm");
+RH_Document_Write("<\/p>");
+//-->
+</script>
+<font face="Arial" color="#0000FF" size="2">ITI Concord v1 Output Programming</font>
+<p></p>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1">st 3 Digits of Output <b>(Trigger) Last 2 Digits of Output Program (Response)</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>Fire Alarm 001 Siren Track 30sec Delay Response Time</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Police Alarm 002 No No Momentary 00</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Auxiliary Alarm 003 No No 3 minutes 01</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Any Audible Alarm 004 No No Siren time 02</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Silent Alarm/Duress 005 No No Sustain for Duration of Event 03</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Any Audible or Silent Alarm 006 No Yes Momentary 04</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>HOM Group 27, 28, 32 in Alarm 007 No Yes 3 minutes 05</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Major Trouble 008 No Yes Siren time 06</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Arming to STAY or AWAY 009 No Yes Sustain for Duration of Event 07</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Arming to AWAY 010 Yes No Momentary 08</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>AVM is Interactive 011 Yes No Minutes 09</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Fail-to-Communicate 012 Yes No Siren time 10</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>AVM Trip (edge) 013 Yes No Sustain for Duration of Event 11</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Keychain Star Button Press 014 Yes Yes Momentary 12</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(X-10 Lights or Garage Door) Yes Yes 3 minutes 13</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Smoke Power 015 Yes Yes Siren time 14</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Resets 4-wire smoke detectors) Yes Yes Sustain for Duration of Event 15</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Phone Test Initiated 225</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>AC Failure 226 (After 15 minutes)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>CPU Low Battery 227</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Auto Phone Test 228</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Receiver Failure 229</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Back In Service 230</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Phone Failure 231</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Buffer Full 232</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Two Trip Error 233</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>System Tamper in Alarm 236</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Freeze Alarm 237</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>No Activity 238</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Fire Panic 239</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Police Panic 240</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Auxiliary Panic 241</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Opening Report 242</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Closing Report 243</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Latchkey Report 244</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Duress 245</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Force Armed Report 246</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Fire in Partition 247</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Recent Closing 248</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Test Report 249</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Group 00 in alarm 64 Sensor Group 17 in alarm 81</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Group 01 in alarm 65 Sensor Group 18 in alarm 82</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Group 02 in alarm 66 Sensor Group 19 in alarm 83</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Group 03 in alarm 67 Sensor Group 20 in alarm 84</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Group 04 in alarm 68 Sensor Group 21 in alarm 85</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Group 05 in alarm 69 Sensor Group 22 in alarm 86</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Group 06 in alarm 70 Sensor Group 23 in alarm 87</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Group 07 in alarm 71 Sensor Group 24 in alarm 88</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Group 08 in alarm 72 Sensor Group 25 in alarm 89</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Group 09 in alarm 73 Sensor Group 26 in alarm 90</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Group 10 in alarm 74 Sensor Group 27 in alarm 91</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Group 11 in alarm 75 Sensor Group 28 in alarm 92</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Group 12 in alarm 76 Sensor Group 29 in alarm 93</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Group 13 in alarm 77 Sensor Group 32 in alarm 96</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Group 14 in alarm 78 Sensor Group 33 in alarm 97</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Group 15 in alarm 79 Sensor Group 34 in alarm 98</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Group 16 in alarm 80 Sensor Group 35 in alarm 99</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 01 in Alarm 129 Sensor 01 open 257</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 02 in Alarm 130 Sensor 02 open 258</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 03 in Alarm 131 Sensor 03 open 259</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 04 in Alarm 132 Sensor 04 open 260</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 05 in Alarm 133 Sensor 05 open 261</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 06 in Alarm 134 Sensor 06 open 262</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 07 in Alarm 135 Sensor 07 open 263</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 08 in Alarm 136 Sensor 08 open 264</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 09 in Alarm 137 Sensor 09 open 265</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 10 in Alarm 138 Sensor 10 open 266</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 11 in Alarm 139 Sensor 11 open 267</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 12 in Alarm 140 Sensor 12 open 268</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 13 in Alarm 141 Sensor 13 open 269</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 14 in Alarm 142 Sensor 14 open 270</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 15 in Alarm 143 Sensor 15 open 271</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 16 in Alarm 144 Sensor 16 open 272</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 17 in Alarm 145 Sensor 17 open 273</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 18 in Alarm 146 Sensor 18 open 274</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 19 in Alarm 147 Sensor 19 open 275</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 20 in Alarm 148 Sensor 20 open 276</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 21 in Alarm 149 Sensor 21 open 277</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 22 in Alarm 150 Sensor 22 open 278</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 23 in Alarm 151 Sensor 23 open 279</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 24 in Alarm 152 Sensor 24 open 280</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 25 in Alarm 153 Sensor 25 open 281</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 26 in Alarm 154 Sensor 26 open 282</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 27 in Alarm 155 Sensor 27 open 283</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 28 in Alarm 156 Sensor 28 open 284</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 29 in Alarm 157 Sensor 29 open 285</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 30 in Alarm 158 Sensor 30 open 286</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 31 in Alarm 159 Sensor 31 open 287</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 32 in Alarm 160 Sensor 32 open 288</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 33 in Alarm 161 Sensor 33 open 289</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 34 in Alarm 162 Sensor 34 open 290</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 35 in Alarm 163 Sensor 35 open 291</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 36 in Alarm 164 Sensor 36 open 292</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 37 in Alarm 165 Sensor 37 open 293</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 38 in Alarm 166 Sensor 38 open 294</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 39 in Alarm 167 Sensor 39 open 295</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 40 in Alarm 168 Sensor 40 open 296</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 41 in Alarm 169 Sensor 41 open 297</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 42 in Alarm 170 Sensor 42 open 298</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 43 in Alarm 171 Sensor 43 open 299</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 44 in Alarm 172 Sensor 44 open 300</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 45 in Alarm 173 Sensor 45 open 301</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 46 in Alarm 174 Sensor 46 open 302</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 47 in Alarm 175 Sensor 47 open 303</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 48 in Alarm 176 Sensor 48 open 304</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 49 in Alarm 177 Sensor 49 open 305</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 50 in Alarm 178 Sensor 50 open 306</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 51 in Alarm 179 Sensor 51 open 307</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 52 in Alarm 180 Sensor 52 open 308</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 53 in Alarm 181 Sensor 53 open 309</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 54 in Alarm 182 Sensor 54 open 310</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 55 in Alarm 183 Sensor 55 open 311</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 56 in Alarm 184 Sensor 56 open 312</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 57 in Alarm 185 Sensor 57 open 313</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 58 in Alarm 186 Sensor 58 open 314</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 59 in Alarm 187 Sensor 59 open 315</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 60 in Alarm 188 Sensor 60 open 316</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 61 in Alarm 189 Sensor 61 open 317</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 62 in Alarm 190 Sensor 62 open 318</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 63 in Alarm 191 Sensor 63 open 319</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 64 in Alarm 192 Sensor 64 open 320</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 65 in Alarm 193 Sensor 65 open 321</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 66 in Alarm 194 Sensor 66 open 322</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 67 in Alarm 195 Sensor 67 open 323</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 68 in Alarm 196 Sensor 68 open 324</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 69 in Alarm 197 Sensor 69 open 325</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 70 in Alarm 198 Sensor 70 open 326</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 71 in Alarm 199 Sensor 71 open 327</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 72 in Alarm 200 Sensor 72 open 328</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 73 in Alarm 201 Sensor 73 open 329</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 74 in Alarm 202 Sensor 74 open 330</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 75 in Alarm 203 Sensor 75 open 331</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor 76 in Alarm 204 Sensor 76 open 332</b></font>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>

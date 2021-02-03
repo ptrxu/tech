@@ -1,0 +1,691 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>DSC PC5936 Intercom Programming</title>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+
+			<script type="text/javascript" language="javascript1.2" src="whver.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+    			<script type="text/javascript" language="javascript1.2" src="whlang.js"></script> 
+    <meta name="generator" content="Adobe RoboHelp 9" />
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+	      //<!--
+	      RH_Document_Write("<p style=\"text-align:right\"> ");
+RH_AddMasterBreadcrumbs( "Tech_2010.htm", "", "/", "Home", "Tech_2010Main.htm");
+RH_Document_Write("<\/p>");
+//-->
+</script>
+<a name="ae6b9496" id="ae6b9496"></a><font face="Arial" color="#0000FF" size="2">DSC PC5936 Intercom Module Programming</font>
+<p></p>
+<p></p>
+<form><font face="Arial" color="#800000" size="1"><input type="button" value="Intercom Instructions" onclick="self.location='Tech_2010new_topic00001607.htm'" /> <input type="button" value="Intercom Programming" onclick="self.location='Tech_2010new_topic00001608.htm'" /> <input type="button" value="Intercom Wiring" onclick="self.location='Tech_2010new_topic00001609.htm'" /></font></form>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Information</b></font> <font face="Arial" color="#000000" size="1"><b>Compatible with PC5921 interior and PC5921EXT Intercom stations</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Not compatible with PC5901 intercom stations</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Supported</b></font> <font face="Arial" color="#000000" size="1"><b>PC1555MX v2.3</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Panels</b></font> <font face="Arial" color="#000000" size="1"><b>PC1555 v3.2</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PC1616</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PC1832</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PC1864</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PC5010 (all)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PC5015 (all)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PC5020 (all)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Wiring</b></font> <font face="Arial" color="#000000" size="1"><b>1. Wire to control panel Keybus</b></font>
+<p></p>
+<ol start="2">
+<li><font face="Arial" color="#000000" size="1"><b>Wire Audio Stations RED &amp; BLACK to COM and AUX+</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Wire GREEN from Station to M1 through M7 depending on station used</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Wire YELLOW from Station to S1 through S7 depending on station used</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>Volume</b></font> <font face="Arial" color="#000000" size="1"><b>All Speaker/Mic Adjustments are made on 5936 Board</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Problems</b></font> <font face="Arial" color="#000000" size="1"><b>1. Not Enrolled with 902</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. Wiring to stations backwards or incorrect</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3. DO NOT DISTURB stays on = Wrong version of Intercom or incoming sounds not enabled in location 20</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4. Incompatible Panel or Intercom stations</b></font>
+<p></p>
+<ol start="5">
+<li><font face="Arial" color="#000000" size="1"><b>Shielded wire not used between PC5936 and PC5921 Intercom stations</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>Intercom</b></font> <font face="Arial" color="#000000" size="1"><b>(For Intercom Use, each function (except baby montior)will return to normal if 30 seconds of no activity</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Instructions Initiate Page</b></font> <font face="Arial" color="#000000" size="1"><b>Press PAGE/ANSWER (Station will give double beep, others give rapid beep)</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Cancel Page</b></font> <font face="Arial" color="#000000" size="1"><b>Press PAGE/ANSWER</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Answer Page</b></font> <font face="Arial" color="#000000" size="1"><b>Press PAGE ANSWER (When page is active DO NOT DISTURB light turns on)</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Ending Page</b></font> <font face="Arial" color="#000000" size="1"><b>Press PAGE/ANSWER again</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Do Not Disturb</b></font> <font face="Arial" color="#000000" size="1"><b>Removes station from incoming pages (Red Light will turn On), press again to exit</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Doorbell Answer</b></font> <font face="Arial" color="#000000" size="1"><b>When doorbell pressed all stations sound tone, press PAGE/ANSWER</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Baby Monitor</b></font> <font face="Arial" color="#000000" size="1"><b>Hold DO NOT DISTURB 2 seconds at location to listen in (DO NOT DISTURN flashes)</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Answer Phone</b></font> <font face="Arial" color="#000000" size="1"><b>(if enabled), press PAGE/ANSWER for 1 second</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Transfer Phone</b></font> <font face="Arial" color="#000000" size="1"><b>Pick up house phone and press # on Phone to transfer from Intercom</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Call Waiting</b></font> <font face="Arial" color="#000000" size="1"><b>If another call comes in press PAGE/ANSWER to toggle between calls</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>2-Way Voice</b></font> <font face="Arial" color="#000000" size="1"><b>Any location marked (2-way) is applicable for a 2-way voice installation</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Program</b></font> <font face="Arial" color="#000000" size="1"><b>1. Enter panel programming (</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>+ 8 + Installer Code)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. Enter location 802</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>[802]</b></font> <font face="Arial" color="#000000" size="2"><b>Audio Module Programming</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[01]</b></font> <font face="Arial" color="#000000" size="1"><b>Definitions for Stations 1 to 7 (2-way)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1">I _<b>0</b> _I _<b>3</b> _I</font> <font face="Arial" color="#000000" size="1"><b>Station 1 00 = Disabled/Not Used</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>03</b> I _<b>0</b> _I _<b>3</b> _I</font> <font face="Arial" color="#000000" size="1"><b>Station 2 01 = Doorbell 1 (Station 1 only)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>03</b> I _<b>0</b> _I _<b>3</b> _I</font> <font face="Arial" color="#000000" size="1"><b>Station 3 02 = Doorbell 2</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>03</b> I _<b>0</b> _I _<b>3</b> _I</font> <font face="Arial" color="#000000" size="1"><b>Station 4 03 = PC5901 Intercom or PC5904 Two Way Module</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>03</b> I _<b>0</b> _I _<b>3</b> _I</font> <font face="Arial" color="#000000" size="1"><b>Station 5 05 = Music Input</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>03</b> I _<b>0</b> _I _<b>3</b> _I</font> <font face="Arial" color="#000000" size="1"><b>Station 6</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>03</b> I _<b>0</b> _I _<b>3</b> _I</font> <font face="Arial" color="#000000" size="1"><b>Station 7</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[02]</b></font> <font face="Arial" color="#000000" size="1"><b>Definitions for Stations 8 to 15 (2-way)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1">I _<b>0</b> _I _<b>3</b> _I</font> <font face="Arial" color="#000000" size="1"><b>Station 9 00 = Disabled/Not Used</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>03</b> I _<b>0</b> _I _<b>3</b> _I</font> <font face="Arial" color="#000000" size="1"><b>Station 10 01 = Doorbell 1 (Station 1 only)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>03</b> I _<b>0</b> _I _<b>3</b> _I</font> <font face="Arial" color="#000000" size="1"><b>Station 11 02 = Doorbell 2</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>03</b> I _<b>0</b> _I _<b>3</b> _I</font> <font face="Arial" color="#000000" size="1"><b>Station 12 03 = PC5901 Intercom or PC5904 Two Way Module</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>03</b> I _<b>0</b> _I _<b>3</b> _I</font> <font face="Arial" color="#000000" size="1"><b>Station 13 05 = Music Input</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>03</b> I _<b>0</b> _I _<b>3</b> _I</font> <font face="Arial" color="#000000" size="1"><b>Station 14</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>03</b> I _<b>0</b> _I _<b>3</b> _I</font> <font face="Arial" color="#000000" size="1"><b>Station 15</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[10]</b></font> <font face="Arial" color="#000000" size="1"><b>Port Assignments Zones 1 to 8 (2-way)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 2</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 3 Set for station with PC5904 Speaker/Mic module</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 4 (If PC5904 is on Station 4 set each location to 04)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 5</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 6</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 7</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 8</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[11]</b></font> <font face="Arial" color="#000000" size="1"><b>Port Assignments Zones 9 to 16 (2-way)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 9</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 10</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 11</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 12</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 13</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 14</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 15</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 16</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[12]</b></font> <font face="Arial" color="#000000" size="1"><b>Port Assignments Zones 17 to 24 (2-way)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 17</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 18</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 19</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 20</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 21</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 22</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 23</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 24</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[13]</b></font> <font face="Arial" color="#000000" size="1"><b>Port Assignments Zones 25 to 32 (2-way)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 25</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 26</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 27</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 28</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 29</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 30</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 31</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 32</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[14]</b></font> <font face="Arial" color="#000000" size="1"><b>Port Assignments Zones 33 to 40 (2-way)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 33</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 34</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 35</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 36</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 37</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 38</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 39</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 40</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[15]</b></font> <font face="Arial" color="#000000" size="1"><b>Port Assignments Zones 41 to 48 (2-way)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 41</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 42</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 43</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 44</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 45</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 46</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 47</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 48</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[16]</b></font> <font face="Arial" color="#000000" size="1"><b>Port Assignments Zones 49 to 56 (2-way)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 49</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 50</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 51</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 52</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 53</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 54</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 55</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 56</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[17]</b></font> <font face="Arial" color="#000000" size="1"><b>Port Assignments Zones 57 to 64 (2-way)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 57</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 58</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 59</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 60</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 61</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 62</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 63</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Zone 64</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[18]</b></font> <font face="Arial" color="#000000" size="1"><b>Keypad Port Assignments (2-way)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Keypad 1 Station Assignment</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Keypad 2 Station Assignment</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I <b>Keypad 3 Station Assignment Links keypad panics to a specific speaker/mic module</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Keypad 4 Station Assignment <i>Example:</i> If PC5904 is on Station 4 set each location to 04</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Keypad 5 Station Assignment If multiple PC5904's are used set each keypad to closest PC5904</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Keypad 6 Station Assignment</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Keypad 7 Station Assignment</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Keypad 8 Station Assignment</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[20]</b></font> <font face="Arial" color="#000000" size="1"><b>First General Broadcast Mask (ON allows Intercoms to answer phone)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>1 For Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>ON</b> _I <b>2 Incoming Sounds on Station 1 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I <b>ON</b> _I <b>3 Incoming Sounds on Station 2 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I <b>ON</b> _I <b>4 Incoming Sounds on Station 3 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I <b>ON</b> _I <b>5 Incoming Sounds on Station 4 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I <b>ON</b> _I <b>6 Incoming Sounds on Station 5 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I <b>ON</b> _I <b>7 Incoming Sounds on Station 6 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I <b>ON</b> _I <b>8 Incoming Sounds on Station 7 Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[21]</b></font> <font face="Arial" color="#000000" size="1"><b>Second General Broadcast Mask (ON allows Intercoms to answer phone)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>1 Incoming Sounds on Station 8 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>ON</b> _I <b>2 Incoming Sounds on Station 9 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I <b>ON</b> _I <b>3 Incoming Sounds on Station 10 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I <b>ON</b> _I <b>4 Incoming Sounds on Station 11 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I <b>ON</b> _I <b>5 Incoming Sounds on Station 12 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I <b>ON</b> _I <b>6 Incoming Sounds on Station 13 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I <b>ON</b> _I <b>7 Incoming Sounds on Station 14 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I <b>ON</b> _I <b>8 Incoming Sounds on Station 15 Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[30]</b></font> <font face="Arial" color="#000000" size="1"><b>Audio Options (2-way) (Leave alone unless Speaker/Mic links to certain zones)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>ON</b> _I <b>1 Local Alarm Follower (Intercom is siren) Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>2 Listen to All Stations when On-Line Listen only to Stations in Alarm</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>3 Page Listens to All Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>4 Doorbell Listens to All Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>5 Bell Silenced during Verbal Alarm Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>6 Audio Link Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>7 For Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>8 For Future Use</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[31]</b></font> <font face="Arial" color="#000000" size="1"><b>Audio Options Two (For Future Use)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>1 For Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>2 For Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>3 For Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>4 For Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>5 For Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>6 For Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>7 For Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>8 For Future Use</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[32]</b></font> <font face="Arial" color="#000000" size="1"><b>Audio Duration (Set at 99 seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>90</b></font> <font face="Helvetica-Light" color="#000000" size="1">I</font><font face="Arial" color="#000000" size="1"><b>__9__</b></font><font face="Helvetica-Light" color="#000000" size="1"><b>I</b></font><font face="Arial" color="#000000" size="1"><b>__9__I Audio Online Time (00 to 99 seconds)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[40]</b></font> <font face="Arial" color="#000000" size="1"><b>Audio Control Telephone Key Programming (Leave default)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default (Assigns 2-Way Voice Central Station keys)</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1">I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>[1] Key</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>[2] Key 00 = Not Used</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>03</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>[3] Key 01 = Talk to All Speakers 10 = For Futre Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>14</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>[4] Key 02 = Future Use 11 = Cancel First Keypress</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>15</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>[5] Key 03 = High Gain Listen to All 12 = For Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>06</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>[6] Key 04 = For Future Use 13 = Zone Select (0 to 3 Only)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>07</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>[7] Key 05 = For Future Use 14 = Increment Selected Mic</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>[8] Key 06 = Low Gain Listen to All 15 = Decrement Selected Mic</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>[9] Key 07 = Extend Time Online 16 = For Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>[0] Key 08 = For Future Use 17 = Mode Key</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>[</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>] Key 09 = Terminate Session</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>11</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>[#] Key</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[41]</b></font> <font face="Arial" color="#000000" size="1"><b>Audio Control Telephone Mode Key Programming (Leave default)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Mode Key (9) + 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Mode Key (9) + 2 00 = Not Used</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Mode Key (9) + 3 01 = Talk to All Speakers 10 = For Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Mode Key (9) + 4 02 = Future Use 11 = Cancel First Keypress</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Mode Key (9) + 5 03 = High Gain Listen to All 12 = For Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Mode Key (9) + 6 04 = For Future Use 13 = Zone Select (0 to 3 Only)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Mode Key (9) + 7 05 = For Future Use 14 = Increment Selected Mic</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Mode Key (9) + 8 06 = Low Gain Listen to All 15 = Decrement Selected Mic</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>09</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Mode Key (9) + 9 07 = Extend Time Online 16 = For Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Mode Key (9) + 0 08 = For Future Use 17 = Mode Key</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Mode Key (9) +</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>09 = Terminate Session</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I</font> <font face="Arial" color="#000000" size="1"><b>Mode Key (9) + #</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[58]</b></font> <font face="Arial" color="#000000" size="1"><b>Ninth Audio Control Options (2-way) (ON for each option)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>ON</b> _I <b>1 Tampers Enabed Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>ON</b> _I <b>2 Openings &amp; Closings Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>ON</b> _I <b>3 Auxiliary Keys Alarm Enabled (Listen In) Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>ON</b> _I <b>4 Panic Keys Alarm Enabled (Listen In) Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>ON</b> _I <b>5 Duress Alarm Enabled (Listen In) Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>6 Zone Expander Supervisory Alarm Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>ON</b> _I <b>7 Opening After Alarm Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>8 For Future Use</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[60]</b></font> <font face="Arial" color="#000000" size="1"><b>Telphone Ring Mask</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>1 For Future Use Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>2 Port 1 Telephone Ring Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>3 Port 2 Telephone Ring Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>4 Port 3 Telephone Ring Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>5 Port 4 Telephone Ring Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>6 Port 5 Telephone Ring Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>7 Port 6 Telephone Ring Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>8 Port 7 Telephone Ring Enabled Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[61]</b></font> <font face="Arial" color="#000000" size="1"><b>Telphone Ring Mask Two</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>1 Port 8 Telephone Ring Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>2 Port 9 Telephone Ring Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>3 Port 10 Telephone Ring Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>4 Port 11 Telephone Ring Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>5 Port 12 Telephone Ring Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>6 Port 13 Telephone Ring Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>7 Port 14 Telephone Ring Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>8 Port 15 Telephone Ring Enabled Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[62]</b></font> <font face="Arial" color="#000000" size="1"><b>Music Broadcast Mask One</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>1 For Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I <b>ON</b> _I <b>2 Port 1 Music Broadcast Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I <b>ON</b> _I <b>3 Port 2 Music Broadcast Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I <b>ON</b> _I <b>4 Port 3 Music Broadcast Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I <b>ON</b> _I <b>5 Port 4 Music Broadcast Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I <b>ON</b> _I <b>6 Port 5 Music Broadcast Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I <b>ON</b> _I <b>7 Port 6 Music Broadcast Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I <b>ON</b> _I <b>8 Port 7 Music Broadcast Enabled Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[63]</b></font> <font face="Arial" color="#000000" size="1"><b>Music Broadcast Mask Two</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I <b>ON</b> _I <b>1 Port 8 Music Broadcast Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I <b>ON</b> _I <b>2 Port 9 Music Broadcast Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I <b>ON</b> _I <b>3 Port 10 Music Broadcast Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I <b>ON</b> _I <b>4 Port 11 Music Broadcast Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I <b>ON</b> _I <b>5 Port 12 Music Broadcast Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I <b>ON</b> _I <b>6 Port 13 Music Broadcast Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I <b>ON</b> _I <b>7 Port 14 Music Broadcast Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I <b>ON</b> _I <b>8 Port 15 Music Broadcast Enabled Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[70]</b></font> <font face="Arial" color="#000000" size="1"><b>Doorstrike Activation Mask One</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>1 For Future Use Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>2 Port 1 Enabled to Activate Doorstrike Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>3 Port 2 Enabled to Activate Doorstrike Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>4 Port 3 Enabled to Activate Doorstrike Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>5 Port 4 Enabled to Activate Doorstrike Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>6 Port 5 Enabled to Activate Doorstrike Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>7 Port 6 Enabled to Activate Doorstrike Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>8 Port 7 Enabled to Activate Doorstrike</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[71]</b></font> <font face="Arial" color="#000000" size="1"><b>Doorstrike Activation Mask Two</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>1 Port 8 Enabled to Activate Doorstrike Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>2 Port 9 Enabled to Activate Doorstrike Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>3 Port 10 Enabled to Activate Doorstrike Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>4 Port 11 Enabled to Activate Doorstrike Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>5 Port 12 Enabled to Activate Doorstrike Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>6 Port 13 Enabled to Activate Doorstrike Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>7 Port 14 Enabled to Activate Doorstrike Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>OFF</b> I <b>8 Port 15 Enabled to Activate Doorstrike Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[72]</b></font> <font face="Arial" color="#000000" size="1"><b>Doorstike PGM Option Programming (Normally do not program)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I <b>00 = Null Key</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>13 = Command Output #1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>14 = Command Output #2</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>19 = Command Output #3</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>21 = Command Output #4</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000001300.gif" alt="Tech_201000001300.gif" border="0" width="666" height="623" /></b></font>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>

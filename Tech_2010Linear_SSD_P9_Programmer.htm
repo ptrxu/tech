@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>Linear SSD P9 Programmer</title>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+
+			<script type="text/javascript" language="javascript1.2" src="whver.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+    			<script type="text/javascript" language="javascript1.2" src="whlang.js"></script> 
+    <meta name="generator" content="Adobe RoboHelp 9" />
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+	      //<!--
+	      RH_Document_Write("<p style=\"text-align:right\"> ");
+RH_AddMasterBreadcrumbs( "Tech_2010.htm", "", "/", "Home", "Tech_2010Main.htm");
+RH_Document_Write("<\/p>");
+//-->
+</script>
+<font face="Arial" color="#0000FF" size="2">Linear SSD P9 Programmer</font>
+<p></p>
+<p></p>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Basics" onclick="self.location='Tech_2010FBI_XL4_Alpha_Keypad.htm'" /> <input type="button" value="Codes" onclick="self.location='Tech_2010FBI_XL4_Wiring.htm'" /> <input type="button" value="Troubles" onclick="self.location='Tech_2010FBI_XL4_Program_Sheet.htm'" /> <input type="button" value="Keypad" onclick="self.location='Tech_2010FBI_XL4_Contact_ID_Report_Codes.htm'" /> <input type="button" value="Sensors" onclick="self.location='Tech_2010new_topic00001814.htm'" /> <input type="button" value="Panel Program" onclick="self.location='Tech_2010FBI_XL4_Sensors.htm'" /> <input type="button" value="Dialer Program" onclick="self.location='Tech_2010new_topic00001823.htm'" /></b></font></form>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>1704 Dialer can only programmed with P-9 Programmer</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sescoa Standard (3x1 report, Account number from 000 to 999)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sescoa Super Speed (4x3 report, Account number from 0000 to 3374)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Radionics Hex (3x1 report, Account number from 000 to FFE (A is not used)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>SEIA (Not supported by 1700 Dialer)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>P-9 Battery 3-volt Lithium DL2430</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>1700 Dialer is also known as DF-17 Dialer (if ordering new ones)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Linear SSD signals</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Fire/Smoke Detector</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Panic Button/Keyfob Panic</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= All Wireless Burg Sensors</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>Remote Connection</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>At first Password prompt type PASS then ENTER</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>At next password prompt type 01 then ENTER</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Display shows "File maintenance" press ENTER</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Arrow up to "modify", press ENTER</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Select file 1 (for 2-way Systems) or 2 (Standard Systems, no 2-way) then ENTER</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>at "1700 Master file?" press "Y"</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>At "Select Step" select 1 then press ENTER</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Press ENTER until you get to "Phone Number 1" enter Receiver Number, press ENTER</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>At "Account Number" enter 3 or 4 digit Account Number (depends on format) then ENTER</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Press ESC , at "Save?" press Y</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Arrow up to "Remote Comm" then press ENTER</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Arrow up to "Write Comm" then press ENTER</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Type Customer phone number then press ENTER</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Enter Access Code (try 3193, needed if Dialer locked out in previous programming)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Programmer will dial phone, ring twice, hang up and call again, panel should answer</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>At "Enter File Number" Enter 1 or 2 (depending on system to be programmed)</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>Download will start then show "Set Time &amp; Date?" press ESC to disconnect</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Local Connection</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>Do above Remote Connection steps, instead of "Remote Com" use "Local Com"</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Plug in RJ Cord from panel directly into back of P9 Programmer</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Arrow up to "Write Comm" then press ENTER</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Display will say "Press button on Dialer" press Red button on TOP of Dialer Main board</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Display asks "1 - 8?" select template to download, Programmer will being downloading</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Press ESC when "Set Time &amp; Date" prompt to disconnect</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>(Locked out Dialers allow downloading if using Local Connection method)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>1700 Program Steps (Use <img src="Tech_201000090003.gif" alt="Tech_201000090003.gif" border="0" width="14" height="17" /> or <img src="Tech_201000090000.gif" alt="Tech_201000090000.gif" border="0" width="14" height="17" /> to toggle some locations, press Y or N for others)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>You can only choose what step you want to start at when display asks "Select Step"</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Step Description Value</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>Enter MF Header (Just a description of system)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Enable Telephone Communication ( Y/N ) Y</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Enter Phone 1 ??????</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>Cntrl STA Format for Ph 1 Radi Hex (most common)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sescoa Standard (3x1 report, Account number from 000 to 999)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sescoa Super Speed (4x3 report, Account number from 0000 to 3374)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Radionics Hex (3x1 report, Account number from 000 to FFE (A is not used)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>SEIA (Not supported by 1700 Dialer)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Enter Account for Ph 1 3-digits (4 if using Sescoa Fast)</b></font>
+<p></p>
+<ol start="4">
+<li><font face="Arial" color="#000000" size="1"><b>Enter Phone 2 Not Used</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>Cntrl STA Format for Ph 2 Doesn't Matter</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Enter Account for Ph 2 Doesn't Matter</b></font>
+<p></p>
+<ol start="5">
+<li><font face="Arial" color="#000000" size="1"><b>Enter Phone 3A Not Used</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Enter Phone 3B Not Used</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>Cntrl Sta Format for Ph 3 Doesn't Matter</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Enter Account # for Ph 3 Doesn't Matter</b></font>
+<p></p>
+<ol start="7">
+<li><font face="Arial" color="#000000" size="1"><b>Use DTMF Dialing ( Y/N ) Y</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>DTMF Fast Rate Dialing ( Y/N ) Y</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>08 Is Ground Start Required ( Y/N ) N</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>09 Enter Number of Call Tries 10</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>10 Enter Sleep Cycles ( 0 - 14 ) 2</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>11 Enter Sleep Time ( Min ) 4</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>12 Enter Anti-Jam Time ( 15 - 255 ) 30</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>13 Enter Loop Restoral Code Not Used</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>14 Supervisory Reports? ( Y/N ) Y</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>15 Enter Primary Superv Phone 1 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>16 Enter Secondary Superv Phone 4</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17 Report To Both Number? ( Y/N ) N</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>18 Open or Close Reports? ( Y/N ) N</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>19 Open Signal Polarity + ? ( Y/N ) Y</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>20 Enter Open (Disarm) Code 0</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>21 Enter Close (Arm) Code 0</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>22 Send Test Code? ( Y/N ) N</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>23 Enter Test/Cancel Code 0</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>24 Are Battery Rpts Required? ( Y/N ) N</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>25 Enter Low Battery Code 0</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>26 Enter Battery Restoral? ( Y/N ) Y</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>27 Enter Battery Restoral Code 0</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>28 Enter Battery Detect Time Doesn't Matter</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>29 Is 24Hr Check-In Required? ( Y/N ) N</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>30 Enter Check-In Code 0</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>31 Enter Loop 1-8 Select 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO1 - Active Loop? ( Y/N ) Y</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO1 - Trigger Polarity +? ( Y/N ) Y</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO1 - Eliminate Swingers? ( Y/N ) Y</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO1 - Enter E.S. Count ( 1-8 ) 3</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO1 - Primary Phone #? ( 1-3 ) 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO1 - Secondary Phone #? ( 1-3 ) 4</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO1 - Report To Both #'s? ( Y/N ) N</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO1 - Report Loop Restoral? ( Y/N ) N</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO1 - Enter Alarm Code ( 0 - 99 ) 01</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO1 - Enter Loop Response 0</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO1 - Enter Loop Priority ( 1-7H ) 7</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO1 - Audio Loop? ( Y/N ) Y if using 2-way</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO1 - Audio Listen Only? ( Y/N ) N</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO2 - Active Loop? ( Y/N ) Y</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO2 - Trigger Polarity +? ( Y/N ) Y</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO2 - Eliminate Swingers? ( Y/N ) Y</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO2 - Enter E.S. Count ( 1-8 ) 3</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO2 - Primary Phone #? ( 1-3 ) 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO2 - Secondary Phone #? ( 1-3 ) 4 (Why? I don't know)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO2 - Report To Both #'s? ( Y/N ) N</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO2 - Report Loop Restoral? ( Y/N ) N</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO2 - Enter Alarm Code ( 0 - 99 ) 02</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO2 - Enter Loop Response 0</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO2 - Enter Loop Priority ( 1-7H ) 6</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO2 - Audio Loop? ( Y/N ) Y if using 2-way</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO2 - Audio Listen Only? ( Y/N ) N</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO3 - Active Loop? ( Y/N ) Y</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO3 - Trigger Polarity +? ( Y/N ) Y</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO3 - Eliminate Swingers? ( Y/N ) Y</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO3 - Enter E.S. Count ( 1-8 ) 3</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO3 - Primary Phone #? ( 1-3 ) 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO3 - Secondary Phone #? ( 1-3 ) 4 (Why? I don't know)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO3 - Report To Both #'s? ( Y/N ) N</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO3 - Report Loop Restoral? ( Y/N ) N</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO3 - Enter Alarm Code ( 0 - 99 ) 03</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO3 - Enter Loop Response 0</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO3 - Enter Loop Priority ( 1-7H ) 5</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO3 - Audio Loop? ( Y/N ) Y if using 2-way</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO3 - Audio Listen Only? ( Y/N ) N</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO4 - Active Loop? ( Y/N ) N</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO5 - Active Loop? ( Y/N ) N</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO6 - Active Loop? ( Y/N ) N</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO7 - Active Loop? ( Y/N ) N</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LO8 - Active Loop? ( Y/N ) N</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>32 RCM Direction (Remote Control Module) ( Y/N ) N</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>33 Enable Remote Access? ( Y/N ) Y</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>34 Lock Communicator? ( Y/N ) N</b></font>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>

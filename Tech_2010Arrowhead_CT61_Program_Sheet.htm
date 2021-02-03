@@ -1,0 +1,482 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>Arrowhead CT-61 Program Sheet</title>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+
+			<script type="text/javascript" language="javascript1.2" src="whver.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+    			<script type="text/javascript" language="javascript1.2" src="whlang.js"></script> 
+    <meta name="generator" content="Adobe RoboHelp 9" />
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+	      //<!--
+	      RH_Document_Write("<p style=\"text-align:right\"> ");
+RH_AddMasterBreadcrumbs( "Tech_2010.htm", "", "/", "Home", "Tech_2010Main.htm");
+RH_Document_Write("<\/p>");
+//-->
+</script>
+<font face="Arial" color="#0000FF" size="2">Arrowhead CT-61 Program Sheet</font> <font face="Arial" color="#008000" size="2">Click HERE for Binary Programming</font>
+<p></p>
+<p></p>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Basics" onclick="self.location='Tech_2010Arrowhead_CT61_Basic_Commands.htm'" /> <input type="button" value="Codes" onclick="self.location='Tech_2010Arrowhead_CT61_User_Codes.htm'" /> <input type="button" value="Trouble" onclick="self.location='Tech_2010Arrowhead_CT61_Trouble_Display.htm'" /> <input type="button" value="Keypad" onclick="self.location='Tech_2010Arrowhead_CT61_Keypad00004127.htm'" /> <input type="button" value="Wiring" onclick="self.location='Tech_2010Arrowhead_CT61_Wiring.htm'" /> <input type="button" value="Program" onclick="self.location='Tech_2010Arrowhead_CT61_Program_Sheet.htm'" /> <input type="button" value="Sensors" onclick="self.location='Tech_2010Arrowhead_CT61_Sensors.htm'" /></b></font></form>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b># saves and moves to next Location</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>= exits programming</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>This is a Moose Z1100R Clone</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Power Rating</b></font> <font face="Arial" color="#000000" size="1"><b>900ma total with 35VA Transformer (including Aux Power, Keypads)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LED Keypad 70ma typical, 60 all LED's On</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Z1100ST LCD Keypad 35ma Standby, 158ma in Alarm</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Standard Motion 20ma (average)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Microwave Motion 30 to 50ma (average)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Glassbreak 25ma to 35ma</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Smoke Detector 40 to 50ma (average)</b></font>
+<p></p>
+<p></p>
+<ol start="2">
+<li><font face="Arial" color="#000000" size="1"><b>ways to enter programming (system cannot be locked out)</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>Enter Program</b></font> <font face="Arial" color="#000000" size="1"><b>1. Close (Hook) SW-1 switch</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. Press 9 + 98765 (Keypad should sound 3 beeps)</b></font>
+<p></p>
+<ol start="3">
+<li><font face="Arial" color="#000000" size="1"><b>Press 0 (Keypad should sound 3 beeps again)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Enter 3-digit location (Do not press #)</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>OR</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>Power down by black switch bottom left of circuit board</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Close (Hook) SW-1 switch and power up (No lights on Keypad)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Press 0, panel beeps indicating Program Mode</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Enter 3-digit location (Do not press #)</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>(Unhook SW-1 when finished to prevent accidental entry by customer)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Program Notes</b></font> <font face="Arial" color="#000000" size="1"><b>(You can only move 1 step forward at a time from wherever location you start at</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>If you want a location other than the next exit then re-enter programming)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Enter Data</b></font> <font face="Arial" color="#000000" size="1"><b>Enter 3-digit data (Keypad should sound 3 beeps)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b># saves and moves to next (Keypad should sound 3 beeps again)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Exit Program</b></font> <font face="Arial" color="#000000" size="1"><b>Press</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>twice</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Default</b></font> <font face="Arial" color="#000000" size="1"><b>Power up panel with SW1 hooked and press 5 9 98765 +</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Program Code</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Default System</b></font> <font face="Arial" color="#000000" size="1"><b>1. Enter programming with 9 98765 0</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. Press 0 0 9 (Zone lights should be OFF)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3. Enter 255 (All Zone lights should turn ON)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4. Press</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>exit, power down, wait 10 seconds and power up</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Zone Page</b></font>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Tech1 Default Signals" onclick="self.location='Tech_201042_Signals_by_Panel_Type.htm'" /></b></font></form>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="2"><b>--------Misc System Options</b></font> <font face="Arial" color="#000000" size="1"><b>(Normally leave alone)</b></font><font face="Arial" color="#000000" size="2"><b>----------</b></font>
+<p></p>
+<p></p>
+<ol start="5">
+<li><font face="Arial" color="#000000" size="1"><b>Two Digit Arming</b> I _<b>001#</b> _I <b>(001 to 255 Disables, 000 = Enables)</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>009 Default Panel</b> I <b>000#</b> _I <b>(000 = Normal, 255 Defaults)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>After entering 255 press *, power down, open Program Switch then power back up</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>013 Code 4 Usage Count</b> I _<b>255#</b> _I <b>(001 to 254, 255 = Permanent)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>017 Access Output Hold Time</b> I _<b>001#</b> _I <b>(001 to 255 seconds)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="2"><b>-----------MAIN PROGRAMMING STARTS HERE------------</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>022 Zone 1 Definition</b> I _<b>064#</b> _I <b>064 = Delay</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>023 Zone 2 Definition</b> I _<b>072#</b> _I <b>065 = Instant</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>024 Zone 3 Definition</b> I _<b>081#</b> _I <b>066 = Fire</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>025 Zone 4 Definition</b> I _<b>065#</b> _I <b>072 = Delay #2</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>026 Zone 5 Definition</b> I _<b>065#</b> _I <b>081 = PIR</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>027 Zone 6 Definition</b> I _<b>065#</b> _I <b>002 = Medical Panic</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>028 Zone 7 Definition</b> I _<b>065#</b> _I <b>003 = Audible Panic button</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>029 Zone 8 Definition</b> I _<b>065#</b> _I <b>011 = Silent Panic Button</b></font>
+<p></p>
+<p></p>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="All Zone Configurations" onclick="self.location='Tech_2010Moose_Z911Z1100_Zone_Planning_Gu.htm'" /></b></font></form>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>030 Exit Delay</b> I _<b>061#</b> _I <b>(001 to 255 seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Even times give Exit Beeps, Odd times do not)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>031 Entry Delay 1</b> I _<b>030#</b> _I <b>(001 to 255 seconds)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>032 Entry Delay 2</b> I _<b>045#</b> _I <b>(001 to 255 Seconds)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>033 Communicator Delay</b> I _<b>001#</b> _I <b>(001 to 255 Seconds 000 = Local)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>034 Burglar Siren Timeout</b> I _<b>006#</b> _I <b>(000 to 255 Minutes 000 = No Timeout)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>035 Fire Siren Timeout</b> I _<b>006#</b> _I <b>(000 to 255 Minutes 000 = No Timeout)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>036 Police Siren Timeout</b> I _<b>006#</b> _I <b>(000 to 255 Minutes 000 = No Timeout)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>037 Medical Timeout</b> I _<b>006#</b> _I <b>(000 to 255 Minutes 000 = No Timeout)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>038 System Configuration</b> I _<b>033#</b> _I <b>(Dial Phone 1 and use Extended Format)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>VALUE DESCRIPTION</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>1 Communicator Extended Reporting</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 Communicator Single Round Reporting</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4 Pulsing Burglar Alarm Output on Arming</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8 Siren/Bell 1 Second Test upon arming</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>16 Silent Keypad Piezo on Burg activation</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>32 Telephone 1 Touchtone dial</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>64 Telephone 2 Touchtone dial</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>128 Keyswitch change of interior and delay modes</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>039 Do not Program</b> I _ <b>#</b> _I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>040 Interior/Delay</b> I _<b>000#</b> _I <b>(Motions and Doors arm Normally)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>VALUE INTERIOR DELAY</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>000 ON ON <i>Example</i>: for Automatic Interior</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>OFF ON Bypass and Instant Doors enter</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>ON OFF 003 in location</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>OFF OFF</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>041 Communicator Dial Attempts</b> I _<b>008#</b> _I <b>(8 Attempts)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>042 Telephone 1 Data Format</b> I _<b>002#</b> _I <b>(3x2 format)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>043 Telephone 2 Data Format</b> I _<b>002#</b> _I <b>(3x2 format)</b></font>
+<p></p>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Ademco 1400Hz Ack/Kissoff, 1900Hz Data, 10 Baud</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Sescoa Vertex 2300Hz Ack/Kissoff, 1800Hz Data, 20 Baud</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Radionics Superfast, 2300Hz Ack/Kissoff, 1800Hz Data, 40 Baud</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Silent Knight Fast, 1400Hz Ack/Kissoff, 1900Hz Data, 15 Baud</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>044 1st Digit of Account Number</b> I _<b>00?#</b> _I <b>(3 digit Account Number only)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>045 2nd Digit of Account Number</b> I _<b>00?#</b> _I <b>(Program 010 if 0 is in Account)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>046 3rd Digit of Account Number</b> I _<b>00?#</b> _I <b>(A=10, B=11, C=12, D=13, E=14, F=15)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>047 Police Panic Audible</b> I _<b>255#</b> _I <b>(255 = Audible, 000 = Silent)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>048 Report Code Zone 1</b> I _<b>003#</b> _I <b>(Sends 31, second digit is automatic)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>049 Report Code Zone 2</b> I _<b>003#</b> _I <b>(Sends 32, second digit is automatic)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>050 Report Code Zone 3</b> I _<b>003#</b> _I <b>(Sends 33, second digit is automatic)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>051 Report Code Zone 4</b> I _<b>003#</b> _I <b>(Sends 34, second digit is automatic)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>052 Report Code Zone 5</b> I _<b>003#</b> _I <b>(Sends 35, second digit is automatic)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>053 Report Code Zone 6</b> I _<b>003#</b> _I <b>(Sends 36, second digit is automatic)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>054 Report Code Zone 7</b> I _<b>003#</b> _I <b>(Sends 37, second digit is automatic)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>055 Report Code Zone 8</b> I _<b>003#</b> _I <b>(Sends 36, use 001 if Smoke Det for 18)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>056 Fire Panic Report Code</b> I _<b>001#</b> _I <b>(Sends 19)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>057 Police Panic Report Code</b> I _<b>002#</b> _I <b>(Sends 29)</b></font>
+<p></p>
+<p></p>
+<ol start="5">
+<li><font face="Arial" color="#000000" size="1"><b>Medical Panic Report Code</b> I _<b>004#</b> _I <b>(Sends 49)</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>059 Opening Report Code</b> I _<b>255#</b> _I <b>(255 = No Report)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>060 Closing Report Code</b> I _<b>255#</b> _I <b>(255 = No Report)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>061 Bypass Report Code</b> I _<b>255#</b> _I <b>(255 = No Report)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>062 Cancel Report Code</b> I _<b>255#</b> _I <b>(255 = No Report)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>063 Restorals Report Code</b> I _<b>255#</b> _I <b>(255 = No Report)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>064 Fire Trouble Report Code</b> I _<b>255#</b> _I <b>(255 = No Report)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>065 Low Battery Report Code</b> I _<b>255#</b> _I <b>(255 = No Report)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>066 24 Hour Test Report Code</b> I _<b>255#</b> _I <b>(255 = No Report)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>067 Not Used, press # to Bypass</b> I _ <b>#</b> _I</font>
+<p></p>
+<p></p>
+<ol start="6">
+<li><font face="Arial" color="#000000" size="1"><b>Telephone 1 Digit 1</b> I _<b>001#</b> _I <b>011 =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>069 Telephone 1 Digit 2</b> I _<b>008#</b> _I <b>012 = #</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>070 Telephone 1 Digit 3</b> I _<b>00?#</b> _I <b>013 = 3 Second Pause</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>071 Telephone 1 Digit 4</b> I _<b>00?#</b> _I <b>014 = Wait for Dial Tone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>072 Telephone 1 Digit 5</b> I _<b>00?#</b> _I <b>255 = Ends Number</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>073 Telephone 1 Digit 6</b> I _<b>00?#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>074 Telephone 1 Digit 7</b> I _<b>00?#</b> _I <b>Use 000 for 0 in Phone Number</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>075 Telephone 1 Digit 8</b> I _<b>00?#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>076 Telephone 1 Digit 9</b> I _<b>00?#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>077 Telephone 1 Digit 10</b> I _<b>00?#</b> _I</font>
+<p></p>
+<ol start="7">
+<li><font face="Arial" color="#000000" size="1"><b>Telephone 1 Digit 11</b> I _<b>00?#</b> _I</font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>079 Telephone 1 Digit 12</b> I _<b>255#</b> _I <b>(255 = End of Phone Number)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>080 Telephone 1 Digit 13</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>081 Telephone 1 Digit 14</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>082 Telephone 1 Digit 15</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>083 Telephone 1 Digit 16</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>084 Telephone 1 Digit 17</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>085 Telephone 1 Digit 18</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>086 Telephone 1 Digit 19</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>087 Telephone 1 Digit 20</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>088 Telephone 1 Digit 21</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>089 Telephone 1 Digit 22</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>090 Telephone 1 Digit 23</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>091 Telephone 1 Digit 24</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>092 Telephone 1 Digit 25</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>093 Telephone 1 Digit 26</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>094 Telephone 1 Digit 27</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>095 Telephone 1 Digit 28</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>096 Telephone 1 Digit 29</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>097 Telephone 1 Digit 30</b> I _<b>255#</b> _I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>098 Telephone 2 Digit 1</b> I _<b>255#</b> _I <b>(255 = End of Phone Number)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>099 Telephone 2 Digit 2</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>100 Telephone 2 Digit 3</b> I _<b>255#</b> _I <b>Use 000 for 0 in Phone Number</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>101 Telephone 2 Digit 4</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>102 Telephone 2 Digit 5</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>103 Telephone 2 Digit 6</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>104 Telephone 2 Digit 7</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>105 Telephone 2 Digit 8</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>106 Telephone 2 Digit 9</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>107 Telephone 2 Digit 10</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>108 Telephone 2 Digit 11</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>109 Telephone 2 Digit 12</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>110 Telephone 2 Digit 13</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>111 Telephone 2 Digit 14</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>112 Telephone 2 Digit 15</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>113 Telephone 2 Digit 16</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>114 Telephone 2 Digit 17</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>115 Telephone 2 Digit 18</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>116 Telephone 2 Digit 19</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>117 Telephone 2 Digit 20</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>118 Telephone 2 Digit 21</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>119 Telephone 2 Digit 22</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>120 Telephone 2 Digit 23</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>121 Telephone 2 Digit 24</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>122 Telephone 2 Digit 25</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>123 Telephone 2 Digit 26</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>124 Telephone 2 Digit 27</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>125 Telephone 2 Digit 28</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>126 Telephone 2 Digit 29</b> I _<b>255#</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>127 Telephone 2 Digit 30</b> I _<b>255#</b> _I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Press</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to exit</b></font>
+<p></p>
+<p></p>
+</body>
+</html>

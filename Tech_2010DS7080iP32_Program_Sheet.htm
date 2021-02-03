@@ -1,0 +1,2153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>DS7080i-P32 Program Sheet</title>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+
+			<script type="text/javascript" language="javascript1.2" src="whver.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+    			<script type="text/javascript" language="javascript1.2" src="whlang.js"></script> 
+    <meta name="generator" content="Adobe RoboHelp 9" />
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+	      //<!--
+	      RH_Document_Write("<p style=\"text-align:right\"> ");
+RH_AddMasterBreadcrumbs( "Tech_2010.htm", "", "/", "Home", "Tech_2010Main.htm");
+RH_Document_Write("<\/p>");
+//-->
+</script>
+<font face="Arial" color="#0000FF" size="2">Detection Systems DS7080i-P32 Program Sheet</font>
+<p></p>
+<p></p>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Basics" onclick="self.location='Tech_2010DS7080iP32_Basic_Commands.htm'" /> <input type="button" value="Codes" onclick="self.location='Tech_2010DS7080iP32_User_Codes.htm'" /> <input type="button" value="Trouble" onclick="self.location='Tech_2010DS7080iP32_Trouble_Display.htm'" /> <input type="button" value="Keypad" onclick="self.location='Tech_2010DS7080iP32_Keypad.htm'" /> <input type="button" value="LCD Keypad" onclick="self.location='Tech_2010DS7080iP32_LCD_Keypad.htm'" /> <input type="button" value="Wiring" onclick="self.location='Tech_2010DS7080iP32_Wiring.htm'" /> <input type="button" value="Program" onclick="self.location='Tech_2010DS7080iP32_Program_Sheet.htm'" /> <input type="button" value="Sensors" onclick="self.location='Tech_2010DS7080iP32_Sensors.htm'" /></b></font></form>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Power Ratings</b></font> <font face="Arial" color="#000000" size="1"><b>1A Aux output</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>A Siren output</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>PGM 1 1A</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PGM 2 500mA</b></font>
+<p></p>
+<p></p>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Device Output Ratings" onclick="self.location='Tech_2010Detection_Systems_Power_Ratings.htm'" /></b></font></form>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Enter Program</b></font> <font face="Arial" color="#000000" size="1"><b>98765 + # + 0 (Keypad lights should start flashing)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>or</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>987654 + # + 0 (If 6-digit user codes are enabled)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>or</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Short 2 solder points at bottom right on panel circuit board</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Move to location</b></font> <font face="Arial" color="#000000" size="1"><b>2-digit location + # + enter Data + #</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Exit Program</b></font> <font face="Arial" color="#000000" size="1"><b>Hold</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for 2 seconds</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Answer DL</b></font> <font face="Arial" color="#000000" size="1"><b># + 8 + 6 or Master Code + # + 8 + 6</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Send To DL</b></font> <font face="Arial" color="#000000" size="1"><b># + 8 + 3 or Master Code + # + 8 + 3</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Hex Program</b></font> <font face="Arial" color="#000000" size="1"><b>A =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>0 B =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>1 C =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>2 D =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>3 E =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>4 F =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>5</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[001#]</b></font> <font face="Arial" color="#000000" size="1"><b>Expansion Module Control (Enter 6 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Module 1 Type (Zn 9 to 16) 0 = Disabled 1 = 8-Point Module 2 = Not Used</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Module 2 Type (Zn 17 to 24) 0 = Disabled 1 = 8-Point Module 2 = Not Used</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Module 3 Type (Zn 25 to 32) 0 = Disabled 1 = 8-Point Module 2 = Not Used</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Module 1 Response Time 0 = 300 ms 1 = 150ms 2 = 75ms 3 = 35ms</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Module 2 Response Time 0 = 300 ms 1 = 150ms 2 = 75ms 3 = 35ms</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Module 3 Response Time 0 = 300 ms 1 = 150ms 2 = 75ms 3 = 35ms</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[002#]</b></font> <font face="Arial" color="#000000" size="1"><b>General Control (Enter 9 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Siren on Communication Fail 0 = No 1 = Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Closing Ringback 0 = No 1 = Yes</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Swinger Shunt 0 = No 1 = Yes</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I 60Hz/50Hz 0 = 60Hz 1 = 50Hz</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Allow all Arming Levels 0 = Yes 1 = Disable Perimeter and Instant Arming</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Enable Partitioning 0 = No 1 = 2 Partitions</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone Restorals 0 = If Silenced 1 = If Zn Restores 2 = If Disarmed</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 00 _I Force Arming Limit 00 = Disabled 01 to 32 = # of Zones allowed to Force Arm</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[003#]</b></font> <font face="Arial" color="#000000" size="1"><b>User Controls (Enter 5 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Keypad Audible during Exit 0 = No 1 = Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I 2 sec Siren at Arming 0 = No 1 = Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Trouble Zone Mode 0 = Disabled 1 = Normally Open 2 = Normally Closed</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I User Code Length 0 = 4-Digits 1 = 6-Digits</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Keypad Tamper Trouble 0 = Disabled 1 = Enabled</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>[004#]</b></font> <font face="Arial" color="#000000" size="1"><b>Programmer/Master Codes (Enter 12 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>987654 123456 I_ 9__I_ 8__I_ 7__I_ 6__I_ 5__I_ 4__I_ 1__I_ 2__I_ 3__I_ 4__I_ 5__I_ 6__I_ #__I</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>or if 4-digit user codes are enabled (I think this is how this works)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>9876 1234 I_ 9__I_ 8__I_ 7__I_ 6__I_ 0__I_ 0__I_ 1__I_ 2__I_ 3__I_ 4__I_ 0__I_ 0__I_ #__I</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[005#]</b></font> <font face="Arial" color="#000000" size="1"><b>Cross Zoning (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 1 is Cross Zoned 1 to 8 = Zones 1 to 8</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 2 is Cross Zoned 1 to 8 = Zones 1 to 8</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 3 is Cross Zoned 1 to 8 = Zones 1 to 8</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 4 is Cross Zoned 1 to 8 = Zones 1 to 8</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 5 is Cross Zoned 1 to 8 = Zones 1 to 8</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 6 is Cross Zoned 1 to 8 = Zones 1 to 8</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 7 is Cross Zoned 1 to 8 = Zones 1 to 8</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 8 is Cross Zoned 1 to 8 = Zones 1 to 8</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[006#]</b></font> <font face="Arial" color="#000000" size="1"><b>Trip Window (for Cross Zone) (Enter 3 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>000 I_ 0__I_ 0__I_ 0__I_ #__I (000 to 099 seconds)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[007#]</b></font> <font face="Arial" color="#000000" size="1"><b>Keypad Assignments (Enter 4 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<ol start="2">
+<li><font face="Arial" color="#000000" size="1"><b>I_ 2__I Keypad 1 Type 0 = Disabled 1 = LED Keypad 2 = LCD Keypad</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Keypad 1 Type 0 = Disabled 1 = LED Keypad 2 = LCD Keypad</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Keypad 1 Type 0 = Disabled 1 = LED Keypad 2 = LCD Keypad</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Keypad 1 Type 0 = Disabled 1 = LED Keypad 2 = LCD Keypad</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[008#]</b></font> <font face="Arial" color="#000000" size="1"><b>Language/Arming Modes (Enter 2 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Display Language 0 = English 1 = French 2 = Spanish</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Arming Mode 0 = Commercial 1 = Quick Arm 2 = Residential</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[009#]</b></font> <font face="Arial" color="#000000" size="1"><b>Output Programming (Enter 4 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I_ 6__I Alarm Output (see list below for options)</b></font>
+<p></p>
+<ol start="3">
+<li><font face="Arial" color="#000000" size="1"><b>I_ 3__I Programmable Output (see list below for options)</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>2 I_ 2__I Programmable Output 2 (see list below for options)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Fire Alarm Cadence 0=Pulse Fire 1=Temporal Fire 2=California Pulse Fire</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 = Latch ON for any Burg Alarm 9 = Fire Zone delayed by 20 seconds</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= ON during Entry Pre-Alert *0 (A) = Burglar and Fire Zone</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= ON for 8 seconds after [System Reset] *1 (B) = Burg &amp; Fire Zone delayed by 20 seconds)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= ON when system is Armed *2 (C) = Keypad Sounder Output</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Ground Start *3 (D) = Access Output (10 second Pause)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= System Status [Ready to Arm] *4 (E) = Pulse 2 seconds during Battery Test</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Burglar Zone *5 (F) = Disabled</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Burglar Zone delayed for 20 seconds</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Fire Zone</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>[010#]</b></font> <font face="Arial" color="#000000" size="1"><b>Time Delays (Enter all digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>045 I_ 045__I Entry Delay 1 Time 000 to 250 seconds</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>045 I_ 045__I Entry Delay 2 Time 000 to 250 seconds</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>060 I_ 060__I Exit Delay Time 000 to 250 seconds</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>004 I_ 004__I Fire Bell Cutoff Time 000 to 098 minutes, 99 = 30 seconds</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>004 I_ 004__I Alarm Bell Cutoff Time 000 to 098 minutes, 99 = 30 seconds</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[011#]</b></font> <font face="Arial" color="#000000" size="1"><b>Report Controls (Enter 4 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I_ 6__I Open and Close Reports (see list below for options)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3 I_ 3__I Day Monitor Zones 0 = No Troubles 1 = Send Trouble Reports when Disarmed</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ 2__I Open/Close Report Routing 0 = Alternate 1 = Phone 1 2 = Phone 2 3 = Both Phones</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone Report Routing 0 = Alternate 1 = Phone 1 2 = Phone 2 3 = Both Phones</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 = Disabled</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Partition 1 O/C Reports</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Partition 1 O/C + Bypass/Force Arm Reports</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Partition 1 O/C only if Zones are Bypassed or Force Armed/Bypass/Force Arm Reports</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Partition 2 O/C Reports</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Partition 2 O/C + Bypass/Force Arm Reports</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Partition 2 O/C only if Zones are Bypassed or Force Armed/Bypass/Force Arm Reports</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Both Partitions O/C Reports</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Both Partitions O/C + Bypass/Force Arm Reports</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Both Partitions O/C only if Zones are Bypassed or Force Armed/Bypass/Force Arm Reports</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>A = First to Open/Last to Close Reports</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>B = First to Open/Last to Close + Bypass/Force Arm Reports</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>C = First to Open/Last to Close only if Zones are Bypassed or Force Armed/Bypass/Force Arm Reports</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[012#]</b></font> <font face="Arial" color="#000000" size="1"><b>Phone Controls (Enter 7 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Tone/Pulse Dialing 0 = Pulse 1 = Tone then Pulse 2 = Tone</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Downloading Callback 0 = Disable 1 = Enable</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 7__I DL Answer Rings - Armed 0 = Disable 1 to F = 1 to F Rings</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 7__I DL Answer Rings - Disarmed (Odd numbers = Answering Machine Over-ride)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I 15 sec Dialer Delay on Burg 0 = Disable 1 = Enable</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I 15 sec Dialer Delay 24hr &amp; Fire 0 = Disable 1 = Enable</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I WDSRP Download Baud Rate 0 = 110 Baud 1 = 300 Baud</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[013#]</b></font> <font face="Arial" color="#000000" size="1"><b>Account Numbers Partition 1 (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0000 I_ __I_ __I_ __I_ __I Partition 1 Phone 1 Account 0000 to FFFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0000 I_ __I_ __I_ __I_ __I_ #__I Partition 1 Phone 2 Account 0000 to FFFF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[014#]</b></font> <font face="Arial" color="#000000" size="1"><b>Account Numbers Partition 2 (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0000 I_ __I_ __I_ __I_ __I Partition 2 Phone 1 Account 0000 to FFFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0000 I_ __I_ __I_ __I_ __I_ #__I Partition 2 Phone 2 Account 0000 to FFFF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[015#]</b></font> <font face="Arial" color="#000000" size="1"><b>Phone 1 Format (Enter all 3 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 9__I Phone Format Formats</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Speed 0 = 10PPS 1 = 20PPS 2 = 40PPS 0 =Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Data Tones 0 = 1400 Ack 1 = 2300 Ack 1 = 3/1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 = 3/1 Extended</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3 = 3/1 with Parity</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[016#]</b></font> <font face="Arial" color="#000000" size="1"><b>Phone 2 Format 4 = 3/1 Extended withParity</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default 5 = 4/1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 9__I Phone Format 6 = 4/2</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Speed 0 = 10PPS 1 = 20PPS 2 = 40PPS 7 = BSFK</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Data Tones 0 = 1900 Data 1400 Ack 8 = SIA 110 Baud</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= 1800 Data 2300 Ack 9 = Contact ID</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>A = SIA 300 Baud</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>B = ROBOFON (Sweden)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>C = Personal Dialing Format</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>D = High Speed 4/9</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>F = Pager</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[017#]</b></font> <font face="Arial" color="#000000" size="1"><b>Phone Number 1 digits 1-16 (Enter Phone Number then # to save and exit)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I</b></font>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>=</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>1</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>2 = #</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>3 = 3-Second Pause</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>4 = Wait for Dial Tone</b></font>
+<p></p>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#0000FF" size="1"><b>[018#]</b></font> <font face="Arial" color="#000000" size="1"><b>Phone Number 1 digits 17-20</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[019#]</b></font> <font face="Arial" color="#000000" size="1"><b>Phone Number 2 digits 1-16 (Enter Phone Number then # to save and exit)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[020#]</b></font> <font face="Arial" color="#000000" size="1"><b>Phone Number 2 digits 17-32</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[021#]</b></font> <font face="Arial" color="#000000" size="1"><b>Download Phone Number digits 1-16 (Enter Phone Number then # to save and exit)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>I_ 1__I_ 8__I_ 0__I_ 0__I_ 9__I_ 4__I_ 8__I_ 8__I_ 7__I_ 8__I_ 6__I_ __I_ __I_ __I_ __I_ __I</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[022#]</b></font> <font face="Arial" color="#000000" size="1"><b>Download Phone Number digits 17-32 (Enter Phone Number then # to save and exit)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[023#]</b></font> <font face="Arial" color="#000000" size="1"><b>Dial Attempts (Enter 3 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>010 I_ 0__I_ 1__I_ 0__I_ #__I (001 to 010 Attempts)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[024#]</b></font> <font face="Arial" color="#000000" size="1"><b>Auto Test/Downloader Callout (Enter 2 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I_ #__I 1st Digit = Test Report 2nd Digit = Downloader Callout</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 = None 0 = Disabled</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Sunday 1 = Sunday</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Monday 2 = Monday</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Tuesday 3 = Tuesday</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Wednesday 4 = Wednesday</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Thursday 5 = Thursday</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Friday 6 = Friday</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Saturday 7 = Saturday</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Daily Test 8 = Every Day</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Every 8 Days 9 = Every 8 Days</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>A = Every 28 Days A = Every 28 Days</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>B = Every Hour</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>C = Every 12 Hours</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[025#]</b></font> <font face="Arial" color="#000000" size="1"><b>Auto Test/Download Callout Time (Enter 12 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>000 I_ __I_ __I_ __I Auto Test Callout Hour (000 to 023)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>000 I_ __I_ __I_ __I Auto Test Callout Minute (000 to 059)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>000 I_ __I_ __I_ __I Download Callout Hour (000 to 023)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>000 I_ __I_ __I_ __I_ #__I Download Callout Minute (000 to 059)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[026#]</b></font> <font face="Arial" color="#000000" size="1"><b>AC Report Delay (Enter 3 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>000 I_ 0__I_ 6__I_ 0__I_ #__I (000 to 255 minutes)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[027#]</b></font> <font face="Arial" color="#000000" size="1"><b>History Controls (Event Buffer) (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Burglar Alarms 0 = No 1 = Yes</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Fire Alarms 0 = No 1 = Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Keypad Alarms 0 = No 1 = Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone Troubles/Restorals 0 = No 1 = Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I System Troubles/Restorals 0 = No 1 = Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Opening/Closings 0 = No 1 = Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Bypass/Unbypass 0 = No 1 = Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Local/Remote Programming 0 = No 1 = Yes</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[028#]</b></font> <font face="Arial" color="#000000" size="1"><b>Special Keys (Enter 3 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 3__I Fire Key [A] 0 = Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 1__I Emergency Key [B] 2 = Invisible (Silent)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 2__I Panic Key [C] 2 = Steady Audible</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3 = Pulsing Audible</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[029#]</b></font> <font face="Arial" color="#000000" size="1"><b>Keypad Report Codes (Enter 12 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 1__I Keypad Fire Report 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 1__I Keypad Fire Restoral Report 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 1__I Keypad Medical Alarm Report 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 1__I Keypad Panic Alarm Report 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Keypad Tamper Alarm 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Keypad Tamper Restoral 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[030#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Type Zn 1 to 8 (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3 I_ __I Zone 1 0 = Disabled 8 = Day Monitor</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4 I_ __I Zone 2 1 = Instant 9 = Keyswitch Toggle</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ __I Zone 3 2 = 24 Hour A = Keyswitch On/Off</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>5 I_ __I Zone 4 3 = Entry/Exit 1 B = Fire Zn with Verification</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I_ __I Zone 5 4 = Entry/Exit 2 C = Fire Zone without Verification</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7 I_ __I Zone 6 5 = Interior E/E Follower D = Interior Delay</b></font>
+<p></p>
+<ol start="2">
+<li><font face="Arial" color="#000000" size="1"><b>I_ __I Zone 7 6 = Interior Home/Away E = Perimeter Homeguard</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>I_ __I Zone 8 7 = Interior Instant F = Perimeter Follower Homeguard</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b><i>Note:</i> Homeguard zones are delay if system is perimeter armed</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Will be delay if a delay zone is violated first or instant if an instant zone is violated</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[031#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Type Zn 9 to 16 (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ __I Zone 9 0 = Disabled 8 = Day Monitor</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ __I Zone 10 1 = Instant 9 = Keyswitch Toggle</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ __I Zone 11 2 = 24 Hour A = Keyswitch On/Off</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ __I Zone 12 3 = Entry/Exit 1 B = Fire Zn with Verification</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ __I Zone 13 4 = Entry/Exit 2 C = Fire Zone without Verification</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ __I Zone 14 5 = Interior E/E Follower D = Interior Delay</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ __I Zone 15 6 = Interior Home/Away E = Perimeter Homeguard</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ __I Zone 16 7 = Interior Instant F = Perimeter Follower Homeguard</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[032#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Type Zn 17 to 24 (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ __I Zone 17 0 = Disabled 8 = Day Monitor</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ __I Zone 18 1 = Instant 9 = Keyswitch Toggle</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ __I Zone 19 2 = 24 Hour A = Keyswitch On/Off</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ __I Zone 20 3 = Entry/Exit 1 B = Fire Zn with Verification</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ __I Zone 21 4 = Entry/Exit 2 C = Fire Zone without Verification</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ __I Zone 22 5 = Interior E/E Follower D = Interior Delay</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ __I Zone 23 6 = Interior Home/Away E = Perimeter Homeguard</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ __I Zone 24 7 = Interior Instant F = Perimeter Follower Homeguard</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[033#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Type Zn 25 to 32 (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ __I Zone 25 0 = Disabled 8 = Day Monitor</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ __I Zone 26 1 = Instant 9 = Keyswitch Toggle</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ __I Zone 27 2 = 24 Hour A = Keyswitch On/Off</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ __I Zone 28 3 = Entry/Exit 1 B = Fire Zn with Verification</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ __I Zone 29 4 = Entry/Exit 2 C = Fire Zone without Verification</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ __I Zone 30 5 = Interior E/E Follower D = Interior Delay</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ __I Zone 31 6 = Interior Home/Away E = Perimeter Homeguard</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ __I Zone 32 7 = Interior Instant F = Perimeter Follower Homeguard</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[034#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Action Zn 1 to 8 (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 1 0 = Alarm on Short, Alarm on Open</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 2 1 = Alarm on Short, Trouble on Open</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 3 2 = Alarm on Open, Trouble on Short</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 4</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 5</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 6</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 7</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 8</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[035#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Action Zn 9 to 16 (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 9 0 = Alarm on Short, Alarm on Open</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 10 1 = Alarm on Short, Trouble on Open</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 11 2 = Alarm on Open, Trouble on Short</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 12</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 13</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 14</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 15</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 16</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[036#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Action Zn 17 to 24 (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 17 0 = Alarm on Short, Alarm on Open</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 18 1 = Alarm on Short, Trouble on Open</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 19 2 = Alarm on Open, Trouble on Short</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 20</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 21</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 22</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 23</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 24</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[037#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Action Zn 25 to 32 (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 25 0 = Alarm on Short, Alarm on Open</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 26 1 = Alarm on Short, Trouble on Open</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 27 2 = Alarm on Open, Trouble on Short</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 28</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 29</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 30</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 31</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Zone 32</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[038#]</b></font> <font face="Arial" color="#000000" size="1"><b>Output Type Zn 1 to 8 (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 1 0 = Invisible (Not Valid for Fire Zones)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 2 1 = Silent (Not Valid for Fire Zones)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 3 2 = Steady Alarm Output</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 4 3 = Pulsing Alarm Output</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 5</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 6</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 7</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 8</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[039#]</b></font> <font face="Arial" color="#000000" size="1"><b>Output Type Zn 9 to 16 (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 9 0 = Invisible (Not Valid for Fire Zones)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 10 1 = Silent (Not Valid for Fire Zones)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 11 2 = Steady Alarm Output</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 12 3 = Pulsing Alarm Output</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 13</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 14</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 15</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 16</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[040#]</b></font> <font face="Arial" color="#000000" size="1"><b>Output Type Zn 17 to 24 (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 17 0 = Invisible (Not Valid for Fire Zones)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 18 1 = Silent (Not Valid for Fire Zones)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 19 2 = Steady Alarm Output</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 20 3 = Pulsing Alarm Output</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 21</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 22</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 23</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 24</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[041#]</b></font> <font face="Arial" color="#000000" size="1"><b>Output Type Zn 25 to 32 (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 25 0 = Invisible (Not Valid for Fire Zones)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 26 1 = Silent (Not Valid for Fire Zones)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 27 2 = Steady Alarm Output</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 28 3 = Pulsing Alarm Output</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 29</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 30</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 31</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 I_ ?__I Zone 32</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[042#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Bypass Zn 1 to 8 (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 1 0 = No Bypassing Allowed</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 2 1 = Bypassing Allowed</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 3</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 4</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 5</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 6</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 7</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 8</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>[043#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Bypass Zn 9 to 16 (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 9 0 = No Bypassing Allowed</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 10 1 = Bypassing Allowed</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 11</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 12</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 13</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 14</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 15</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 16</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>[044#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Bypass Zn 17 to 24 (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 17 0 = No Bypassing Allowed</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 18 1 = Bypassing Allowed</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 19</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 20</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 21</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 22</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 23</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 24</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>[045#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Bypass Zn 25 to 32 (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 25 0 = No Bypassing Allowed</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 26 1 = Bypassing Allowed</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 27</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 28</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 29</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 30</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 31</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 32</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>[046#]</b></font> <font face="Arial" color="#000000" size="1"><b>Custom Arming (# 4) Zn 1 to 8 (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 1 0 = Arm</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 2 1 = Bypass</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 3</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 4</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 5</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 6</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 7</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 8</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>[047#]</b></font> <font face="Arial" color="#000000" size="1"><b>Custom Arming (# 4) Zn 9 to 16 (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 9 0 = Arm</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 10 1 = Bypass</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 11</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 12</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 13</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 14</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 15</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 16</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>[048#]</b></font> <font face="Arial" color="#000000" size="1"><b>Custom Arming (# 4) Zn 17 to 24 (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 17 0 = Arm</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 18 1 = Bypass</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 19</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 20</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 21</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 22</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 23</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 24</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>[049#]</b></font> <font face="Arial" color="#000000" size="1"><b>Custom Arming (# 4) Zn 25 to 32 (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 25 0 = Arm</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 26 1 = Bypass</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 27</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 28</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 29</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 30</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 31</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Zone 32</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>[050#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Partitioning Zn 1 to 8 (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 1 1 = Partition 1</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 2 2 = Partition 2</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 3 3 = Partition 1 and 2</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 4</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 5</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 6</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 7</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 8</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>[051#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Partitioning Zn 9 to 16 (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 9 1 = Partition 1</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 10 2 = Partition 2</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 11 3 = Partition 1 and 2</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 12</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 13</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 14</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 15</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 16</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>[052#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Partitioning Zn 17 to 24 (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 17 1 = Partition 1</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 18 2 = Partition 2</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 19 3 = Partition 1 and 2</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 20</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 21</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 22</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 23</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 24</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>[053#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Partitioning Zn 25 to 32 (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 25 1 = Partition 1</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 26 2 = Partition 2</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 27 3 = Partition 1 and 2</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 28</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 29</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 30</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 31</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 1__I Zone 32</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>[054#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Alarm Reports Zn 1 to 8 (Enter 16 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>10 I_ 1__I_ 0__I Zone 1 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>20 I_ 2__I_ 0__I Zone 2 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>30 I_ 3__I_ 0__I Zone 3 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>40 I_ 4__I_ 0__I Zone 4 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>50 I_ 5__I_ 0__I Zone 5 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>60 I_ 6__I_ 0__I Zone 6 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>70 I_ 7__I_ 0__I Zone 7 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>80 I_ 8__I_ 0__I Zone 8 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[055#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Alarm Reports Zn 9 to 16 (Enter 16 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 9 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 10 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 11 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 12 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 13 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 14 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 15 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 16 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[056#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Alarm Reports Zn 17 to 24 (Enter 16 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 17 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 18 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 19 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 20 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 21 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 22 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 23 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 24 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[057#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Alarm Reports Zn 25 to 32 (Enter 16 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 25 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 26 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 27 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 28 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 29 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 30 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 31 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 32 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[058#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Restoral Reports Zn 1 to 8 (Enter 16 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>10 I_ 1__I_ 0__I Zone 1 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>20 I_ 2__I_ 0__I Zone 2 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>30 I_ 3__I_ 0__I Zone 3 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>40 I_ 4__I_ 0__I Zone 4 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>50 I_ 5__I_ 0__I Zone 5 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>60 I_ 6__I_ 0__I Zone 6 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>70 I_ 7__I_ 0__I Zone 7 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>80 I_ 8__I_ 0__I Zone 8 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[059#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Restoral Reports Zn 9 to 16 (Enter 16 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 9 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 10 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 11 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 12 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 13 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 14 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 15 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 16 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[060#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Restoral Reports Zn 17 to 24 (Enter 16 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 17 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 18 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 19 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 20 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 21 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 22 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 23 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 24 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[061#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Restoral Reports Zn 25 to 32 (Enter 16 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 25 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 26 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 27 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 28 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 29 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 30 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 31 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 32 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[062#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Trouble Reports Zn 1 to 8 (Enter 16 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>10 I_ 1__I_ 0__I Zone 1 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>20 I_ 2__I_ 0__I Zone 2 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>30 I_ 3__I_ 0__I Zone 3 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>40 I_ 4__I_ 0__I Zone 4 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>50 I_ 5__I_ 0__I Zone 5 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>60 I_ 6__I_ 0__I Zone 6 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>70 I_ 7__I_ 0__I Zone 7 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>80 I_ 8__I_ 0__I Zone 8 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[063#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Trouble Reports Zn 9 to 16 (Enter 16 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 9 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 10 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 11 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 12 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 13 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 14 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 15 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 16 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[064#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Trouble Reports Zn 17 to 24 (Enter 16 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 17 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 18 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 19 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 20 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 21 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 22 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 23 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 24 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[065#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Trouble Reports Zn 25 to 32 (Enter 16 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 25 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 26 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 27 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 28 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 29 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 30 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 31 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 32 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[066#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Trouble Restoral Zn 1 to 8 (Enter 16 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>10 I_ 1__I_ 0__I Zone 1 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>20 I_ 2__I_ 0__I Zone 2 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>30 I_ 3__I_ 0__I Zone 3 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>40 I_ 4__I_ 0__I Zone 4 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>50 I_ 5__I_ 0__I Zone 5 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>60 I_ 6__I_ 0__I Zone 6 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>70 I_ 7__I_ 0__I Zone 7 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>80 I_ 8__I_ 0__I Zone 8 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[067#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Trouble Restoral Zn 9 to 16 (Enter 16 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 9 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 10 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 11 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 12 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 13 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 14 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 15 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 16 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[068#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Trouble Restoral Zn 17 to 24 (Enter 16 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 17 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 18 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 19 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 20 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 21 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 22 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 23 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 24 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[069#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Trouble Restoral Zn 25 to 32 (Enter 16 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 25 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 26 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 27 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 28 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 29 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 30 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 31 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 32 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[070#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Bypass Reports Zn 1 to 8 (Enter 16 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>10 I_ 1__I_ 0__I Zone 1 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>20 I_ 2__I_ 0__I Zone 2 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>30 I_ 3__I_ 0__I Zone 3 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>40 I_ 4__I_ 0__I Zone 4 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>50 I_ 5__I_ 0__I Zone 5 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>60 I_ 6__I_ 0__I Zone 6 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>70 I_ 7__I_ 0__I Zone 7 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>80 I_ 8__I_ 0__I Zone 8 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[071#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Bypass Reports Zn 9 to 16 (Enter 16 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 9 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 10 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 11 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 12 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 13 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 14 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 15 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 16 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[072#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Bypass Reports Zn 17 to 24 (Enter 16 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 17 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 18 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 19 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 20 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 21 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 22 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 23 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 24 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[073#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Bypass Reports Zn 25 to 32 (Enter 16 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 25 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 26 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 27 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 28 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 29 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 30 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 31 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 32 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[074#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Bypass Restoral Zn 1 to 8 (Enter 16 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 1 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 2 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 3 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 4 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 5 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 6 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 7 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 8 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[075#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Bypass Restoral Zn 9 to 16 (Enter 16 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 9 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 10 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 11 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 12 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 13 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 14 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 15 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 16 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[076#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Bypass Restoral Zn 17 to 24 (Enter 16 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 17 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 18 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 19 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 20 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 21 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 22 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 23 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 24 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[077#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Bypass Restoral Zn 25 to 32 (Enter 16 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 25 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 26 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 27 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 28 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 29 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 30 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 31 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Zone 32 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[078#]</b></font> <font face="Arial" color="#000000" size="1"><b>Open/Close Reports (Enter 10 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Open Report 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Close Report 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I Duress Report 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Partial Close Report 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I Open After Alarm/Cancel 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[079#]</b></font> <font face="Arial" color="#000000" size="1"><b>AC/Battery Reports (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I Low Battery Report 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I Low Battery Restoral 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I AC Fail Report 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I AC Fail Restoral 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[080#]</b></font> <font face="Arial" color="#000000" size="1"><b>Remote/Local Program Reports (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I Remote Program Successful 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Remote Program Unsuccessful 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Local Program Successful 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I Local Program Unsuccessful 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[081#]</b></font> <font face="Arial" color="#000000" size="1"><b>Misc Reports (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I System Trouble Report 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I System Trouble Restoral 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 0__I_ 0__I Exit Error Report 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I Recent Closing Report 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[082#]</b></font> <font face="Arial" color="#000000" size="1"><b>Test Reports (Enter 8 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I Automatic Test Report 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I Manual Comm Test Report 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I System Test Report 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I System Test Restoral Report 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Alpha Programming</b></font> <font face="Arial" color="#000000" size="1"><b>Left Panic moves left</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Right Panic moves right</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>System Status toggles case</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= 1 SPACE 6 = 6 M N O</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 2 A B C 7 = 7 P R S</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 3 D E F 8 = 8 T U V</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 4 G H I 9 = 9 W X Y</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 5 J K L 0 = Q Z</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>Instructions</b></font> <font face="Arial" color="#000000" size="1"><b>Press each number key until correct number/letter appears</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>Example to program FRONT press 3 four times until F appears</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Press right arrow key to move right one space</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Press 7 key three time until R appears</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Press right arrow key to move right one space</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Press 6 key four times until O appears</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Press right arrow key to move right one space</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Press 6 key 3 times until N appears</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Press right arrow key to move right one space</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Press 8 key twice until T appears</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Press # to save and exit</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>[083#]</b></font> <font face="Arial" color="#000000" size="1"><b>Partition 1 Label (Enter all letters then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[084#]</b></font> <font face="Arial" color="#000000" size="1"><b>Partition 2 Label (Enter all letters then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[085#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 1 Label (Enter all letters then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[086#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 2 Label (Enter all letters then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[087#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 3 Label (Enter all letters then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[088#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 4 Label (Enter all letters then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[089#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 5 Label (Enter all letters then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[090#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 6 Label (Enter all letters then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[091#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 7 Label (Enter all letters then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[092#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 8 Label (Enter all letters then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>to</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[116#]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 32 Label (Enter all letters then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I_ __I</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[117#]</b></font> <font face="Arial" color="#000000" size="1"><b>EX8 Point Expansion Reports (Enter 6 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I Module 1 Missing 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I Module 2 Missing 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I Module 3 Missing 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[118#]</b></font> <font face="Arial" color="#000000" size="1"><b>EX8 Point Expansion Restorals (Enter 6 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I Module 1 Missing Restoral 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I Module 2 Missing Restoral 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I Module 3 Missing Restoral 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[119#]</b></font> <font face="Arial" color="#000000" size="1"><b>EX8 Point Expansion Tamper (Enter 6 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I Module 1 Tamper 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I Module 2 Tamper 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I Module 3 Tamper 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[120#]</b></font> <font face="Arial" color="#000000" size="1"><b>EX8 Point Expansion Restoral (Enter 6 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I Module 1 Tamper Restoral 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I Module 2 Tamper Restoral 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I Module 3 Tamper Restoral 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[121#]</b></font> <font face="Arial" color="#000000" size="1"><b>EX8 Point Expansion Fault (Enter 6 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I Module 1 Fault 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I Module 2 Fault 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I Module 3 Fault 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[122#]</b></font> <font face="Arial" color="#000000" size="1"><b>EX8 Point Expansion Fault Restoral (Enter 6 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I Module 1 Fault 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I Module 2 Fault 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 1__I_ 0__I Module 3 Fault 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[123#]</b></font> <font face="Arial" color="#000000" size="1"><b>Ocatal Relay Control/Reports (Enter 5 digits then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I_ 0__I Ocatal Relay Enable 0 = Disabled 1 = Enabled</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 00_I Module Missing Report 00 to FF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 I_ 00_I Module Missing Restoral 00 to FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[124#]</b></font> <font face="Arial" color="#000000" size="1"><b>Default Programming (Enter 1 to default system then # to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I_ 0__I Default Program 0 = Normal 1 = Default system</b></font>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>

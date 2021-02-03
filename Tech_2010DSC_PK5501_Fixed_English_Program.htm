@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>DSC PK5501 Fixed English Programming</title>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+
+			<script type="text/javascript" language="javascript1.2" src="whver.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+    			<script type="text/javascript" language="javascript1.2" src="whlang.js"></script> 
+    <meta name="generator" content="Adobe RoboHelp 9" />
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+	      //<!--
+	      RH_Document_Write("<p style=\"text-align:right\"> ");
+RH_AddMasterBreadcrumbs( "Tech_2010.htm", "", "/", "Home", "Tech_2010Main.htm");
+RH_Document_Write("<\/p>");
+//-->
+</script>
+<font face="Arial" color="#0000FF" size="3"><b>DSC PK5501 Fixed English Keypad Programming</b></font>
+<p></p>
+<p></p>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="PK5500 Alpha Programming" onclick="self.location='Tech_2010DSC_PK5500_Alpha_Keypad_Programi.htm'" /> <input type="button" value="PK5501 Fixed English Programming" onclick="self.location='Tech_2010DSC_PK5501_Fixed_English_Program.htm'" /> <input type="button" value="PK5508/5516 LED Programming" onclick="self.location='Tech_2010DSC_PK55085516_LED_Keypad_Progra.htm'" /> <input type="button" value="RF Receiver Programming" onclick="self.location='Tech_2010DSC_PKRF55xx_v51_KeypadReceiver_.htm'" /> <input type="button" value="Wiring" onclick="self.location='Tech_2010DSC_PK55xx_Keypad_Wiring.htm'" /></b></font></form>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Notes</b></font> <font face="Arial" color="#000000" size="1"><b>125mA maximum</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Compatibility</b></font> <font face="Arial" color="#000000" size="1"><b>PC580/Power 432</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PC1555/Power 632</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PC1616</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PC1832</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PC1864</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PC5008</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PC5010/Power 832</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PC5015/Power 832</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PC5020/Power 864</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Program</b></font> <font face="Arial" color="#000000" size="1"><b>Enter panel programming then press</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[071]</b></font> <font face="Arial" color="#000000" size="1"><b>First User Display Mask</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I_ <b>ON</b> I <b>1 Hold (P) Panic Keys prompt ON Hold (P) Panic Keys prompt OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I_ <b>ON</b> I <b>2 Auto Arm &amp; Time prompt ON Auto Arm &amp; Time prompt OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I_ <b>ON</b> I <b>3 Quick Arm prompt ON Quick Arm prompt OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I_ <b>ON</b> I <b>4 Interior Arm prompt ON Interior Arm prompt OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I_ <b>ON</b> I <b>5 Quick Exit prompt ON Quick Exit prompt OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I_ <b>ON</b> I <b>6 Thermostat CTRL prompt ON Thermostat CTRL prompt OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I_ <b>ON</b> I <b>7 ACK all Troubles prompt ON ACK all Troubles prompt OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I_ <b>ON</b> I <b>8 Music Input ON Music Input OFF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[072]</b></font> <font face="Arial" color="#000000" size="1"><b>Second User Display Mask</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>1 User Initiated Callup prompt ON User Initiated Callup prompt OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I_ <b>ON</b> I <b>2 For Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I_ <b>ON</b> I <b>3 Walk Test prompt ON Walk Test prompt OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I_ <b>ON</b> I <b>4 Command Output #1 prompt ON Command Output #1 prompt OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_ <b>ON</b> I <b>5 Command Output #2 prompt ON Command Output #2 prompt OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I_ <b>ON</b> I <b>6 Command Output #3 prompt ON Command Output #3 prompt OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_ <b>ON</b> I <b>7 Command Output #4 prompt ON Command Output #4 prompt OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_ <b>ON</b> I <b>8 For Future Use</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[074]</b></font> <font face="Arial" color="#000000" size="1"><b>Key Options</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I_ <b>ON</b> I <b>1 (F) Fire Keys enabled (F) Fire Keys enabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I_ <b>ON</b> I <b>2 (A) Auxiliary Keys enabled (A) Auxiliary Keys enabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I_ <b>ON</b> I <b>3 (P) Panic Keys enabled (P) Panic Keys enabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>4 for Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>5 for Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 for Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 for Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 for Future Use</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[076]</b></font> <font face="Arial" color="#000000" size="1"><b>First Keypad Options</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I_ <b>ON</b> I <b>1 Display Code when Programming Display X when Programming</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I_ <b>ON</b> I <b>2 Local Clock Display Enabled Local Clock Display Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 Local Clock Displays 24 Hour Time Local Clock Displays AM/PM</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I_ <b>ON</b> I <b>4 AutoScroll Alarm Enabled AutoScroll Alarm Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>5 Local Display of Temperature ON Local Display of Temperature OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Bypass Options prompt ON Bypass Options prompt OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 for Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 AutoScroll Open Zones Enabled AutoScroll Open Zones Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[077]</b></font> <font face="Arial" color="#000000" size="1"><b>Second Keypad Options</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I_ <b>ON</b> I <b>1 Chime Enabled for Zone Openings Chime Disabled for Zone Openings</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I_ <b>ON</b> I <b>2 Chime Enabled for Zone Closings Chime Disabled for Zone Closings</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 5th Terminal is PGM Output 5th Terminal is Zone Input</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I_ <b>ON</b> I <b>4 Language Select from any Menu Languate Select from Installer Menu</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>5 Power LED Enabled Power LED Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I_ <b>ON</b> I <b>6 Power LED Indicates AC Present Power LED Indicates AC Absent</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I_ <b>ON</b> I <b>7 Alarms Displayed while Armed Alarms not Displayed while Armed</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 Low Temp Warning Enabled Low Temp Warning Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>Door Chime Sound Programming</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>Enter</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>8 + Installer Code +</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Enter 2-digit Zone Number (01 to 32)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Press 1 to 4 to select door chime</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Repeat step 3 for each zone</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Press # to exit back to panel programming</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>Light 1 2 3 4</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4 Beeps "Bing-Bong" "Ding-Dong" Alarm Tone</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[201]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 01</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[202]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 02</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[203]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 03</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[204]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 04</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[205]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 05</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[206]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 06</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[207]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 07</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[208]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 08</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[209]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 09</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[210]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 10</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[211]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 11</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[212]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 12</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[213]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 13</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[214]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 14</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[215]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 15</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[216]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 16</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[217]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 17</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[218]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 18</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[219]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 19</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[220]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 20</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[221]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 21</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[222]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 22</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[223]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 23</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[224]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 24</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[225]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 25</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[226]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 26</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[227]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 27</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[228]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 28</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[229]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 29</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[230]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 30</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[231]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 31</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[232]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 32</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>to</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[264]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone 64</b> I__ _I I__ _I I__ _I I__ _I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[999]</b></font> <font face="Arial" color="#000000" size="1"><b>Reset LCD EEPROM to Factory Defaults</b></font>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>

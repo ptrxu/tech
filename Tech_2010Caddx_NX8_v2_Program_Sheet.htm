@@ -1,0 +1,2988 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>Caddx NX-8 v2 Program Sheet</title>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+
+			<script type="text/javascript" language="javascript1.2" src="whver.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+    			<script type="text/javascript" language="javascript1.2" src="whlang.js"></script> 
+    <meta name="generator" content="Adobe RoboHelp 9" />
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+	      //<!--
+	      RH_Document_Write("<p style=\"text-align:right\"> ");
+RH_AddMasterBreadcrumbs( "Tech_2010.htm", "", "/", "Home", "Tech_2010Main.htm");
+RH_Document_Write("<\/p>");
+//-->
+</script>
+<font face="Arial" color="#0000FF" size="2">GE Caddx NX-8/SecurityPro 800 v2 Program Sheet</font> <font face="Arial" color="#008000" size="1">Click HERE for Programming Keys</font>
+<p></p>
+<p></p>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Basics" onclick="self.location='Tech_2010Caddx_NX8_v2_Basic_Commands.htm'" /> <input type="button" value="Codes" onclick="self.location='Tech_2010Caddx_NX8_v2_User_Codes.htm'" /> <input type="button" value="Trouble" onclick="self.location='Tech_2010Caddx_NX8_v2_Trouble_Display.htm'" /> <input type="button" value="LED Keypads" onclick="self.location='Tech_2010Caddx_NX8_v2_Keypad.htm'" /> <input type="button" value="LCD Keypads" onclick="self.location='Tech_2010Caddx_NX8_v2_Alpha_Keypad.htm'" /> <input type="button" value="Wiring" onclick="self.location='Tech_2010Caddx_NX8_v2_Wiring.htm'" /> <input type="button" value="Program" onclick="self.location='Tech_2010Caddx_NX8_v2_Program_Sheet.htm'" /> <input type="button" value="Sensors" onclick="self.location='Tech_2010Caddx_NX8_v2_Sensors.htm'" /></b></font></form>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>A = 10 B = 11 C = 12 D = 13 E = 14 F = 15</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Power Ratings</b></font> <font face="Arial" color="#000000" size="1"><b>500mA if using 25VA Transformer</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>A if using 40VA or 50VA Transformer</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>250mA Smoke Detector power</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>A Siren output</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Device Output Ratings" onclick="self.location='Tech_2010Caddx_Power_Ratings.htm'" /></b></font></form>
+<p></p>
+<p></p>
+<ol start="2">
+<li><font face="Arial" color="#0000FF" size="1"><b>Way Voice Info</b></font> <font face="Arial" color="#000000" size="1"><b>Generates "Listen-in to Follow" only with SIA format and timer in field 40 is set to anything other than 0</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>Download Callback</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>98 # = panel calls download computer (User Code after may be required)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Download Answer</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>99 # = panel picks up while phone ringing (User Code after may be required)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Enter Program</b></font> <font face="Arial" color="#000000" size="1"><b>1. Press</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>+ 8</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. 9713 (default)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>or</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>971300 if 6-digit option is enabled</b></font>
+<p></p>
+<ol start="3">
+<li><font face="Arial" color="#000000" size="1"><b>0 + #</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>Move to Location</b></font> <font face="Arial" color="#000000" size="1"><b>Location + #</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Enter Data</b></font> <font face="Arial" color="#000000" size="1"><b>Enter data +</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>which saves and moves to next digit within location, # exits at any time</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Example: To change Receiver Phone 1</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>Press 0 + # (Moves to location 0)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Enter 15 +</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>(Enters an F which selects Touch Tone dialing)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Enter 1</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>8</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>0</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>0</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>etc (End Phone Number with 14 +</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Press # to exit location (Moves back to start of programming)</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>Exit Program</b></font> <font face="Arial" color="#000000" size="1"><b>1. Press # to exit any program location</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. Press EXIT key twice</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b><i>Note:</i> Panel may blip the siren for 1 second</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Factory Default</b></font> <font face="Arial" color="#000000" size="1"><b>910 # while in programming (Last resort)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Enroll Modules</b></font> <font face="Arial" color="#000000" size="1"><b>All modules enroll while exiting programming</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Keypad Address</b></font>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Click HERE for Keypad Programming" onclick="self.location='Tech_2010Caddx_NX_Keypad_Programming.htm'" /></b></font></form>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>0#</b></font> <font face="Arial" color="#000000" size="1"><b>Receiver Number 1 (20 Digits)</b> I _ <b>F</b> _I _ <b>1</b> I _ <b>8</b> _I _ <b>?</b> _I _ <b>?</b> _I _ <b>?</b> I _ <b>?</b> _I _ <b>?</b> _I _ <b>?</b> _I _ <b>?</b> _I _ <b>?</b> _I _ <b>E</b> _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>11 (B) =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Program as 15</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>1</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>8</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>0</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>0</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>then 14</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b># to end) 12 (C) = #</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>13 (D) = 4 Second Pause</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Don't use 10's for 0's) 14 (E) = End of Number</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>15 (F) = Touch Tone</b></font>
+<p></p>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>Account Number (6 digits)</b> I _ <b>?</b> _I _ <b>?</b> I _ <b>?</b> _I _ <b>?</b> _I <b>10</b> _I _ _I <b>(10 = End of number)</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>(Example: if account is 1234 program as 1</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>2</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>3</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>4</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>10</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>then # to exit)</b></font>
+<p></p>
+<p></p>
+<ol start="2">
+<li><font face="Arial" color="#000000" size="1"><b>Report Format</b> I _<b>14</b> _I <b>(Enter digit then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>0 = Communicator Disable</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Universal 4/2 (1800Hz transmit/2300Hz handshake/40pps)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 3/1 or 4/1 Fast (1900Hz transmit/1400Hz handshake/20pps)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Reserved</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Pager</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 3/1 or 4/1 Slow (1800Hz transmit/2300Hz handshake/20pps)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 3/1 or 4/1 Slow (1800Hz transmit/1400Hz handshake/20pps)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 3/1 or 4/1 Fast (1800Hz transmit/2300Hz handshake/40pps)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 3/1 or 4/1 Fast (1800Hz transmit/1400Hz handshake/40pps)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 3/1 or 4/1 Fast Parity (1800Hz transmit/2300Hz handshake/40pps)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 3/1 or 4/1 Fast Parity (1800Hz transmit/1400Hz handshake/40pps)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 4/2 Express (2-digit Event Code DTMF)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 4/2 Fast (1900Hz transmit/1400Hz handshake/20pps)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Contact ID</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= SIA</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Custom Format (see location 18)</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>3#</b></font> <font face="Arial" color="#000000" size="1"><b>Dial Attempts/Backup Phone 1</b> <b>(Enter 1st digit then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8</b> I <b>8</b> _I <b>Dial Attempts 1 to 15 attempts</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>1</b> I <b>1</b> _I <b>Phone 1 Backup Control 0 = Call phone 1, if fail call phone 2</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Call phone 1 only</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 2 attempts to phone 1 then 2 attempts to phone 2 etc</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>4#</b></font> <font face="Arial" color="#000000" size="1"><b>Events to Report Phone 1 First segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for second segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I<b>_ ON _</b>I <b>1 Alarms and Restores Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I<b>_ ON _</b>I <b>2 Opening/Closings Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I<b>_ ON _</b>I <b>3 Bypass Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I<b>_ ON _</b>I <b>4 Zone Trouble Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I<b>_ ON _</b>I <b>5 AC Failure and Low Battery Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I<b>_ ON _</b>I <b>6 Siren/Telephone Fault Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I<b>_ ON _</b>I <b>7 Test Reports Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I<b>_ ON _</b>I <b>8 Program/Download/Log Full Reports Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Events to Report Phone 1 Second segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I<b>_ ON _</b>I <b>1 Tampers Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I<b>_ ON _</b>I <b>2 Short Circuit &amp; Ground Fault Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I<b>_ ON _</b>I <b>3 Sensor Failure/Lost Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I<b>_ ON _</b>I <b>4 Sensor Low Battery Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I<b>_ ON _</b>I <b>5 Expander Trouble Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I<b>_ ON _</b>I <b>6 Failure To Communicate Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I<b>_ ON _</b>I <b>7 Zone Activity Monitor Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I<b>_ ON _</b>I <b>8 Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>5#</b></font> <font face="Arial" color="#000000" size="1"><b>Select Partition to Report to Phone 1 (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>1 Partition 1 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>2 Partition 2 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>3 Partition 3 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>4 Partition 4 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>5 Partition 5 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>6 Partition 6 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>7 Partition 7 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>8 Partition 8 Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>6#</b></font> <font face="Arial" color="#000000" size="1"><b>Receiver Number 2 (20 Digits)</b> I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Pager info: 1. Enter pager in 2nd or 3rd phone number then 13 for a 4 Second Pause</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. Set report format to 4</b></font>
+<p></p>
+<ol start="3">
+<li><font face="Arial" color="#000000" size="1"><b>Program report codes in locations 56 to 83</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>1st digit of Alarm report codes start at 110 (Zone Type Event Code)</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>(do not alter Zone Type Event Codes panel will send incorrect SIA and CID reports)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>7#</b></font> <font face="Arial" color="#000000" size="1"><b>Account Number 2 (6 digits)</b> I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>8#</b></font> <font face="Arial" color="#000000" size="1"><b>Report Format Phone 2</b> I _ _I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>9#</b></font> <font face="Arial" color="#000000" size="1"><b>Dial Attempts/Backup Phone 2</b> <b>(Enter 1st digit then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8</b> I <b>8</b> _I <b>Dial Attempts 1 to 15 attempts</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>1</b> I <b>1</b> _I <b>Phone 1 Backup Control 0 = Call phone 2, if fail call phone 1</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Call phone 2 only</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 2 attempts to phone 2 then 2 attempts to phone 1 etc</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>10#</b></font> <font face="Arial" color="#000000" size="1"><b>Events to Report Phone 2 First segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for second segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>1 Alarms and Restores Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>2 Opening/Closings Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>3 Bypass Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>4 Zone Trouble Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>5 AC Failure and Low Battery Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>6 Siren &amp; Telephone Fault Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>7 Test Reports Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>8 Program/Download/Log Full Reports Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Events to Report Phone 2 Second segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>1 Tampers Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>2 Short Circuit &amp; Ground Fault Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>3 Sensor Failure/Lost Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>4 Sensor Low Battery Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>5 Expander Trouble Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>6 Failure To Communicate Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>7 Zone Activity Monitor Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>8 Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>11#</b></font> <font face="Arial" color="#000000" size="1"><b>Select Partition to Report to Phone 2 (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>1 Partition 1 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>2 Partition 2 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>3 Partition 3 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>4 Partition 4 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>5 Partition 5 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>6 Partition 6 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>7 Partition 7 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>8 Partition 8 Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>12#</b></font> <font face="Arial" color="#000000" size="1"><b>Receiver Number 3 (20 Digits)</b> I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Pager info: 1. Enter pager in 2nd or 3rd phone number then 13 for a 4 Second Pause</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. Set report format to 4</b></font>
+<p></p>
+<ol start="3">
+<li><font face="Arial" color="#000000" size="1"><b>Program report codes in locations 56 to 83</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>1st digit of Alarm report codes start at 110 (Zone Type Event Code)</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>(do not alter Zone Type Event Codes panel will send incorrect SIA and CID reports)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>13#</b></font> <font face="Arial" color="#000000" size="1"><b>Account Number 3 (6 digits)</b> I _ _I _ _I _ _I _ _I _ _I _ _I <b>(Not Used)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>14#</b></font> <font face="Arial" color="#000000" size="1"><b>Report Format Phone 3</b> I _ _I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>15#</b></font> <font face="Arial" color="#000000" size="1"><b>Dial Attempts/Backup Phone 3 (Enter 1st digit then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8</b> I <b>8</b> _I <b>Dial Attempts 1 to 15 attempts</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>1</b> I <b>1</b> _I <b>Phone 1 Backup Control 0 = Call phone 3, if fail call phone 2</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Call phone 3 only</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 2 attempts to phone 3 then 2 attempts to phone 2 etc</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>16#</b></font> <font face="Arial" color="#000000" size="1"><b>Events to Report Phone 3 First segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for second segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>1 Alarms and Restores Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>2 Opening/Closings Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>3 Bypass Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>4 Zone Trouble Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>5 AC Failure and Low Battery Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>6 Not Used Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>7 Siren &amp; Telephone Fault Trouble Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>8 Test Reports &amp; Download Finished Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Events to Report Phone 3 Second segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>1 Tampers Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>2 Short Circuit &amp; Ground Fault Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>3 Sensor Failure Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>4 Sensor Low Battery Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>5 Expander Trouble Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>6 Failure To Communicate Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>7 Zone Activity Monitor</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>8 Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>17#</b></font> <font face="Arial" color="#000000" size="1"><b>Phone 3 Select Partition to Report to Phone 3 (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>1 Partition 1 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>2 Partition 2 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>3 Partition 3 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>4 Partition 4 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>5 Partition 5 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>6 Partition 6 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>7 Partition 7 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>8 Partition 8 Disabled</b></font>
+<p></p>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>18#</b></font> <font face="Arial" color="#000000" size="1"><b>Format Override First segment (Custom Formats) (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for second segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>1 1800Hz Transmit 1900Hz Transmit</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>2 2300Hz Handshake 1400Hz Handshake</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>3 Checksum Parity Double Round Parity</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>4 2-Digit Event Code 1-Digit Event Code</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>5 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>6 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>7 20 PPS 10 or 40 PPS</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>8 10 PPS 20 or 40 PPS</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Format Override Second segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>1 Pager Format Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>2 1400/2300 Handshake Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>3 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>4 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>5 Contact ID</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>6 SIA</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>7 Contact ID or 4 + 3</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>8 DTMF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>19#</b></font> <font face="Arial" color="#000000" size="1"><b>Download Access Code</b> I<b>__8__</b>I<b>__4__</b>I<b>__8__</b>I<b>__0__</b>I<b>__0__</b>I<b>__0__</b>I<b>__0__</b>I<b>__0__</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Program as 8</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>4</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>8</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>0</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>0</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>0</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>0</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>0 then # to exit)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>20#</b></font> <font face="Arial" color="#000000" size="1"><b>Rings to Answer Download</b> I<b>__8__</b>I <b>(Enter 1 to 15 then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>21#</b></font> <font face="Arial" color="#000000" size="1"><b>Download Options (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_ <b>ON</b> I <b>1 Two Call Answering Machine Defeat Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_ <b>ON</b> I <b>2 Tone Sniff Answering Machine Defeat Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>3 Callback Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>4 Shut Down Control Panel Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>5 Lock Out Local Programming* Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>6 Lock Out Communicator Programming* Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>7 Lockout Download Section* Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>8 Enable Callback at AutoTest Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b><i>Note:</i> Communicator lockout prevents access to fields 0, 1, 2, 3 and 4 for Phone 1, same for Phones 2 and 3</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Downloader lockout prevents access to fields 19, 20, 21 and 22</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Options 4, 5 and 6 can be viewed when keypad programming but can only be changed by downloading</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>22#</b></font> <font face="Arial" color="#000000" size="1"><b>Callback Phone Number</b> I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>23#</b></font> <font face="Arial" color="#000000" size="1"><b>Partition 1 Feature Selection First segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for second segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ ON _</b>I <b>1 Quick Arm Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ ON _</b>I <b>2 Quick Exit Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I<b>_ ON _</b>I <b>3 Auto Bypass Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>4 Silent Keypad Panic Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I<b>_ ON _</b>I <b>5 Audible Keypad Panic Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ ON _</b>I <b>6 Keypad Aux 1 Enable (Fire Panic) Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ ON _</b>I <b>7 Keypad Aux 2 Enable (Auxiliary Panic) Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ ON _</b>I <b>8 Multiple Code Attempt Shutdown Enable Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Partition 1 Feature Selection Second segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for third segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>1 LED Extinguish Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>2 User Code Required to Bypass Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>3 Zone Bypass Sounder Alert Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I<b>_ ON _</b>I <b>4 AC Fail/Low Bat Sounder Alert Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>5 Bypass Toggle Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>6 Silent Auto Arm Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>7 Auto Instant Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>8 Future Use Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Partition 1 Feature Selection Third segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for fourth segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>1 Opening/Closing Reporting Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>2 Zone Bypass Reporting Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>3 Zone Restore Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ ON _</b>I <b>4 Zone Trouble Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ ON _</b>I <b>5 Zone Tamper Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ ON _</b>I <b>6 Cancel Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ ON _</b>I <b>7 Recent Closing Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ ON _</b>I <b>8 Exit Error Report Enable Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Partition 1 Feature Selection Fourth segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for fifth segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>1 Late to Close/Early to Open Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>2 Auto Arm in Stay Mode Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>3 Disable Door Delays in Night Mode Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>4 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>5 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>6 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>7 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>8 Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Partition 1 Feature Selection Fifth segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>1 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>2 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>3 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>4 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>5 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>6 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>7 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>8 Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>24#</b></font> <font face="Arial" color="#000000" size="1"><b>Feature Selection (Enter 2 to 3 digits then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # Exits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>30</b> I <b>30</b> _I <b>Entry Time 1 (10 to 255 Seconds, new version = 30 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>60</b> I <b>30</b> _I <b>Exit Time 1 (10 to 255 Seconds, new version = 45 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>30</b> I <b>30</b> _I <b>Entry Time 2 (10 to 255 Seconds, new version = 30 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>60</b> I <b>60</b> _I <b>Exit Time 2 (10 to 255 Seconds, new version = 45 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>25#</b></font> <font face="Arial" color="#000000" size="1"><b>Zones 1 to 8 Type (Enter each digit then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # Exits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<ol start="3">
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 1</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>5 I______I Zone 2</b></font>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Click HERE for Zone Types" onclick="self.location='Tech_2010Caddx_NX_468_v2_Zone_Types.htm'" /></b></font></form>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 3</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 4</b></font>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Click HERE for Zone Settings" onclick="self.location='Tech_2010Caddx_NXSeries_v2_ZoneReporting.htm'" /></b></font></form>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 5</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 6</b></font>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Click HERE for Wireless Zones" onclick="self.location='Tech_2010Caddx_NX_Wireless_Programming.htm'" /></b></font></form>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 7</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 8</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>26#</b></font> <font face="Arial" color="#000000" size="1"><b>Partition Selections Zones 1 to 8 (Enter each digit then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # Exits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 1 1 = Partition 1</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 2 2 = Partition 2 (A zone can occupy more than 1 partition)</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 3 3 = Partition 3</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 4 4 = Partition 4 (Ex: press 1 2 3 for Zone 1 to use partition 1, 2, 3</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 5 5 = Partition 5 then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to move to zone 2 etc)</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 6 6 = Partition 6</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 7 7 = Partition 7</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 8 8 = Partition 8</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>27#</b></font> <font face="Arial" color="#000000" size="1"><b>Zones 9 to 16 Zone Type (Enter each digit then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # Exits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 9</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 10</b></font>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Click HERE for Zone Types" onclick="self.location='Tech_2010Caddx_NX_468_v2_Zone_Types.htm'" /></b></font></form>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 11</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 12</b></font>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Click HERE for Zone Settings" onclick="self.location='Tech_2010Caddx_NXSeries_v2_ZoneReporting.htm'" /></b></font></form>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 13</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 14</b></font>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Click HERE for Wireless Zones" onclick="self.location='Tech_2010Caddx_NX_Wireless_Programming.htm'" /></b></font></form>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 15</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 16</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>28#</b></font> <font face="Arial" color="#000000" size="1"><b>Partition Selections Zones 9 to 16 (Enter each digit then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # Exits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 9 1 = Partition 1</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 10 2 = Partition 2</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 11 4 = Partition 3 (Ex: press 1 2 3 for Zone 9 to use partition 1, 2, 3</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 12 5 = Partition 4 then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to move to Zone 10 etc)</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 13 5 = Partition 5</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 14 6 = Partition 6</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 15 7 = Partition 7</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 16 8 = Partition 8</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>29#</b></font> <font face="Arial" color="#000000" size="1"><b>Zones 17 to 24 Zone Type (Enter each digit then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # Exits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 17</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 18</b></font>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Click HERE for Zone Types" onclick="self.location='Tech_2010Caddx_NX_468_v2_Zone_Types.htm'" /></b></font></form>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 19</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 20</b></font>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Click HERE for Zone Settings" onclick="self.location='Tech_2010Caddx_NXSeries_v2_ZoneReporting.htm'" /></b></font></form>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 21</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 22</b></font>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Click HERE for Wireless Zones" onclick="self.location='Tech_2010Caddx_NX_Wireless_Programming.htm'" /></b></font></form>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 23</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 24</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>30#</b></font> <font face="Arial" color="#000000" size="1"><b>Partition Selections Zones 17 to 24 (Enter each digit then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # Exits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 17 1 = Partition 1</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 18 2 = Partition 2</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 19 4 = Partition 3 (Ex: press 1 2 3 for Zone 17 to use partition 1, 2, 3,</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 20 5 = Partition 4 then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to move to Zone 18 etc)</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 21 5 = Partition 5</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 22 6 = Partition 6</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 23 7 = Partition 7</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 24 8 = Partition 8</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>31#</b></font> <font face="Arial" color="#000000" size="1"><b>Zones 25 to 32 Zone Type (Enter each digit then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # Exits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 25</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 26</b></font>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Click HERE for Zone Types" onclick="self.location='Tech_2010Caddx_NX_468_v2_Zone_Types.htm'" /></b></font></form>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 27</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 28</b></font>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Click HERE for Zone Settings" onclick="self.location='Tech_2010Caddx_NXSeries_v2_ZoneReporting.htm'" /></b></font></form>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 29</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 30</b></font>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Click HERE for Wireless Zones" onclick="self.location='Tech_2010Caddx_NX_Wireless_Programming.htm'" /></b></font></form>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 31</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 32</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>32#</b></font> <font face="Arial" color="#000000" size="1"><b>Partition Selections Zones 25 to 32 (Enter each digit then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # Exits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 25 1 = Partition 1</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 26 2 = Partition 2</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 27 4 = Partition 3 (Ex: press 1 2 3 for Zone 25 to use partition 1, 2, 3</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 28 5 = Partition 4 then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to move to Zone 26 etc)</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 29 5 = Partition 5</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 30 6 = Partition 6</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 31 7 = Partition 7</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 32 8 = Partition 8</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>33#</b></font> <font face="Arial" color="#000000" size="1"><b>Zones 33 to 40 Zone Type (Enter each digit then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # Exits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 33</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 34</b></font>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Click HERE for Zone Types" onclick="self.location='Tech_2010Caddx_NX_468_v2_Zone_Types.htm'" /></b></font></form>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 35</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 36</b></font>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Click HERE for Zone Settings" onclick="self.location='Tech_2010Caddx_NXSeries_v2_ZoneReporting.htm'" /></b></font></form>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 37</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 38</b></font>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Click HERE for Wireless Zones" onclick="self.location='Tech_2010Caddx_NX_Wireless_Programming.htm'" /></b></font></form>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 39</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 40</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>34#</b></font> <font face="Arial" color="#000000" size="1"><b>Partition Selections Zones 33 to 40 (Enter each digit then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # Exits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 33 1 = Partition 1</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 34 2 = Partition 2</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 35 4 = Partition 3 (Ex: press 1 2 3 for Zone 33 to use partition 1, 2, 3</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 36 5 = Partition 4 then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to move to zone 34 etc)</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 37 5 = Partition 5</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 38 6 = Partition 6</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 39 7 = Partition 7</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 40 8 = Partition 8</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>35#</b></font> <font face="Arial" color="#000000" size="1"><b>Zones 41 to 48 Zone Type (Enter each digit then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # Exits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 41</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 42</b></font>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Click HERE for Zone Types" onclick="self.location='Tech_2010Caddx_NX_468_v2_Zone_Types.htm'" /></b></font></form>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 43</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 44</b></font>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Click HERE for Zone Settings" onclick="self.location='Tech_2010Caddx_NXSeries_v2_ZoneReporting.htm'" /></b></font></form>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 45</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 46</b></font>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Click HERE for Wireless Zones" onclick="self.location='Tech_2010Caddx_NX_Wireless_Programming.htm'" /></b></font></form>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 47</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 I______I Zone 48</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>36#</b></font> <font face="Arial" color="#000000" size="1"><b>Partition Selections Zones 41 to 48 (Enter each digit then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # Exits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 41 1 = Partition 1</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 42 2 = Partition 2</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 43 4 = Partition 3 (Ex: press 1 2 3 for Zone 41 to use partition 1, 2, 3</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 44 5 = Partition 4 then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to move to zone 42 etc)</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 45 5 = Partition 5</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 46 6 = Partition 6</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 47 7 = Partition 7</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>I______I Zone 48 8 = Partition 8</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>37#</b></font> <font face="Arial" color="#000000" size="1"><b>Siren &amp; System Supervision First segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Second segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I<b>_ ON _</b>I <b>1 Siren Sounds if Phone Cut w/Armed Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I<b>_ OFF_</b>I <b>2 Siren Sounds if Phone Cut w/Disarmed Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>3 Siren Blast at Arming Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>4 Siren Blast at Exit Delay Expiration Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>5 Siren Blast at Closing Kissoff Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>6 Siren Sounds on Cross Zone Verification Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I<b>_ OFF_</b>I <b>7 Siren Sounds for a Tamper Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>8 Siren Sounds for Wireless Arm/Disarm Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Siren &amp; System Supervision Second segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Third segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>1 Convert Siren Driver to Voltage Out Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>2 Siren Sounds for Expander Trouble Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>3 Immediate Restore by Zone Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>4 Dynamic Battery Test upon Arming Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ ON _</b>I <b>5 Battery Missing Test every 12 Seconds Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I<b>_ ON _</b>I <b>6 Manual Bell Test by</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>4 Test Function Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ ON _</b>I <b>7 Manual Com Test by</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>4 Test Function Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>8 Box Tamper Enabled Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Siren &amp; System Supervision Third segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Fourth segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>1 Box Tamper Report Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ ON _</b>I <b>2 AC Fail Report Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ ON _</b>I <b>3 Low Battery Report Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ ON _</b>I <b>4 Aux Power Over Current Report Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>5 Siren Supervision Report Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ ON _</b>I <b>6 Telephone Line Cut Report Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>7 Ground Fault Detection Report Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ ON _</b>I <b>8 Expander Trouble Report Enabled Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Siren &amp; System Supervision Fourth segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Fifth segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ ON _</b>I <b>1 Fail To Communicate Report Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>2 Log Full Report Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ ON _</b>I <b>3 Autotest Report Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>4 Start &amp; End Programming Report Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ ON _</b>I <b>5 End Download Report Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>6 Sensor Low Battery Report Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ ON _</b>I <b>7 Sensor Missing Report Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>8 First to Open/Last to Close Enabled Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Siren &amp; System Supervision Fifth segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Sixth segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>1 Lost Clock Service LED Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>2 Zone Doubling Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>3 Disable On-Board Eight Zones Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>4 Enable 2 Trip on Cross Zone for Alarm Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>5 Disable Bypass Report on Force Arm Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>6 Reserved Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>7 Clock Uses Internal Crystal Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>8 Disable Temporal Siren on Fire Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Siren &amp; System Supervision Sixth segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Seventh segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>1 Enable 2-Wire Smoke Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>2 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 Zone Activity in Hours Zone Activity in Days</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>4 Daylight Savings Time Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>5 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Disable "Clean Me" Report Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 Disable Start/End Walk Test Report Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Siren &amp; System Supervision Seventh segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>1 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>2 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>4 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>5 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>38#</b></font> <font face="Arial" color="#000000" size="1"><b>Swinger Shutdown Count</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1">I <b>1</b> _I</font> <font face="Arial" color="#000000" size="1"><b>(0 (Disabled) to 15 (F) Reports)</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>39#</b></font> <font face="Arial" color="#000000" size="1"><b>Keypad Sounder Control (Toggle ON/OFF then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I<b>_ ON _</b>I <b>1 Keypad Sounds on Phone Cut w/Armed Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I<b>_ ON _</b>I <b>2 Keypad Sounds on Phone Cut w/Disarmed Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ ON _</b>I <b>3 Keypad Sounds on AC Failure Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>4 Keypad Sounds on Low Battery Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>5 Keypad Sounds on Cross Zone Trip Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I<b>_ ON _</b>I <b>6 Keypad Sounds For Tamper Alarms Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>7 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ ON _</b>I <b>8 Keypad Sounds For Expander Trouble Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>40#</b></font> <font face="Arial" color="#000000" size="1"><b>System Timers (Enter each digit then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # Exits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I__ _I <b>Dynamic Battery Test Duration (0 to 255 minutes)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5</b> I__ _I <b>AC Fail Report Delay (0 to 255 minutes)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I__ _I <b>Power Up Delay (0 to 60 seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8</b> I__ _I <b>Siren Timeout (1 to 255 minutes)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I__ _I <b>Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5</b> I__ _I <b>Cross Zone Time (0 to 255 minutes)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3</b> I__ _I <b>Chime Time (0 to 255 x50ms)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>30</b> I__ _I <b>Dialer Delay (15 to 255 seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I__ _I <b>Fire Alarm Verification Time (120 to 255 seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I__ _I <b>Listen In Time (0 to 255 seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I__ _I <b>Zone Activity Monitor (0 to 255 days)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I__ _I <b>Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I__ _I <b>Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I__ _I <b>Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>41#</b></font> <font face="Arial" color="#000000" size="1"><b>User Code Requirements (Toggle ON/OFF then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 1 Enable 6-Digit User Codes Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 2 User Code Required for</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>98 &amp;</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>99 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 3 Enable Auto Cancel/Abort Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 4 Enable Walk-Test Mode Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 5 Enable Auto Force-Arming w/Keyswitch Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 6 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 7 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 8 Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>42#</b></font> <font face="Arial" color="#000000" size="1"><b>Go To Program Code</b> I _ <b>9</b> _I _ <b>7</b> I _ <b>1</b> _I _ <b>3</b> _I _ _I _ _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Program as 9</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>7</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>1</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>3</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b># to exit)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>43#</b></font> <font face="Arial" color="#000000" size="1"><b>Go To Program Options First segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Second segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 1 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 2 Program Code is Arm Only Code Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 3 Program Code is Arm Only after Closing Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 4 Program Code is Master Code* Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 5 Program Code is Arm/Disarm Code Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 6 Program Code Bypasses Zones Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 7 Program Code Sends O/C Reports Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 8 Reserved</b></font>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>enable in case Master Code is forgotten, use Installer Code to add new Master Code</b></font>
+<p></p>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Go To Program Options Second segment (Toggle ON/OFF then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 1 Enable "Go To Program Code" for Partition 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 2 Enable "Go To Program Code" for Partition 2</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 3 Enable "Go To Program Code" for Partition 3</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 4 Enable "Go To Program Code" for Partition 4</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 5 Enable "Go To Program Code" for Partition 5</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 6 Enable "Go To Program Code" for Partition 6</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 7 Enable "Go To Program Code" for Partition 7</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 8 Enable "Go To Program Code" for Partition 8</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>44#</b></font> <font face="Arial" color="#000000" size="1"><b>Duress Code</b> I _ <b>2</b> _I _ <b>5</b> I _ <b>8</b> _I _ <b>0</b> _I _ _I _ _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Program as 2</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>5</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>8</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>0</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>then # to exit)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>45#</b></font> <font face="Arial" color="#000000" size="1"><b>Auxiliary Outputs 1 to 4 Partition Selection</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Auxiliary Output 1 First segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Second segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 1 Partition 1 Not on Partition 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 2 Partition 2 Not on Partition 2</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 3 Partition 3 Not on Partition 3</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 4 Partition 4 Not on Partition 4</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 5 Partition 5 Not on Partition 5</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 6 Partition 6 Not on Partition 6</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 7 Partition 7 Not on Partition 7</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 8 Partition 8 Not on Partition 8</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Auxiliary Output 2 Second segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Third segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 1 Partition 1 Not on Partition 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 2 Partition 2 Not on Partition 2</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 3 Partition 3 Not on Partition 3</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 4 Partition 4 Not on Partition 4</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 5 Partition 5 Not on Partition 5</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 6 Partition 6 Not on Partition 6</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 7 Partition 7 Not on Partition 7</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 8 Partition 8 Not on Partition 8</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Auxiliary Output 3 Third segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Fourth segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 1 Partition 1 Not on Partition 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 2 Partition 2 Not on Partition 2</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 3 Partition 3 Not on Partition 3</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 4 Partition 4 Not on Partition 4</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 5 Partition 5 Not on Partition 5</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 6 Partition 6 Not on Partition 6</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 7 Partition 7 Not on Partition 7</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 8 Partition 8 Not on Partition 8</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Auxiliary Output 4 Fourth segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save, # exits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 1 Partition 1 Not on Partition 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 2 Partition 2 Not on Partition 2</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 3 Partition 3 Not on Partition 3</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 4 Partition 4 Not on Partition 4</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 5 Partition 5 Not on Partition 5</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 6 Partition 6 Not on Partition 6</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 7 Partition 7 Not on Partition 7</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 8 Partition 8 Not on Partition 8</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>46#</b></font> <font face="Arial" color="#000000" size="1"><b>Auxiliary Output 1 Special Timing First segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Second segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 1 Output timed in minutes Auxiliary Output Time in Seconds</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 2 Output to latch Output Timed</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 3 Output stops timing on code entry</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 4 Output on only during Open &amp; Close time</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 5 Output on only during Open &amp; Close time</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 6 Invert Output (0 Volts going to 12 Volts) Output Normal (Floating Ground)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 7 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 8 Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Auxiliary Output 2 Special Timing Second segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Third segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 1 Output timed in minutes Auxiliary Output Time in Seconds</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 2 Output to latch Output Timed</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 3 Output stops timing on code entry</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 4 Output on only during Open &amp; Close time</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 5 Output on only during Open &amp; Close time</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 6 Invert Output (0 Volts going to 12 Volts) Output Normal (Floating Ground)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 7 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 8 Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Auxiliary Output 3 Special Timing Third segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Fourth segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 1 Output timed in minutes Auxiliary Output Time in Seconds</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 2 Output to latch Output Timed</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 3 Output stops timing on code entry</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 4 Output on only during Open &amp; Close time</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 5 Output on only during Open &amp; Close time</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 6 Invert Output (0 Volts going to 12 Volts) Output Normal (Floating Ground)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 7 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 8 Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Auxiliary Output 4 Special Timing Fourth segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 1 Output timed in minutes Auxiliary Output Time in Seconds</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 2 Output to latch Output Timed</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON I_ ON _I 3 Output stops timing on code entry</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 4 Output on only during Open &amp; Close time</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 5 Output on only during Open &amp; Close time</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 6 Invert Output (0 Volts going to 12 Volts) Output Normal (Floating Ground)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 7 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF I_ OFF_I 8 Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>47#</b></font> <font face="Arial" color="#000000" size="1"><b>Auxiliary Output 1 Event &amp; Time (Enter 1 to 2 digits then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # Exits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I _ _I <b>Event Number for Output 1 (Enter Event Number)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>10</b> I _ _I <b>Timing for Output 1 (1 to 255 Minutes/Seconds (See option 46))</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(0 = Output Follows Event)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>48#</b></font> <font face="Arial" color="#000000" size="1"><b>Auxiliary Output 2 Event &amp; Time (Enter 1 to 2 digits then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # Exits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>1</b> I _ _I <b>Event Number for Output 1 (Enter Event Number)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>10</b> I _ _I <b>Timing for Output 1 (1 to 255 Minutes/Seconds (See option 46))</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(0 = Output Follows Event)</b></font>
+<p></p>
+<p></p>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Click HERE for All Output Events" onclick="self.location='Tech_2010Caddx_NX8_v2_Series_Output_Event.htm'" /></b></font></form>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>49#</b></font> <font face="Arial" color="#000000" size="1"><b>Auxiliary Output 3 Event &amp; Time (Enter 1 to 2 digits then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # Exits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2</b> I _ _I <b>Event Number for Output 1 (Enter Event Number)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>10</b> I _ _I <b>Timing for Output 1 (1 to 255 Minutes/Seconds (See option 46))</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(0 = Output Follows Event)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>50#</b></font> <font face="Arial" color="#000000" size="1"><b>Auxiliary Output 4 Event &amp; Time (Enter 1 to 2 digits then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # Exits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>21</b> I _ _I <b>Event Number for Output 1 (Enter Event Number)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I _ _I <b>Timing for Output 1 (1 to 255 Minutes/Seconds (See option 46))</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(0 = Output Follows Event)</b></font>
+<p></p>
+<p></p>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Click HERE for All Output Events" onclick="self.location='Tech_2010Caddx_NX8_v2_Series_Output_Event.htm'" /></b></font></form>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>51#</b></font> <font face="Arial" color="#000000" size="1"><b>Autotest Control (Enter 1 to 2 digits then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # Exits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I______I Autotest Interval select (0 = Autotest in Days, 1 = Autotest in Hours)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>24 I______I Autotest Interval (1 to 255 Days or 1 to 23 Hours)</b></font>
+<p></p>
+<ol start="2">
+<li><font face="Arial" color="#000000" size="1"><b>I______I Autotest Time (Hours) (1 to 23 O'Clock)</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>0 I______I Autotest Time (Minutes after the Hour) (0 to 59 minutes)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>52#</b></font> <font face="Arial" color="#000000" size="1"><b>Opening Time (Enter 1 to 2 digits then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8 I______I Hour of Opening Time (0 to 24)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I______I Minutes of the Hour of Opening Time (0 to 59)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>53#</b></font> <font face="Arial" color="#000000" size="1"><b>Closing Time / Auto Arming Time (Enter 1 to 2 digits then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>20 I______I Hour of Opening Time (0 to 24)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 I______I Minutes of the Hour of Opening Time (0 to 59)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>54#</b></font> <font face="Arial" color="#000000" size="1"><b>Days of Week Partition 1 is Open First segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Second segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>1 Open on Sunday Not Open on Sunday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>2 Open on Monday Not Open on Monday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>3 Open on Tuesday Not Open on Tuesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>4 Open on Wednesday Not Open on Wednesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>5 Open on Thursday Not Open on Thursday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>6 Open on Friday Not Open on Friday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>7 Open on Saturday Not Open on Saturday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>8 Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Days of Week Partition 2 is Open Second segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Third segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>1 Open on Sunday Not Open on Sunday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>2 Open on Monday Not Open on Monday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>3 Open on Tuesday Not Open on Tuesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>4 Open on Wednesday Not Open on Wednesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>5 Open on Thursday Not Open on Thursday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>6 Open on Friday Not Open on Friday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>7 Open on Saturday Not Open on Saturday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>8 Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Days of Week Partition 3 is Open Third segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Fourth segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>1 Open on Sunday Not Open on Sunday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>2 Open on Monday Not Open on Monday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>3 Open on Tuesday Not Open on Tuesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>4 Open on Wednesday Not Open on Wednesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>5 Open on Thursday Not Open on Thursday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>6 Open on Friday Not Open on Friday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>7 Open on Saturday Not Open on Saturday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>8 Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Days of Week Partition 4 is Open Fourth segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Fifth segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>1 Open on Sunday Not Open on Sunday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>2 Open on Monday Not Open on Monday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>3 Open on Tuesday Not Open on Tuesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>4 Open on Wednesday Not Open on Wednesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>5 Open on Thursday Not Open on Thursday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>6 Open on Friday Not Open on Friday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>7 Open on Saturday Not Open on Saturday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>8 Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Days of Week Partition 5 is Open Fifth segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Sixth segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>1 Open on Sunday Not Open on Sunday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>2 Open on Monday Not Open on Monday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>3 Open on Tuesday Not Open on Tuesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>4 Open on Wednesday Not Open on Wednesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>5 Open on Thursday Not Open on Thursday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>6 Open on Friday Not Open on Friday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>7 Open on Saturday Not Open on Saturday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>8 Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Days of Week Partition 6 is Open Sixth segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Seventh segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>1 Open on Sunday Not Open on Sunday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>2 Open on Monday Not Open on Monday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>3 Open on Tuesday Not Open on Tuesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>4 Open on Wednesday Not Open on Wednesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>5 Open on Thursday Not Open on Thursday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>6 Open on Friday Not Open on Friday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>7 Open on Saturday Not Open on Saturday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>8 Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Days of Week Partition 7 is Open Seventh segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>1 Open on Sunday Not Open on Sunday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>2 Open on Monday Not Open on Monday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>3 Open on Tuesday Not Open on Tuesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>4 Open on Wednesday Not Open on Wednesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>5 Open on Thursday Not Open on Thursday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>6 Open on Friday Not Open on Friday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>7 Open on Saturday Not Open on Saturday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>8 Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Days of Week Partition 8 is Open Eight segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>1 Open on Sunday Not Open on Sunday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>2 Open on Monday Not Open on Monday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>3 Open on Tuesday Not Open on Tuesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>4 Open on Wednesday Not Open on Wednesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>5 Open on Thursday Not Open on Thursday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>6 Open on Friday Not Open on Friday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>7 Open on Saturday Not Open on Saturday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>8 Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>55#</b></font> <font face="Arial" color="#000000" size="1"><b>Days of Week Partition 1 Auto Arms First segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Second segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>1 Auto Arming on Sunday No Auto Arming on Sunday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>2 Auto Arming on Monday No Auto Arming on Monday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>3 Auto Arming on Tuesday No Auto Arming on Tuesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>4 Auto Arming on Wednesday No Auto Arming on Wednesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>5 Auto Arming on Thursday No Auto Arming on Thursday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>6 Auto Arming on Friday No Auto Arming on Friday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>7 Auto Arming on Saturday No Auto Arming on Saturday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>8 Disable 45 Minute Auto-Arm Retry Disable 45 Minute Auto-Arm Retry</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Days of Week Partition 2 Auto Arms Second segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Third segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>1 Auto Arming on Sunday No Auto Arming on Sunday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>2 Auto Arming on Monday No Auto Arming on Monday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>3 Auto Arming on Tuesday No Auto Arming on Tuesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>4 Auto Arming on Wednesday No Auto Arming on Wednesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>5 Auto Arming on Thursday No Auto Arming on Thursday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>6 Auto Arming on Friday No Auto Arming on Friday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>7 Auto Arming on Saturday No Auto Arming on Saturday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>8 Disable 45 Minute Auto-Arm Retry Disable 45 Minute Auto-Arm Retry</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Days of Week Partition 3 Auto Arms Third segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Fourth segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>1 Auto Arming on Sunday No Auto Arming on Sunday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>2 Auto Arming on Monday No Auto Arming on Monday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>3 Auto Arming on Tuesday No Auto Arming on Tuesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>4 Auto Arming on Wednesday No Auto Arming on Wednesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>5 Auto Arming on Thursday No Auto Arming on Thursday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>6 Auto Arming on Friday No Auto Arming on Friday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>7 Auto Arming on Saturday No Auto Arming on Saturday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>8 Disable 45 Minute Auto-Arm Retry Disable 45 Minute Auto-Arm Retry</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Days of Week Partition 4 Auto Arms Fourth segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Fifth segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>1 Auto Arming on Sunday No Auto Arming on Sunday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>2 Auto Arming on Monday No Auto Arming on Monday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>3 Auto Arming on Tuesday No Auto Arming on Tuesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>4 Auto Arming on Wednesday No Auto Arming on Wednesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>5 Auto Arming on Thursday No Auto Arming on Thursday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>6 Auto Arming on Friday No Auto Arming on Friday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>7 Auto Arming on Saturday No Auto Arming on Saturday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>8 Disable 45 Minute Auto-Arm Retry Disable 45 Minute Auto-Arm Retry</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Days of Week Partition 5 Auto Arms Fifth segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Sixth segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>1 Auto Arming on Sunday No Auto Arming on Sunday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>2 Auto Arming on Monday No Auto Arming on Monday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>3 Auto Arming on Tuesday No Auto Arming on Tuesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>4 Auto Arming on Wednesday No Auto Arming on Wednesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>5 Auto Arming on Thursday No Auto Arming on Thursday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>6 Auto Arming on Friday No Auto Arming on Friday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>7 Auto Arming on Saturday No Auto Arming on Saturday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>8 Disable 45 Minute Auto-Arm Retry Disable 45 Minute Auto-Arm Retry</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Days of Week Partition 6 Auto Arms Sixth segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Seventh segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>1 Auto Arming on Sunday No Auto Arming on Sunday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>2 Auto Arming on Monday No Auto Arming on Monday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>3 Auto Arming on Tuesday No Auto Arming on Tuesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>4 Auto Arming on Wednesday No Auto Arming on Wednesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>5 Auto Arming on Thursday No Auto Arming on Thursday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>6 Auto Arming on Friday No Auto Arming on Friday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>7 Auto Arming on Saturday No Auto Arming on Saturday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>8 Disable 45 Minute Auto-Arm Retry Disable 45 Minute Auto-Arm Retry</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Days of Week Partition 7 Auto Arms Seventh segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Eighth segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>1 Auto Arming on Sunday No Auto Arming on Sunday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>2 Auto Arming on Monday No Auto Arming on Monday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>3 Auto Arming on Tuesday No Auto Arming on Tuesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>4 Auto Arming on Wednesday No Auto Arming on Wednesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>5 Auto Arming on Thursday No Auto Arming on Thursday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>6 Auto Arming on Friday No Auto Arming on Friday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>7 Auto Arming on Saturday No Auto Arming on Saturday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>8 Disable 45 Minute Auto-Arm Retry Disable 45 Minute Auto-Arm Retry</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Days of Week Partition 8 Auto Arms Eighth segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON Option OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>1 Auto Arming on Sunday No Auto Arming on Sunday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>2 Auto Arming on Monday No Auto Arming on Monday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>3 Auto Arming on Tuesday No Auto Arming on Tuesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>4 Auto Arming on Wednesday No Auto Arming on Wednesday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>5 Auto Arming on Thursday No Auto Arming on Thursday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>6 Auto Arming on Friday No Auto Arming on Friday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>7 Auto Arming on Saturday No Auto Arming on Saturday</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>8 Disable 45 Minute Auto-Arm Retry Disable 45 Minute Auto-Arm Retry</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>4/2 Format Report Codes</b></font> <font face="Arial" color="#0000FF" size="1"><b>(Leave alone)</b></font> <font face="Arial" color="#000000" size="1"><b>(Enter each digit then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next digit)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>56#</b></font> <font face="Arial" color="#000000" size="1"><b>Restore Communication Code Partition 1</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Restore Communication Code Partition 2</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Restore Communication Code Partition 3</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Restore Communication Code Partition 4</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Restore Communication Code Partition 5</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Restore Communication Code Partition 6</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Restore Communication Code Partition 7</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Restore Communication Code Partition 8</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>57#</b></font> <font face="Arial" color="#000000" size="1"><b>Bypass Communication Code Partition 1</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Bypass Communication Code Partition 2</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Bypass Communication Code Partition 3</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Bypass Communication Code Partition 4</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Bypass Communication Code Partition 5</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Bypass Communication Code Partition 6</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Bypass Communication Code Partition 7</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Bypass Communication Code Partition 8</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>58#</b></font> <font face="Arial" color="#000000" size="1"><b>Tamper Communication Code Partition 1</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Tamper Communication Code Partition 2</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Tamper Communication Code Partition 3</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Tamper Communication Code Partition 4</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Tamper Communication Code Partition 5</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Tamper Communication Code Partition 6</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Tamper Communication Code Partition 7</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Tamper Communication Code Partition 8</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>59#</b></font> <font face="Arial" color="#000000" size="1"><b>Trouble Communication Code Partition 1</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Trouble Communication Code Partition 2</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Trouble Communication Code Partition 3</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Trouble Communication Code Partition 4</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Trouble Communication Code Partition 5</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Trouble Communication Code Partition 6</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Trouble Communication Code Partition 7</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Trouble Communication Code Partition 8</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>60#</b></font> <font face="Arial" color="#000000" size="1"><b>Sensor Low Battery Communication Code Partition 1</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Low Battery Communication Code Partition 2</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Low Battery Communication Code Partition 3</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Low Battery Communication Code Partition 4</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Low Battery Communication Code Partition 5</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Low Battery Communication Code Partition 6</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Low Battery Communication Code Partition 7</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Low Battery Communication Code Partition 8</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>61#</b></font> <font face="Arial" color="#000000" size="1"><b>Sensor Missing Communication Code Partition 1</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Missing Communication Code Partition 2</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Missing Communication Code Partition 3</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Missing Communication Code Partition 4</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Missing Communication Code Partition 5</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Missing Communication Code Partition 6</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Missing Communication Code Partition 7</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sensor Missing Communication Code Partition 8</b> I<b>__ 0 __</b>I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>62#</b></font> <font face="Arial" color="#000000" size="1"><b>Duress Communication Code</b> I<b>__ 00__</b>I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>63#</b></font> <font face="Arial" color="#000000" size="1"><b>Auxiliary 1 (Fire) Communication Code</b> I<b>__ 00__</b>I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>64#</b></font> <font face="Arial" color="#000000" size="1"><b>Auxiliary 2 (Medical) Communication Code</b> I<b>__ 00__</b>I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>65#</b></font> <font face="Arial" color="#000000" size="1"><b>Keypad Panic Communication Code</b> I<b>__ 02__</b>I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>66#</b></font> <font face="Arial" color="#000000" size="1"><b>Keypad Multiple Code Entry Tamper</b> I<b>__ 00__</b>I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>67#</b></font> <font face="Arial" color="#000000" size="1"><b>Box Tamper / Box Tamper Restore</b> I _<b>00 / 00</b> I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>68#</b></font> <font face="Arial" color="#000000" size="1"><b>AC Fail / AC Restore</b> I _<b>00 / 00</b> I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>69#</b></font> <font face="Arial" color="#000000" size="1"><b>Low Battery / Low Battery Restore</b> I _<b>00 / 00</b> I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>70#</b></font> <font face="Arial" color="#000000" size="1"><b>Power Short / Power Short Restore</b> I _<b>00 / 00</b> I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>71#</b></font> <font face="Arial" color="#000000" size="1"><b>Bell Tamper / Bell Tamper Restore</b> I _<b>00 / 00</b> I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>72#</b></font> <font face="Arial" color="#000000" size="1"><b>Telephone Line Cut / Telephone Line Restore</b> I _<b>00 / 00</b> I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>74#</b></font> <font face="Arial" color="#000000" size="1"><b>Expander Trouble / Expander Trouble Restore</b> I _<b>00 / 00</b> I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>75#</b></font> <font face="Arial" color="#000000" size="1"><b>Failure to Communicate</b> I<b>__ 00__</b>I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>76#</b></font> <font face="Arial" color="#000000" size="1"><b>Log Full Communication Code</b> I<b>__ 00__</b>I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>77#</b></font> <font face="Arial" color="#000000" size="1"><b>Opening Reports (Enter each digit then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Opening Communication Code Partition 1</b> I<b>__ 0_ _</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Opening Communication Code Partition 2</b> I<b>__ 0_ _</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Opening Communication Code Partition 3</b> I<b>__ 0_ _</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Opening Communication Code Partition 4</b> I<b>__ 0_ _</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Opening Communication Code Partition 5</b> I<b>__ 0_ _</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Opening Communication Code Partition 6</b> I<b>__ 0_ _</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Opening Communication Code Partition 7</b> I<b>__ 0_ _</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Opening Communication Code Partition 8</b> I<b>__ 0_ _</b>I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>78#</b></font> <font face="Arial" color="#000000" size="1"><b>Closing Reports (Enter each digit then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Closing Communication Code Partition 1</b> I<b>__ 0_ _</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Closing Communication Code Partition 2</b> I<b>__ 0_ _</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Closing Communication Code Partition 3</b> I<b>__ 0_ _</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Closing Communication Code Partition 4</b> I<b>__ 0_ _</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Closing Communication Code Partition 5</b> I<b>__ 0_ _</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Closing Communication Code Partition 6</b> I<b>__ 0_ _</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Closing Communication Code Partition 7</b> I<b>__ 0_ _</b>I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Closing Communication Code Partition 8</b> I<b>__ 0_ _</b>I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>79#</b></font> <font face="Arial" color="#000000" size="1"><b>Autotest Communication Code (Enter digits then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I<b>__ 00__</b>I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>80#</b></font> <font face="Arial" color="#000000" size="1"><b>Recent Closing and Exit Alarm (Enter digits then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I<b>__ 00__</b>I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>81#</b></font> <font face="Arial" color="#000000" size="1"><b>Start Programming / End Programming (Enter digits then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I<b>__ 00 00__</b>I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>82#</b></font> <font face="Arial" color="#000000" size="1"><b>End Download (Enter digits then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I<b>__ 00__</b>I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>83#</b></font> <font face="Arial" color="#000000" size="1"><b>Cancel Communication Code (Enter digits then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I<b>__ 0 __</b>I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>84#</b></font> <font face="Arial" color="#000000" size="1"><b>to</b></font> <font face="Arial" color="#0000FF" size="1"><b>87#</b></font> <font face="Arial" color="#000000" size="1"><b>Reserved for Future Use</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>88#</b></font> <font face="Arial" color="#000000" size="1"><b>Partition 1 Account Number</b> I _ <b>?</b> _I _ <b>?</b> I _ <b>?</b> _I _ <b>?</b> _I <b>10</b> _I _ _I <b>(10 = End of number)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Only enter if system is partitioned, program as 1</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>2</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>3</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>4</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>10</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>#)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>89#</b></font> <font face="Arial" color="#000000" size="1"><b>Partition 2 Account Number</b> I _ <b>?</b> _I _ <b>?</b> I _ <b>?</b> _I _ <b>?</b> _I <b>10</b> _I _ _I <b>(10 = End of number)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>90#</b></font> <font face="Arial" color="#000000" size="1"><b>Partition 2 Feature Selection First segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for second segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>1 Quick Arm Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>2 Quick Exit Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 Auto Bypass Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>4 Silent Keypad Panic Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>5 Audible Keypad Panic Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Keypad Aux 1 Enable (Fire Panic) Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 Keypad Aux 2 Enable (Medical Panic) Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 Multiple Code Attempt Shutdown Enable Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Partition 2 Feature Selection Second segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for third segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>1 LED Extinguish Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>2 User Code Required to Bypass Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 Zone Bypass Sounder Alert Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>4 AC Fail/Low Bat Sounder Alert Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>5 Bypass Toggle Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Silent Auto Arm Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 Auto Instant Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 Multi Keypress Tamper</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Partition 2 Feature Selection Third segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Fourth segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>1 Opening/Closing Reporting Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>2 Zone Bypass Reporting Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 Zone Restore Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>4 Zone Trouble Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>5 Zone Tamper Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Cancel Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 Recent Closing Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 Exit Error Report Enable Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Partition 2 Feature Selection Fourth segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>1 Late to Close/Early to Open Reporting Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>2 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>4 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>5 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>91#</b></font> <font face="Arial" color="#000000" size="1"><b>Partition 2 Entry/Exit Timers (Enter 2 to 3 digits then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # Exits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I _I <b>Entry Time 1 (10 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I _I <b>Exit Time 1 (10 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I _I <b>Entry Time 2 (10 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I _I <b>Exit Time 2 (10 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>92#</b></font> <font face="Arial" color="#000000" size="1"><b>Partition 3 Account Number</b> I _ _I _ I _ _I _ _I _I _ _I <b>(10 = End of number)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>93#</b></font> <font face="Arial" color="#000000" size="1"><b>Partition 3 Feature Selection First segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for second segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>1 Quick Arm Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>2 Quick Exit Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 Auto Bypass Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>4 Silent Keypad Panic Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>5 Audible Keypad Panic Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Keypad Aux 1 Enable (Fire Panic) Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 Keypad Aux 2 Enable (Medical Panic) Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 Multiple Code Attempt Shutdown Enable Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Partition 3 Feature Selection Second segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for third segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>1 LED Extinguish Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>2 User Code Required to Bypass Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 Zone Bypass Sounder Alert Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>4 AC Fail/Low Bat Sounder Alert Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>5 Bypass Toggle Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Silent Auto Arm Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 Auto Instant Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 Multi Keypress Tamper</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Partition 3 Feature Selection Third segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Fourth segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>1 Opening/Closing Reporting Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>2 Zone Bypass Reporting Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 Zone Restore Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>4 Zone Trouble Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>5 Zone Tamper Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Cancel Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 Recent Closing Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 Exit Error Report Enable Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Partition 3 Feature Selection Fourth segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>1 Late to Close/Early to Open Reporting Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>2 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>4 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>5 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>94#</b></font> <font face="Arial" color="#000000" size="1"><b>Partition 3 Entry/Exit Timers (Enter 2 to 3 digits then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # Exits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I _I <b>Entry Time 1 (10 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I _I <b>Exit Time 1 (10 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I _I <b>Entry Time 2 (10 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I _I <b>Exit Time 2 (10 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>95#</b></font> <font face="Arial" color="#000000" size="1"><b>Partition 4 Account Number</b> I _ _I _ I _ _I _ _I _I _ _I <b>(10 = End of number)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>96#</b></font> <font face="Arial" color="#000000" size="1"><b>Partition 4 Feature Selection First segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for second segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>1 Quick Arm Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>2 Quick Exit Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 Auto Bypass Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>4 Silent Keypad Panic Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>5 Audible Keypad Panic Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Keypad Aux 1 Enable (Fire Panic) Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 Keypad Aux 2 Enable (Medical Panic) Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 Multiple Code Attempt Shutdown Enable Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Partition 4 Feature Selection Second segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for third segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>1 LED Extinguish Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>2 User Code Required to Bypass Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 Zone Bypass Sounder Alert Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>4 AC Fail/Low Bat Sounder Alert Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>5 Bypass Toggle Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Silent Auto Arm Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 Auto Instant Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 Multi Keypress Tamper</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Partition 4 Feature Selection Third segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Fourth segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>1 Opening/Closing Reporting Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>2 Zone Bypass Reporting Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 Zone Restore Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>4 Zone Trouble Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>5 Zone Tamper Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Cancel Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 Recent Closing Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 Exit Error Report Enable Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Partition 4 Feature Selection Fourth segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>1 Late to Close/Early to Open Reporting Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>2 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>4 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>5 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>97#</b></font> <font face="Arial" color="#000000" size="1"><b>Partition 4 Entry/Exit Timers (Enter 2 to 3 digits then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # Exits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I _I <b>Entry Time 1 (10 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I _I <b>Exit Time 1 (10 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I _I <b>Entry Time 2 (10 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I _I <b>Exit Time 2 (10 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>98#</b></font> <font face="Arial" color="#000000" size="1"><b>Partition 5 Account Number</b> I _ _I _ I _ _I _ _I _I _ _I <b>(10 = End of number)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>99#</b></font> <font face="Arial" color="#000000" size="1"><b>Partition 5 Feature Selection First segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for second segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>1 Quick Arm Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>2 Quick Exit Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 Auto Bypass Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>4 Silent Keypad Panic Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>5 Audible Keypad Panic Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Keypad Aux 1 Enable (Fire Panic) Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 Keypad Aux 2 Enable (Medical Panic) Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 Multiple Code Attempt Shutdown Enable Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Partition 5 Feature Selection Second segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for third segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>1 LED Extinguish Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>2 User Code Required to Bypass Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 Zone Bypass Sounder Alert Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>4 AC Fail/Low Bat Sounder Alert Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>5 Bypass Toggle Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Silent Auto Arm Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 Auto Instant Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 Multi Keypress Tamper</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Partition 5 Feature Selection Third segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Fourth segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>1 Opening/Closing Reporting Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>2 Zone Bypass Reporting Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 Zone Restore Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>4 Zone Trouble Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>5 Zone Tamper Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Cancel Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 Recent Closing Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 Exit Error Report Enable Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Partition 5 Feature Selection Fourth segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>1 Late to Close/Early to Open Reporting Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>2 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>4 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>5 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>100#</b></font> <font face="Arial" color="#000000" size="1"><b>Partition 5 Entry/Exit Timers (Enter 2 to 3 digits then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # Exits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I _I <b>Entry Time 1 (10 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I _I <b>Exit Time 1 (10 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I _I <b>Entry Time 2 (10 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I _I <b>Exit Time 2 (10 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>101#</b></font> <font face="Arial" color="#000000" size="1"><b>Partition 6 Account Number</b> I _ _I _ I _ _I _ _I _I _ _I <b>(10 = End of number)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>102#</b></font> <font face="Arial" color="#000000" size="1"><b>Partition 6 Feature Selection First segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for second segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>1 Quick Arm Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>2 Quick Exit Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 Auto Bypass Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>4 Silent Keypad Panic Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>5 Audible Keypad Panic Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Keypad Aux 1 Enable (Fire Panic) Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 Keypad Aux 2 Enable (Medical Panic) Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 Multiple Code Attempt Shutdown Enable Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Partition 6 Feature Selection Second segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for third segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>1 LED Extinguish Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>2 User Code Required to Bypass Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 Zone Bypass Sounder Alert Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>4 AC Fail/Low Bat Sounder Alert Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>5 Bypass Toggle Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Silent Auto Arm Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 Auto Instant Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 Multi Keypress Tamper</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Partition 6 Feature Selection Third segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Fourth segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>1 Opening/Closing Reporting Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>2 Zone Bypass Reporting Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 Zone Restore Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>4 Zone Trouble Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>5 Zone Tamper Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Cancel Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 Recent Closing Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 Exit Error Report Enable Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Partition 6 Feature Selection Fourth segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>1 Late to Close/Early to Open Reporting Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>2 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>4 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>5 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>103#</b></font> <font face="Arial" color="#000000" size="1"><b>Partition 6 Entry/Exit Timers (Enter 2 to 3 digits then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # Exits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I _I <b>Entry Time 1 (10 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I _I <b>Exit Time 1 (10 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I _I <b>Entry Time 2 (10 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I _I <b>Exit Time 2 (10 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>104#</b></font> <font face="Arial" color="#000000" size="1"><b>Partition 7 Account Number</b> I _ _I _ I _ _I _ _I _I _ _I <b>(10 = End of number)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>105#</b></font> <font face="Arial" color="#000000" size="1"><b>Partition 7 Feature Selection First segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for second segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>1 Quick Arm Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>2 Quick Exit Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 Auto Bypass Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>4 Silent Keypad Panic Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>5 Audible Keypad Panic Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Keypad Aux 1 Enable (Fire Panic) Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 Keypad Aux 2 Enable (Medical Panic) Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 Multiple Code Attempt Shutdown Enable Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Partition 7 Feature Selection Second segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for third segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>1 LED Extinguish Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>2 User Code Required to Bypass Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 Zone Bypass Sounder Alert Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>4 AC Fail/Low Bat Sounder Alert Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>5 Bypass Toggle Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Silent Auto Arm Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 Auto Instant Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 Multi Keypress Tamper</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Partition 7 Feature Selection Third segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Fourth segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>1 Opening/Closing Reporting Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>2 Zone Bypass Reporting Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 Zone Restore Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>4 Zone Trouble Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>5 Zone Tamper Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Cancel Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 Recent Closing Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 Exit Error Report Enable Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Partition 7 Feature Selection Fourth segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>1 Late to Close/Early to Open Reporting Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>2 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>4 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>5 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>106#</b></font> <font face="Arial" color="#000000" size="1"><b>Partition 7 Entry/Exit Timers (Enter 2 to 3 digits then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # Exits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I _I <b>Entry Time 1 (10 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I _I <b>Exit Time 1 (10 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I _I <b>Entry Time 2 (10 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I _I <b>Exit Time 2 (10 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>107#</b></font> <font face="Arial" color="#000000" size="1"><b>Partition 8 Account Number</b> I _ _I _ I _ _I _ _I _I _ _I <b>(10 = End of number)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>108#</b></font> <font face="Arial" color="#000000" size="1"><b>Partition 8 Feature Selection First segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for second segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>1 Quick Arm Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>2 Quick Exit Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 Auto Bypass Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>4 Silent Keypad Panic Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>5 Audible Keypad Panic Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Keypad Aux 1 Enable (Fire Panic) Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 Keypad Aux 2 Enable (Medical Panic) Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 Multiple Code Attempt Shutdown Enable Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Partition 8 Feature Selection Second segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for third segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>1 LED Extinguish Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>2 User Code Required to Bypass Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 Zone Bypass Sounder Alert Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I<b>_ OFF_</b>I <b>4 AC Fail/Low Bat Sounder Alert Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>5 Bypass Toggle Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Silent Auto Arm Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 Auto Instant Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 Multi Keypress Tamper</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Partition 8 Feature Selection Third segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for Fourth segment)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>1 Opening/Closing Reporting Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>2 Zone Bypass Reporting Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 Zone Restore Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>4 Zone Trouble Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>5 Zone Tamper Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Cancel Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 Recent Closing Report Enable Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 Exit Error Report Enable Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Partition 8 Feature Selection Fourth segment (Toggle On/Off then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>1 Late to Close/Early to Open Reporting Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>2 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>3 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>4 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>5 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>109#</b></font> <font face="Arial" color="#000000" size="1"><b>Partition 8 Entry/Exit Timers (Enter 2 to 3 digits then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # Exits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I _I <b>Entry Time 1 (10 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I _I <b>Exit Time 1 (10 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I _I <b>Entry Time 2 (10 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I _I <b>Exit Time 2 (10 to 255 Seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0</b> I <b>0</b> _I <b>Reserved</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>110#</b></font> <font face="Arial" color="#000000" size="1"><b>to</b></font> <font face="Arial" color="#0000FF" size="1"><b>149#</b></font> <font face="Arial" color="#000000" size="1"><b>see "Zone Type" sections</b></font>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>

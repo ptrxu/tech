@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>DSC PC5132 v4.0 Receiver Program Sheet</title>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+
+			<script type="text/javascript" language="javascript1.2" src="whver.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+    			<script type="text/javascript" language="javascript1.2" src="whlang.js"></script> 
+    <meta name="generator" content="Adobe RoboHelp 9" />
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+	      //<!--
+	      RH_Document_Write("<p style=\"text-align:right\"> ");
+RH_AddMasterBreadcrumbs( "Tech_2010.htm", "", "/", "Home", "Tech_2010Main.htm");
+RH_Document_Write("<\/p>");
+//-->
+</script>
+<a name="ae6b9395" id="ae6b9395"></a><a name="ae6b9395" id="ae6b9395"></a><a name="ae6b9395" id="ae6b9395"></a><font face="Arial" color="#0000FF" size="3"><b>DSC PC5132 v4.0-v4.22 433mhz Wireless Receiver Program Sheet</b></font>
+<p></p>
+<p></p>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Programming" onclick="self.location='Tech_2010DSC_PC5132_v40_Receiver_Program_.htm'" /> <input type="button" value="Wiring" onclick="self.location='Tech_2010DSC_PC5132_v40_Receiver_Wiring.htm'" /></b></font></form>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Notice</b></font> <font face="Arial" color="#000000" size="1"><b>PC5132-433 v4.20NA has serious issues with keyfobs, all unused keyfob locations must be programmed as 100000</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>to prevent possible phantom low battery display which will permenantly damage receiver AND control panel!</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Specifications</b></font> <font face="Arial" color="#000000" size="1"><b>Frequency: 433mhz</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Current Draw: 80mA</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Max Zones: 32</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Range: 1000 feet open air</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>PC/WS5010 v1</b></font> <font face="Arial" color="#000000" size="1"><b>Use double EOL resistors on hardwire loops to supervise wireless zones</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>WS5010 v2</b></font> <font face="Arial" color="#000000" size="1"><b>5-Digit SN serial numbers must be entered</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Zones must be assigned in blocks of 4</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Example: Zones 1 to 4 can be Wireless or Hardwired but not both</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Program</b></font> <font face="Arial" color="#000000" size="1"><b>1. Enter 902 in panel programming and wait 3 minutes to enroll module to panel</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. Enter</b></font> <font face="Arial" color="#0000FF" size="1"><b>location</b></font> <font face="Arial" color="#0000FF" size="2"><b>804</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3. Enter 2-digit sub-location and enter data</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(6-digit entry is required on all but PC501 v1.0 which requires 5-digit entry)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Use "ESN" Number from sticker on sensor, if sensor only has SN number enter 0 as 1st digit)</b></font>
+<p></p>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>st Digit of serial number = Transmitter Type</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Door/Window</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Motion Detector</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Smoke Detector</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Pendant Panic</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Keyfob</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000001126.gif" alt="Tech_201000001126.gif" border="0" width="498" height="171" /></b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>ESN to SN</b></font> <font face="Arial" color="#000000" size="1"><b>(If WS5010 v1 and 2 or PC5010 v1)</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Conversion</b></font> <font face="Arial" color="#000000" size="1"><b>1. The 1st digit of ESN number is also 1st digit of SN</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. Open up calculator in Microsoft Windows</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3. Click on VIEW at top of calculator and select SCIENTIFIC</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4. Click on HEX button at top left of calculator</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5. Input the 2nd, 3rd and 4th characters or numbers of the ESN number</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6. Click on DEC button at top left of calculator</b></font>
+<p></p>
+<ol start="7">
+<li><font face="Arial" color="#000000" size="1"><b>These are the last 4 digits of the SN number</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>Example: ESN 26DA4A would be SN 21754</b></font>
+<p></p>
+<p></p>
+<ol start="8">
+<li><font face="Arial" color="#000000" size="1"><b>If 0 is 2nd digit use 3rd and 4th digits into calculator then add 00 to beginning of the result</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>Example: If ESN is 6039E9</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>The 1st digit (6) of ESN number is also 1st digit of SN</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Click on VIEW at top of calculator and select SCIENTIFIC</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Click on HEX button at top left of calculator</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Enter 3rd and 4th digit (39)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Click DEC button, the result should be 57</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>The SN number will be 60057</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>Hex Program</b></font> <font face="Arial" color="#000000" size="1"><b>A =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>1</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>B =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>2</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>C =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>3</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>D =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>4</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>E =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>5</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>F =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>6</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>If combining press</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>at end of hex string (example BC would be</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>23</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>[804]</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>Zone Serial Numbers</b></font> <font face="Arial" color="#000000" size="1"><b>(Use "ESN" Number from sticker on sensor)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default = 000000 (WARNING! this section accepts 5 digits if Panel is PC5010 v1 or receiver is v2!)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[01] Zone 1</b> I _ _I _ _I _ _I _ _I _ _I _ _I <b>[17] Zone 17</b> I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[02] Zone 2</b> I _ _I _ _I _ _I _ _I _ _I _ _I <b>[18] Zone 18</b> I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[03] Zone 3</b> I _ _I _ _I _ _I _ _I _ _I _ _I <b>[19] Zone 19</b> I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[04] Zone 4</b> I _ _I _ _I _ _I _ _I _ _I _ _I <b>[20] Zone 20</b> I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[05] Zone 5</b> I _ _I _ _I _ _I _ _I _ _I _ _I <b>[21] Zone 21</b> I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[06] Zone 6</b> I _ _I _ _I _ _I _ _I _ _I _ _I <b>[22] Zone 22</b> I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[07] Zone 7</b> I _ _I _ _I _ _I _ _I _ _I _ _I <b>[23] Zone 23</b> I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[08] Zone 8</b> I _ _I _ _I _ _I _ _I _ _I _ _I <b>[24] Zone 24</b> I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[09] Zone 9</b> I _ _I _ _I _ _I _ _I _ _I _ _I <b>[25] Zone 25</b> I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[10] Zone 10</b> I _ _I _ _I _ _I _ _I _ _I _ _I <b>[26] Zone 26</b> I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[11] Zone 11</b> I _ _I _ _I _ _I _ _I _ _I _ _I <b>[27] Zone 27</b> I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[12] Zone 12</b> I _ _I _ _I _ _I _ _I _ _I _ _I <b>[28] Zone 28</b> I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[13] Zone 13</b> I _ _I _ _I _ _I _ _I _ _I _ _I <b>[29] Zone 29</b> I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[14] Zone 14</b> I _ _I _ _I _ _I _ _I _ _I _ _I <b>[30] Zone 30</b> I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[15] Zone 15</b> I _ _I _ _I _ _I _ _I _ _I _ _I <b>[31] Zone 31</b> I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[16] Zone 16</b> I _ _I _ _I _ _I _ _I _ _I _ _I <b>[32] Zone 32</b> I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>Wireless Keyfob Serial Numbers</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default = 000000</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[41] Key 01</b> I _ _I _ _I _ _I _ _I _ _I _ _I <b>[49] Key 09</b> I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[42] Key 02</b> I _ _I _ _I _ _I _ _I _ _I _ _I <b>[50] Key 10</b> I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[43] Key 03</b> I _ _I _ _I _ _I _ _I _ _I _ _I <b>[51] Key 11</b> I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[44] Key 04</b> I _ _I _ _I _ _I _ _I _ _I _ _I <b>[52] Key 12</b> I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[45] Key 05</b> I _ _I _ _I _ _I _ _I _ _I _ _I <b>[53] Key 13</b> I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[46] Key 06</b> I _ _I _ _I _ _I _ _I _ _I _ _I <b>[54] Key 14</b> I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[47] Key 07</b> I _ _I _ _I _ _I _ _I _ _I _ _I <b>[55] Key 15</b> I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[48] Key 08</b> I _ _I _ _I _ _I _ _I _ _I _ _I <b>[56] Key 16</b> I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>Wireless Keyfob Options</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Partition 1 Wireless Key Options (WLS909 Keyfob Button Definitions here)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[59] Function Key 1</b> I _ _I _ _I <b>Function Key 3</b> I _ _I _ _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Function Key 2</b> I _ _I _ _I <b>Function Key 4</b> I _ _I _ _I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Partition 2 Wireless Key Options (Add Keyfob Button Definitions here)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[60] Function Key 1</b> I _ _I _ _I <b>Function Key 3</b> I _ _I _ _I</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Function Key 2</b> I _ _I _ _I <b>Function Key 4</b> I _ _I _ _I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[00] Key Not Used [16]</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>0 Quick Exit</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[01] For Future Use [17]</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>1 Reactivate Stay/Aways</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[02] For Future Use [18] For Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[03] Stay Arm [19]</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>7 3 Command Output 3</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[04] Away Arm [20] For Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[05]</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>9 No-Entry Arm [21]</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>7 4 Command Output 4</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[06]</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>4 Chime ON/OFFl [22] to [26] For Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[07]</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>6 ---- 4 System Test [27] Disarm (OFF)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[08] to [12] For Future Use [28] Fire Alarm</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[13]</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>7 1 Command Output 1 [29] Aux/Medical Alarm</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[14]</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>7 2 Sensor Reset [30] Police Panic</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>[15] For Future Use</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000001180.gif" alt="Tech_201000001180.gif" border="0" width="782" height="339" /></b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>Supervision</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[81]</b></font> <font face="Arial" color="#000000" size="1"><b>Wireless supervisory Window</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>03</b> I _ _I _ _I <b>Wireless device window (hours), valid entries are 01-24</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>NOTE: Panic pendants are NOT supervised and must be disabled in the following sections</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[82]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Device Supervision Options (1-8)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>1 Zone 01 Supervision enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>2 Zone 02 Supervision enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>3 Zone 03 Supervision enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>4 Zone 04 Supervision enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>5 Zone 05 Supervision enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>6 Zone 06 Supervision enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>7 Zone 07 Supervision enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>8 Zone 08 Supervision enabled Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[83]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Device Supervision Options (9-16)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>1 Zone 09 Supervision enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>2 Zone 10 Supervision enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>3 Zone 11 Supervision enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>4 Zone 12 Supervision enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>5 Zone 13 Supervision enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>6 Zone 14 Supervision enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>7 Zone 15 Supervision enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>8 Zone 16 Supervision enabled Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[84]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Device Supervision Options (17-24)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>1 Zone 17 Supervision enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>2 Zone 18 Supervision enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>3 Zone 19 Supervision enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>4 Zone 20 Supervision enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>5 Zone 21 Supervision enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>6 Zone 22 Supervision enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>7 Zone 23 Supervision enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>8 Zone 24 Supervision enabled Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[85]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Device Supervision Options (25-32)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>1 Zone 25 Supervision enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>2 Zone 26 Supervision enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>3 Zone 27 Supervision enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>4 Zone 28 Supervision enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>5 Zone 29 Supervision enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>6 Zone 30 Supervision enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>7 Zone 31 Supervision enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I _ _I <b>8 Zone 32 Supervision enabled Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[90]</b></font> <font face="Arial" color="#000000" size="1"><b>Handheld Keypads (1-4) Partition Assignments</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>1 For Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>2 For Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>3 For Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>4 For Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>5 For Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>6 For Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I <b>ON</b>_I <b>7 RF Jam Disabled RF Jam Detect Enabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>8 Global Placement Test Individual Placement Test</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[91]</b></font> <font face="Arial" color="#000000" size="1"><b>Wireless Keys (1-8) Partition Assignments</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>1 Wireless Key 01 on partition 2 On partition 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>2 Wireless Key 02 on partition 2 On partition 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>3 Wireless Key 03 on partition 2 On partition 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>4 Wireless Key 04 on partition 2 On partition 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>5 Wireless Key 05 on partition 2 On partition 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>6 Wireless Key 06 on partition 2 On partition 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>7 Wireless Key 07 on partition 2 On partition 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>8 Wireless Key 08 on partition 2 On partition 1</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[92]</b></font> <font face="Arial" color="#000000" size="1"><b>Wireless Keys (9-16) Partition Assignments</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>1 Wireless Key 09 on partition 2 On partition 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>2 Wireless Key 10 on partition 2 On partition 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>3 Wireless Key 11 on partition 2 On partition 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>4 Wireless Key 12 on partition 2 On partition 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>5 Wireless Key 13 on partition 2 On partition 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>6 Wireless Key 14 on partition 2 On partition 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>7 Wireless Key 15 on partition 2 On partition 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I _ _I <b>8 Wireless Key 16 on partition 2 On partition 1</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[93]</b></font> <font face="Arial" color="#000000" size="1"><b>RF Jam Detection Zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I <b>Select an unused zone that will be violated when RF Jamming occures</b></font>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>

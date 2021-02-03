@@ -1,0 +1,2038 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>ITI Advent Program Sheet</title>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+
+			<script type="text/javascript" language="javascript1.2" src="whver.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+    			<script type="text/javascript" language="javascript1.2" src="whlang.js"></script> 
+    <meta name="generator" content="Adobe RoboHelp 9" />
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+	      //<!--
+	      RH_Document_Write("<p style=\"text-align:right\"> ");
+RH_AddMasterBreadcrumbs( "Tech_2010.htm", "", "/", "Home", "Tech_2010Main.htm");
+RH_Document_Write("<\/p>");
+//-->
+</script>
+<font face="Arial" color="#0000FF" size="3"><b>ITI Advent Home Navigator Programming (Under Construction)</b></font>
+<p></p>
+<p></p>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Basics" onclick="self.location='Tech_2010ITI_Advent_Basic_Commands.htm'" /> <input type="button" value="Codes" onclick="self.location='Tech_2010ITI_Advent_User_Codes.htm'" /> <input type="button" value="Troubles" onclick="self.location='Tech_2010ITI_Advent_Trouble_Display.htm'" /> <input type="button" value="Keypad" onclick="self.location='Tech_2010ITI_Advent_Keypad.htm'" /> <input type="button" value="Wiring" onclick="self.location='Tech_2010ITI_Advent_Wiring.htm'" /> <input type="button" value="Program" onclick="self.location='Tech_2010ITI_Advent_Program_Sheet.htm'" /> <input type="button" value="Sensors" onclick="self.location='Tech_2010ITI_Advent_Sensors.htm'" /></b></font></form>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Power Ratings</b></font> <font face="Arial" color="#000000" size="1"><b>5A Aux output with 24VAC 100VA transformer</b></font>
+<p></p>
+<ol start="2">
+<li><font face="Arial" color="#000000" size="1"><b>5A Siren output</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Device Output Ratings" onclick="self.location='Tech_2010GEITI_Power_Ratings.htm'" /></b></font></form>
+<p></p>
+<p></p>
+<font face="Helvetica-Bold" color="#0000FF" size="1"><b>Enter Program</b></font> <font face="Helvetica-Bold" color="#000000" size="1"><b>8 + 0 + 0123</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica-Bold" color="#0000FF" size="1"><b>Exit Program</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Helvetica-Bold" color="#000000" size="1"><b>twice</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica-Bold" color="#0000FF" size="1"><b>Download Info</b></font> <font face="Helvetica-Bold" color="#000000" size="1"><b>0 + 2 + 0123 + 1 to upload to Downloader</b></font>
+<p></p>
+<font face="Helvetica-Bold" color="#000000" size="1"><b>0 + 2 + 0123 + 2 to send from Downloader to Panel</b></font>
+<p></p>
+<font face="Helvetica-Bold" color="#000000" size="1"><b>0 + 2 + 0123 + 3 to send to and from panel (Downloader specified)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>Access Codes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17107 Dealer Access Six digit dealer system access code 6 Digits 0 to 9 None</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Code</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>50013 Access Code Number of characters in all access codes 4, 5, 6 4</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Length If length is increased in an existing code</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>it is padded with leading zeros. If length is</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>decreased in an existing code, the beginning</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>of the code is truncated</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>Reporting Phone Number Features</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx = Reporting Phone Numbers 19-22</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>yy = Partition 1 to 4 (Home Navigator) 1 to 8 (Commercial and Fire Panel)</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx116 Account Account number 1 (Secondary phone number) 00 to 15 00000000</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Number 1 (2 keystrokes per character, 8 characters max)</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>00=0 04=4 08=8 12=C</b></font>
+<p></p>
+<ol>
+<li><font face="Helvetica" color="#000000" size="1"><b>1 05=5 09=9 13=D</b></font>
+<p></p>
+</li>
+<li><font face="Helvetica" color="#000000" size="1"><b>2 06=6 10=A 14=E</b></font>
+<p></p>
+</li>
+<li><font face="Helvetica" color="#000000" size="1"><b>3 07=7 11=B 15=F</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Helvetica" color="#000000" size="1"><b>xx117 Account Account number 2 (Primary phone number) 00 to 15 00000000</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Number 2 (2 keystrokes per character, 8 characters max)</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>yy001 Reporting Enables reporting phone number. If no, phone 1=Yes 0=No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Phone # number is skipped 0=No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Enable</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>yy002 Reporting Central station phone Number 24 characters None</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Phone of up to 24 characters</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Number (2 keystrokes per character, enter as 01 08 00 00 etc)</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>00=0 04=4 08=8 12=1 to 5 seconds delay</b></font>
+<p></p>
+<ol>
+<li><font face="Helvetica" color="#000000" size="1"><b>1 05=5 09=9 13=Wait for dial tone</b></font>
+<p></p>
+</li>
+<li><font face="Helvetica" color="#000000" size="1"><b>2 06=6 10=</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font>
+<p></p>
+</li>
+<li><font face="Helvetica" color="#000000" size="1"><b>3 07=7 11=#</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Helvetica" color="#000000" size="1"><b>yy003 Phone Report Number of phone report communication 5-10 5</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Attempts attempts</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>yy004 Phone Report Phone Communication format: 0-2 0</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Communication 0 - Contact ID</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Format 1 - SIA2000 at 1200 bps (PSK) (SIA does not exist on this panel although</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>2 - SIA2000 at 300 bps (FSK) it is in the installation manual, go figure)</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>yy005 Panic Zone Special zone number reported for panics 1-Special 0</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Number 0-Not Special</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17094 Phone Line 1 Enables phone line 1 DTMF dialing 1-Yes 1-Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>DTMF Dialing 0-No</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17095 Phone Line 2 Enables phone line 2 DTMF dialing 1-Yes 1-Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>DTMF Dialing 0-No</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17096 System Events Enables system events reporting to 1-Yes 1-Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Reporting central station 0-No</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17101 Buddy Dial Sets the number of dialing attempts before 0-11 5</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Attempts buddy transmit request message is generated.</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>0=immediate transmit request even if no report.</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>11=no buddy transmit request</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17102 System System account number 1 00 to 15 00000000</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Account (2 keystrokes per account character)</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Number 1 (This is for downloading and is NOT a standard Account Number!)</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>00=0 04=4 08=8 12=C</b></font>
+<p></p>
+<ol>
+<li><font face="Helvetica" color="#000000" size="1"><b>1 05=5 09=9 13=D</b></font>
+<p></p>
+</li>
+<li><font face="Helvetica" color="#000000" size="1"><b>2 06=6 10=A 14=E</b></font>
+<p></p>
+</li>
+<li><font face="Helvetica" color="#000000" size="1"><b>3 07=7 11=B 15=F</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Helvetica" color="#000000" size="1"><b>17103 System System account number 2 00 to 15 00000000</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Account (2 keystrokes per account character)</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Number 2 (This is for downloading and is NOT a standard Account Number!)</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17104 Number of Sets number of evacuation messages 0-4 4</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Evacuation</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Messages</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17105 Phone Line 1 Sets dialing prefix character for phone line 1 00-13 None</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Dialing Prefix (2 keystrokes per character, 1 character max)</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>00=0 04=4 08=8 12=C</b></font>
+<p></p>
+<ol>
+<li><font face="Helvetica" color="#000000" size="1"><b>1 05=5 09=9 13=D</b></font>
+<p></p>
+</li>
+<li><font face="Helvetica" color="#000000" size="1"><b>2 06=6 10=A 14=E</b></font>
+<p></p>
+</li>
+<li><font face="Helvetica" color="#000000" size="1"><b>3 07=7 11=B 15=F</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Helvetica" color="#000000" size="1"><b>17106 Phone Line 2 Sets dialing prefix character for phone line 2 00-13 None</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Dialing Prefix (2 keystrokes per character, 1 character max)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>Pager Phone Numbers &amp; Features</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>zz = Pager Phone Numbers 25-40</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>zz001 Pager Phone Enables pager phone number 1=Yes 0=No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Phone Enable If no, phone number is skipped 0=No</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>zz002 Pager Phone Pager phone number of up to 20 characters 20 characters None</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Number consisting of (2 keystrokes per character):</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>00=0 04=4 08=8 12=1 to 5 seconds delay</b></font>
+<p></p>
+<ol>
+<li><font face="Helvetica" color="#000000" size="1"><b>1 05=5 09=9 13=Wait for dial tone</b></font>
+<p></p>
+</li>
+<li><font face="Helvetica" color="#000000" size="1"><b>2 06=6 10=</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font>
+<p></p>
+</li>
+<li><font face="Helvetica" color="#000000" size="1"><b>3 07=7 11=#</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Helvetica" color="#000000" size="1"><b>zz003 Phone pager Number of communication attempts to pager 3-10 3</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Attempts</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>zz004 Phone Pager Phone page communication format: 0-1 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Communication 0 - TAP at 300 bps (FSK)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Format 1 - TAP at 1200 pbs (PSK)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>zz005 Communication Digital communication character format 1=7E1 1 - 7E1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Character 0=8N1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Format</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>zz006 Pager System Enables system reporting to pager 1-Yes 0=No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Reports 0=No</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>zz007 Partition 1 Enables partition 1 reporting to pager 1-Yes 0=No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Reports to 0=No (1=Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Pager for zz=25)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>zz008 Partition 2 Enables partition 2 reporting to pager 1-Yes 0=No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Reports to 0=No (1=Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Pager for zz=26)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>zz009 Partition 3 Enables partition 3 reporting to pager 1-Yes 0=No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Reports to 0=No (1=Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Pager for zz=27)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>zz010 Partition 4 Enables partition 4 reporting to pager 1-Yes 0=No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Reports to 0=No (1=Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Pager for zz=28)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>zz011 Partition 5 Enables partition 5 reporting to pager 1-Yes 0=No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Reports to 0=No (1=Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Pager for zz=29)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>zz0112 to zz0114 not used if Home Navigator</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>zz015 Pager PIN Pager PIN number Up to 15 None</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>digits (0-9) digits (0-9)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>zz016 Pager Maximum length of pager message 0-255 120</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Message Characters</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Length</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>Downloader Phone Number &amp; Features</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Phone numbers 23-24 are downloader phone numbers</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17052 Phone Answer Number of phone rings required for the 1-12 rings 12 rings</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Rings panel to answer an incoming call</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Note: For residential use only)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17053 Ring-Pause- Number of rings at which ring-pause-ring is 2-10 rings 3 rings</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Ring Abort aborted (Note: For residential use only)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Rings</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17086 Remote Phone Enables remote phone access for partition 1 1-Yes 1-Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Enable Note: For residential use only</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17087 Remote Phone Enables remote phone ring count 1-Yes 1-Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Ring Count Note: For residential use only 0-No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Enable</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17088 Remote Phone Enable remote phone ring-pause-ring answer 1-Yes 1-Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Ring-Pause- Note: For residential use only 0-No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Ring Enable</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17107 Dealer Access Six digit dealer system access code 6 Digits 0 to 9 None</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Code</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17108 Downloader Five character downloader access code 5 characters 12345</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Access Code 0 to 9 &amp; ASCII</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17109 Downloader Eight character downloader account number 8 characters 00000000</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Account Num 0 to 9 &amp; ASCII</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17122 Downloader Enables panel to downloader callback 1=Yes 0=No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Callback 0=No</b></font>
+<p></p>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>23001 Downloader Enables Downloading 1=Yes 0=No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Phone Enable 0=No</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>23002 Downloader Downloader phone Number 24 characters None</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Phone of up to 24 characters</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Number (2 keystrokes per character)</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>00=0 04=4 08=8 12=1 to 5 seconds delay</b></font>
+<p></p>
+<ol>
+<li><font face="Helvetica" color="#000000" size="1"><b>1 05=5 09=9 13=Wait for dial tone</b></font>
+<p></p>
+</li>
+<li><font face="Helvetica" color="#000000" size="1"><b>2 06=6 10=</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font>
+<p></p>
+</li>
+<li><font face="Helvetica" color="#000000" size="1"><b>3 07=7 11=#</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="2"><b>Zone Features</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>47001 Add (Learn) Adds (learns) new zones. The user supplies</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Zones the partition number, zone type number, and</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>zone number. Press</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to cancel</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b><i>This system cannot use SAW Sensors!</i></b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>47002 Delete Deletes (unlearns) existing zones. If no zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Zones exists, the system will display/sound "NO</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ZONES" and return to the program menu. The</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>user supplies the zone number to delete</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>47003 List Lists existing zones. The system will list the</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Zones zone number, type number, partition number. If</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>no zone exists, the system will display/sound</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>"NO ZONE" and return to main menu. The #</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(done) key will skip forward and * (cancel) key</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>will exit</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>47004 Zone Allows changing of zone attributes:</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Attributes 1 - Critical Security Zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 - RF Supervisory Time (default = A (4 hours)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3 - Zone Activity Threshold (0=none, 1=xx018, 2=xx019, 3=xx020)</b></font>
+<p></p>
+<ol start="4">
+<li><font face="Arial" color="#000000" size="1"><b>- Hardwire Smoke Verify</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>- Delayed Zone (See 17117)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>- Floor (1-20 above ground, 21-29 below ground, 0 = none)</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>8, 9 - Not used</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>10 - Warning message index (0=none)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>49001 Zone Text Allows zone display text entries. System 000-999</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>zone number and up to eight three-digit (8 entries max)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>text entries</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b><a href="Tech_2010Advent_ZoneModule_Descriptions.htm"></a></b></font><font face="Arial" color="#008000" size="1"><b><a href="Tech_2010Advent_ZoneModule_Descriptions.htm">Click HERE for Text Listing</a></b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>47005 Test Buddies Causes the system to test buddies.</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>If no buddy zones have been added (learned),</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>then no transmission will be generated.</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>47006 List Buddies Lists existing buddy zone numbers, IDs, and</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>recent signal strengths</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>47007 Add (Learn) Adds (learns) analog addressable smoke</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Analog Zones</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>47008 Test Analog Tests analog addressable smoke zones</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Zones</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>Bus Device Options</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>48001 Add (Learn) Adds (learns) new bus device. (The device must</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Device be connected and powered. The added device is</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>automatically assigned to partition 1.</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>48002 Delete Bus Deletes (unlearns) an existing bus device. The</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Device system asks for the 8-digit bus device unique ID</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>number to delete. Include leading zeros if any.</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>48003 List Bus Lists existing bus devices. The system will list</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Devices the device address number, device unique ID</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>number and partition number. Press the # key to</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>skip forward or the</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Helvetica" color="#000000" size="1"><b>key to exit</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>49002 Bus Device Allows SuperBus device display text entries 000-999</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Text System requests bus device number and up (8 entries max)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>to eight three-digit text entries</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b><a href="Tech_2010Advent_ZoneModule_Descriptions.htm"></a></b></font><font face="Arial" color="#008000" size="1"><b><a href="Tech_2010Advent_ZoneModule_Descriptions.htm">Click HERE for Text Listing</a></b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>48004 Bus Partition Assigns bus devices to a particular partition.</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>system will ask for the device number and</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>desired partition numbers</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>49004 Partition Text Allows partition display text entries. System 000-999</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>partition number and up to eight three- (8 entries max)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>digit text entries</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b><a href="Tech_2010Advent_ZoneModule_Descriptions.htm"></a></b></font><font face="Arial" color="#008000" size="1"><b><a href="Tech_2010Advent_ZoneModule_Descriptions.htm">Click HERE for Text Listing</a></b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>49005 Static (Idle) Allows static (idle) display text entries. 00-999</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Display Text System requests partition number and up (64 entries max)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>to 64 two-digit text entries</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b><a href="Tech_2010Advent_Text_Descriptors.htm"></a></b></font><font face="Arial" color="#008000" size="1"><b><a href="Tech_2010Advent_Text_Descriptors.htm">Click HERE for Text Listing</a></b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>48005 Change Trans- Changes bus wireless transmitting device used</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Bus Device ID to communicate with "buddy" panels and/or</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>wireless 2-way devices. Accept indicated ID or</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>enter other added device's unique ID number</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>48006 List Bus Lists existing bus device unique ID numbers and</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Device Text display text</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>48007 Change Bus Changes (overwrites) Superbus device unique</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Text ID ID text with another devices text. Enter current</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>and then desired device ID numbers</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>48008 Reset Analog Resets analog smoke module</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Smoke</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>49003 Output Text Allows output device display text entries. Sys- 000-999</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>requests output number and up to eight (8 entries max)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>three-digit text entries</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b><a href="Tech_2010Advent_ZoneModule_Descriptions.htm"></a></b></font><font face="Arial" color="#008000" size="1"><b><a href="Tech_2010Advent_ZoneModule_Descriptions.htm">Click HERE for Text Listing</a></b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>Keypad Options</b></font> <font face="Arial" color="#000000" size="1"><b>xx = Partition 01 to 04</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx082 Fire Touchpad Enables fire touchpad key or access code 1=Yes 1=Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Key or Code 0=No</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx083 Fire Tamper Sets response to fire zone/sensor tamper 0=Trouble 0=Trouble</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Response (For commercial and residential burg only) 1=Police Alarm</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx084 Aux/Med Panic Yes- Press phone 7777 or non-fire keypad 1=Yes 1=Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Assignment Auxiliary panic button generates auxiliary 0=No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>panic alarm. No generates medical panic</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx085 Police Panic Enables non-fire touchpad police panic 1=Yes 1=Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Enable 0=No</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx086 Aux/Med Panic Enables non-fire touchpad aux/medical 1=Yes 1=Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Enable panic button 0=No</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx087 Fire Panic Enables non-fire touchpad fire panic button 1=Yes 1=Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Enable (Not to be used for fire pull stations) 0=No</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx110 Chime Text Enables chime to also announce zone text 1=Yes 0=No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>0=No</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx111 Close Chime Enables chime on zone closing and opening 1=Yes 0=No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>0=No</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17079 Voice Alarm Sets voice alarm volume 1-High 1-High</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Volume Aux alarms are not sounded at high volume) 0-Low</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17080 Phone Police Enables phone police panic sequence 1-Yes 1-Yes</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Panic Enable 0-No</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17081 Phone Aux/ Enables phone auxiliary/medical panic 1-Yes 1-Yes</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Med Panic sequence 0-No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Enable</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17082 Phone Fire Enables phone fire panic sequence 1-Yes 1-Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Panic Enable 0-No</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>System Times</b></font> <font face="Arial" color="#000000" size="1"><b>xx = Partition 01 to 04</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx002 Siren Sound Number of minutes alarm siren sounds 1-30 Minutes 8</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx003 Entry Delay Length of entry delay in seconds 24-120 Seconds 32</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx004 Exit Delay Length of Exit Delay in seconds 24-120 Seconds 32</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx005 Extended Delay Length of extended delay in minutes 5-30 Minutes 2</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx006 Entry/Exit Fast Length of time in seconds that fast beeps 5-30 Seconds 10</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Beep Time will sound during the last part of entry/exit</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>delay to signal that the delay is ending</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx009 No Activity Length of time in hours without an activity 1-24 Hours 0</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Time After which no activity pre-alarm is initiated 0=not active</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx010 No Activity Length of time in minutes allowed after a no 1-10 Minutes 5</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Report Delay activity exception is diagnosed before the</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>alarm condition is reported (to allow the user</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>to generate activity).</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx011 Sensor Test Length of time inafter which sensor test 5-120 Minutes 30</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Time-out automatically times out</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx012 Panic Report Length of time after panic alarm is detected 1-120 Seconds 5</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Delay before report is sent</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx013 Alarm Report Length of time after non-panic alarm is 1-120 Seconds 5</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Delay detected before report is sent</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx014 Fire Report Length of time after fire alarm is detected 0-15 Minutes 0</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Delay condition is detected before report is sent</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx015 Suspicion Length of time after suspicion type 1-120 Minutes 5</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Alarm Delay detector is tripped in which condition</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>may be canceled and not generate alarm</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx100 Exit Beeps Yes=beeps at beginning and ending with</b></font> <font face="Arial" color="#000000" size="1"><b>1=Yes 1=Yes</b></font>
+<p></p>
+<ul>
+<li><font face="Helvetica" color="#000000" size="1"><b>oice and arming level notification</b></font> <font face="Arial" color="#000000" size="1"><b>0=No</b></font>
+<p></p>
+</li>
+</ul>
+<font face="Helvetica" color="#000000" size="1"><b>No=continuous beeps with voice &amp; arming level</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx101 Exit Delay Enable early termination standard exit delay</b></font> <font face="Arial" color="#000000" size="1"><b>1=Yes 0=No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Termination (Can't be used with Exit Delay Reset feature) 0=No</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx102 Exit Delay Enable one-time reset of standard exit delay</b></font> <font face="Arial" color="#000000" size="1"><b>1=Yes 0=No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Reset (Can't be used with Exit Delay Termination) 0=No</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx103 Entry Delay Determines if beeps sound on</b></font> <font face="Arial" color="#000000" size="1"><b>1=Yes 0=No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Beeps standard entry delay (Yes) or all 0=No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>segments of entry delay (No)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17036 AC Power Out- Determines how long it takes to 1-200 Seconds 8 sec</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>age Annuncia- detect an AC power failure or restoral before</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>tion Delay local trouble annunciation</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17041 AC Report Delay time in hours before AC power fail is 0-36 Hours 6 hours</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Delay reported to monitoring service. This time is</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>in addition to random 0-30 minute delay</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17070 Daylight Sav- Enables automatic daylight savings time 1-Yes 1-Yes</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>ings Time adjustment 0-No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Adjust</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17073 Battery Test Panel backup battery self-test interval 1=4 hrs 1</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Interval 0=24 hrs (4 hrs)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>Keypad Options</b></font> <font face="Arial" color="#000000" size="1"><b>xx = Partition 01 to 04</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx082 Fire Touchpad Enables fire touchpad key or access code 1=Yes 1=Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Key or Code 0=No</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx083 Fire Tamper Sets response to fire zone/sensor tamper 0=Trouble 0=Trouble</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Response (For commercial and residential burg only) 1=Police Alarm</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx084 Aux/Med Panic Yes- Press phone 7777 or non-fire keypad 1=Yes 1=Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Assignment Auxiliary panic button generates auxiliary 0=No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>panic alarm. No generates medical panic</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx085 Police Panic Enables non-fire touchpad police panic 1=Yes 1=Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Enable 0=No</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx086 Aux/Med Panic Enables non-fire touchpad aux/medical 1=Yes 1=Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Enable panic button 0=No</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx087 Fire Panic Enables non-fire touchpad fire panic button 1=Yes 1=Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Enable (Not to be used for fire pull stations) 0=No</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx110 Chime Text Enables chime to also announce zone text 1=Yes 0=No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>0=No</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx111 Close Chime Enables chime on zone closing and opening 1=Yes 0=No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>0=No</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17079 Voice Alarm Sets voice alarm volume 1-High 1-High</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Volume Aux alarms are not sounded at high volume) 0-Low</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17080 Phone Police Enables phone police panic sequence 1-Yes 1-Yes</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Panic Enable 0-No</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17081 Phone Aux/ Enables phone auxiliary/medical panic 1-Yes 1-Yes</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Med Panic sequence 0-No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Enable</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17082 Phone Fire Enables phone fire panic sequence 1-Yes 1-Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Panic Enable 0-No</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>System Times</b></font> <font face="Arial" color="#000000" size="1"><b>xx = Partition 01 to 04</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx002 Siren Sound Number of minutes alarm siren sounds 1-30 Minutes 8</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx003 Entry Delay Length of entry delay in seconds 24-120 Seconds 32</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx004 Exit Delay Length of Exit Delay in seconds 24-120 Seconds 32</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx005 Extended Delay Length of extended delay in minutes 5-30 Minutes 2</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx006 Entry/Exit Fast Length of time in seconds that fast beeps 5-30 Seconds 10</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Beep Time will sound during the last part of entry/exit</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>delay to signal that the delay is ending</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx009 No Activity Length of time in hours without an activity 1-24 Hours 0</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Time After which no activity pre-alarm is initiated 0=not active</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx010 No Activity Length of time in minutes allowed after a no 1-10 Minutes 5</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Report Delay activity exception is diagnosed before the</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>alarm condition is reported (to allow the user</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>to generate activity).</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx011 Sensor Test Length of time inafter which sensor test 5-120 Minutes 30</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Time-out automatically times out</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx012 Panic Report Length of time after panic alarm is detected 1-120 Seconds 5</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Delay before report is sent</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx013 Alarm Report Length of time after non-panic alarm is 1-120 Seconds 5</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Delay detected before report is sent</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx014 Fire Report Length of time after fire alarm is detected 0-15 Minutes 0</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Delay condition is detected before report is sent</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx015 Suspicion Length of time after suspicion type 1-120 Minutes 5</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Alarm Delay detector is tripped in which condition</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>may be canceled and not generate alarm</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx100 Exit Beeps Yes=beeps at beginning and ending with</b></font> <font face="Arial" color="#000000" size="1"><b>1=Yes 1=Yes</b></font>
+<p></p>
+<ul>
+<li><font face="Helvetica" color="#000000" size="1"><b>oice and arming level notification</b></font> <font face="Arial" color="#000000" size="1"><b>0=No</b></font>
+<p></p>
+</li>
+</ul>
+<font face="Helvetica" color="#000000" size="1"><b>No=continuous beeps with voice &amp; arming level</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx101 Exit Delay Enable early termination standard exit delay</b></font> <font face="Arial" color="#000000" size="1"><b>1=Yes 0=No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Termination (Can't be used with Exit Delay Reset feature) 0=No</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx102 Exit Delay Enable one-time reset of standard exit delay</b></font> <font face="Arial" color="#000000" size="1"><b>1=Yes 0=No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Reset (Can't be used with Exit Delay Termination) 0=No</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx103 Entry Delay Determines if beeps sound on</b></font> <font face="Arial" color="#000000" size="1"><b>1=Yes 0=No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Beeps standard entry delay (Yes) or all 0=No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>segments of entry delay (No)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17036 AC Power Out- Determines how long it takes to 1-200 Seconds 8 sec</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>age Annuncia- detect an AC power failure or restoral before</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>tion Delay local trouble annunciation</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17041 AC Report Delay time in hours before AC power fail is 0-36 Hours 6 hours</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Delay reported to monitoring service. This time is</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>in addition to random 0-30 minute delay</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17070 Daylight Sav- Enables automatic daylight savings time 1-Yes 1-Yes</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>ings Time adjustment 0-No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Adjust</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17073 Battery Test Panel backup battery self-test interval 1=4 hrs 1</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Interval 0=24 hrs (4 hrs)</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica-Bold" color="#0000FF" size="2"><b>Partition Features</b></font> <font face="Helvetica-Bold" color="#000000" size="1"><b>(xx = Partition 01 to 08)</b></font>
+<p></p>
+<font face="Helvetica-Bold" color="#000000" size="1"><b>Location Feature Description Choices Default</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx001 LTIME Sound Local annunciation time (LTIME) of day (00:00-23:59) 1200</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Time when all existing trouble conditions</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>are spoken and displayed locally and</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>trouble beeps start. LTIME automatically</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>set to 4 hours on commercial systems</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx007 Scheduled Length of scheduled (auto) arming period 5-30 Minutes 10</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Arming Period (minutes). Measured from beginning of</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>notification to actual arming</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx008 Scheduled Amount of time in minutes by which 15-120 Minutes 30</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Arming scheduled arming will be suspended</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Extension during prealarm period. Arming extension</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>is done by arming to current level during</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>prealarm period</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx016 Not Used</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx017 Bypass Limit Number of sensors which may be bypassed 0-132 Sensors 132</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx018 Zone/Sensor Number of level changes without zone/sensor 1-255 Level 10</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Activity Fault activity on threshold 1 before sensor activity Changes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Delay 1 trouble is generated</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx019 Zone/Sensor Number of level changes without zone/sensor 1-255 Level 30</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Activity Fault activity on threshold 2 before sensor activity Changes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Delay 2 trouble is generated</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx020 Zone/Sensor Number of level changes without zone/sensor 1-255 Level 30</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Activity Fault activity on threshold 2 before sensor activity Changes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Delay 3 trouble is generated</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx021 Auto Bypass Number of trips from one zone/sensor 1-8 Trips 3</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Trips an arming period after which zone/sensor</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>is automatically bypassed until next arming</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>level change. Also resets at midnight</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx022 X10 House Panel house code setting used for first 16 1-16 (A-P) XX</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Code 1 X-10 line carrier devices. Device codes are (XX=Partition)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>represented in letters A (1) through P (16)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx023 X10 House Panel house code setting used for first 16 1-16 (A-P) XX + 4</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Code 1 X-10 line carrier devices. Device codes are</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>represented in letters A (1) through P (16)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx024 Not Used</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx025 Level 2 Enable Enables Level 2 Arming 1=Yes 1=Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0=No (Enabled)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx026 Level 3 Enable Enables Level 3 Arming 1=Yes 1=Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0=No (Enabled)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx027 Level 4 Enable Enables Level 4 Arming 1=Yes 1=Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0=No (Enabled)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx028 Level 5 Enable Enables Level 5 Arming 1=Yes 1=Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0=No (Enabled)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx029 to xx048 Not Used</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx049 Output 1 Output number for non-X10 menu output 33 0=None 0=None</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Number 0 (none), 0-100 0=100</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx050 Output 2 Output number for non-X10 menu output 34 0=None 0=None</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Number 0 (none), 0-100 0=100</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx051 Output 3 Output number for non-X10 menu output 35 0=None 0=None</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Number 0 (none), 0-100 0=100</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx052 Output 4 Output number for non-X10 menu output 36 0=None 0=None</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Number 0 (none), 0-100 0=100</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx053 Output 5 Output number for non-X10 menu output 37 0=None 0=None</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Number 0 (none), 0-100 0=100</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx054 Output 6 Output number for non-X10 menu output 38 0=None 0=None</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Number 0 (none), 0-100 0=100</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx055 Output 7 Output number for non-X10 menu output 39 0=None 0=None</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Number 0 (none), 0-100 0=100</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx056 Output 8 Output number for non-X10 menu output 40 0=None 0=None</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Number 0 (none), 0-100 0=100</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx062 Unused</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx063 Direct Arm Special action assignment for direct arming to 4-16 6</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Level-3 Action Level-3 special Learn Mode transmissions</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>(See list in xx057.)</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx064 Direct Arm Special action assignment for direct arming to 4-16 5</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Level-2 Action Level-2 special Learn Mode transmissions</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>(See list in xx057)</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx067 Unused</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx068 Partition Enable Partition enable 1=Yes Part1=1</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>(Partition 01 is always enabled) 0=No Others=0</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx069 Light Access Access code required for light control 1=Yes 0=No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Code Enable 0=No</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx070 Device Access Access code required for device item control 1=Yes 0=No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Code Enable 0=No</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx071 Latch Key Access code required to access latchkey 1=On 0=Off</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Access Code (automatic alarm if not disarmed within a 0=Off</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Enable preset period of time)</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx072 to xx075 Not Used</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx076 Keypad Tamper Enables keypad tamper alarm 1=Yes 0=No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>(incorrect access code) 0=No</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx077 Intrusion If enabled, first trip of intrusion sensors 1=Yes 0=No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Report Delay cause local police alarm, second generates 0=No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>report. If disabled first trip causes alarm</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>and generates report</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx078 Suspicion If on, suspicion trips generates alarm after 1=ON 0=On</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Alarm Delay time-out. If off no alarms will be generated 0 = Off</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>from a suspicion trip</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx079 Zone Tamper Enables zone tamper report even if zone is 1=Yes 0=No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Report Enable not "armed" (all arming states) 0=No</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx080 Two Trip Type Enables two trip type. The first trip of sensor 1=Yes 0=No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Report Enable in this type causes a local police alarm. The 0=No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>second trip generates a report</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx081 Not used</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx088 Report Enables reporting of partition events to 1=On 1=On</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Partition Central Station 0=Off</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Events</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx089 Report Abort Enables report aborting on cancel event 1=On 1=On</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>on Cancel Event 0=Off</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx090 Second Fire Enables second fire alarm to end report delay 1=On 1=On</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Alarm Ends 0=Off</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Delay</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx091 Print Partition Enables partition (xx) events to be printed 1=On 1=On</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Events 0=Off</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx092 Auto Forced Enables auto forced arming 1=Yes 1=Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Arming (Auto bypass of protest sensors on arming) 0=No</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx093 Quick Arm Enables quick arming 1=Yes 1=Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Arming without the need for access code) 0=No</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx094 Schedule Enables arm/disarm by schedule 1=Yes 1=Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Arm/Disarm 0=No</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx095 Swinger Enables swinger (multiple trips within 1=Yes 1=Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Bypass Enable a certain time) automatic bypassing 0=No</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx096 Auto Unby- Enables automatic unbypassing 1=Yes 0=No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>pass Enable 0=No</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx097 Exterior Siren Enables arming verification on exterior sirens 1=Yes 0=No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Arming Verifi- 0=No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>cation</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx098 Local Closing Enables local verification of closing report 1=On 0=Off</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Report Verifi- 0=Off</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>cation</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx099 Not used</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx104 to xx108 Not used</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx108 Ltime Sound Enables LTIME (timed system trouble)</b></font> <font face="Arial" color="#000000" size="1"><b>1=Yes 1=Yes</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Enable annunciation. (See xx001) 0=No</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx109 Not Used</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx112 All Restoral On = Restoral reports get generated for all 1=On 0=Off</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Reports reporting types. Off = type definition for 0=Off</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>the generation of restoral reports applies</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx113 Instant Exte- Yes = exterior siren sounds instantly during 1=Yes 0=No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>rior Siren alarm. No = sounds after 15 second delay 0=No</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx114 Instant RF Low Enables instant indication of wireless sensor 1=On 1=On</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Battery Indica- low battery condition. 0=Off</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>tion</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx115 Not used</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx119 Not used</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx120 Keyswitch Arming level to default to for keyswitch close Level 2-5 Level 3</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Close Default</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx121 to xx125 Not Used</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>System Features</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17001 System Date System date in MMDDYY format 6 digits 1/1/00</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>(MMDDYY)</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17002 System Time System time in 24-hour HHMMSS format 6 digits 12:00:00</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>(HHMMSS)</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17003 System Day System day of week 0 to 6 5 = Sat</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Week (0 = Monday to 6=Sunday)</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17004 STIME Report Time of day (00:00-23:59) auto phone test is 4 digits 1:00</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Time performed and reported. (HHMM)</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17005 Not used</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17006 GPI/O 1 Each on-board inputs has a response time 8-255 32</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Response panel has to "see" transition for at least (0.128-4.08 sec) (0.512 sec)</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Time that length of time to deem it a trip or restoral</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>General purpose input #1 response time in 16</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>msec (Actual time = value x 16 msec)</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17007 GPI/O 2 General purpose input #2 response time in 16 8-255 32</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Response 16 msec increments (0.128-4.08 sec) (0.512 sec)</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Time (Actual time = value x 16 msec.)</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17008 GPI/O 3 General purpose input #3 response time in 16 8-255 32</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Response 16 msec increments (0.128-4.08 sec) (0.512 sec)</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Time (Actual time = value x 16 msec.)</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17009 GPI/O 4 General purpose input #4 response time in 16 8-255 32</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Response 16 msec increments (0.128-4.08 sec) (0.512 sec)</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Time (Actual time = value x 16 msec.)</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17010 GPI/O 5 General purpose input #5 response time in 16 8-255 32</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Response 16 msec increments (0.128-4.08 sec) (0.512 sec)</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Time (Actual time = value x 16 msec.)</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17011 GPI/O 6 General purpose input #6 response time in 16 8-255 32</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Response 16 msec increments (0.128-4.08 sec) (0.512 sec)</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Time (Actual time = value x 16 msec.)</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17012 Exp Input 1 Expansion input #1 response time in 16 8-255 32</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Response 16 msec increments (0.128-4.08 sec) (0.512 sec)</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Time (Actual time = value x 16 msec.)</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17013 Exp Input 2 Expansion input #2 response time in 16 8-255 32</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Response 16 msec increments (0.128-4.08 sec) (0.512 sec)</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Time (Actual time = value x 16 msec.)</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17014 Exp Input 3 Expansion input #3 response time in 16 8-255 32</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Response 16 msec increments (0.128-4.08 sec) (0.512 sec)</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Time (Actual time = value x 16 msec.)</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17015 Exp Input 4 Expansion input #4 response time in 16 8-255 32</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Response 16 msec increments (0.128-4.08 sec) (0.512 sec)</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Time (Actual time = value x 16 msec.)</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17016 Exp Input 5 Expansion input #5 response time in 16 8-255 32</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Response 16 msec increments (0.128-4.08 sec) (0.512 sec)</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Time (Actual time = value x 16 msec.)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17017 Exp Input 6 Expansion input #6 response time in 16 8-255 32</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Response 16 msec increments (0.128-4.08 sec) (0.512 sec)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Time (Actual time = value x 16 msec.)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17018 Maximum Ring Maximum cycle time for ring signal 0-255 msec 67 msec</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Cycle Time</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17019 Minimum Ring Minimum duration of a valid ring burst in 3-300 x10 msec 40</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Burst Duration 10 msec increments. (3-300 x10 msec) (400 msec)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17020 Maximum Ring Maximum duration of a valid ring burst in 3-300 x10 msec 250</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Burst Duration 10 msec increments. (3-300 x10 msec) (2500 msec)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17021 Min Duration Min duration between valid ring bursts 0-300 x10 msec 0 msec</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Between Ring in 10 msec increments (3-300 x10 msec.)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Bursts</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17022 Max Duration Min duration between valid ring bursts 0-300 x10 msec 0 msec</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Between Ring in 10 msec increments (3-300 x10 msec.)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Bursts</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17023 Min Time Min time between valid rings in 10 msec 100-9999 200</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Between Rings increments (100-999 x10 msec.) x10 msec (2000 msec)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17024 Max Time Max time between valid rings in 10 msec</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Between Rings increments (100-999 x10 msec.)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17025 Min Time Min time between ring-pause-ring calls 6-20 sec 10 sec</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Between Ring-</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Pause-Ring</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Calls</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17026 Max Time Max time between ring-pause-ring calls 7-60 sec 30 sec</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Between Ring-</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Pause-Ring</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Calls</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17027 On-Hook Time telephone is held on-hook before 2-10 sec 4 sec</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Before Hang- hang-up</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>up Time</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17028 Off-Hook Time Max time between local phone off-hook 0-255 sec 5 sec</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>For Seize and DTMF seize sequence for local phone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>control</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17029 Maximum Max time between ring signal and local 0-255 sec 8 sec</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Answer Time phone off-hook to be considered answer</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>of call</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17030 Time Between Max time between keystrokes in a phone 1-5 sec 2 sec</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Phone Panic panic sequence</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Keystrokes</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17031 Minimum Minimum duration of a valid DTMF tone in 10 1-100 x10 msec 3</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Tone Duration msec increments. (1-100 x10 msec.) (30 msec)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17032 Min Duration Minimum duration of pause between DTMF 1-100 x10 msec 5</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Between tones in 10 msec increments (50 msec)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Tones</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17033 Not used</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17034 Auto Phone Automatic system phone test frequency in 0-255 days 7</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Test days. Reported at STIME (0 is off)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Frequency</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17035 Not used</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17037 Low Battery Battery voltage at which a low battery is 172-188 180</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Voltage indicatedcated. (Set in 1/17 volt units) (10.1-11.1 volts) (10.6 volts)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17038 OK Battery Battery voltage at which a battery OK is 188-204 196</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Voltage indicated (11.1-12.0 volts) (11.5 volts)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17039 Start Shut- Battery voltage at which shutdown is started 151-167 159</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>down Battery (8.9-9.8 volts) (9.4 volts)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Voltage</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17040 Cancel Shut- Battery voltage at which shutdown cancels 168-184 176</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>down Battery (9.9-10.8 volts) (10.4 volts)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Voltage</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17042 Not used</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17043 History Buffer Let history buffer get xxx percent full before 10-100 80</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>% generating trouble indication. Another trouble</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>is generated when the buffer overflows</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17044 Report Buffer Allows report buffer to get xxx percent full 10-100 80</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>% before forcing report of delayed low priority</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>events. No trouble generated until report</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>buffer overflows</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17045 Not used</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17046 Medical Alarm Medical alarm sound rhythm 1-6 3</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sound Rhythm (_ represents 125 sec sound, ___ represents 5 second sound):</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>1- ___ ___ ___ ___ (repeat)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2- ___ _ _ ___ (repeat)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3- ___ (repeat)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4- _ (repeat)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5- __________(steady on)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6- (programmable)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17047 Police Alarm Police alarm sound rhythm 1-6 5</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sound Rhythm (See Medical Alarm Sound Rhythm above)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17048 AuxiliaryAlarm Auxiliary alarm sound rhythm. (See Medical 1-6 4</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sound Rhythm (See Medical Alarm Sound Rhythm selections)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17049 Supervisory Supervisory time A in hours 2-24 hrs 4 hrs</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Time A (See 47004)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17050 Supervisory Supervisory time B in hours 2-24 hrs 24 hrs</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Time B (See 47004)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17051 Not used</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17054 Minimum Valid Minimum number of cycles in a valid ring 0-255 cycles 2 cycles</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Ring Cycles</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17055 Valid Ring Number of ring bursts in a valid ring 1-5 bursts 1 burst</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Bursts</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17056 Local Phone DTMF sequence for local phone control 0-9,</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>,#</b></font> <font face="Courier" color="#000000" size="1"><b>**</b></font><font face="Arial" color="#000000" size="1"><b>##</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Control</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sequence</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17057 Phone Device DTMF sequence for phone device override 0-9,</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>,#</b></font> <font face="Courier" color="#000000" size="1"><b>**</b></font><font face="Arial" color="#000000" size="1"><b>##</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Override</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sequence</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17058 Pager ID Determines system ID sent with pager report 0-255 0</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17059 - 17062 Not used</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17063 GPI/O 1 Sets general purpose input/output (GPI/O) #1 1-Output 0-Input</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>In/Out as an input or output 0-Input</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17064</b></font> <font face="Arial" color="#000000" size="1"><b>GPI/O 2 Sets general purpose input/output (GPI/O) #2 1-Output 0-Input</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>In/Out as an input or output 0-Input</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17065</b></font> <font face="Arial" color="#000000" size="1"><b>GPI/O 3 Sets general purpose input/output (GPI/O) #3 1-Output 0-Input</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>In/Out as an input or output 0-Input</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17066</b></font> <font face="Arial" color="#000000" size="1"><b>GPI/O 4 Sets general purpose input/output (GPI/O) #4 1-Output 0-Input</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>In/Out as an input or output 0-Input</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17067</b></font> <font face="Arial" color="#000000" size="1"><b>GPI/O 5 Sets general purpose input/output (GPI/O) #5 1-Output 0-Input</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>In/Out as an input or output 0-Input</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17068</b></font> <font face="Arial" color="#000000" size="1"><b>GPI/O 6 Sets general purpose input/output (GPI/O) #6 1-Output 0-Input</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>In/Out as an input or output 0-Input</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17069 No Phone Line No phone line is connected to the panel. If 1-Yes 0-No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>no phone line is connected, the panel will 0-No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>not check for phone line failure</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17071 Not used</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17072 RF Jam Detect Enables wireless signal jamming detection 1-Yes 1-Yes</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Sound Enable Note: Must be enabled for commercial fire, 0-No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>commercial burg, and residential fire systems</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17074 High-Rise Enables zones for "floor" attributes 1-Yes 0-No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Building (See 47004) 0-No</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17075 Not used</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17076 Commercial/ Sets commercial or residence application 1-Commercial 0</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Residence If commercial, LTIME is set to every 4 hours 0-Residential</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>instead of every 24 hours. Also changes</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>names indicated for levels 2 and 3</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17077 Not used</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17078 Wireless Enables detection and indication of wireless 1-Yes 1-Yes</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Radio Fail radio failure 0-No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Detect</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17083 Evacuation Enables fire alarm evacuation audio messages 1-On 0-Off</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Messages 0-Off</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17084 First Fire Enables first fire alarm disarm to silence and 1-On 0-Off</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Alarm Disarm not cancel alarm 0-Off</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Silence (Second disarm cancels alarm)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17085 Local Partition Enables local phone access and control in 1-Yes 1-Yes</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>Phone partition 1 0-No</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>Enable</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0-No</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17089 Remote Phone Enables remote phone override 1-Yes 1-Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Override Note: For residential use only 0-No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Enable</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17090 Remote Phone Enables remote phone answer four rings 1-Yes 1-Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Tollsaver earlier than ring count (17052) if 0-No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>alarms/troubles have occurred</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Note: For residential use only</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17091 Ring Valid Enables ring valid at beginning or end of cycle 1-Beginning 0-End</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Cycle Time Note: For residential use only 0-End</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17092 Off-hook Enables phone off-hook condition as activity 1-On 1-On</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Activity Note: For residential use only 0-Off</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17093 Not used</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17097 Print Sets printing of line feed following 1-Yes 1-Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Line feed carriage return 0-No</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17098 Zone Test Enables zone test operation from a remote 1-Yes 1-Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>From Phone telephone 0-No</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17099 Print System Enables printing of system events 1-Yes 1-Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Events 0-No</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17100 Not used</b></font>
+<p></p>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17110 Not used</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17111 Fire Silence Duration for which fire alarm is silenced 15-999 sec 30</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Time</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17112 Output Delay Duration for which output activation is delayed 1-999 sec 30</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Time</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17113 Output Delay Duration A for which output is activated 1-999 4</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>A One-Shot</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Time</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17114 Output Delay Duration B for which output is activated 1-999 30</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>B One-Shot</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Time</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17115 Output Delay Duration C for which output is activated 1-999 180</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>C Time</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17116 Output Delay Duration D for which output is activated 1-999 900</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>D One-Shot</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Time</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17117 Zone Trip Delay duration after zone trip before alarm 1-255 10</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Alarm Delay</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17118 GP Input 7 General purpose input #7 response time in 8-255 32</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Response 16 msec (Actual time = value x 16 msec.) (0.128-4.08 sec) (0.512 sec)</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Time</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17119 Expansion Expansion input #7 response time in 8-255 32</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Input 7 16 msec (Actual time = value x 16 msec.) (0.128-4.08 sec) (0.512 sec)</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Resp Time</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17120 Expansion Expansion input #8 response time in 8-255 32</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Input 8 16 msec (Actual time = value x 16 msec.) (0.128-4.08 sec) (0.512 sec)</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Resp Time</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17121 Not used</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17123 AC Line Hz AC power line frequency 1=50 Hz 0=60hz</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>0=60 Hz</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17124 Epson ESC/P Enables Epson printer ESC/P protocol 1=Yes 1=Yes</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>0=No</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17125 Partition Text Enables partition text to be displayed and 1=Yes 1=Yes</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Speech spoken. (0-No for single partition systems) 0=No</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17126 Enable Enables unsilencing of fire alarm after 1=Yes 0=No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Unsilence silencing period expires. If not set, a 0=No</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>silenced alarm will not resound</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17127 to 17128 Not used</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>17129 Non UL-864 Sets panel to non UL-864. This allows 1=Yes 1=Yes</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Enable options which are otherwise not accessible 0=No</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>Keyfob Options</b></font> <font face="Arial" color="#000000" size="1"><b>xx = Partition 01 to 04</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx057 Unlock Button Special action assignment for keychain 4-16 4</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Action Touchpad Unlock button</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 to 2 = Not used 11 = Arm to closed level with latchkey</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3 = Auxiliary Panic 12 = Increment arming (0 to 1, 1 to 2, 2 to 3)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4 = Arm to level 1 13 = Turn all* lights on</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5 = Arm to level 2 14 = Turn all* lights off</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 = Arm to level 3 15 = Toggle all* lights</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7 = Arm to special level 4 16 = Do nothing</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8 = Arm to special level 5 * all lights having the first (of two)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>9 = Arm to closed level House Codes in the partition.</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>10 = Arm to closed level &amp; no delay</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx058 Lock Button Special action assignment for keychain 4-16 9</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Action Touchpad Lock button</b></font> <font face="Helvetica" color="#000000" size="1"><b>(See list in xx057)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx059 Lights Button Special action assignment for keychain 4-16 15</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Action Touchpad Lights button</b></font> <font face="Helvetica" color="#000000" size="1"><b>(See list in xx057)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx060 Star Button Special action assignment for keychain 4-16 12</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Action Touchpad Star button</b></font> <font face="Helvetica" color="#000000" size="1"><b>(See list in xx057)</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx061 Lights/Star Special action assignment for keychain 3-16 3</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Buttons Action touchpad Lights and Star button combo</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx065 Lock/Star But- Special action assignment for keychain 4-16 16</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>ton Action touchpad lock and star button combination</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>(See list in xx057)</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>xx066 Unlock/Lights Special action assignment for keychain 4-16 16</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Button Action touchpad unlock and lights button combo</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>(See list in xx057)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>xx118 Auto Close/ Arming level which to default for auto close Level 2-5 Level 3</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Keychain and/or keychain touchpad close</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Close Default</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>Misc System Options</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>50001 Reset Resets panel memory to backed-up values</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>50002 Clear Resets panel memory to factory default values</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>50003 Software/ Indicates panel software and hardware version</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Version #</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>50004 Clear History Resets history buffer pointers and erases buffer backup</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Output Programming</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>To view or change output configuration values:</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>Press 8 to select System Menu.</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Press 0 to select Enter Program Mode.</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Enter your install access code (default is 0123).</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Enter the set output configuration feature number</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>(50005) from Table D.14 in Appendix D.</b></font>
+<p></p>
+<ol start="5">
+<li><font face="Arial" color="#000000" size="1"><b>Enter output number and press #.</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Press # to accept the displayed value or enter the</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>desired value and press #.</b></font>
+<p></p>
+<ol start="7">
+<li><font face="Arial" color="#000000" size="1"><b>Repeat steps 4 and 5 for all desired outputs.</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>When finished, press * to exit menu.</b></font>
+<p></p>
+<p></p>
+<p></p>
+</li>
+</ol>
+</body>
+</html>

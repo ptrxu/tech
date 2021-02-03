@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>DS7100 Program Sheet</title>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+
+			<script type="text/javascript" language="javascript1.2" src="whver.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+    			<script type="text/javascript" language="javascript1.2" src="whlang.js"></script> 
+    <meta name="generator" content="Adobe RoboHelp 9" />
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+	      //<!--
+	      RH_Document_Write("<p style=\"text-align:right\"> ");
+RH_AddMasterBreadcrumbs( "Tech_2010.htm", "", "/", "Home", "Tech_2010Main.htm");
+RH_Document_Write("<\/p>");
+//-->
+</script>
+<font face="Arial" color="#0000FF" size="2">Detection Systems DS7100 Program Sheet</font>
+<p></p>
+<p></p>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Basics" onclick="self.location='Tech_2010DS7100_Basic_Commands.htm'" /> <input type="button" value="Codes" onclick="self.location='Tech_2010DS7100_User_Codes.htm'" /> <input type="button" value="Trouble" onclick="self.location='Tech_2010DS7100_Trouble_Display.htm'" /> <input type="button" value="Keypad" onclick="self.location='Tech_2010DS7100_Keypad.htm'" /> <input type="button" value="LCD Keypad" onclick="self.location='Tech_2010DS7100_LCD_Keypad.htm'" /> <input type="button" value="Wiring" onclick="self.location='Tech_2010DS7100_Wiring.htm'" /> <input type="button" value="Program" onclick="self.location='Tech_2010DS7100_Program_Sheet.htm'" /> <input type="button" value="Sensors" onclick="self.location='Tech_2010DS7100_Sensors.htm'" /></b></font></form>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Power Ratings</b></font> <font face="Arial" color="#000000" size="1"><b>1A Aux output</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2A Siren output</b></font>
+<p></p>
+<p></p>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Device Output Ratings" onclick="self.location='Tech_2010Detection_Systems_Power_Ratings.htm'" /></b></font></form>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Enter Program</b></font> <font face="Arial" color="#000000" size="1"><b>9 8 7 6 5 + # + 0 (Keypad lights should start flashing)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>or</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Short 2 solder points at bottom right on panel circuit board</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Move to location</b></font> <font face="Arial" color="#000000" size="1"><b>2-digit location + # + enter Data + #</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Exit Program</b></font> <font face="Arial" color="#000000" size="1"><b>Hold</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for 2 seconds</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Answer DL</b></font> <font face="Arial" color="#000000" size="1"><b># + 8 + 6 or Master Code + # + 8 + 6</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Send To DL</b></font> <font face="Arial" color="#000000" size="1"><b># + 8 + 3 or Master Code + # + 8 + 3</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Hex Program</b></font> <font face="Arial" color="#000000" size="1"><b>A =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>0 B =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>1 C =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>2 D =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>3 E =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>4 F =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>5</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>Programming</b></font> <font face="Arial" color="#000000" size="1"><b>(Not Complete but enough to get a download)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>71#Phone Number 1 (30 digits)</b> I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _<b>#</b> _I</font>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>+ 1 =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>+ 2 = #</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>+ 3 = 3 second pause</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>+ 4 = Wait for Dial Tone</b></font>
+<p></p>
+<p></p>
+</li>
+</ul>
+<ol start="72">
+<li><font face="Arial" color="#000000" size="1"><b>Phone Number 2 (30 digits)</b> I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _<b>#</b> _I</font>
+<p></p>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Account Code 1 (4 digits)</b> I _ _I _ _I _ _I _ _I _<b>#</b> _I <b>B =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>+ 1</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>C =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>+ 2</b></font>
+<p></p>
+<ol start="74">
+<li><font face="Arial" color="#000000" size="1"><b>Account Code 2 (4 digits)</b> I _ _I _ _I _ _I _ _I _<b>#</b> _I <b>D =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>+ 3</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>E =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>+ 4</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>F =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>+ 5</b></font>
+<p></p>
+<p></p>
+<ol start="75">
+<li><font face="Arial" color="#000000" size="1"><b>Communicator Format 1</b> I _<b>0</b> _I _<b>0</b> _I _<b>8</b> _I _<b>7</b> _I _<b>1</b> _I _<b>0</b> _I _<b>#</b> _I</font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>(Touch Tone, 8 Dialing Attempts, 4/2 Format, 1800hz, 2300hz Ack, last digit not used)</b></font>
+<p></p>
+<p></p>
+<ol start="76">
+<li><font face="Arial" color="#000000" size="1"><b>Communicator Format 2</b> I _<b>0</b> _I _<b>0</b> _I _<b>8</b> _I _<b>7</b> _I _<b>1</b> _I _<b>0</b> _I _<b>#</b> _I</font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>(Touch Tone, 8 Dialing Attempts, 4/2 Format, 1800hz, 2300hz Ack, last digit not used)</b></font>
+<p></p>
+<p></p>
+<ol start="77">
+<li><font face="Arial" color="#000000" size="1"><b>Download Number 3 (15 digits) I_ 1__I_ 8__I_ 0__I_ 0__I_ 9__I_ 4__I_ 8__I_ 8__I_ 7__I_ 8__I_ 6__I_ #__I</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>79 Remote Programming Options</b> I _<b>0</b> _I _<b>2</b> _I _<b>7</b> _I _<b>7</b> _I _<b>#</b> _I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>82 Installer Programmer Code</b> I _<b>9</b> _I _<b>8</b> _I _<b>7</b> _I _<b>6</b> _I _<b>5</b> _I _<b>#</b> _I</font>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>

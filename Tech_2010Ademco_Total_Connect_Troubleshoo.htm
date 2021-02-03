@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>Ademco Total Connect Troubleshooting</title>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+
+			<script type="text/javascript" language="javascript1.2" src="whver.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+    			<script type="text/javascript" language="javascript1.2" src="whlang.js"></script> 
+    <meta name="generator" content="Adobe RoboHelp 9" />
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+	      //<!--
+	      RH_Document_Write("<p style=\"text-align:right\"> ");
+RH_AddMasterBreadcrumbs( "Tech_2010.htm", "", "/", "Home", "Tech_2010Main.htm");
+RH_Document_Write("<\/p>");
+//-->
+</script>
+<a name="ae72b02d" id="ae72b02d"></a><a name="ae72b02d" id="ae72b02d"></a><font face="Arial" color="#0000FF" size="3"><b>Honeywell Total Connect Troubleshooting</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Overview</b></font> <font face="Arial" color="#000000" size="1"><b>Total Connect allows remote access to Vista-15P/20P or LynxR-I panels</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Also allows email messages for programmed events (arming/disarming etc.)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Total Control Website = https://services.alarmnet.com/TotalConnect</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Compatibility</b></font> <font face="Arial" color="#000000" size="1"><b>7845GSMR Cellular Backup</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7845IGSM Internet Cellular Backup</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7847i Internet Module</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7847i-L Lynx Module</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7845i, Symphony and original 7845GSM are not compatible</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Vista-15P/20P (v5.2 or higher)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LynxR-I (v15.3 or higher)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Configure Email</b></font> <font face="Arial" color="#000000" size="1"><b>Uses Vist-15P/20P triggered 4204 relay events to send email</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Notifications</b></font> <font face="Arial" color="#000000" size="1"><b>1. Enable 4204 relays 1 to 4 or 1 to 8 in *79</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>If AlarmNet Direct is programmed as "4204 Sourced" set up relays 1 to 4 at address 12</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>If AlarmNet Direct is programmed as "2 4204 Sourced" set up relays 1 to 8 at address 12</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(These "phantom" relays cannot conflict with an existing 4204 relay module if installed)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. Relay 1 = Event 1 on Total Connect web page, Relay 1 2 = Event 2 etc</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Example: To send an email if system is armed and disarmed</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>Program *80 Output Function 1 to close and stay closed Relay 1 if system is Armed Stay (20)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Program *80 Output Function 2 to close and stay closed Relay 2 if system is Armed Away (21)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Program *80 Output Function 3 to Open (Off/Disabled) Relay 1 if system is disarmed (22)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Program Event 1 "Event Text" in Total Connect to say "Security System"</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Program Event 1 "Normal State" to say "Was Disarmed"</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Program Event 1 "Activated State" to say "Was Armed Away"</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Program Event 2 "Normal State" to say "Was Disarmed"</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Program Event 2 "Activated State" to say "Was Armed Stay"</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>When relay 1 activates Total Connect sends "Security System Was Armed Away"</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>When relay 2 activates Total Connect sends "Security System Was Armed Say"</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>When relay 1 or relay 2 turns Off total Connect sends "Security System Was Disarmed"</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Troubleshooting</b></font> <font face="Arial" color="#000000" size="1"><b>General</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>7845GSM/7845iGSM must be correct version (7845iGSMR or 7845GSMR)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>7845GSM/7845GSM must be wired as ECP device</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Vista-15P/20P must be v5.2 or higher</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>LynxR-I must be v16.0 or higher</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>A keypad only display appears with Vista-15P indicates AUI address required by Total Connect is</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>not enabled in panel or in use b another device.</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>AlarmNet Direct</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>"Device Address" must be set (Vista-15P/20P/LynxR-I = 3)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>"Enable Direct Wire" must be OFF</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>"Keypad Address" must be set to an AUI address not used by an installed graphics keypad</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>For LynxR-I this must be set to 1</b></font>
+<p></p>
+<ol start="4">
+<li><font face="Arial" color="#000000" size="1"><b>"Remote Access" must be enabled</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>"Keypad Type" must be set for "Full Control" to enable all Total Connect options</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>or for just keypad display set for "Keypad Only" or "Lynx Keypad"</b></font>
+<p></p>
+<ol start="6">
+<li><font face="Arial" color="#000000" size="1"><b>"Multimode" must be enabled in AlarmNet Direct to send email messages</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>"4204 Sourced" allows 4 different reports to email, "2 4204 Sourced" allows 8</b></font>
+<p></p>
+<ol start="7">
+<li><font face="Arial" color="#000000" size="1"><b>Multimode address must be set correctly (Vista-15P/20P = 12, Lynx 6 or 7)</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>Vista-15P/Vista/20P</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>AUI address used by Total Connect must be enabled in field *189</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>AUI address for remote access must not be used by an installed keypad</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>(Example: 6270 or 6271C keypad uses AUI address 1, address 2 is for Total connect remote access</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>As last resort contact AlarmNet Direct about possible database issues</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Ademco/First Alert Panels RADIO FEATURES TOTAL CONNECT FEATURES</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>IP Download 7845GSM Setting Keypad Type Multimode Email</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4110/FA100C No Zone None No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4110DL/FA110C No Zone None No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4110XM/FA120C No Zone None No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4120EC/FA200C No Zone None No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5130XM/FA500C No Zone None No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4120XM No Zone None No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4140XM/FA1000C No Zone None No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4140XMP/FA1200C No Zone None No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4140XMP (Rev 10 VIP)/FA1200CV No Zone None No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4140XMPT/FA1300C No Zone None No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4140XMPT2/FA1330C No Zone, 4204 Keypad Only Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5110XM/FA2000C No Zone None No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5120XM/FA2100C No Zone None No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5140XM/FA1500C No Zone None No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LYNX/ReadyGuard No Zone None No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LYNX-R/ReadyGuard-R No Zone None No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LYNXREN/ReadyGuard-EN No Zone None No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LYNXR-I/ReadyGuard-I Yes Zone, ECP Full Control Beta Testing</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Vista 10/FA140C No Zone, 4204 None Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Vista 10SE/FA142C No Zone, 4204 None Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Vista 10P/FA 130CP No Zone, 4204, ECP Keypad Only Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Vista 15/FA148C No Zone, 4204, ECP None Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Vista 15P/FA148CP No Zone, 4204, ECP Keypad Only Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Via 30/FA140C No Zone, 4204 None Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Vista 20/FA150C No Zone, 4204 None Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Vista 20SE/FA162C No Zone, 4204, ECP None Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Vista 20P/FA168C No Zone, 4204, ECP Full Control Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Vista 20PS/FA168CPS No Zone, 4204, ECP Full Control Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Vista 20PI/20P v5.2+/FA168CPS v5.1+ Yes Zone, 4204, ECP Full Control Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Vista 32FB No Zone, 4204, ECP Keypad Only No</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Vista 40/FA1220C No Zone, 4204 Keypad Only Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Vista 40/FA1220CV No Zone, 4204 Keypad Only Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Vista 50/50P/FA1340C No Zone, 4204 Keypad Only Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Vista 50PEN VBPCOMKIT Zone, 4204, ECP Full Control Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Vista 100 No Zone, 4204 Keypad Only</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Vista 128FB/FA1600C No Zone, 4204, ECP Keypad Only Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Vista 128B No Zone, 4204, ECP Keypad Only</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Vista 128BP/FA1660C VBPCOMKIT Zone, 4204, ECP Full Control Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Vista 128FBP/FA1670C VFBPCOMKIT Zone, 4204, ECP Full Control Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Vista 250FBP/FA1700C No Zone, 4204, ECP Full Control Yes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Vista 250BP VBPCOMKIT Zone, 4204, ECP Full Control Yes</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>VBPCOMKIT = Optional communication package from Honeywell</b></font>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>

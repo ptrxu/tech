@@ -1,0 +1,578 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>DSC T-Link TL250 Programming</title>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+
+			<script type="text/javascript" language="javascript1.2" src="whver.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+    			<script type="text/javascript" language="javascript1.2" src="whlang.js"></script> 
+    <meta name="generator" content="Adobe RoboHelp 9" />
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+	      //<!--
+	      RH_Document_Write("<p style=\"text-align:right\"> ");
+RH_AddMasterBreadcrumbs( "Tech_2010.htm", "", "/", "Home", "Tech_2010Main.htm");
+RH_Document_Write("<\/p>");
+//-->
+</script>
+<font face="Arial" color="#0000FF" size="3"><b>DSC T-Link TL250 Programming</b></font>
+<p></p>
+<p></p>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Programming" onclick="self.location='Tech_2010DSC_TLink_TL250_Programming.htm'" /> <input type="button" value="Wiring" onclick="self.location='Tech_2010DSC_TLink_TL250_Wiring.htm'" /></b></font></form>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Report Format</b></font> <font face="Arial" color="#000000" size="1"><b>SIA (It does not matter what format panel uses</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Compatibility</b></font> <font face="Arial" color="#000000" size="1"><b>PC4020 v3.31 and higher</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PC5020 v3.2 and higher</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PC1616</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PC1832</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PC1864</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Power Ratings</b></font> <font face="Arial" color="#000000" size="1"><b>12VDC</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>250mA maximum</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Program Notes</b></font> <font face="Arial" color="#000000" size="1"><b>Most programming will involve locations 001, 003, 007 and maybe 011, all others can be left default</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Enter Program</b></font> <font face="Arial" color="#000000" size="1"><b>Enter DSC panel programming (</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>8 5555 or</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>8 1555 or</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>8 5010)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Enter 851</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Move to location</b></font> <font face="Arial" color="#000000" size="1"><b>Enter 3-digit location then enter data, # may be required to exit location</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Programs exactly like a DSC panel)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Exit Program</b></font> <font face="Arial" color="#000000" size="1"><b>#</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Default Panel</b></font> <font face="Arial" color="#000000" size="1"><b>1. Power T-Link down</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. Connect jumper from PGM1 to IN1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3. Apply power, wait 20 seconds then power down and remove jumper</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>or</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>Go to location 999</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Enter 00 to default module</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Enter 55 to reboot module</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>Status LED</b></font> <font face="Arial" color="#000000" size="1"><b>1 Blink = Network Absent</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 Blinks = Account is set to default FFFFFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3 Blinks = T-Link is not receiving heartbeat from central station receiver</b></font>
+<p></p>
+<ol start="4">
+<li><font face="Arial" color="#000000" size="1"><b>Blinks = Not receving polls from panel through PC-Link Interface</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Blinks = One of T-Link Inputs (IN)) is in alarm condition</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Blinks = T-Link failed to communicate with Receiver #1</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Blinks = PC5108 Module is not responding to T-Link</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Blinks = PC5108 Tamper has been activated</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Blinks = T-Link failed to communicate with Receiver #2</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Blinks = System was armed by key switch zone</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Blinks = T-Link is being programmed remotely</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Blinks = T-Link is being programmed locally</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Blinks = T-Link unable to connect to Receiver #2 on power-up</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>Hex Program</b></font> <font face="Arial" color="#000000" size="1"><b>A =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>1</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>B =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>2</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>C =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>3</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>D =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>4</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>E =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>5</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>F =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>6</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>If combining press</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>at end of hex string (example BC would be</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>23</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>[851] T-Link Programming</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Loc Description Default</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[001]</b></font> <font face="Arial" color="#000000" size="1"><b>T-Link IP Address (Enter all 12 digits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I__ _I I I I__ _I I I I__ _I I I I__ _I I <b>192 168 000 099</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Enter 000 000 000 000 if host network enables DHCP)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[002]</b></font> <font face="Arial" color="#000000" size="1"><b>T-Link Subnet Mask</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I__ _I I I I__ _I I I I__ _I I I I__ _I I <b>255 255 000 000</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[003]</b></font> <font face="Arial" color="#000000" size="1"><b>T-Link Account Code</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I I I I I I I I I <b>0000FFFFFF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[004]</b></font> <font face="Arial" color="#000000" size="1"><b>Receiver Encryption Password</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I I I I I I I I I I I I I I I <b>0000000000000000</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[005]</b></font> <font face="Arial" color="#000000" size="1"><b>Receiver Encryption Password</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I I I I I I I I I I I I I I I <b>0000000000000000</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[006]</b></font> <font face="Arial" color="#000000" size="1"><b>Installer Code</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I I I <b>5555</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[007]</b></font> <font face="Arial" color="#000000" size="1"><b>Primary Receiver IP Address</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I__ _I I I I__ _I I I I__ _I I I I__ _I I <b>000 000 000 000</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[008]</b></font> <font face="Arial" color="#000000" size="1"><b>Primary Receiver Gateway IP Address</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I__ _I I I I__ _I I I I__ _I I I I__ _I I <b>000 000 000 000</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[009]</b></font> <font face="Arial" color="#000000" size="1"><b>Primary Receiver Local Port</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I I I <b>3060</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[010]</b></font> <font face="Arial" color="#000000" size="1"><b>Primary Receiver Remote Port</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I I I <b>3061</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[011]</b></font> <font face="Arial" color="#000000" size="1"><b>Secondary Receiver IP Address</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I__ _I I I I__ _I I I I__ _I I I I__ _I I <b>000 000 000 000</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[012]</b></font> <font face="Arial" color="#000000" size="1"><b>Secondary Receiver Gateway IP Address</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I__ _I I I I__ _I I I I__ _I I I I__ _I I <b>000 000 000 000</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[013]</b></font> <font face="Arial" color="#000000" size="1"><b>Secondary Receiver Local Port</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I I I <b>3065</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[014]</b></font> <font face="Arial" color="#000000" size="1"><b>Secondary Receiver Remote Port</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I I I <b>3061</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[015]</b></font> <font face="Arial" color="#000000" size="1"><b>Third Receiver IP Address</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I__ _I I I I__ _I I I I__ _I I I I__ _I I <b>000 000 000 000</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[016]</b></font> <font face="Arial" color="#000000" size="1"><b>Third Receiver Gateway IP Address</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I__ _I I I I__ _I I I I__ _I I I I__ _I I <b>000 000 000 000</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[017]</b></font> <font face="Arial" color="#000000" size="1"><b>Third Receiver Local Port</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I I I <b>3066</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[018]</b></font> <font face="Arial" color="#000000" size="1"><b>Third Receiver Remote Port</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I I I <b>3061</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[019]</b></font> <font face="Arial" color="#000000" size="1"><b>Console Port</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I I I <b>3064</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[020]</b></font> <font face="Arial" color="#000000" size="1"><b>TFTP Port (For remote flash ROM updating)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I <b>69</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[021]</b></font> <font face="Arial" color="#000000" size="1"><b>DLS Port</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I I I <b>3062</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[022]</b></font> <font face="Arial" color="#000000" size="1"><b>SA Port</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I I I <b>3063</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[023]</b></font> <font face="Arial" color="#000000" size="1"><b>Supervision Enable (By Central Station Receiver)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I <b>00 = No (Default)</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Yes</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>[024]</b></font> <font face="Arial" color="#000000" size="1"><b>Receiver Failure Debounce Time</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[025]</b></font> <font face="Arial" color="#000000" size="1"><b>Receiver Restoral Debounce Time</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Options 026, 027, 028, 030, 031 and 032 can only be programmed using T-Link Console Software</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[026]</b></font> <font face="Arial" color="#000000" size="1"><b>Email Address 1 (18 characters)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I I I I I I I I I I I I I I I <b>Blank</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[027]</b></font> <font face="Arial" color="#000000" size="1"><b>Email Address 2 (18 characters)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I I I I I I I I I I I I I I I <b>Blank</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[028]</b></font> <font face="Arial" color="#000000" size="1"><b>Email Address From (18 characters)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I I I I I I I I I I I I I I I <b>Blank</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[029]</b></font> <font face="Arial" color="#000000" size="1"><b>DNS Server IP Address</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I__ _I I I I__ _I I I I__ _I I I I__ _I I <b>000 000 000 000</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[030]</b></font> <font face="Arial" color="#000000" size="1"><b>SMTP Server (18 characters)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I I I I I I I I I I I I I I I <b>Blank</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[031]</b></font> <font face="Arial" color="#000000" size="1"><b>Email Account (18 characters)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I I I I I I I I I I I I I I I <b>Blank</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[032]</b></font> <font face="Arial" color="#000000" size="1"><b>Email Password (18 characters)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I I I I I I I I I I I I I I I <b>Blank</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[033]</b></font> <font face="Arial" color="#000000" size="1"><b>Trouble Toggle Option 1 (Toggle Zone lights ON or OFF then # to exit)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I_ <b>ON</b> I <b>1 Network Trouble Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I_ <b>ON</b> I <b>2 Invalid Account (FFFFFF) Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I_ <b>ON</b> I <b>3 Receiver 1 Absent Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I_ <b>ON</b> I <b>4 Panel Communication Trouble Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>5 3rd Phone Number Enabled Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 Fail To Communicate to Receiver 1 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 PC5108 Expander Absent Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 PC5108 Expander Tamper Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[034]</b></font> <font face="Arial" color="#000000" size="1"><b>T-Link Trouble Reporting</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Option ON OFF</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I_ <b>ON</b> I <b>1 Fail To Communicate to Receiver 2 Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I_ <b>ON</b> I <b>2 Keyswitch Arm/Disarm Reporting Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I_ <b>ON</b> I <b>3 T-Link Remote Programming Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON</b> I_ <b>ON</b> I <b>4 T-Link Local Programming Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>5 Receiver 2 Absent Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>6 For Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>7 For Future Use</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF</b> I_<b>OFF</b> I <b>8 For Future Use</b></font>
+<p></p>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[035]</b></font> <font face="Arial" color="#000000" size="1"><b>T-Link Programmable Output #1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I <b>00 = Disabled</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Enabled</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>[036]</b></font> <font face="Arial" color="#000000" size="1"><b>Digital Input 01 Definition</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I <b>00 = Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>03 = Instant Input (BA/BH)</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[037]</b></font> <font face="Arial" color="#000000" size="1"><b>Digital Input 02 Definition 08 = Report Fire (FA/FH)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I <b>11 = Standard Burg Input (BA/BH)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>16 = 24 Hr Panic (PA/PH)</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[038]</b></font> <font face="Arial" color="#000000" size="1"><b>Digital Input 03 Definition 21 = 24 Hr Tamper (TA/TH)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I <b>23 = Maintained Keyswitch Arm</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Input 2 only)</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[039]</b></font> <font face="Arial" color="#000000" size="1"><b>Digital Input 04 Definition 99 = 24 Hr Bell Follwer</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[040]</b></font> <font face="Arial" color="#000000" size="1"><b>Digital Input 05 Definition</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[041]</b></font> <font face="Arial" color="#000000" size="1"><b>Digital Input 06 Definition</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[042]</b></font> <font face="Arial" color="#000000" size="1"><b>Digital Input 07 Definition</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[043]</b></font> <font face="Arial" color="#000000" size="1"><b>Digital Input 08 Definition</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[044]</b></font> <font face="Arial" color="#000000" size="1"><b>Digital Input 09 Definition</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[045]</b></font> <font face="Arial" color="#000000" size="1"><b>Digital Input 10 Definition</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[046]</b></font> <font face="Arial" color="#000000" size="1"><b>Digital Input 11 Definition</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[047]</b></font> <font face="Arial" color="#000000" size="1"><b>Digital Input 12 Definition</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[048]</b></font> <font face="Arial" color="#000000" size="1"><b>Digital Input 01 Configuration</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I <b>00 = Normally Open (Default)</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Normally Closed</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>[049]</b></font> <font face="Arial" color="#000000" size="1"><b>Digital Input 02 to 04 Configuration</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I <b>00 = Normally Open (Default)</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Normally Closed</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>[050]</b></font> <font face="Arial" color="#000000" size="1"><b>Digital Input 01 SIA Reporting Code</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I <b>FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[051]</b></font> <font face="Arial" color="#000000" size="1"><b>Digital Input 02 SIA Reporting Code</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I <b>FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[052]</b></font> <font face="Arial" color="#000000" size="1"><b>Digital Input 03 SIA Reporting Code</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I <b>FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[053]</b></font> <font face="Arial" color="#000000" size="1"><b>Digital Input 04 SIA Reporting Code</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I <b>FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[054]</b></font> <font face="Arial" color="#000000" size="1"><b>Digital Input 05 SIA Reporting Code</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I <b>FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[055]</b></font> <font face="Arial" color="#000000" size="1"><b>Digital Input 06 SIA Reporting Code</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I <b>FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[056]</b></font> <font face="Arial" color="#000000" size="1"><b>Digital Input 07 SIA Reporting Code</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I <b>FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[057]</b></font> <font face="Arial" color="#000000" size="1"><b>Digital Input 08 SIA Reporting Code</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I <b>FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[058]</b></font> <font face="Arial" color="#000000" size="1"><b>Digital Input 09 SIA Reporting Code</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I <b>FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[059]</b></font> <font face="Arial" color="#000000" size="1"><b>Digital Input 10 SIA Reporting Code</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I <b>FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[060]</b></font> <font face="Arial" color="#000000" size="1"><b>Digital Input 11 SIA Reporting Code</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I <b>FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[061]</b></font> <font face="Arial" color="#000000" size="1"><b>Digital Input 12 SIA Reporting Code</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I <b>FF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[062]</b></font> <font face="Arial" color="#000000" size="1"><b>Fire On Time</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I <b>05 x100ms</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[063]</b></font> <font face="Arial" color="#000000" size="1"><b>Fire Off Time</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I <b>05 x100ms</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[064]</b></font> <font face="Arial" color="#000000" size="1"><b>Restoral Delay Time</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I <b>64</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[065]</b></font> <font face="Arial" color="#000000" size="1"><b>Fire Pulse Count</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I <b>03</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[066]</b></font> <font face="Arial" color="#000000" size="1"><b>SIA ACK Time</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I <b>02</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[067]</b></font> <font face="Arial" color="#000000" size="1"><b>DVACS Account</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I <b>00</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[068]</b></font> <font face="Arial" color="#000000" size="1"><b>DVACS Extended</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I <b>00</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[069]</b></font> <font face="Arial" color="#000000" size="1"><b>Contact ID Kiss-Off Duration</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I <b>08</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[070]</b></font> <font face="Arial" color="#000000" size="1"><b>Contact ID Handshake Selection</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I I <b>2D</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[901]</b></font> <font face="Arial" color="#000000" size="1"><b>Current T-Link IP Address (View only)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I I__ _I I I I__ _I I I I__ _I I I I__ _I I</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[999]</b></font> <font face="Arial" color="#000000" size="1"><b>Restore T-Link Default Programming 1. Enter 00 to default</b></font>
+<p></p>
+<ol start="2">
+<li><font face="Arial" color="#000000" size="1"><b>Enter 55 to restart module</b></font>
+<p></p>
+<p></p>
+<p></p>
+</li>
+</ol>
+</body>
+</html>

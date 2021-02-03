@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>Ademco 6164 Alpha Keypad</title>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+
+			<script type="text/javascript" language="javascript1.2" src="whver.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+    			<script type="text/javascript" language="javascript1.2" src="whlang.js"></script> 
+    <meta name="generator" content="Adobe RoboHelp 9" />
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+	      //<!--
+	      RH_Document_Write("<p style=\"text-align:right\"> ");
+RH_AddMasterBreadcrumbs( "Tech_2010.htm", "", "/", "Home", "Tech_2010Main.htm");
+RH_Document_Write("<\/p>");
+//-->
+</script>
+<font face="Arial" size="2">Ademco 6164 4-Zone Alpha Keypad Program Sheet</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Information</b></font> <font face="Arial" color="#000000" size="1"><b>Emulates a 4-zone 4229 Relay/Zone expander.</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Can be used on any Ademco panel that compatible with a 4229 (Vista).</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Keypad can be used on Vista-40 and higher panels but zone expander cannot be used.</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>CPU LED (Yellow) CPU failure of keypad</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Tamper switch reports as 4229 case tamper if Zone/Relay option is enabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Tamper switch reports as a keypad tamper if Zone/Relay option is disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Power Ratings</b></font> <font face="Arial" color="#000000" size="1"><b>190mA (Backlight On, Sounder On)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>115mA (Backlight On, Sounder Off)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>55mA (Backlight Off, Sounder Off)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Relay is rated for max 1A, 24V AC/DC</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Enter Program</b></font> <font face="Arial" color="#000000" size="1"><b>1. Press 1 and 3 together for 5 seconds within 60 seconds of power up</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. Programming begins at "Keypad Address",</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Helvetica" color="#000000" size="1"><b>saves and moves to next location</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Exit Program</b></font> <font face="Arial" color="#000000" size="1"><b>Press # at end of last program location (Language)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Location Display Default Description</b></font>
+<p></p>
+<p></p>
+<ol>
+<li><font face="Helvetica" color="#000000" size="1"><b>Keypad Address "</b></font><font face="Arial Rounded MT Bold" color="#000000" size="1"><b><i>CON ADDRESS = XX</i></b></font><font face="Helvetica" color="#000000" size="1"><b>" 31 Enter 01 to 31 then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Helvetica" color="#000000" size="1"><b>for next</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>Vista-10SE/Vista-20SE = 31</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>(Enter 00 then 01 to 31)</b></font> <font face="Arial" color="#000000" size="1"><b>Vista-15P/20P = 16 to 23</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Vista-40 = 01-15</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Vista-50P and above = 01-30</b></font>
+<p></p>
+<p></p>
+<ol start="2">
+<li><font face="Helvetica" color="#000000" size="1"><b>Expander Enable "</b></font><font face="Arial Rounded MT Bold" color="#000000" size="1"><b><i>ZONE EXPANDER"</i></b></font> <font face="Helvetica" color="#000000" size="1"><b>0 1 Toggles ON/OFF then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Helvetica" color="#000000" size="1"><b>for next</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Helvetica" color="#000000" size="1"><b>"</b></font><font face="Arial Rounded MT Bold" color="#000000" size="1"><b><i>OFF [ 1 = ON]"</i></b></font>
+<p></p>
+<p></p>
+<ol start="3">
+<li><font face="Helvetica" color="#000000" size="1"><b>Zone Expander Addr "EXP A</b></font><font face="Arial Rounded MT Bold" color="#000000" size="1"><b><i>DDRESS = XX</i></b></font><font face="Helvetica" color="#000000" size="1"><b>" 01 Enter 00 to 15 then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Helvetica" color="#000000" size="1"><b>for next</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>Vista-10SE/Vista-20SE = 01</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Vista-10P/15P = 07 to 08</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Vista-20P = 07 to 11</b></font>
+<p></p>
+<p></p>
+<ol start="4">
+<li><font face="Helvetica" color="#000000" size="1"><b>Zone Type "</b></font><font face="Arial Rounded MT Bold" color="#000000" size="1"><b><i>ZONE TYPE</i></b></font><font face="Helvetica" color="#000000" size="1"><b>" EOLR 1 Toggles between EOLR and</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial Rounded MT Bold" color="#000000" size="1"><b><i>"EOLR [ 1 = DBALAN]"</i></b></font> <font face="Arial" color="#000000" size="1"><b>Double Balanced</b></font> <font face="Helvetica" color="#000000" size="1"><b>then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Helvetica" color="#000000" size="1"><b>for next</b></font>
+<p></p>
+<p></p>
+<ol start="5">
+<li><font face="Arial" color="#000000" size="1"><b>Tamper</b></font> <font face="Helvetica" color="#000000" size="1"><b>"</b></font><font face="Arial Rounded MT Bold" color="#000000" size="1"><b><i>TAMPER</i></b></font><font face="Helvetica" color="#000000" size="1"><b>"</b></font> <font face="Arial" color="#000000" size="1"><b>OFF</b></font> <font face="Helvetica" color="#000000" size="1"><b>1 Toggles tamper ON/OFF then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Helvetica" color="#000000" size="1"><b>for next</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Helvetica" color="#000000" size="1"><b>"</b></font><font face="Arial Rounded MT Bold" color="#000000" size="1"><b><i>OFF [ 1 = ON]"</i></b></font>
+<p></p>
+<p></p>
+<ol start="6">
+<li><font face="Arial" color="#000000" size="1"><b>Display</b></font> <font face="Helvetica" color="#000000" size="1"><b>"</b></font><font face="Arial Rounded MT Bold" color="#000000" size="1"><b><i>DISPLAY</i></b></font><font face="Helvetica" color="#000000" size="1"><b>"</b></font> <font face="Arial" color="#000000" size="1"><b>ON</b></font> <font face="Helvetica" color="#000000" size="1"><b>Enter option then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Helvetica" color="#000000" size="1"><b>for next</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Helvetica" color="#000000" size="1"><b>"</b></font><font face="Arial Rounded MT Bold" color="#000000" size="1"><b><i>1=ON 2=KEY 3=DIS"</i></b></font> <font face="Arial" color="#000000" size="1"><b>1 = Display is always active</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 = Blanked 45 seconds after keypress</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3 = Blanked after armed until disarmed</b></font>
+<p></p>
+<p></p>
+<ol start="7">
+<li><font face="Arial" color="#000000" size="1"><b>Sounds</b></font> <font face="Helvetica" color="#000000" size="1"><b>"</b></font><font face="Arial Rounded MT Bold" color="#000000" size="1"><b><i>SOUNDS</i></b></font><font face="Helvetica" color="#000000" size="1"><b>"</b></font> <font face="Arial" color="#000000" size="1"><b>All 1 Toggles All or Alarms only</b></font> <font face="Helvetica" color="#000000" size="1"><b>then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Helvetica" color="#000000" size="1"><b>for next</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Helvetica" color="#000000" size="1"><b>"</b></font><font face="Arial Rounded MT Bold" color="#000000" size="1"><b><i>ALL [ 1 = ON]"</i></b></font>
+<p></p>
+<p></p>
+<ol start="8">
+<li><font face="Arial" color="#000000" size="1"><b>Language</b></font> <font face="Helvetica" color="#000000" size="1"><b>"</b></font><font face="Arial Rounded MT Bold" color="#000000" size="1"><b><i>LANGUAGE?</i></b></font><font face="Helvetica" color="#000000" size="1"><b>"</b></font> <font face="Arial" color="#000000" size="1"><b>ENG Press # to select NO and exit keypad programming</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Helvetica" color="#000000" size="1"><b>"</b></font><font face="Arial Rounded MT Bold" color="#000000" size="1"><b><i>* = YES # = NO"</i></b></font> <font face="Arial" color="#000000" size="1"><b>or press</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Helvetica" color="#000000" size="1"><b>to select language</b></font>
+<p></p>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>"</b></font><font face="Arial Rounded MT Bold" color="#000000" size="1"><b><i>DEU ENG ESP FR"</i></b></font> <font face="Arial" color="#000000" size="1"><b># Toggles between languages then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Helvetica" color="#000000" size="1"><b>to save and exit</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>"</b></font><font face="Arial Rounded MT Bold" color="#000000" size="1"><b><i>IT NL RUS"</i></b></font> <font face="Arial" color="#000000" size="1"><b>DEU = German</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ENG = English</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>FR = French</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>IT = Italian</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>NL = The Netherlands?</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>RUS = Russian</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000527.gif" alt="Tech_201000000527.gif" border="0" width="426" height="379" /></b></font>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>

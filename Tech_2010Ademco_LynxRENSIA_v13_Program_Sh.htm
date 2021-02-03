@@ -1,0 +1,1607 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>Ademco LynxR-ENSIA v13 Program Sheet</title>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+
+			<script type="text/javascript" language="javascript1.2" src="whver.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+    			<script type="text/javascript" language="javascript1.2" src="whlang.js"></script> 
+    <meta name="generator" content="Adobe RoboHelp 9" />
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+	      //<!--
+	      RH_Document_Write("<p style=\"text-align:right\"> ");
+RH_AddMasterBreadcrumbs( "Tech_2010.htm", "", "/", "Home", "Tech_2010Main.htm");
+RH_Document_Write("<\/p>");
+//-->
+</script>
+<font face="Arial" color="#0000FF" size="2">Ademco LynxR-ENSIA v13 Program Sheet</font>
+<p></p>
+<p></p>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Basics" onclick="self.location='Tech_2010Ademco_LynxRENSIA_v13_Basic_Comm.htm'" /> <input type="button" value="Codes" onclick="self.location='Tech_2010Ademco_LynxRENSIA_v13_User_Codes.htm'" /> <input type="button" value="Trouble" onclick="self.location='Tech_2010Ademco_LynxRENSIA_v13_Trouble_Di.htm'" /> <input type="button" value="Keypad" onclick="self.location='Tech_2010Ademco_LynxRENSIA_v13_Keypad.htm'" /> <input type="button" value="Wiring" onclick="self.location='Tech_2010Ademco_LynxRENSIA_v13_Wiring_Dia.htm'" /> <input type="button" value="Program" onclick="self.location='Tech_2010Ademco_LynxRENSIA_v13_Program_Sh.htm'" /> <input type="button" value="Sensors" onclick="self.location='Tech_2010Ademco_LynxRENSIA_v13_Sensors.htm'" /></b></font></form>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>SIA Standards</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>31 Single Alarm Sounding per Zone can be set for 1 alarm or to follow</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>92</b></font>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>34 Exit delay is now minimum 45 seconds</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>35 Entry delay 1 is now minimum 30 seconds</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>36 Entry delay 2 is now minimum 30 seconds</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>37 Audible Exit Warning and Quick Exit has been deleted and is always enabled</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>38 Confirmation Arming Ding is always enabled for keyfobs and cannot be disabled</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>39 Cross Zone Timer added (Previously was "Power Up in Previous State")</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>40 PABX Access Code is now PABX Access Code or Call Waiting Disable</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>47 Adds Call Wait Cancel options</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>50 Now called Burglary Abort Window</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>56 Added Zone type 16 Fire with Verify</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>57 Has 3 false alarm options</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>59 Exit error reporting is enabled by default and cannot be disabled</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>60 Cancel reporting is enabled by default and cannot be disabled</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>69 Recent closing reporting is enabled by default and cannot be disabled</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>92 Swinger Shutdown cannot be disabled and has options for 1 or 2 trips before shutdown</b></font>
+<p></p>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#0000FF" size="1"><b>Power Ratings</b></font> <font face="Arial" color="#000000" size="1"><b>30mA - Piezo output terminals 10 &amp; 11</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>120mA - Bell output terminals 11 &amp; 12</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Enter Program</b></font> <font face="Arial" color="#000000" size="1"><b>4112 + 8 + 8 + 8</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>(Voice Prompt)</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000260.gif" alt="Tech_201000000260.gif" border="0" width="450" height="240" /></b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Voice Prompts</b></font> <font face="Arial" color="#000000" size="1"><b>"Add Sensors"</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>"Delete Sensors"</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>"First Central Station Phone Number" (Not seen with Monitronics panels)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>"First Central Station Account Number"</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>"Second Central Station Phone Number" (Not seen with Monitronics panels)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>"Second Central Station Account Number"</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>"Template" (Loads default panel info, use 1 if needed)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>"Expert Programming Mode" (Standard programming mode)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Enter Program</b></font> <font face="Arial" color="#000000" size="1"><b>4112 + 8 + 0 + 0 (Display should show 20)</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>(Standard)</b></font> <font face="Arial" color="#000000" size="1"><b>or Power down then back up and press</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>and # within 1 minute</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(If exiting programming you can re-enter within 1 minute by pressing</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>and #)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Move to Location</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>+ Location</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>View Location</b></font> <font face="Arial" color="#000000" size="1"><b># + Location (Display will read off one digit at a time)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Exit Program</b></font> <font face="Arial" color="#000000" size="1"><b>1.</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>98</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OR</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2.</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>99 if needing to re-enter programming later by Code + 8 + 00</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OR</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3. Press ESCAPE to return to Voice Prompt Programming then ESCAPE again to exit</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Sniffer Test</b></font> <font face="Arial" color="#000000" size="1"><b>(Tests wireless sensors)</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>Installer Code + # + 3</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Keypad displays all wireless sensors, faulting sensor removes it from list</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Exit with Installer Code + 1 (OFF)</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>Go-No Go Test</b></font> <font face="Arial" color="#000000" size="1"><b>(Verifies adequate RF by reducing receiver signal strength by 50%)</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>Installer Code + # + 8</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>a. Siren sounds</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>b. Panel may send walk test signal (If test signal was programmed)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>c. "dd" appears on screen</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>d. Keypad will beep every 15 seconds</b></font>
+<p></p>
+<ol start="3">
+<li><font face="Arial" color="#000000" size="1"><b>Fault sensor, keypad should beep 3 times and display zone number,</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>if no beeps sound reorient or move sensor a few inches and try again</b></font>
+<p></p>
+<ol start="4">
+<li><font face="Arial" color="#000000" size="1"><b>Exit with Installer Code + 1 (OFF)</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>20 Installer Code</b> I _ <b>4</b> _I _ <b>1</b> _I _ <b>1</b> _I _ <b>2</b> _I</font>
+<p></p>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>21 Quick Arm Enable</b> I _ <b>1</b> _I <b>0 = Disable</b></font>
+<p></p>
+</li>
+</ul>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Enable</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>22 Keypad Backlight Timeout</b> I _ <b>0</b> _I <b>0 = Backlight On</b></font>
+<p></p>
+</li>
+</ul>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Backlight Off after 10 seconds</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>23 Force Bypass</b> I _ <b>0</b> _I <b>0 = Disable</b></font>
+<p></p>
+</li>
+</ul>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Enable</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>24 RF House Code</b> I _ <b>0</b> _I _ <b>0</b> _I <b>01 to 31</b></font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>(5827, 5827BD 5828 RF keypads and 5804BD Keyfobs)</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>25 Powerline X-10 House Code</b> I _ <b>0</b> _I <b>0 = A 1 = B 2 = C 3 = D 4 = E 5 = F</b></font>
+<p></p>
+</li>
+</ul>
+<ol start="6">
+<li><font face="Arial" color="#000000" size="1"><b>= G 7 = H 8 = I 9 = J #10 = K</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>#11 = L #12 = M #13 = N #14 = O #15 = P</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>26 Chime by Zone</b> I _ <b>0</b> _I <b>0 = Disable</b></font>
+<p></p>
+</li>
+</ul>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Enable zones to hcime in</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>81 Zone List 3</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>27 Real Time Clock Display</b> I _ <b>1</b> _I <b>0 = Disable</b></font>
+<p></p>
+</li>
+</ul>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Enable</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>29 Daylight Savings Start/End Month</b> I _ <b>4</b> _I #<b>10</b>_I <b>00 = Disable 07 = July</b></font>
+<p></p>
+</li>
+</ul>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= January 08 = August</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= February 09 = September</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= March #10 = October</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= April #11 = November</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= May #12 = December</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= June</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>30 Daylight Savings Time</b> I _ <b>1</b> _I _ <b>5</b> _I <b>1 = 1st Weekend</b></font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Start/End Weekend Number 2 = 2nd Weekend</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3 = 3rd Weekend</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4 = 4th Weekend</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5 = Last Weekend</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 = Next to Last Weekend</b></font>
+<p></p>
+<ol start="7">
+<li><font face="Arial" color="#000000" size="1"><b>= 3rd from Last Weekend</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>31 Single Alarm Sounding/Zone</b> I _ <b>0</b> _I <b>0 = Follows Swinger Shutdown in</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>92</b></font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>(SIA standard) 1 = 1 per Arming period</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>32 Fire Sounder Timeout</b> I _ <b>1</b> _I <b>0 = Disable</b></font>
+<p></p>
+</li>
+</ul>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Enable</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>33 Alarm Bell Timeout</b> I _ <b>2</b> _I <b>0 = None</b></font>
+<p></p>
+</li>
+</ul>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= 4 minutes</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 8 minutes</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 12 minutes</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 16 minutes</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>34 Exit Delay</b> I _ <b>7</b> _I _ <b>0</b> _I <b>45 to 96 seconds</b></font>
+<p></p>
+</li>
+</ul>
+<ol start="97">
+<li><font face="Arial" color="#000000" size="1"><b>= 120 seconds</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>35 Zone Type 01 Entry Delay</b> I _ <b>3</b> _I _ <b>0</b> _I <b>30 to 96 seconds</b></font>
+<p></p>
+</li>
+</ul>
+<ol start="97">
+<li><font face="Arial" color="#000000" size="1"><b>= 120 seconds</b></font>
+<p></p>
+</li>
+</ol>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>36 Zone Type 02 Entry Delay</b> I _ <b>4</b> _I _ <b>5</b> _I <b>98 = 180 seconds</b></font>
+<p></p>
+</li>
+</ul>
+<ol start="99">
+<li><font face="Arial" color="#000000" size="1"><b>= 240 seconds</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>38 Confirmation of Arming Ding</b> I _ <b>0</b> _I <b>0 = Disable</b></font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>(This is always enabled at start of arming for keyfobs) 1 = 1/2 second siren after arming by LynxR-ENSIA or RF Keypad</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 = 1/2 second siren after arming by LynxR-ENSIA or RF Keypad</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>39 Cross Zone Timer</b> I _ <b>0</b> _I <b>0 = No Cross Zoning 9 = 2 minutes 15 seconds</b></font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>(SIA standard) 1 = 15 seconds #10 = 2 minutes 30 seconds</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 = 30 seconds #11 = 2 minutes 45 seconds</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>This is the maximum amount of time which 3 = 45 seconds #12 = 3 minutes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 zones must be tripped to send an alarm 4 = 60 seconds #13 = 3 minutes 15 seconds</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>if only one is tripped a trouble message 5 = 1 minute 15 seconds #14 = 3 minutes 30 seconds</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(CID code 380) will be sent instead 6 = 1 minute 30 seconds #15 = 3 minutes 45 seconds</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7 = 1 minute 45 seconds</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Program which 2 zones are used in</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>81 Zone List 2 8 = 2 minutes</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b><i>Note:</i> Cross Zones should be types 3, 4 or 5 only, if interior zone is used then both zones must be interior zones</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>40 PABX Access or Call Wait Disable</b> I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>If 9 is needed to dial add here</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>If Call Wait Disable enter</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>70 then #+13, also see</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>47</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>41 Primary Phone (20 digits)</b> I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>End Phone with</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b># + 11 =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b># + 12 = # # + 13 = 2.5 second pause</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>42 Secondary Phone</b> I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>43 Primary Account (10 digits)</b> I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Hex B = #+11 C = #+12 D = #+13 E = #+14 F = #+15</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>44 Secondary Account</b> I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>46 End User Phone Number (24 digits)</b> I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>(For Pagers or "Follow Me" Feature)</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>47 Phone System Select</b> I _ <b>7</b> _I <b>0 = Pulse Dial</b></font>
+<p></p>
+</li>
+</ul>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= DTMF Dial</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Pulse Dial, CS on Watts Line</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= DTMF Dial, CS on Watts Line</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>4 = Pulse with Speaker Phone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5 = DTMF with Speaker Phone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 = Pulse/Watts/Speaker Phone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7 = DTMF/Watts/Speaker Phone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8 = Pulse Dial/Call Wait Cancel Enabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>9 = Tone Dial/Call Wait Cancel Enabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>#10 = Pulse Dial/Watts/Call Wait Cancel Enabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>#11 = Tone Dial/Watts/Call Wait Cancel Enabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>#12 = Speaker Phone/Pulse Dial/Call Wait Cancel Enabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>#13 = Speaker Phone/Tone Dial/Call Wait Cancel Enabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>#14 = Speaker Phone/Pulse Dial/Watts/Call Wait Enabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>#15 = Speaker Phone/Tone Dial/Watts/Call Wait Enabled</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>48 Report Format</b> I _ <b>7</b> _I <b>Primary 0 = 3/1, 4/1 Ademco L/S Standard</b></font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1">I _ <b>7</b> _I <b>Secondary 1 = 3/1, 4/1 Radionics Standard</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 = 4/2 Ademco L/S Standard</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3 = 4/2 Radionics Standard</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5 = Contact ID (10-digit Account Numbers)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 = 4/2 Ademco Express</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7 = Contact ID (4-digit Account Numbers)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8 = 3/1, 4/1 Ademco L/S Expanded</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>9 = 3/1, 4/1 Radionics Expanded</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>49 Central Station Pager/Follow Me</b> I _ <b>0</b> _I <b>(Pager/Follow Me cannot be used with 2-Way Voice)</b></font>
+<p></p>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>To Primary Phone To Secondary Phone</b></font>
+<p></p>
+<ol>
+<li><font face="Helvetica" color="#000000" size="1"><b>= Alarms, Restore, Cancel All Other Reports</b></font>
+<p></p>
+</li>
+<li><font face="Helvetica" color="#000000" size="1"><b>= All Reports except Open/Close, Test Open/Close, Test</b></font>
+<p></p>
+</li>
+<li><font face="Helvetica" color="#000000" size="1"><b>= Alarms, Restore, Cancel All Reports</b></font>
+<p></p>
+</li>
+<li><font face="Helvetica" color="#000000" size="1"><b>= All Reports except Open/Close, Test All Reports</b></font>
+<p></p>
+</li>
+<li><font face="Helvetica" color="#000000" size="1"><b>= All Reports (Dual Reporting) All Reports</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>To Primary Phone To Pager (</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>46)</b></font>
+<p></p>
+<ol start="6">
+<li><font face="Helvetica-Bold" color="#000000" size="1"><b>= All reports except Open/Close (Pager)</b></font> <font face="Helvetica" color="#000000" size="1"><b>Alarms/Open/Close/Trouble Users 5 - 8, Keyfobs 26-33</b></font>
+<p></p>
+</li>
+<li><font face="Helvetica" color="#000000" size="1"><b>= All reports Alarms/Troubles</b></font>
+<p></p>
+</li>
+<li><font face="Helvetica" color="#000000" size="1"><b>= All reports Alarms/Open/Close/Trouble Users 5 to 8, keyfobs 26-33</b></font>
+<p></p>
+</li>
+<li><font face="Helvetica" color="#000000" size="1"><b>= All reports except Open/Close Alarms/Open/Close for Users 5 to 8 or wireless</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Helvetica" color="#000000" size="1"><b>Arm/disarm keyfob zones 34-41, users 1 to 4 and</b></font>
+<p></p>
+<font face="Helvetica" color="#000000" size="1"><b>Keyfobs 26-33 do not send open/close reports</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>To Primary Phone To End User Voice Prompt (</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>46)</b></font>
+<p></p>
+<ol start="10">
+<li><font face="Helvetica" color="#000000" size="1"><b>= All except Open/Close Alarms/Open/Close/Trouble Users 5 - 8, Keyfobs 26-33</b></font>
+<p></p>
+</li>
+<li><font face="Helvetica" color="#000000" size="1"><b>= All Reports Alarms/Trouble</b></font>
+<p></p>
+</li>
+<li><font face="Helvetica" color="#000000" size="1"><b>= All Reports Alarms/Open/Close/Trouble Users 5 - 8, Keyfobs 26-33</b></font>
+<p></p>
+</li>
+<li><font face="Helvetica" color="#000000" size="1"><b>= All except Open/Close Open/Close</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>50 Burglary Abort Window</b> I _ <b>2</b> _I <b>0 = No abort window</b></font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>(Does not apply to zone types 6, 7, 8 and 9) 1 = 15 second abort window</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 = 30 second abort window</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3 = 45 second abort window</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>51 Periodic Test Report</b> I _ <b>3</b> _I <b>0 = None</b></font>
+<p></p>
+</li>
+</ul>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= 24 Hours</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Weekly</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Monthly</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>52 First Test Report Offset</b> I _ <b>3</b> _I <b>0 = 24 Hours</b></font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>(Sends after exiting program mode or download) 1 = 6 Hours</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 = 12 Hours</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3 = 18 Hours</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>53 Sescoa/Radionics Select</b> I _ <b>0</b> _I <b>0 = Radionics</b></font>
+<p></p>
+</li>
+</ul>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Sescoa</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>54 Lack of Usage Notification</b> I _ <b>0</b> _I <b>0 = Disable</b></font>
+<p></p>
+</li>
+</ul>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= 1 Day 4 = 90 Days</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 7 Days 5 = 180 Days</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 27 Days 6 = 365 Days</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</b></font>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>56 Zone Assignments (Max 24 wireless zones including 1 hardwired zone)</b></font>
+<p></p>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>1. Enter Zone to program (01 to 99) or 00 to exit (</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, 00 to exit)</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000261.gif" alt="Tech_201000000261.gif" border="0" width="92" height="29" /></b></font> <font face="Arial" color="#000000" size="1"><b>Hardwire Zone Zone 01</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Wireless Zones Zones 02 to 25</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Keyfob Zones Zones 26 to 41</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Duress Code Zone 92</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Fire Panic Zone 95</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Medical Panic Zone 96</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Police Panic Zone 99</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Lynx Defaults Zone 2 = Delay Zone on Loop 2, Voice description = "Front Door"</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Zone 3 = Delay Zone on Loop 2, Voice description = "Back Door Door"</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Zone 4 = Instant Zone on Loop 2, Voice description = "Window"</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Zone 5 = Interior on Loop 1, Voice description = "Motion Detector"</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Zone 26 = 21 Arm Away Loop 3 Zone 30 = 21 Arm Away Loop 3</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Zone 27 = 22 Disarm Loop 2 Zone 31 = 22 Disarm Loop 2</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Zone 28 = 20 Arm Stay Loop 4 Zone 32 = 20 Arm Stay Loop 4</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Zone 29 = 23 No Alarm Loop 1 Zone 33 = 23 No Alarm Loop 1</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. Enter Zone Type (</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # for previous menu)</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000262.gif" alt="Tech_201000000262.gif" border="0" width="92" height="29" /></b></font> <font face="Arial" color="#000000" size="1"><b>00 = Zone Disabled/Deleted 08 = 24 hour Aux/Medical</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Delay Zone 09 = Fire</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Secondary Delay Zone 10 = Interior Delay</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Perimeter/Instant 16 = Fire with Verification</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Interior Follower/Motions 20 = Arm-Stay</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Trouble by Day/Alarm by Night 21 = Arm-Away</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 24 hour Silent/Holdup 22 = Disarm</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 24 hour Police Panic 23 = No Alarm Response</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>24 = Silent Burglary</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3. Enter 10 for Report Code (</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # for previous menu)</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000263.gif" alt="Tech_201000000263.gif" border="0" width="92" height="29" /></b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>if programming Panics or Duress display will move back to step 1, sensors continue to step 4</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4. Enter RF Loop Type (</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # for previous menu)</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000264.gif" alt="Tech_201000000264.gif" border="0" width="92" height="29" /></b></font> <font face="Arial" color="#000000" size="1"><b>3 = RF (Door/Motions/Glassbreaks/Smokes)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4 = UR (some Remote Panic Buttons)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5 = BR (Keyfobs and Panic Buttons)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5. Enter Loop Number (0 to 4) (</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # for previous menu)</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000265.gif" alt="Tech_201000000265.gif" border="0" width="92" height="29" /></b></font> <font face="Arial" color="#000000" size="1"><b>(0 displays "F" delete sensor screen, see end of this section)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Door Switch External wired connector = Loop 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Internal reed switch = loop 2</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Glassbreak Loop 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Smoke Detectors Loop 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Motions Loop 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Keyfobs Bottom Right Button = Loop 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Each button is 1 zone) Top Right Button = Loop 2</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Top Left Button = Loop 3</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Bottom Left Button = Loop 4</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5a. If this appears sensor has been previously learned</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000266.gif" alt="Tech_201000000266.gif" border="0" width="92" height="29" /></b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6. Sensor Menu (</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # for previous menu)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Press 1 to go to step 7 and enter Serial Number</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Press 2 to copy last serial number entered (Used for keyfobs)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Press 3 to view existing serial number 1 digit at a time (Only if sensor previously learned and IA L displays)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Press 9 to move to "F" (Delete Sensor) screen (Then press 1 to delete existing serial number)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Press</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to continue to Step 10 Zone Descriptor screen</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Press # to move back to Step 5 Loop Number screen</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Press 0 to skip to step 10 and enter Zone Descriptors</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000267.gif" alt="Tech_201000000267.gif" border="0" width="92" height="29" /></b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7. If 1 is pressed enter Serial Number now then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>(</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # skips back to step 6)</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000268.gif" alt="Tech_201000000268.gif" border="0" width="92" height="29" /></b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8. Serial Number displays, press</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to accept, # backs up to step 7</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000269.gif" alt="Tech_201000000269.gif" border="0" width="92" height="29" /></b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>9. Display shows serial learned, press</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000270.gif" alt="Tech_201000000270.gif" border="0" width="92" height="29" /></b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>9a. Activate Sensor to confirm (optional), press</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000271.gif" alt="Tech_201000000271.gif" border="0" width="92" height="29" /></b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>10. Press 1 to enter Zone Descriptor, 0 skips to next zone</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000272.gif" alt="Tech_201000000272.gif" border="0" width="92" height="29" /></b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>11. Enter 1st word with # + 2-digit word</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000273.gif" alt="Tech_201000000273.gif" border="0" width="92" height="29" /></b></font> <font face="Arial" color="#000000" size="1"><b>6 saves and moves to step 12 (Keypad speaks each word as entered)</b></font>
+<p></p>
+<ol start="8">
+<li><font face="Arial" color="#000000" size="1"><b>saves and moves to next zone</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>12. Enter 2nd word with # + 2-digit word</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000274.gif" alt="Tech_201000000274.gif" border="0" width="92" height="29" /></b></font> <font face="Arial" color="#000000" size="1"><b>6 saves and moves to step 13 (Keypad speaks each word as entered)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8 saves and moves to next zone</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>13. Enter 3rd word with # + 2-digit word</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000275.gif" alt="Tech_201000000275.gif" border="0" width="92" height="29" /></b></font> <font face="Arial" color="#000000" size="1"><b>6 or 8 saves new Voice Descriptor (Keypad speaks new Voice Descriptor)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>and moves to next Zone at step 1</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 ½ sec pause 07 First Floor 16 North 75 Three</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>82 Alarm 45 Five 58 Nursery 76 Transmitter</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>32 Attic 08 Floor 59 Office 77 Two</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>Baby 46 Four 60 One 78 Upstairs</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>33 Back 47 Front 17 Outside 26 Utility</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>34 Basement 48 Garage 61 Patio 79 Utility Room</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>35 Bathroom 49 Guest Room 62 Police 27 West</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>36 Bedroom 09 Gun 18 Pool 80 Window</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>83 Check 50 Hall 63 Rear 28 Yard</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>37 Delay Door 10 Inside 19 Room 81 Zero</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>38 Den 51 Kitchen 64 Second Floor 86 Zones</b></font>
+<p></p>
+<ol start="2">
+<li><font face="Arial" color="#000000" size="1"><b>Detector 11 Laundry 65 Seven 29 1 ST</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Dining 52 Laundry Room 20 Shed 30 2 ND</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>39 Dining Room 12 Library 21 Shop 31 3 RD</b></font>
+<p></p>
+<ol start="4">
+<li><font face="Arial" color="#000000" size="1"><b>Door 13 Living 66 Side 70 Custom Word #1</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>40 Downstairs 53 Living Room 67 Silent Police 71 Custom Word #2</b></font>
+<p></p>
+<ol start="5">
+<li><font face="Arial" color="#000000" size="1"><b>Driveway 14 Main 68 Six 72 Custom Word #3</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>East 15 Master 69 Sliding 73 Custom Word #4</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>41 Eight 54 Master Bedroom 22 Smoke 74 Custom Word #5</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>42 Emergency 55 Medical 23 South 99 Blank/Erase</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>43 Family Room 84 Message 24 Storage</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>87 Fire 56 Motion Detector 85 System</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>44 Fire Detection 57 Nine 25 Third Floor</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>14. Enter next Zone to program (01 to 99) or 00 to exit</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000276.gif" alt="Tech_201000000276.gif" border="0" width="92" height="29" /></b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>Delete Sensor</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>1. At "A" Zone Number (step 1) screen enter zone to delete (01 to 41) then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. At "B" Zone Type (step 2) screen enter 00 then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>or enter 0 at "E" Loop Number screen (step 5) then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3. Press</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>until "F" Delete Sensor screen appears</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000277.gif" alt="Tech_201000000277.gif" border="0" width="92" height="29" /></b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4. If 00 was entered at Zone Type (B) screen press 1 to delete sensor and move to next sensor programming</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>if 0 was entered at Loop Number (E2 or E2L) screen press 1 to delete only the serial number and move to 1C screen</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>57 False Alarm Options</b> I _ <b>7</b> _I <b>0 = All options disabled</b></font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>(SIA standard) 1 = Exit Time Restart Enabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 = Auto Stay Arming Enabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3 = Auto Stay Arming/Exit Time Restart</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4 = Cancel Alarm Display Enabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5 = Cancel Alarm Display/Exit Time Restart</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 = Cancel Alarm Display/Auto Stay Arming</b></font>
+<p></p>
+<ol start="7">
+<li><font face="Arial" color="#000000" size="1"><b>= Cancel Alarm Display/Auto Stay/Exit Time Restart</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>Cancel Display = Displays "CA" if an alarm abort occurs before report to central station</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>or if alarm cancel occurs after alarm reports (does not affect zone types 5, 6 and 7)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Auto Stay Arming = Will arm in Stay mode if exit delay expires and no delay zones were activated</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Exit Delay Restart/Reset = Restarts exit delay after system is Stay armed by pressing STAY or Code + STAY</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>or repeats the exit delay if E/E door is re-opened before exit delay expires</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>58 RF Jam Detect</b> I _ <b>0</b> _I <b>0 = Disable</b></font>
+<p></p>
+</li>
+</ul>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= RF Jam Detect, no Report</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= RF Jam + Report</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>59 Exit Alarm Report Code</b> I _ <b>1</b> _I <b>(Always enabled, cannot be disabled)</b></font>
+<p></p>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>60 Trouble Report Code</b> I _ <b>1</b> _I _ <b>0</b> _I</font>
+<p></p>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>61 Bypass Report Code</b> I _ <b>0</b> _I _ <b>0</b> _I</font>
+<p></p>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>62 AC Loss Report Code</b> I _ <b>1</b> _I _ <b>0</b> _I</font>
+<p></p>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>63 Low Bat Report Code</b> I _ <b>1</b> _I _ <b>0</b> _I</font>
+<p></p>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>64 Test Report Code</b> I _ <b>1</b> _I _ <b>0</b> _I</font>
+<p></p>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>65 Open/Disarm Report Code</b> I _ <b>0</b> _I</font>
+<p></p>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>66 Away/Stay Arm Report Code</b> I _ <b>0</b> _I <b>Away</b></font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1">I _ <b>0</b> _I <b>Stay</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>67 RF Xmtr Low Battery Report Code</b> I _ <b>1</b> _I _ <b>0</b> _I</font>
+<p></p>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>68 Cancel Report Code</b> I _ <b>1</b> _I _ <b>0</b> _I <b>(Always enabled, cannot be disabled)</b></font>
+<p></p>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>69 Recent Closing Report Code</b> I _ <b>1</b> _I <b>(Always enabled, cannot be disabled)</b></font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>(2-minute window if an alarm occurs after arming)</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>70 Alarm Restore Report Code</b> I _ <b>0</b> _I <b>(0 if using AVM 2-way module)</b></font>
+<p></p>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>71 Trouble Restore Report Code</b> I _ <b>1</b> _I _ <b>0</b> _I</font>
+<p></p>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>72 Bypass Restore Report Code</b> I _ <b>0</b> _I _ <b>0</b> _I</font>
+<p></p>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>73 AC Restore Report Code</b> I _ <b>1</b> _I _ <b>0</b> _I</font>
+<p></p>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>74 Low Bat Restore Report Code</b> I _ <b>1</b> _I _ <b>0</b> _I</font>
+<p></p>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>75 RF Low Bat Restore Report Code</b> I _ <b>1</b> _I _ <b>0</b> _I</font>
+<p></p>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>76 Test Restore Report Code</b> I _ <b>1</b> _I _ <b>0</b> _I <b>(Always enabled, cannot be disabled)</b></font>
+<p></p>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>80 Output Device Programming</b></font>
+<p></p>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Example: to open garage door</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>Select Device 01 in step 2</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Select 1 in step 3 to close for 2 seconds to activate X-10 PowerFlash at garage door opener</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Select 2 in step 4 to enable keyfob button fault to activate X-10 PowerFlash</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Select a Zone List which has the keyfob button entered (programmed in</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>81)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Bypass steps 6 and 7, program keyfob button as Type 23 (No Alarm Response)</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>Note: To turn a lamp on and off with keyfob 2 buttons must be used, one for ON and one for OFF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>1. Press 0 to exit or 1 to enter</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>80 programming</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000278.gif" alt="Tech_201000000278.gif" border="0" width="92" height="29" /></b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. Enter 2-digit X-10 Device number (01 to 08) (</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, 00 to exit)</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000279.gif" alt="Tech_201000000279.gif" border="0" width="92" height="29" /></b></font> <font face="Arial" color="#000000" size="1"><b>(set by X-10 module dials)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>By default schedule 8 is</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Action = 2 (Close and stay closed)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Start Zone Type = 33 (Start on any burglar alarm)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Stop Zone Type = 36 (Stop on siren timeout or disarm)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3. Enter what X-10 device will do or 0 to skip (</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # for previous)</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000280.gif" alt="Tech_201000000280.gif" border="0" width="92" height="29" /></b></font> <font face="Arial" color="#000000" size="1"><b>0 = No Response/Skip</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Close for 2 seconds</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Close and stay closed</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Pulse On and Off</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>For X-10 PowerHorn to function must be set to Pulse On and OFF</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4. Enter START Event Type (Type of event to trigger device) (</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # for previous)</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000281.gif" alt="Tech_201000000281.gif" border="0" width="92" height="29" /></b></font> <font face="Arial" color="#000000" size="1"><b>0 = Not Used/Skip</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Alarm</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Fault (Zone or Keyfob button)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Trouble</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>5. Enter START Zone List (List programmed in</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>81) (</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # for previous)</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000282.gif" alt="Tech_201000000282.gif" border="0" width="92" height="29" /></b></font> <font face="Arial" color="#000000" size="1"><b>0 = Not Used/Skip</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Zone List 1</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Zone List 2</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Zone List 3</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>6. Enter START Zone Type (Optional) (</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # for previous)</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000283.gif" alt="Tech_201000000283.gif" border="0" width="92" height="29" /></b></font> <font face="Arial" color="#000000" size="1"><b>00 = Not Used/Skip 22 = Disarming</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Delay Zone 31 = End of Exit Time</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Secondary Delay Zone 32 = Start of Entry Time</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Perimeter/Instant 33 = Any Burglar Alarm</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Interior Follower/Motions 36 = At Bell Timeout or Disarm</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Trouble by Day/Alarm by Night 38 = Chime</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 24 hour Silent/Holdup 39 = Any Fire Alarm</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 24 hour Police Panic 40 = Bypassing</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>08 = 24 hour Aux/Medical 42 = System Low Battery</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>09 = Fire 43 = Communication Failure</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>10 = Interior Delay 52 = Kissoff</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>20 = Arm-Stay 58 = Duress</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>21 = Arm-Away</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7. Enter STOP Zone List (List programmed in</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>81) (</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # for previous)</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000284.gif" alt="Tech_201000000284.gif" border="0" width="92" height="29" /></b></font> <font face="Arial" color="#000000" size="1"><b>0 = Not Used/Skip</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Zone List 1</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Zone List 2</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Zone List 3</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>8. Enter STOP Zone Type (Optional) (</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # for previous)</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000285.gif" alt="Tech_201000000285.gif" border="0" width="92" height="29" /></b></font> <font face="Arial" color="#000000" size="1"><b>(see above Zone Types)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>9. Enter next 2-digit Device number (01 to 08) or 00 to exit</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000279.gif" alt="Tech_201000000279.gif" border="0" width="92" height="29" /></b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>81 Zone Lists for Output Devices</b></font>
+<p></p>
+</li>
+</ul>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>Press 1 to enter zone list programming, 0 to exit</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000286.gif" alt="Tech_201000000286.gif" border="0" width="92" height="29" /></b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. Enter Zone List to program (</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, 00 exits)</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000287.gif" alt="Tech_201000000287.gif" border="0" width="92" height="29" /></b></font> <font face="Arial" color="#000000" size="1"><b>Zone List 1 = X-10</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Zone List 2 = X-10 or Cross Zones</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Zone List 3 for Chime By Zone</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>26</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3. Enter Zone to add to Zone List then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>then 00 for step 4 (</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, 00 exits)</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000288.gif" alt="Tech_201000000288.gif" border="0" width="92" height="29" /></b></font> <font face="Arial" color="#000000" size="1"><b>Multiple Zones can be added (example: 01</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>03</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>25</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>etc)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4. To delete this Zone List press 1, to skip to step 5 press 0 (</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, 00 exits)</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000289.gif" alt="Tech_201000000289.gif" border="0" width="92" height="29" /></b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5. To delete Zone in this List press 1, to skip to step 6 press 0 (</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, 00 exits)</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000290.gif" alt="Tech_201000000290.gif" border="0" width="92" height="29" /></b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5a. If 1 was selected enter Zone to delete then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>, end with 00</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000291.gif" alt="Tech_201000000291.gif" border="0" width="92" height="29" /></b></font> <font face="Arial" color="#000000" size="1"><b>Multiple Zones can be deleted (example: 01</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>03</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>25</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>etc)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6. Enter next Zone List to program or 00 to exit</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000287.gif" alt="Tech_201000000287.gif" border="0" width="92" height="29" /></b></font>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>83 Sequential Mode (Optional way of enrolling sensors)</b></font>
+<p></p>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>84 Assign Zone Voice Descriptors (Alternate way of adding Descriptors)</b></font>
+<p></p>
+</li>
+</ul>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>Press 1 to enter mode programming, 0 to exit</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000292.gif" alt="Tech_201000000292.gif" border="0" width="92" height="29" /></b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. Enter Zone to add Voice Description (01 to 99) (</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, 00 exits)</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000293.gif" alt="Tech_201000000293.gif" border="0" width="92" height="29" /></b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3. Enter 1st word with # + 2-digit Descriptor</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000294.gif" alt="Tech_201000000294.gif" border="0" width="92" height="29" /></b></font> <font face="Arial" color="#000000" size="1"><b>6 saves and moves to step 4 (Keypad speaks each word as entered)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8 saves and moves to next zone</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4. Enter 2nd word with # + 2-digit Descriptor</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000295.gif" alt="Tech_201000000295.gif" border="0" width="92" height="29" /></b></font> <font face="Arial" color="#000000" size="1"><b>6 saves and moves to step 5 (Keypad speaks each word as entered)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8 saves and moves to next zone</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5. Enter 3nd word with # + 2-digit Descriptor</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000295.gif" alt="Tech_201000000295.gif" border="0" width="92" height="29" /></b></font> <font face="Arial" color="#000000" size="1"><b>6 or 8 to save and finish (Keypad speaks entire Voice Descriptor)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6. Enter next Zone to add Voice Description (01 to 99) or 00 to exit</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000293.gif" alt="Tech_201000000293.gif" border="0" width="92" height="29" /></b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 1/2 sec pause 14 Fire 28 Motion 42 Window</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>Alarm 15 Floor 29 Office 43 Yard</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Attic 16 Front 30 Patio 44 Zones</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Baby 17 Garage 31 Pool 45 1st</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Back 18 Gun 32 Room 46 2nd</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Basement 19 Hall 33 Shed 47 3rd</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Bathroom 20 Inside 34 Shop 70 Custom Word 1</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Bedroom 21 Kitchen 35 Side 71 Custom Word 2</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>08 Check 22 Laundry 36 Sliding 72 Custom Word 3</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>09 Den 23 Library 37 Smoke 73 Custom Word 4</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>10 Detector 24 Living 38 Storage 74 Custom Word 5</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>11 Dining 25 Main 39 System 99 Blank</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>12 Door 26 Master 40 Upstairs</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>13 Emergency 27 Message 41 Utility</b></font>
+<p></p>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="All Spanish Voice Descriptors" onclick="self.location='Tech_2010Ademco_LynxRENMT_v11_Spanish_Con.htm'" /></b></font></form>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>85 Record Custom Voice Descriptors (Zone Descriptions and "Follow Me" feature)</b></font>
+<p></p>
+</li>
+</ul>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>Press 1 to enter mode programming, 0 to exit</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000296.gif" alt="Tech_201000000296.gif" border="0" width="92" height="29" /></b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. Enter Custom Word to program (70 to 74) or 00 to exit (</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, 00 exits)</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000297.gif" alt="Tech_201000000297.gif" border="0" width="92" height="29" /></b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3. Press</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>+ # to begin recording</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4. Keypad beeps 3 times, after 3rd beep speak message (Recording length is 1.5 seconds)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5. Press # to re-record</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Press 6 to save and move back to to step 2</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>87 Aux Function/1 Button Paging</b> I _ <b>1</b> _I <b>0 = Aux key uses defined functions</b></font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>(For Macros see "Basic Commands") 1 = Aux key sends message to Pager</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>88 Pager Characteristics (16 digits)</b> I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>(For PIN's, 800 blocks etc</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>= # + 11, # = # + 12, 2 second pause = # + 13)</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>89 Event Log 80% Full Report Code</b> I _ <b>0</b> _I _ <b>0</b> _I</font>
+<p></p>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>90 Event Logging</b> I <b>#15</b>_I <b>0 = None</b></font>
+<p></p>
+</li>
+</ul>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Logs Alarm/Restore</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Logs Trouble/Restore</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>4 = Logs Bypass/Restore</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8 = Open/Close</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>#15 = Logs all</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>91 Long Range Radio/Audio Alarm</b> I _ <b>0</b> _I <b>0 = None</b></font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>1 = AVM 2-Way &amp; Remote Phone Control</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>For non 2-way systems select 0 or 2 2 = Remote Phone Control only</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>For 2-way systems select 1 or 4 4 = AVM 2-Way Audio only</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>92 Reports per Armed Period</b> I _ <b>1</b> _I <b>1 = Shutdown after 1 trip</b></font>
+<p></p>
+</li>
+</ul>
+<ol start="2">
+<li><font face="Arial" color="#000000" size="1"><b>= Shutdown after 2 trips</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>93 Flexible Callback</b> I _ <b>0</b> _I <b>0 = No Flexible Callback</b></font>
+<p></p>
+</li>
+</ul>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Last digit flexible</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Last 2-digits flexible</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Last 3-digits flexible</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>94 Download Phone (16 digits)</b> I _<b>1</b> _I _ <b>8</b> _I _<b>0</b> _I _ <b>0</b> _I _<b>6</b> _I _ <b>8</b> _I _<b>2</b> _I _ <b>1</b> _I _<b>6</b> _I _ <b>9</b> _I _<b>0</b> _I _ _I</font>
+<p></p>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>95 Ring Count</b> I <b>#15</b>_I <b>00 = Downloading Disable</b></font>
+<p></p>
+</li>
+</ul>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>to 14 = Rings before answer</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>15 = Answering Machine over-ride</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>96 Reinitialize Download (Defaults download CSID, resets account number to FFFF)</b></font>
+<p></p>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>97 Default Panel (Enter 1 to default)</b></font>
+<p></p>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>98 Exits Program Mode (Will not allow re-entry with Installer Code + 8 + 0 + 0)</b></font>
+<p></p>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>99 Exits Program Mode (Will allow re-entry with Code + 8 + 0 + 0)</b></font>
+<p></p>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#0000FF" size="2"><b>Scheduling</b></font> <font face="Arial" color="#000000" size="1"><b>1. Enter Master or Installer Code + # + 64</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. Enter Schedule to program (1 to 8) then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # exits</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000247.gif" alt="Tech_201000000247.gif" border="0" width="92" height="29" /></b></font> <font face="Arial" color="#000000" size="1"><b>1 to 6 are for Users, 7 to 8 only for Installer</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3. Enter Event which will occur then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # exits</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000248.gif" alt="Tech_201000000248.gif" border="0" width="92" height="29" /></b></font> <font face="Arial" color="#000000" size="1"><b>0 = No Event Selected</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Activate X-10 Device</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Latch Key Report (sounds if not disarmed by specific time)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Automatic Stay Arming</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Voice Reminder Announcement</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Alarm Clock (sounds until button press)</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>4. Enter Hour to Start Event then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # exits</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000249.gif" alt="Tech_201000000249.gif" border="0" width="92" height="29" /></b></font> <font face="Arial" color="#000000" size="1"><b>00 to 12</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5. Enter 0 for AM or 1 for PM then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # for previous display</b></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000250.gif" alt="Tech_201000000250.gif" border="0" width="92" height="29" /></b></font>
+<p></p>
+<ol start="6">
+<li><font face="Arial" color="#000000" size="1"><b>Enter Minute to Start Event then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # for previous display</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000251.gif" alt="Tech_201000000251.gif" border="0" width="92" height="29" /></b></font>
+<p></p>
+<ol start="7">
+<li><font face="Arial" color="#000000" size="1"><b>Enter Start Day of Event then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # for previous display</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000252.gif" alt="Tech_201000000252.gif" border="0" width="92" height="29" /></b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>If Events 3, 4 and 5 were programmed display will return to step 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>If events 1 and 2 are being programmed display will continue to step 8</b></font>
+<p></p>
+<p></p>
+<ol start="8">
+<li><font face="Arial" color="#000000" size="1"><b>Enter Hour to Stop Event then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # for previous display</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000253.gif" alt="Tech_201000000253.gif" border="0" width="92" height="29" /></b></font>
+<p></p>
+<ol start="9">
+<li><font face="Arial" color="#000000" size="1"><b>Enter 0 for AM or 1 for PM then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # for previous display</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000254.gif" alt="Tech_201000000254.gif" border="0" width="92" height="29" /></b></font>
+<p></p>
+<ol start="10">
+<li><font face="Arial" color="#000000" size="1"><b>Enter Minute to Stop Event then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # for previous display</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000255.gif" alt="Tech_201000000255.gif" border="0" width="92" height="29" /></b></font>
+<p></p>
+<ol start="11">
+<li><font face="Arial" color="#000000" size="1"><b>Enter Stop Day of Event then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # for previous display</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000256.gif" alt="Tech_201000000256.gif" border="0" width="92" height="29" /></b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>If not programming X-10 Devices display returns to step 1</b></font>
+<p></p>
+<p></p>
+<ol start="12">
+<li><font face="Arial" color="#000000" size="1"><b>Enter X-10 Device to perform Event then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>for next, # for previous display</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000257.gif" alt="Tech_201000000257.gif" border="0" width="92" height="29" /></b></font> <font face="Arial" color="#000000" size="1"><b>Device 1 to 8</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Display will move back to step 1, press # to exit</b></font>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>

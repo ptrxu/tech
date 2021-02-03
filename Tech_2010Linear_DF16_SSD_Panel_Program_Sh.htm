@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>Linear DF-16 SSD Panel Program Sheet</title>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+
+			<script type="text/javascript" language="javascript1.2" src="whver.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+    			<script type="text/javascript" language="javascript1.2" src="whlang.js"></script> 
+    <meta name="generator" content="Adobe RoboHelp 9" />
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+	      //<!--
+	      RH_Document_Write("<p style=\"text-align:right\"> ");
+RH_AddMasterBreadcrumbs( "Tech_2010.htm", "", "/", "Home", "Tech_2010Main.htm");
+RH_Document_Write("<\/p>");
+//-->
+</script>
+<font face="Arial" color="#0000FF" size="2">Linear DF-16 SSD Panel <b>Program Sheet</b></font>
+<p></p>
+<p></p>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Basics" onclick="self.location='Tech_2010Linear_DF16_SSD_Basic_Commands.htm'" /> <input type="button" value="Codes" onclick="self.location='Tech_2010Linear_DF16_SSD_User_Codes.htm'" /> <input type="button" value="Troubles" onclick="self.location='Tech_2010Linear_DF16_SSD_Trouble_Display.htm'" /> <input type="button" value="Keypad" onclick="self.location='Tech_2010Linear_DF16_SSD_Keypad.htm'" /> <input type="button" value="Panel Program" onclick="self.location='Tech_2010Linear_DF16_SSD_Panel_Program_Sh.htm'" /> <input type="button" value="Dialer Program" onclick="self.location='Tech_2010Linear_DF16_SSD_Dialer_Program_S.htm'" /> <input type="button" value="Sensors" onclick="self.location='Tech_2010Linear_DF16_SSD_Sensors.htm'" /></b></font></form>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>1704 Dialer can only programmed with P-9 Programmer (See bottom of this page)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Formats</b></font> <font face="Arial" color="#000000" size="1"><b>Radionics HEX, Sescoa Standard, Sescoa Superspeed</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Enter Program</b></font> <font face="Arial" color="#000000" size="1"><b>User Code + LEARN (1 Gong, 5 Beeps)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Exit Program</b></font> <font face="Arial" color="#000000" size="1"><b>Press OFF for 3 seconds</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Compatible</b></font> <font face="Arial" color="#000000" size="1"><b>DF-10 Wireless Keypad (Linear DVS2400 Sensors likely won't work)</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Wireless</b></font> <font face="Arial" color="#000000" size="1"><b>DF-31 Door/Window</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Sensors</b></font> <font face="Arial" color="#000000" size="1"><b>DF-41 &amp; DF-42 Keyfobs</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>DF-54 Motion Detector</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>DF-71 Smoke Detector</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Add Sensor</b></font> <font face="Arial" color="#000000" size="1"><b>1. Enter Zone (01 to 16), Zone light turns ON</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. Activate Sensor (press AUTO on keyfob)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>1 Bing = Learned OK</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Long Buzz = Another sensor already learned in that zone</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Delete Sensor</b></font> <font face="Arial" color="#000000" size="1"><b>Enter Zone (01 to 16) then TEST (1 Bing, Zone Light turns OFF)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Interior Zones</b></font> <font face="Arial" color="#000000" size="1"><b>User Code + LEARN (1 Gong 5 Beeps)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Enter Zone Number + HOME + 7 + AWAY (1 Bing)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Instant or Delay Zones selected by jumper under Transmitter)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Default System</b></font> <font face="Arial" color="#000000" size="1"><b>Hold LEARN button while plugging in AC Transformer</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Defaulting the system doesn't default the dialer</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Learn Master Code again with</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>+ New Code (1 to 5 digits) + OFF)</b></font>
+<p></p>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>To Program below enter Location + HOME, enter New Value + AWAY</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LOC Description Possible Values Default</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>20 Entry Delay 1 to 255 seconds 45</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>21 Exit Delay 1 to 255 seconds 30</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>30 Burglary Siren Time 1 to 30 minutes 5</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>31 Emergency Siren Time 1 to 30 minutes 5</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>32 Fire Siren Time 1 to 30 minutes 30</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>40 Automation Output Time 1 to 2500 seconds 0</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>50 Remote Keyfob Arming Level 2 = HOME Mode 3</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3 = AWAY Mode</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>51 Remote Control Disarming Level 0 = OFF Mode 0</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= CHIME Mode</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>60 Auto Bypass of Open Zones 0 = OFF 1</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= ON</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>61 Auto Reactivation of Bypassed Zones 0 = OFF 0</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= ON</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>62 Quick Arming Enable 0 = OFF 1</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= ON</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>63 Emergency Panic Audible/Silent 0 = Audible 0</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Silent</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>64 Burglar Alarm Audible/Silent 0 = Audible 0</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Silent</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>65 Exit Delay Beeps 0 = OFF 1</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= ON</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>66 Entry Delay Beeps 0 = OFF 1</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= ON</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>67 Test Sensor Light 0 = OFF 0</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Turns on every 2 weeks as reminder to test) 1 = ON</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>68 Automation Output Polarity 0 = Voltage w/OFF 1</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Voltage when ON</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>69 Automation Output during E/E Delays 0 = NO 0</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= YES</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>70 Automation Output when Armed 0 = NO 0</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= YES</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>71 Automation Output Flashes in Alarm 0 = NO 0</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= YES</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>72 Automation Flashes During &amp; after Alarm 0 = NO 0</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= YES</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>73 Remote Arm/Disarm Chirp 0 = NO 1</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= YES</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>74 Automation Bing Tone 0 = NO 1</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= YES</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>98 Secondary User Code 1 to 5 Digits ????</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>99 Master User Code 1 to 5 Digits ????</b></font>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>

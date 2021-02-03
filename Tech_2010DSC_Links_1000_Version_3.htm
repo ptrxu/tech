@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>DSC Links 1000 Version 3</title>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+
+			<script type="text/javascript" language="javascript1.2" src="whver.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+    			<script type="text/javascript" language="javascript1.2" src="whlang.js"></script> 
+    <meta name="generator" content="Adobe RoboHelp 9" />
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+	      //<!--
+	      RH_Document_Write("<p style=\"text-align:right\"> ");
+RH_AddMasterBreadcrumbs( "Tech_2010.htm", "", "/", "Home", "Tech_2010Main.htm");
+RH_Document_Write("<\/p>");
+//-->
+</script>
+<font face="Arial" color="#0000FF" size="2"><b>DSC Links 1000 v3 Programming</b></font>
+<p></p>
+<p></p>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="V2 Wiring" onclick="self.location='Tech_2010DSC_Links1000_v2_Main_Board.htm'" /> <input type="button" value="V3 Program" onclick="self.location='Tech_2010DSC_Links_1000_Version_3.htm'" /> <input type="button" value="V3 Wiring" onclick="self.location='Tech_2010DSC_Links_1000_v3_Main_Board.htm'" /></b></font></form>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="2"><b>LINKS 1000 MUST be programmed by external programmer to operate</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Phones Wiring</b></font> <font face="Arial" color="#000000" size="1"><b>Must be first in line, Tip &amp; Ring to Links, T1 &amp; R1 from Links to Panel</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Wiring Links</b></font> <font face="Arial" color="#000000" size="1"><b>1. Wire Zone from panel to SYS TBL on Links</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. Wire Zone common to TMP on Links</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3. Jumper from TMP to AUX-GND on Links</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4. 5.6k Zone Resistor from TMP to SYS TBL on Links</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5. Wire PGMin to PGM 1 (Never PGM 2)</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b><i>Note</i></b></font><font face="Arial" color="#000000" size="1"><b>: Older Links label this terminal as S PGM</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6. Jumper 5.6k Resistor from AUX+ to PGM 1 on panel</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>Programming Panel</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>WSS5010</b></font> <font face="Arial" color="#000000" size="1"><b>1. Program Zone definition for "Links Supervisory" (10)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. Program PGM 1 as 16</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3. Turn on lights 1 and 7 in 361 to enable Links as backup</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4. Turn on light 4 in zone attributes to allow bypassing in event of trouble or failure</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>PC1555/5010</b></font> <font face="Arial" color="#000000" size="1"><b>1. Program Zone 8 for Links Supervisory in 001 as 09</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. Program PGM 1 as 16 to enable Links</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3. Turn on lights 1 in 361 to report to Links as backup</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4. Enter Links Trouble Report Codes in section 320 (zone # Links is connected)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5. Program Call Directions in 361 to 368</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6. Turn on light 4 in zone attributes to allow bypassing in event of trouble or failure</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Testing</b></font> <font face="Arial" color="#000000" size="1"><b>1. Make sure LED L3 (Top) or L4 (2nd from top) Signal Strength LED is ON</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(If L5 or L6 is on either raise Links higher or mount longer antenna)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. Make sure LED1 (Middle LED) is flashing once every 10 seconds</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3. Remove RJ Cord from Block, send an alarm signal</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4. After 1 minute relay should click, LED1 is ON steady, Links should send</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Trouble LED L1</b></font> <font face="Arial" color="#000000" size="1"><b>2 flashes = AC Trouble to Links</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3 flashes = Low Battery</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4 flashes = Loss of Cellular Communication (Raise Links or use longer Antenna)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 flashes = Tamper Trouble</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7 flashes = Internal Trouble</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8 flashes = PGM trouble (most common trouble)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Check PGM programming and wiring (Usual cause)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Check for Resistor across AUX+ and PGM 1)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>No Signal Still?</b></font> <font face="Arial" color="#000000" size="1"><b>1. Hook handset to panel, send signal, if nothing happens check panel programming</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. Call Links Number (printed on box), "Customer not in service" = Links not activated</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(If Links is activated message should be "Customer has left the vehicle")</b></font>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>

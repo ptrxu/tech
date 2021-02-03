@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>Ademco 5839 Remote Keypad Program Guide</title>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+
+			<script type="text/javascript" language="javascript1.2" src="whver.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+    			<script type="text/javascript" language="javascript1.2" src="whlang.js"></script> 
+    <meta name="generator" content="Adobe RoboHelp 9" />
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+	      //<!--
+	      RH_Document_Write("<p style=\"text-align:right\"> ");
+RH_AddMasterBreadcrumbs( "Tech_2010.htm", "", "/", "Home", "Tech_2010Main.htm");
+RH_Document_Write("<\/p>");
+//-->
+</script>
+<font face="Arial" color="#0000FF" size="3"><b>Ademco 5839 Remote Keypad Program Guide</b></font>
+<p></p>
+<p></p>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Programming" onclick="self.location='Tech_2010Ademco_5839_Remote_Keypad_Progra.htm'" /> <input type="button" value="5839 Keypad" onclick="self.location='Tech_2010Ademco_5839_Remote_Keypad.htm'" /> <input type="button" value="5883 Receiver" onclick="self.location='Tech_2010Ademco_5839_5883_Wireless_Transe.htm'" /></b></font></form>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Note</b></font> <font face="Arial" color="#000000" size="1"><b>Nobody here has ever gotten this programming to work on the 5883 receiver</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(It never goes farther than step #9 from below program sheet)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Info</b></font> <font face="Arial" color="#000000" size="1"><b>Must use 5883 Wireless Receiver</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Turn dip switch 6 ON for Bi-direction support</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Do not set multiple keypads to the same address</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Setup desired keypad address before setting up 5839</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Power</b></font> <font face="Arial" color="#000000" size="1"><b>1 9-Volt battery</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Optional 9-Volt 110mA DC power supply Ademco part # N7703 (9-Volt center pin, 0-Volt shell)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Keypad will go into sleep mode if powered only by battery, press</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to wake</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Compatibility</b></font> <font face="Arial" color="#000000" size="1"><b>Vista-15P v1.3 and higher</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Vista-20P v1.4 and higher</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>FA148C v1.3 and higher</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>FA168C v1.4 and higher</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Programming</b></font> <font face="Arial" color="#000000" size="1"><b>1. Set Dip switches on 5883 to select receiver address (Vista-15P/20P turn 2,3 and 4 OFF)</b></font>
+<p></p>
+<ol start="2">
+<li><font face="Arial" color="#000000" size="1"><b>Place panel into RF Go-No-Go RF mode</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>Vista-10/15P/20/20P Installer Code + # + 4</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Vista-40/50/100/128 Installer Code + 5</b></font>
+<p></p>
+<ol start="3">
+<li><font face="Arial" color="#000000" size="1"><b>Wait 1 minute</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>3. Power up 5839 keypad by pressing</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>key</b></font> <font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000564.gif" alt="Tech_201000000564.gif" border="0" width="115" height="34" /></b></font>
+<p></p>
+<ol start="4">
+<li><font face="Arial" color="#000000" size="1"><b>Hold 1 &amp; 3 keys until this display then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000565.gif" alt="Tech_201000000565.gif" border="0" width="115" height="34" /></b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Press</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>key to enter Setup</b></font> <font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000566.gif" alt="Tech_201000000566.gif" border="0" width="115" height="34" /></b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Press</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>key for 5839 address</b></font> <font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000567.gif" alt="Tech_201000000567.gif" border="0" width="115" height="34" /></b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Set 5839 address using below chart</b></font> <font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000568.gif" alt="Tech_201000000568.gif" border="0" width="115" height="34" /></b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>This sets 5839 as an additional keypad</b></font> <font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000569.gif" alt="Tech_201000000569.gif" border="0" width="285" height="187" /></b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>Vista-15/20P - Must have this address enabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Vista-40 - Enable and set as Alpha keypad in #93</b></font>
+<p></p>
+<ol start="9">
+<li><font face="Arial" color="#000000" size="1"><b>This will display, may require pressing</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000570.gif" alt="Tech_201000000570.gif" border="0" width="115" height="34" /></b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>If ID from 5883 is learned this will appear</b></font> <font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000571.gif" alt="Tech_201000000571.gif" border="0" width="115" height="34" /></b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>If this doesn't appear go back to step 2</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Press</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to accept ID</b></font>
+<p></p>
+<ol start="11">
+<li><font face="Arial" color="#000000" size="1"><b>Display will return to Setup screen</b></font> <font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000566.gif" alt="Tech_201000000566.gif" border="0" width="115" height="34" /></b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>Press # to quit or</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to setup Function keys</b></font>
+<p></p>
+<p></p>
+<ol start="12">
+<li><font face="Arial" color="#000000" size="1"><b>Press</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to setup Function keys</b></font> <font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000572.gif" alt="Tech_201000000572.gif" border="0" width="115" height="34" /></b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Enable function keys with</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>disable with #</b></font> <font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000573.gif" alt="Tech_201000000573.gif" border="0" width="115" height="34" /></b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Display returns to this screen, press # for next</b></font> <font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000572.gif" alt="Tech_201000000572.gif" border="0" width="115" height="34" /></b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Press</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to setup sounds or # for previous</b></font> <font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000574.gif" alt="Tech_201000000574.gif" border="0" width="115" height="34" /></b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Press</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to enable sounds or # for previous</b></font> <font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000575.gif" alt="Tech_201000000575.gif" border="0" width="115" height="34" /></b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Display moves to Options? screen</b></font> <font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000565.gif" alt="Tech_201000000565.gif" border="0" width="115" height="34" /></b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>Press # to exit or</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to move back to step 5</b></font>
+<p></p>
+<ol start="18">
+<li><font face="Arial" color="#000000" size="1"><b>Keypad should display msg screen</b></font> <font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000564.gif" alt="Tech_201000000564.gif" border="0" width="115" height="34" /></b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>If successful keypad should display properly</b></font> <font face="Arial" color="#800000" size="1"><b><img src="Tech_201000000576.gif" alt="Tech_201000000576.gif" border="0" width="115" height="34" /></b></font>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</li>
+</ol>
+</body>
+</html>

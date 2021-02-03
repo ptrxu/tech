@@ -1,0 +1,578 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>FBI Omni-408 Program Sheet</title>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+
+			<script type="text/javascript" language="javascript1.2" src="whver.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+    			<script type="text/javascript" language="javascript1.2" src="whlang.js"></script> 
+    <meta name="generator" content="Adobe RoboHelp 9" />
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+	      //<!--
+	      RH_Document_Write("<p style=\"text-align:right\"> ");
+RH_AddMasterBreadcrumbs( "Tech_2010.htm", "", "/", "Home", "Tech_2010Main.htm");
+RH_Document_Write("<\/p>");
+//-->
+</script>
+<font face="Arial" color="#0000FF" size="3"><b>FBI Omni-408 Program Sheet</b></font>
+<p></p>
+<p></p>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Basics" onclick="self.location='Tech_2010FBI_Omni408_Basic_Commands.htm'" /> <input type="button" value="Codes" onclick="self.location='Tech_2010FBI_Omni408_User_Codes.htm'" /> <input type="button" value="Trouble" onclick="self.location='Tech_2010FBI_Omni408_Trouble_Display.htm'" /> <input type="button" value="Keypad" onclick="self.location='Tech_2010FBI_Omni408_LED_Keypad.htm'" /> <input type="button" value="LCD Keypad" onclick="self.location='Tech_2010FBI_Omni408_LCD_Keypad.htm'" /> <input type="button" value="Wiring" onclick="self.location='Tech_2010FBI_Omni408_Wiring.htm'" /> <input type="button" value="Program" onclick="self.location='Tech_2010FBI_Omni408_Program_Sheet.htm'" /> <input type="button" value="Sensors" onclick="self.location='Tech_2010FBI_Omni408_Sensors.htm'" /></b></font></form>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Power Ratings</b></font> <font face="Arial" color="#000000" size="1"><b>500ma total (including Aux Power, Smokes, Keypads)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>50ma Smoke Power</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LED Keypads 30ma</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6615 Alpha Keypad 60ma Standby / 100ma Active (extimated)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Standard Motion 20ma (average)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Microwave Motion 30 to 50ma (average)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Glassbreak 25ma to 35ma</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Smoke Detector 40 to 50ma (average)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Enter Program</b></font> <font face="Arial" color="#000000" size="1"><b>Press CODE key +</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>+ 2468 + 1</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Options</b></font> <font face="Arial" color="#000000" size="1"><b>Code +</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>+ Installer Code + 1 = Enter Programming</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Code +</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>+ Installer Code + 2 = Read Only Mode (View data but don't allow changes)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Code +</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>+ Installer Code + 3 = Unattended Download (Sends to downloader)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Code +</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>+ Installer Code + 4 = Online Download (Answer downloader)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Code +</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>+ Installer Code + 5 = Walk Test Mode (Reduced sensitivity)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Code +</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>+ Installer Code + 6 = Clear Tampers</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Code +</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>+ Installer Code + 7 = Event Log View (Event buffer)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Move to location</b></font> <font face="Arial" color="#000000" size="1"><b>Press</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>+ 2 digit location while anywhere in programming</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Program location</b></font> <font face="Arial" color="#000000" size="1"><b>Press # after each digit and move to next location</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b><i>Example:</i></b></font> <font face="Arial" color="#000000" size="1"><b>To program phone number enter 1#8#0#0# etc</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Exit Program</b></font> <font face="Arial" color="#000000" size="1"><b>Press STAY</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Default Panel</b></font> <font face="Arial" color="#000000" size="1"><b>1. Short "EEPROM RESET" pins on panel and power up</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OR</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. Press CODE key +</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>+ 2468 + 1 and hold 1 &amp; 3 at same time</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Zone Page if 4/2</b></font>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Tech1 Default Signals" onclick="self.location='Tech_201042_Signals_by_Panel_Type.htm'" /></b></font></form>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Hex Program</b></font> <font face="Arial" color="#000000" size="1"><b>CODE+1 = A CODE+2 = B CODE+3 = C CODE+4 = D CODE+5 = E CODE+6 = F</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>---------------------------------------------------------------------------------------------------------------------------</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="2"><b>CLICK ON PROGRAM LOCATIONS TO SHOW ALL POSSIBLE VALUES</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>01 Primary Phone (16 Digits)</b> I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>L1 L2 L3 L4 L5 L6 L7 L8 L9 L10 L11 L12 L13 L14 L15 L16</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>A = End of Phone Number</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>B = TouchTone</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>C = 3 second pause</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>D = TouchTone #</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>E =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>70C = Disable Call Waiting</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>F = 800</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>02 Secondary Phone (16 Digits)</b> I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Pager or "Follow Me"</b> <b>L1 L2 L3 L4 L5 L6 L7 L8 L9 L10 L11 L12 L13 L14 L15 L16</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>03 Callback Phone (16 Digits)</b> I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>L1 L2 L3 L4 L5 L6 L7 L8 L9 L10 L11 L12 L13 L14 L15 L16</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>04 Account Number 1</b> I _ _I _ _I _ _I _ _I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>L1 L2 L3 L4</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>05 Account Number 2</b> I _ _I _ _I _ _I _ _I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>L1 L2 L3 L4</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>06 CS Dialer Options</b> I _<b>7</b> _I <b>5</b> I _<b>1</b> I <b>3</b> I <b>(4/2 Format, 2300 Handshake)</b></font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Click to show details &gt;&gt;</b> <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_Location_4.htm';Popup.DoClick()">L1</a></font> <font face="Arial" color="#800000" size="1"><b>L2 L3 L4</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1">07 Keypad Conditions<b>I</b> _F _<b>I</b> 0 <b>I</b> _E <b>I</b></font>
+<p></p>
+</li>
+</ul>
+<ol start="4">
+<li><font face="Arial" color="#000000" size="1"><b>I</b> Click to show details &gt;&gt;<a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_Location_5.htm';Popup.DoClick()"></a></font> <font face="Arial" color="#800000" size="1"><b>L1</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>L2 L3 L4</b></font>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>08 System Timeouts</b>I _<b>6</b> _I 6 I <b>_</b>2</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1">I F I<a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_Location_6.htm';Popup.DoClick()">Click to show details &gt;&gt;</a></font>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><object id="Popup" codebase="Popup.Ocx" width="1" height="1" classid="CLSID:8F0DD2CA-786E-11D0-A671-000092909AB2"><param name="SizeX" value="250" />
+<param name="SizeY" value="120" /></object></b></font>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>09 Miscellaneous Sys Options</b> I _<b>2</b> _I <b>9</b> I _<b>3</b> I <b>6</b> I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Click to show details &gt;&gt;</b> <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_Location_7.htm';Popup.DoClick()">L1</a></font> <font face="Arial" color="#800000" size="1"><b>L2 L3 L4</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1">10 Sys Options/Pager/Arm/Disarm<b>I</b> _0 _<b>I</b> 0 <b>I</b> _3 <b>I</b></font>
+<p></p>
+</li>
+</ul>
+<ol start="0">
+<li><font face="Arial" color="#000000" size="1"><b>I</b> Click to show details &gt;&gt;&gt;<a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010Omni408_Location_8.htm';Popup.DoClick()"></a></font> <font face="Arial" color="#800000" size="1"><b>L1</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>L2 L3 L4</b></font>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>11 Zone 1 Type and CS Code</b>I <b>_</b>? I <b>_</b> ? I <b>_</b>3 <b>I</b></font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Click to show details &gt;&gt;&gt;</b> <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_Zone_Types.htm';Popup.DoClick()">L1</a> <b>L2</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>L3</b></font>
+<p></p>
+<font face="Courier" color="#000000" size="1"><b>L4</b></font> <font face="Arial" color="#000000" size="1">*<b>12 Zone 2 Type and CS Code</b>I <b>_</b>? I <b>_</b> ? <b>I</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>_</b>3 <b>I</b> 2 <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_Zone_Types.htm';Popup.DoClick()"></a></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Click to show details &gt;&gt;&gt;</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>L1</b> L2 <b>L3</b> L4 <b>*</b>13 Zone 3 Type and CS Code</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>I</b> <b>Click to show details &gt;&gt;&gt;</b> <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_Zone_Types.htm';Popup.DoClick()">L1</a> <b>L2</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>L3</b></font>
+<p></p>
+<font face="Courier" color="#000000" size="1"><b>L4</b></font> <font face="Arial" color="#000000" size="1">*<b>14 Zone 4 Type and CS Code</b>I <b>_</b>? I <b>_</b> ? <b>I</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>_</b>3 <b>I</b> 4 <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_Zone_Types.htm';Popup.DoClick()"></a></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Click to show details &gt;&gt;&gt;</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>L1</b> L2 <b>L3</b> L4 <b>*</b>15 Zone 5 Type and CS Code</font> <font face="Arial" color="#800000" size="1">I</font>
+<form><font face="Arial" color="#800000" size="1"><input type="button" value="BURGLARY/FIRE CID CODES" onclick="self.location='Tech_2010FBI_XL2_Turbo_Zone_Contact_ID_Ta.htm'" /> _</font><font face="Arial" color="#000000" size="1"><b>?</b></font></form>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>I</b> <b>Click to show details &gt;&gt;&gt;</b> <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_Zone_Types.htm';Popup.DoClick()">L1</a> <b>L2</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>L3</b></font>
+<p></p>
+<font face="Courier" color="#000000" size="1"><b>L4</b></font> <font face="Arial" color="#000000" size="1">*<b>16 Zone 6 Type and CS Code</b>I <b>_</b>? I <b>_</b> ? <b>I</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>_</b>3 <b>I</b> 6 <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_Zone_Types.htm';Popup.DoClick()"></a></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Click to show details &gt;&gt;&gt;</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>L1</b> L2 <b>L3</b> L4 <b>*</b>17 Zone 7 Type and CS Code</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>I</b> <b>Click to show details &gt;&gt;&gt;</b> <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_Zone_Types.htm';Popup.DoClick()">L1</a> <b>L2</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>L3</b></font>
+<p></p>
+<font face="Courier" color="#000000" size="1"><b>L4</b></font> <font face="Arial" color="#000000" size="1">*<b>18 Zone 8 Type and CS Code</b>I <b>_</b>? I <b>_</b> ? <b>I</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>_</b>3 <b>I</b> 8 <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_Zone_Types.htm';Popup.DoClick()"></a></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Click to show details &gt;&gt;&gt;</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>L1</b> L2 <b>L3</b> L4 *<b>19 Ambush/AC Loss</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I <b>L1 L2 L3 L4</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>20 Panic/Low Battery</b> I _<b>2</b> _I <b>9</b> I _<b>7</b> I <b>8</b> I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>L1 L2 L3 L4</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>21 Open/Close/CS Test</b> I _<b>A</b> I <b>A</b> I _<b>A</b> I <b>A</b> I <b>(These auto-report, use A to disable)</b></font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>L1 L2 L3 L4</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>22 Bypass/Rest/Trouble/Cancel</b> I _<b>A</b> I <b>A</b> I _<b>D</b> I <b>1</b> I</font></li>
+</ul>
+<form><font face="Arial" color="#800000" size="1"><input type="button" value="PANICS/MISC CID CODES" onclick="self.location='Tech_2010FBI_XL20_PanicBypassAuto_Report_.htm'" /></font></form>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>L1 L2 L3 L4</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>23 Keypad Fire/Auxiliary</b> I _<b>2</b> _I <b>2</b> I _<b>0</b> I <b>0</b> I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>L1 L2 L3 L4</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>24 RF Low Bat/Superv/Restore</b> I _<b>A</b>_I <b>A</b> I _<b>A</b> I <b>A</b> I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>L1 L2 L3 L4</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>25 Bell Superv/RF Tamper/Rest</b> I _<b>A</b>_I <b>A</b> I _<b>A</b> I <b>A</b> I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>L1 L2 L3 L4</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>26 RF Zones/Pager Options</b> I _<b>0</b> _I <b>0</b> I _<b>A</b> I <b>0</b> I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Click to show details &gt;&gt;&gt;</b> <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010Omni408_Question_26.htm';Popup.DoClick()">L1 L2 L3 L4</a></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>27 Nonsupervised/Tamp RF Zns</b> I _<b>0</b> _I <b>0</b> I _<b>0</b> I <b>0</b> I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Click to show details &gt;&gt;&gt;</b> <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_Question_27.htm';Popup.DoClick()">L1 L2 L3 L4</a></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>28 Triggers 1 &amp; 2</b> I _<b>2</b> _I <b>6</b> I _<b>7</b> I <b>9</b> I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Click to show details &gt;&gt;&gt;</b> <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_Question_28.htm';Popup.DoClick()">L1 L2 L3 L4</a></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>29 CS Test Time (0000 - 2359)</b> I _<b>0</b> _I <b>0</b> I _<b>0</b> I <b>0</b> I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>L1 L2 L3 L4</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>30 CID Group Number</b> I _<b>A</b>_I <b>A</b> I _<b>A</b> I <b>A</b> I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>(No idea yet what this does)</b> <b>L1 L2 L3 L4</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>31 RF Keyfob 1 Button Definitions</b> I _<b>0</b> _I <b>0</b> I _<b>0</b> I <b>0</b> I <b>(Uses standard Ademco Keyfobs)</b></font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Click to show details &gt;&gt;&gt;</b> <b>L1 L2 L3 L4</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>32 RF Keyfob 2 Button Definitions</b> I _<b>0</b> _I <b>0</b> I _<b>0</b> I <b>0</b> I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Click to show details &gt;&gt;&gt;</b> <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_Question_31.htm';Popup.DoClick()">L1 L2 L3 L4</a></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>33 RF Keyfob 3 Button Definitions</b> I _<b>0</b> _I <b>0</b> I _<b>0</b> I <b>0</b> I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Click to show details &gt;&gt;&gt;</b> <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_Question_31.htm';Popup.DoClick()">L1 L2 L3 L4</a></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>34 RF Keyfob 4 Button Definitions</b> I _<b>0</b> _I <b>0</b> I _<b>0</b> I <b>0</b> I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Click to show details &gt;&gt;&gt;</b> <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_Question_31.htm';Popup.DoClick()">L1 L2 L3 L4</a></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>35 RF Keyfob 5 Button Definitions</b> I _<b>0</b> _I <b>0</b> I _<b>0</b> I <b>0</b> I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Click to show details &gt;&gt;&gt;</b> <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_Question_31.htm';Popup.DoClick()">L1 L2 L3 L4</a></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>36 RF Keyfob 6 Button Definitions</b> I _<b>0</b> _I <b>0</b> I _<b>0</b> I <b>0</b> I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Click to show details &gt;&gt;&gt;</b> <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_Question_31.htm';Popup.DoClick()">L1 L2 L3 L4</a></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>37 Exit Program, Exit Error</b> I _<b>A</b>_I <b>A</b> I _<b>A</b> I <b>A</b> I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Recent Panic Report Codes</b> <b>L1 L2 L3 L4</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Arial" color="#000000" size="1"><b>00 Installer Code</b> I _<b>2</b> _I _<b>4</b> I _<b>6</b> _I <b>8</b> I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>L1 L2 L3 L4</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="2"><b>RF Programming</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Press</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b># 01 to 14, LED's will begin to pulse</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>All programming is exactly like regular panel programming</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>to exit back to panel programming press STAY</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Calligrapher" color="#000000" size="1"><b>#</b></font><font face="Arial" color="#000000" size="1"><b>01 RF Device 1 Definition</b> I _ _I _ _I I _ _I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Click to show details &gt;&gt;&gt;</b> <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_RF_Device_OptionsType.htm';Popup.DoClick()">L1 L2</a> L3 L4 L5 L6 L7 L8 L9</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Opt Type Serial Number</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Calligrapher" color="#000000" size="1"><b>#</b></font><font face="Arial" color="#000000" size="1"><b>02 RF Device 2 Definition</b> I _ _I _ _I I _ _I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Click to show details &gt;&gt;&gt;</b> <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_RF_Device_OptionsType.htm';Popup.DoClick()">L1 L2</a> L3 L4 L5 L6 L7 L8 L9</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Opt Type Serial Number</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Calligrapher" color="#000000" size="1"><b>#</b></font><font face="Arial" color="#000000" size="1"><b>03 RF Device 3 Definition</b> I _ _I _ _I I _ _I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Click to show details &gt;&gt;&gt;</b> <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_RF_Device_OptionsType.htm';Popup.DoClick()">L1 L2</a> L3 L4 L5 L6 L7 L8 L9</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Opt Type Serial Number</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Calligrapher" color="#000000" size="1"><b>#</b></font><font face="Arial" color="#000000" size="1"><b>04 RF Device 4 Definition</b> I _ _I _ _I I _ _I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Click to show details &gt;&gt;&gt;</b> <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_RF_Device_OptionsType.htm';Popup.DoClick()">L1 L2</a> L3 L4 L5 L6 L7 L8 L9</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Opt Type Serial Number</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Calligrapher" color="#000000" size="1"><b>#</b></font><font face="Arial" color="#000000" size="1"><b>05 RF Device 5 Definition</b> I _ _I _ _I I _ _I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Click to show details &gt;&gt;&gt;</b> <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_RF_Device_OptionsType.htm';Popup.DoClick()">L1 L2</a> L3 L4 L5 L6 L7 L8 L9</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Opt Type Serial Number</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Calligrapher" color="#000000" size="1"><b>#</b></font><font face="Arial" color="#000000" size="1"><b>06 RF Device 6 Definition</b> I _ _I _ _I I _ _I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Click to show details &gt;&gt;&gt;</b> <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_RF_Device_OptionsType.htm';Popup.DoClick()">L1 L2</a> L3 L4 L5 L6 L7 L8 L9</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Opt Type Serial Number</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Calligrapher" color="#000000" size="1"><b>#</b></font><font face="Arial" color="#000000" size="1"><b>07 RF Device 7 Definition</b> I _ _I _ _I I _ _I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Click to show details &gt;&gt;&gt;</b> <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_RF_Device_OptionsType.htm';Popup.DoClick()">L1 L2</a> L3 L4 L5 L6 L7 L8 L9</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Opt Type Serial Number</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Calligrapher" color="#000000" size="1"><b>#</b></font><font face="Arial" color="#000000" size="1"><b>08 RF Device 8 Definition</b> I _ _I _ _I I _ _I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Click to show details &gt;&gt;&gt;</b> <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_RF_Device_OptionsType.htm';Popup.DoClick()">L1 L2</a> L3 L4 L5 L6 L7 L8 L9</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Opt Type Serial Number</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Calligrapher" color="#000000" size="1"><b>#</b></font><font face="Arial" color="#000000" size="1"><b>09 RF Keyfob 1 Definition</b> I _ _I _ _I I _ _I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Click to show details &gt;&gt;&gt;</b> <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_RF_Device_OptionsType.htm';Popup.DoClick()">L1 L2</a> L3 L4 L5 L6 L7 L8 L9</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Opt Type Serial Number</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Calligrapher" color="#000000" size="1"><b>#</b></font><font face="Arial" color="#000000" size="1"><b>10 RF Keyfob 2 Definition</b> I _ _I _ _I I _ _I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Click to show details &gt;&gt;&gt;</b> <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_RF_Device_OptionsType.htm';Popup.DoClick()">L1 L2</a> L3 L4 L5 L6 L7 L8 L9</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Opt Type Serial Number</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Calligrapher" color="#000000" size="1"><b>#</b></font><font face="Arial" color="#000000" size="1"><b>11 RF Keyfob 3 Definition</b> I _ _I _ _I I _ _I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Click to show details &gt;&gt;&gt;</b> <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_RF_Device_OptionsType.htm';Popup.DoClick()">L1 L2</a> L3 L4 L5 L6 L7 L8 L9</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Opt Type Serial Number</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Calligrapher" color="#000000" size="1"><b>#</b></font><font face="Arial" color="#000000" size="1"><b>12 RF Keyfob 4 Definition</b> I _ _I _ _I I _ _I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Click to show details &gt;&gt;&gt;</b> <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_RF_Device_OptionsType.htm';Popup.DoClick()">L1 L2</a> L3 L4 L5 L6 L7 L8 L9</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Opt Type Serial Number</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Calligrapher" color="#000000" size="1"><b>#</b></font><font face="Arial" color="#000000" size="1"><b>13 RF Keyfob 5 Definition</b> I _ _I _ _I I _ _I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Click to show details &gt;&gt;&gt;</b> <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_RF_Device_OptionsType.htm';Popup.DoClick()">L1 L2</a> L3 L4 L5 L6 L7 L8 L9</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Opt Type Serial Number</b></font>
+<p></p>
+<p></p>
+<ul>
+<li><font face="Calligrapher" color="#000000" size="1"><b>#</b></font><font face="Arial" color="#000000" size="1"><b>14 RF Keyfob 6 Definition</b> I _ _I _ _I I _ _I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+</li>
+</ul>
+<font face="Arial" color="#000000" size="1"><b>Click to show details &gt;&gt;&gt;</b> <a href="javascript:Popup.CurrentURL=parent.location;Popup.Target='Tech_2010XL20_RF_Device_OptionsType.htm';Popup.DoClick()">L1 L2</a> L3 L4 L5 L6 L7 L8 L9</font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Opt Type Serial Number</b></font>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>

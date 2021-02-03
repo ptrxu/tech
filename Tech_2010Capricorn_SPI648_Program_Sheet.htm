@@ -1,0 +1,618 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>Capricorn SPI-648 Program Sheet</title>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+
+			<script type="text/javascript" language="javascript1.2" src="whver.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+    			<script type="text/javascript" language="javascript1.2" src="whlang.js"></script> 
+    <meta name="generator" content="Adobe RoboHelp 9" />
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+	      //<!--
+	      RH_Document_Write("<p style=\"text-align:right\"> ");
+RH_AddMasterBreadcrumbs( "Tech_2010.htm", "", "/", "Home", "Tech_2010Main.htm");
+RH_Document_Write("<\/p>");
+//-->
+</script>
+<font face="Arial" color="#0000FF" size="2">CEI Capricorn SPI-648 Panel <b>Program Sheet</b></font> <font face="Arial" color="#0000FF" size="1"><b>(Under Construction)</b></font>
+<p></p>
+<p></p>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Basics" onclick="self.location='Tech_2010Capricorn_SPI648_Basic_Commands.htm'" /> <input type="button" value="Codes" onclick="self.location='Tech_2010Capricorn_SPI648_User_Codes.htm'" /> <input type="button" value="Trouble" onclick="self.location='Tech_2010Capricorn_SPI648_Trouble_Display.htm'" /> <input type="button" value="Keypad" onclick="self.location='Tech_2010Capricorn_SPI648_Keypad.htm'" /> <input type="button" value="Wiring" onclick="self.location='Tech_2010Capricorn_SPI648_Wiring_Diagram.htm'" /> <input type="button" value="Dialer Program" onclick="self.location='Tech_2010Capricorn_SPI648_Dialer_Program_.htm'" /> <input type="button" value="Panel Program" onclick="self.location='Tech_2010Capricorn_SPI648_Program_Sheet.htm'" /> <input type="button" value="Sensors" onclick="self.location='Tech_2010Capricorn_SPI648_Sensors.htm'" /></b></font></form>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>You can program main system from keypad, dialer must be programmed with P-4000 Acron Programmer</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Enter Programming</b></font> <font face="Arial" color="#000000" size="1"><b>- Press Program Switch in middle of circuit board until keypad beeps</b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b><i>Note:</i></b></font> <font face="Arial" color="#000000" size="1"><b>Keypad should now show 00 in Right window and another number in Left window</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000001730.gif" alt="Tech_201000001730.gif" border="0" width="263" height="129" /></b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Location Description Values</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 First Digit of House Code 6 (Default)</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>Second Digit of House Code 4 (Default)</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b><i>Note:</i></b></font> <font face="Arial" color="#000000" size="1"><b>This must match Transmitter Dip Switches</b></font>
+<p></p>
+<p></p>
+<ol start="2">
+<li><font face="Arial" color="#000000" size="1"><b>Quick Arm Enable 0 = Enable</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Disable</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>03 Restrict Arming to Keypad or Keyswitch 0 = Arm/Disarm by Keypad</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Arm/Disarm by Keyswitch Only</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>04 Allow Duress Code 0 = No</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Yes</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>05 Select AUX Key function 0 = Disabled</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= User Enabled Lights</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Medical Panic</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>06 Bypass Options for Burg &amp; 24 Hr Special 0 = No Bypassing Allowed</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Bypassing RF Channels 1, 2, 3, 4 only</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Bypass Hardwire Zones</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>07 Night Mode Enable 0 = Night Mode Arming Disabled</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Night Mode Arming Allowed</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>08 Interior Follower Enable 0 = Interior Follower Disabled</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Interior Follower Enabled</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>09 Swinger Shutdown Enable 0 = Swinger Disabled</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Swinger Enabled</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>10 AC Power Loss Sound and Reports Enable 0 = No Sounds or Reports after AC Loss</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>or 4 = 30 Seconds after AC Loss</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>or 5 = 1 Minute after AC Loss</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>or 6 = 20 Minutes after AC Loss</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>11 Exit Delay Time 0 = No Delay 7 = 60 Seconds</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= 10 Seconds 8 = 20 Seconds with Beeps</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 15 Seconds 9 = 25 Seconds with Beeps</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 20 Seconds A = 30 Seconds with Beeps</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 25 Seconds B = 45 Seconds with Beeps</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 30 Seconds C = 60 Seconds with Beeps</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 45 Seconds</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>12 Entry Delay Time 0 = No Delay 7 = 60 Seconds</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= 10 Seconds 8 = 20 Seconds with Beeps</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 15 Seconds 9 = 25 Seconds with Beeps</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 20 Seconds A = 30 Seconds with Beeps</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 25 Seconds B = 45 Seconds with Beeps</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 30 Seconds C = 60 Seconds with Beeps</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 45 Seconds</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>13 Police Zones Audible 0 = Alarms Audible except Ch 45 (Silent)</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Alarms Silent except Ch 44 (Audible)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= 1st Alarm Silent, rest Audible ex 44 &amp; 45</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>14 Medical Alarm Audible 0 = Slow Beeps until User Code silenced</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Slow beeps for 5 sec until User Code silenced</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Slow Beeps on Siren or keypads</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>15 24Hr Special Alarm Audible 0 = Slow Beeps until User Code silenced</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Slow beeps for 5 sec until User Code silenced</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Slow Beeps on Siren or keypads</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= DC-9 Communicator Reporting</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>16 Fire Siren Tone Option Tone Options</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17 Fire Siren On Time 0 = Sweep 4 = Fire then Sweep</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Steady 5 = Fire then Steady</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>18 Police Siren Tone Option 2 = Fast Pulse 6 = Fire then Fast Pulse</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>19 Police Siren On Time 3 = European Hi-Low 7 = Fire then Hi-Low</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8 = Silent Burg, no Siren</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>21 Burg Siren Tone Option</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>22 Burg Siren On Time Time Out Options</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0 = 1 Minute 2 = 5 Minutes</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= 2 Minutes 3 = 10 Minutes</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>4 = Continuous</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>22 Hardwire Zone 1 Type Zone Type</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>23 Hardwire Zone 1 Loop Option 0 = Disabled Zone</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Instant</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>24 Hardwire Zone 2 Type 2 = Delay</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>25 Hardwire Zone 2 Loop Option 3 = 24Hr Instant</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4 = Delay Interior</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>26 Hardwire Zone 3 Type 5 = Instant Interior</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>27 Hardwire Zone 3 Loop Option 6 = Delay Interior (Night Mode)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7 = Instant Interior (Night Mode)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>28 Hardwire Zone 4 Type 8 = 24Hr Special/Tamper</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>29 Hardwire Zone 4 Loop Option 9 = Fire Zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>A = Police Alarm</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>30 Hardwire Zone 5 Type B = Medical Alarm</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>31 Hardwire Zone 5 Loop Option C = Keyswitch</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>32 Hardwire Zone 6 Type Loop Option</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>33 Hardwire Zone 6 Loop Option 0 = Open or Closed, Superv. Slow Loop</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Open or Closed, Superv. Fast Loop</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>34 Hardwire Zone 7 Type 2 = Closed, Slow Loop</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>35 Hardwire Zone 7 Loop Option 3 = Closed, Fast Loop</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4 = Open, Slow Loop</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>36 Hardwire Zone 8 Type 5 = Open, Fast Loop</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>37 Hardwire Zone 8 Loop Option</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>38 Line Carrier, add Lights to Unit Codes 1 or 4 = Add User Lights on Unit Code 10</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>or 5 = Add User Lights to Unit Code 8</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>or 6 = Add User Lights to Unit Code 9</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>or 7 = Add User Lights to Unit Code 8 and 9</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>8 = Quick Lights option (on for 2 seconds)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>39 Line Carrier - 2 Minute E/E Lights 0 = No E/E Lights</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Add E/E Lights to Code 8</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Add E/E Lights to Code 9</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Add E/E Lights to Code 8 and 9</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Add E/E Lights to Code 10</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>40 Prevent Silent Alarm on Acc. Outputs 0 = Alarms sent to Accessory Output</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Only Audible Alarms sent</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>41 Sales Demo Mode 0 = Demo Mode Disabled</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Demo Mode Enabled</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>42 Permit Fire Testing in Owners Test Mode 0 = Fire Zones can be tested</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Fire Zone always active</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>43 Allow Master Code to be Changed 0 = Master Code cannot be changed</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= New Master Code after Programming</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>Exit Programming, press 1 and 2 keys at same time, keypad will sound steady tone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Enter new Master Code, sounder will stop</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>44 Reload Factory Defaults 0 = No</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Yes after exiting programming</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="2"><b>Wireless Sensors</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>House code must match sensors and program location 00 and 01</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Sensor Zone determines Zone Type</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>House Code</b></font> <font face="Arial" color="#000000" size="1"><b>X = OFF O = ON</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Switch Switch Switch</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Code S1 S2 S3 S4 S5 S6 Code S1 S2 S3 S4 S5 S6 Code S1 S2 S3 S4 S5 S6</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>X X X X X X 23 X O O X O X 45 X X O O X O</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>O X X X X X 24 O O O X O X 46 O X O O X O</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>X O X X X X 25 X X X O O X 47 X O O O X O</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>O O X X X X 26 O X X O O X 48 O O O O X O</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>X X O X X X 27 X O X O O X 49 X X X X O O</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>O X O X X X 28 O O X O O X 50 O X X X O O</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>X O O X X X 29 X X O O O X 51 X O X X O O</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>O O O X X X 30 O X O O O X 52 O O X X O O</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>X X X O X X 31 X O O O O X 53 X X O X O O</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>O X X O X X 32 O O O O O X 54 O X O X O O</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>X O X O X X 33 X X X X X O 55 X O O X O O</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>O O X O X X 34 O X X X X O 56 O O O X O O</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>X X O O X X 35 X O X X X O 57 X X X O O O</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>X O O O X X 36 O O X X X O 58 O X X O O O</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>X O O O X X 37 X X O X X O 59 X O X O O O</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>X X X X O X 38 O X O X X O 60 O O X O O O</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>O X X X O X 39 X O O X X O 61 X X O O O O</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>O X X X O X 40 O O O X X O 62 O X O O O O</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>X O X X O X 41 X X X O X O 63 X O O O O O</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>O O X X O X 42 O X X O X O 64 O O O O O O</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>X X O X O X 43 X O X O X O</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>O X O X O X 44 O O X O X O</b></font>
+<p></p>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>Zone Number</b></font> <font face="Arial" color="#000000" size="1"><b>X = OFF O = ON (set at sensor, no panel program needed)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Code S7 S8 S9 S10 S11 S12</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>X X X X X X Delay Zone (may be bypassed with MK-60)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>O X X X X X Instant Zone (may be bypassed with MK-60)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>X O X X X X 24 Hour Instant (may be bypassed with MK-60)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>O O X X X X 24 Hour Special (may be bypassed with MK-60)</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>X X O X X X Delay Zone</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>O X O X X X Delay Zone</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>X O O X X X Delay Zone</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>08 O O O X X X Delay Zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>09 X X X O X X instant Zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>10 O X X O X X Instant Zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>11 X O X O X X Instant Zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>12 O O X O X X Instant Zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>13 X X O O X X Instant Zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>14 O X O O X X Instant Zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>15 X O O O X X Instant Zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>16 O O O O X X Instant Zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>17 X X X X O X Instant Zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>18 O X X X O X Instant Zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>19 X O X X O X Instant Zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>20 O O X X O X Instant Zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>21 X X O X O X Instant Zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>22 O X O X O X Instant Zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>23 X O O X O X Instant Zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>24 O O O X O X Delay Trap Zone (Delay in Away, Inactive in Stay or Night)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>25 X X X O O X Instant Trap Zone (Instant in Away, Inactive in Stay or Night)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>26 O X X O O X Instant Trap Zone (Instant in Away, Inactive in Stay or Night)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>27 X O X O O X Instant Trap Zone (Instant in Away, Inactive in Stay or Night)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>28 O O X O O X Delay Trap Zone (Delay in Away, Inactive to Stay, Instant in Night)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>29 X X O O O X Delay Trap Zone (Delay in Away, Inactive to Stay, Instant in Night)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>30 O X O O O X Instant Trap Zone (Instant in Away, Inactive in Stay, Instant in Night)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>31 X O O O O X Instant Trap Zone (Instant in Away, Inactive in Stay, Instant in Night)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>32 O O O O O X Instant Trap Zone (Instant in Away, Inactive in Stay, Instant in Night)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>33 X X X X X O Fire Zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>34 O X X X X O Fire Zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>35 X O X X X O Fire Zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>36 O O X X X O Fire Zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>37 X X O X X O Fire Zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>38 O X O X X O Fire Zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>39 X O O X X O Fire Zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>40 O O O X X O Fire Zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>41 O O O X O O Fire Zone</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>42 X X X O X O Police Panic</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>43 O X X O X O Police Panic</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>44 X O X O X O Audible Police Panic</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>45 O O X O X O Silent Police Panic</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>46 O O X X O O Police Panic (Keyfob)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>47 O O O O O O Police Panic (Keyfob)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>48 X X O O X O Medical Panic (Keyfob)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>49 O X O O X O Medical Panic (Keyfob)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>50 X O O O X O Medical Panic (Keyfob)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>51 O O O O X O Medical Panic (Keyfob)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>52 X O X X O O Medical Panic (Keyfob)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>The following requires no House ID</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>XX X X X X O O Sounds Beeps to indicate Armed mode</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>XX O X X X O O User Lights</b></font>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>

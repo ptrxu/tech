@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>ITI SX-V Program Sheet</title>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+
+			<script type="text/javascript" language="javascript1.2" src="whver.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+    			<script type="text/javascript" language="javascript1.2" src="whlang.js"></script> 
+    <meta name="generator" content="Adobe RoboHelp 9" />
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+	      //<!--
+	      RH_Document_Write("<p style=\"text-align:right\"> ");
+RH_AddMasterBreadcrumbs( "Tech_2010.htm", "", "/", "Home", "Tech_2010Main.htm");
+RH_Document_Write("<\/p>");
+//-->
+</script>
+<font face="Arial" color="#0000FF" size="2">ITI SX-V Program Sheet</font>
+<p></p>
+<p></p>
+<form><font face="Arial" color="#800000" size="1"><input type="button" value="Basics" onclick="self.location='Tech_2010ITI_SXV_Basic_Commands.htm'" /> <input type="button" value="Codes" onclick="self.location='Tech_2010ITI_SXV_User_Codes.htm'" /> <input type="button" value="Troubles" onclick="self.location='Tech_2010ITI_SXV_Trouble_Display.htm'" /> <input type="button" value="Keypad" onclick="self.location='Tech_2010ITI_SXV_Keypad.htm'" /> <input type="button" value="Wiring" onclick="self.location='Tech_2010ITI_SXV_Wiring.htm'" /> <input type="button" value="Program" onclick="self.location='Tech_2010ITI_SXV_Program_Sheet.htm'" /> <input type="button" value="Sensors" onclick="self.location='Tech_2010ITI_SXV_Wireless_Sensors.htm'" /></font></form>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1">Format ITI only, can be programmed by CS-4000 Receiver</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1">Do NOT power down system or programming will be lost, use switch on bottom right to turn off</font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>On Powerup CPU will show RR for 2 minutes then CS in display window and beep every 60 seconds</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Programming With wireless Keypad</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Enter Program 1. Program House Code into Wireless Keypad with ITI Programmer (1 to 254)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. In SX-V move Program Switch 2 UP to enter program (See wiring Diagram)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3. Press BYPASS on Remote Keypad to program House Code into Control Panel</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Control panel will show P, sensor number display will go blank for few seconds)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Exit Program Move Switch 2 DOWN</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Press and HOLD BOTH FIRE, AUX or POLICE keys listed below, keypad will give initial beep then beep again</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Add Sensor STATUS + 2-digit sensor number</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Decimal to Octal Zone Conversion Zones</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>SX-V Panel 1 2 3 4 5 6 7 10 11 12 13 14 15 16 17 20 21 22 23 24 25 26 27 30</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Programmer 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Delete Sensor BYPASS + 2 digit Zone (Zone Number defines Zone Type)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Master Code AUXILIARY + 4-digit code (Keypad should beep twice)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Duress Code POLICE + 2-digits (99)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Entry Time POLICE + STATUS + (0 to 60)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Exit Time POLICE + BYPASS + (0 to 60)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Account Num FIRE + STATUS + last 5 digits of Account#</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Receiver Num FIRE + BYPASS + Phone #</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>CPU Clock Hold AUXILIARY, listen for 6 beeps, press BYPASS, enter current time of day</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Programming by LCD Keypad</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Enter Program 1. Program House Code into Remote Keypad with ITI Programmer (1 to 254)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. Move Program Switch 2 UP to enter program (See wiring Diagram)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3. After several seconds keypad should say "Program Mode"</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Move to Location Press STATUS to move forward, BYPASS moves backwards through Selections</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Enter a Location Press COMMAND, enter Data, COMMAND again to save (Keypad blinks "<i>OK</i>")</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Exit a Location Press FIRE to move back up to top of Menus (see below list)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Exit Program Move Switch 2 DOWN</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="2"><b>Program Fields</b></font> <font face="Arial" color="#000000" size="1"><b>(Move to field, COMMAND enters, STAY or BYPASS toggles, FIRE exits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PROGRAM SENSORS (programs sensor text, below example shows Zone 45 as Front Door)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Press BYPASS or STATUS until "<i>Program Sensor</i>" appears</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Press COMMAND to enter (Display reads "<i>PRG 01 - Sensor In</i> ")</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Press STATUS (Display reads "<i>PRG</i> ")</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Enter Sensor to program (Display reads "<i>PRG 45</i> ")</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Press COMMAND</b> <b>(Display reads "<i>A 00</i> ")</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Enter 1st word or character from list below (Display reads "<i>A 62 Front</i> ")</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Press COMMAND to safe and move to next (Display reads "<i>B 00</i> ")</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Enter 2nd word or character from list below (Display reads "<i>B53 Door</i> ")</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Continue until finished then press FIRE (Display reads "<i>Add 45 Front Door</i> ")</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Press COMMAND to save (Display reads "<i>Add 45 Done</i> ")</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ADD SENSORS 1. Press BYPASS or STATUS until "<i>PROGRAM SENSORS</i>" appears</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. Press COMMAND to enter (Display reads "<i>Add 00 Buddy Rep</i>")</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3. Press STATUS (Display reads "<i>ADD</i>")</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4. Enter Sensor (00 to 99)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5. Press COMMAND to save (Display shows "<i>ADD xx DONE</i>")</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6. Press FIRE to exit</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>DELETE SENSORS 1. Press BYPASS or STATUS until "<i>DELETE SENSORS</i>" appears</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. Press COMMAND to enter (Display reads "<i>Delete 00 Buddy Rep</i>")</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3. Press STATUS (Display reads "<i>DEL</i>")</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4. Enter Sensor (00 to 99)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5. Press COMMAND to save (Display shows "<i>DEL xx DONE</i>")</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6. Press FIRE to exit</b></font>
+<p></p>
+<p></p>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="SX-V Sensor Programming" onclick="self.location='Tech_2010ITI_60371_Sensor_Programmer.htm'" /></b></font></form>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Zone Types are determined by Zone Number In Octal Format only</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Some programmers require pressing SENSOR TYPE button twice on programmer for Octal mode)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00 Buddy Report</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>Sensor in Range</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>to 07 24 Hour Police Panics</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>10 to 11 Medical Panics</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>12 to 17 Environmental (Flood/Freeze) sensors</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>20 to 27 Smoke Detectors</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>30 to 33 Special 24 Hour zones</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>34 to 37 Delay Zones</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>40 to 47 Instant Zones</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>50 to 57 Instant Zones</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>60 to 67 PIR Zones</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>70 to 76 Interior Doors</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>77 Touchpad Tamper</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>80 Keypad Fire Panic</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>81 Keypad Police Panic</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>82 Keypad Medical Panic</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>83 PhoneTest</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>84 Opening Report</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>85 Closing Report</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>86 Duress</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>87 Force Arm, Auto Force Arm</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>90 AC Fail</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>91 Low CPU Battery</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>92 Alarm Tamper Loop</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>93 Auto PhoneTest</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>94 Receiver Failure</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>95 CPU Back Online (AC Restore)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>97 Dead or Missing Phone Line</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000001431.gif" alt="Tech_201000001431.gif" border="0" width="305" height="507" /></b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Decimal to Octal Zone Conversion (get out the calculator)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>What to program the sensor as</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Zone 1 2 3 4 5 6 7 10 11 12 13 14 15 16 17 20 21 22 23 24 25 26 27 30 31 32 33 34 35 36</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Zone 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>What to program the sensor into panel as</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Each Zone can have a maximum of 9 words or characters)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>For Word Enter For Word Enter For Word Enter</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Area 40 Floor 60 Patio 80</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Attic 41 Freeze 61 Police 81</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Basement 42 Front 62 Pool 82</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Bathroom 43 Gallery 63 Porch 83</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Bedroom 44 Garage 64 Rear 84</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Bottom 45 Hall 65 Room 85</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Breezeway 46 Heat 66 Safe 86</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Cabinet 47 Kitchen 67 Screen 87</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Carpet 48 Laundry 68 Second 88</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Closet 49 Level 69 Sensor 89</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Den 50 Library 70 Shock 90</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Desk 51 Living 71 Side 91</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Dining 52 Main 72 Sliding 92</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Door 53 Master 73 Smoke 93</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Drawer 54 Mat 74 Sound 94</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>East 55 Medical 75 South 95</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Entry 56 Motion 76 Stairs 96</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Family 57 North 77 Top 97</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Fire 58 Office 78 West 98</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>First 59 Panic 79 Window 99</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>For Character Enter For Character Enter For Character Enter</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Null 0 N 14 ' (Apostophe) 28</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>A 1 O 15 #NAME? 29</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>B 2 P 16 0 30</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>C 3 Q 17 1 31</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>D 4 R 18 2 32</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>E 5 S 19 3 33</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>F 6 T 20 4 34</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>G 7 U 21 5 35</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>H 8 V 22 6 36</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>I 9 W 23 7 37</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>J 10 X 24 8 38</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>K 11 Y 25 9 39</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>L 12 Z 26</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>M 13 (SPACE) 27</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PROGRAM FEATURES Enable or Disable F00 to F17 (Toggle ON/OFF with BYPASS / STATUS)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>F01 Tamper Polarity OFF = CPU Tamper is NC</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON = CPU Tamper is NO</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>F02 Exterior Siren Delay OFF = Exterior Siren activates with Interior Siren</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON = Exterior Siren waits 15 seconds</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>F03 Local Alarm OFF = System dials Monitoring Station</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON = Local System Only</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>F04 Low Battery Report OFF = Low Battery Reporting Enabled weekly</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON = Low Battery Reports only once until repaired</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>F05 Supervisory Report OFF = Supervisory Reports daily until repaired</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON = Supervisory Reports weekly until repaired</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>F06 Dialer Abort OFF = System reports Alarm then Cancel</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON = System aborts call if disarmed in 15 to 20 seconds</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>F07 Open Sensor Display OFF = Open sensors are not displayed</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON = Open sensors are displayed</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>F10 Dealer Sensor Test OFF = Standard Level 9 Sensor Test Enabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON = Siren sounds when data round is received</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>F11 Interior Siren Sound OFF = Interior Siren sounds Status and Alarms</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON = Interior Siren sounds only Alarms</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>F12 Restoral Reporting OFF = Restoral Reporting Disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON = Restoral Reporting Enabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>F13 Not Used</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>F14 Hourly Phone Test OFF = Hourly phone line Testing disabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON = System checks phone line every hour</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>F15 Sensor Tamper OFF = Sensor Tamper Reporting Enabled</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON = Sensor Tamper Reporting Disabled</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>F16 Trouble Beeps OFF = Troubles sound 6 beeps every minute</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON = Trouble Beeps sound only if sensor is opened</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>F17 Direct Bypass OFF = Bypasses only unbypassed by Arming/Disarming</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON = Access Code + Bypass + Sensor unbypasses only</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>CPU TIME Set panel time (Military) (COMMAND to save, FIRE exits)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ACCESS CODE Enters Master Code (COMMAND to save, FIRE exits)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>DURESS CODE Enter 99 (COMMAND to save, FIRE exits)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ACCOUNT NUMBER Last 5 of Account (no letters) (COMMAND to save, FIRE exits)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>PHONE NUMBER 7 to 11 Digits (COMMAND to save, FIRE exits)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ENTRY DELAY 04 to 60 seconds (COMMAND to save, FIRE exits)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>EXIT DELAY 04 to 60 seconds (COMMAND to save, FIRE exits)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>HOUSE CODE 001 to 254, must match sensors (COMMAND to save, FIRE exits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LOOP NUMBER for Keypad Zone Loop</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LOOP IS N/C / N/O Configures Keypad Zone</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>UNIT NUMBER 0 to 7 (don't know what this is yet)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>STATUS BEEPS Toggle Status beeps On/Off with STATUS / BYPASS</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>QUICK ARM ON / OFF Toggle Quick Arm On/Off with STATuS / BYPASS</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>SEND TEXT Sends Text to other keypads</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>LOAD TEXT Loads Text</b></font>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>

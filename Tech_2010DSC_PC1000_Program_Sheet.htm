@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>DSC PC1000 Program Sheet</title>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+
+			<script type="text/javascript" language="javascript1.2" src="whver.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+    			<script type="text/javascript" language="javascript1.2" src="whlang.js"></script> 
+    <meta name="generator" content="Adobe RoboHelp 9" />
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+	      //<!--
+	      RH_Document_Write("<p style=\"text-align:right\"> ");
+RH_AddMasterBreadcrumbs( "Tech_2010.htm", "", "/", "Home", "Tech_2010Main.htm");
+RH_Document_Write("<\/p>");
+//-->
+</script>
+<font face="Arial" color="#0000FF" size="2">DSC PC1000 Program Sheet</font> <font face="Arial" color="#008000" size="2">Binary Programming</font>
+<p></p>
+<p></p>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Basics" onclick="self.location='Tech_2010DSC_PC1000_Basic_Commands.htm'" /> <input type="button" value="Codes" onclick="self.location='Tech_2010DSC_PC1000_User_Codes.htm'" /> <input type="button" value="Trouble" onclick="self.location='Tech_2010DSC_PC1000_Trouble_Display.htm'" /> <input type="button" value="Keypad" onclick="self.location='Tech_2010DSC_PC1000_Keypad.htm'" /> <input type="button" value="Wiring" onclick="self.location='Tech_2010DSC_PC1000_Wiring.htm'" /> <input type="button" value="Program" onclick="self.location='Tech_2010DSC_PC1000_Program_Sheet.htm'" /> <input type="button" value="Sensors" onclick="self.location='Tech_2010DSC_PC1000_Sensors.htm'" /></b></font></form>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Power Ratings</b></font> <font face="Arial" color="#000000" size="1"><b>300mA Aux output maximum</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>600mA Siren output</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>50mA PGM output</b></font>
+<p></p>
+<p></p>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Device Output Ratings" onclick="self.location='Tech_2010DSC_Classic_Series_Power_Ratings.htm'" /></b></font></form>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Enter Program</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>8 1000 (ARMED light turns ON, SYSTEM light will flash)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Exiting Program</b></font> <font face="Arial" color="#000000" size="1"><b>#</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Move to location</b></font> <font face="Arial" color="#000000" size="1"><b>Enter 1-digit location, enter data, # may be required to exit location</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Default Panel</b></font> <font face="Arial" color="#000000" size="1"><b>Short "EEPROM RESET" pins on main board under removable dialer, power up system</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Dialer Module</b></font> <font face="Arial" color="#000000" size="1"><b>System has removable Communicator connected to Main Board (see Wiring Diagram)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Hex Program</b></font> <font face="Arial" color="#000000" size="1"><b>A =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>1</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>, B =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>2</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>, C =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>3</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>, D =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>4</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>, E =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>5</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>, F =</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>6</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>4/2 Signals</b></font>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Tech1 Default Signals" onclick="self.location='Tech_201042_Signals_by_Panel_Type.htm'" /></b></font></form>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[1]</b></font> <font face="Arial" color="#000000" size="1"><b>Phone Number (15 Digits)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I _ _I</font>
+<p></p>
+<font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>2</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>=</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>3</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>= 4 second pause</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>4</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>= Wait for Dial Tone</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[2]</b></font> <font face="Arial" color="#000000" size="1"><b>Account Number</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1">I _ _I _ _I _ _I _ _I <b>(Any 0 must be entered as</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>1</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>00 is</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>11</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[3]</b></font> <font face="Arial" color="#000000" size="1"><b>Alarm Report Codes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>FF</b> I _<b>3</b> _I _<b>1</b> _I <b>Zone 1 Alarm FF</b> I _<b>0</b> _I _<b>0</b> _I <b>Auxiliary Input Alarm (hardwire panic)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>FF</b> I _<b>3</b> _I _<b>2</b> _I <b>Zone 2 Alarm FF</b> I _<b>2</b> _I _<b>9</b> _I <b>Keypad Police Alarm (</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>&amp; #)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>FF</b> I _<b>3</b> _I _<b>3</b> _I <b>Zone 3 Alarm FF</b> I _<b>1</b> _I _<b>9</b> _I <b>Keypad Fire Alarm (1 &amp; 3)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>FF</b> I _<b>3</b> _I _<b>4</b> _I <b>Zone 4 Alarm (If Fire use 16) FF</b> I _<b>4</b> _I _<b>9</b> _I <b>Keypad Medical Alarm (4 &amp; 6)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[4]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone Restoral Codes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>FF</b> I _<b>0</b> _I _<b>0</b> _I <b>Zone 1 Restoral FF</b> I _<b>0</b> _I _<b>0</b> _I <b>Auxiliary Input Restoral (hardwire panic)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>FF</b> I _<b>0</b> _I _<b>0</b> _I <b>Zone 2 Restoral FF</b> I _<b>0</b> _I _<b>0</b> _I <b>Keypad Police Restoral (</b></font><font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>&amp; #)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>FF</b> I _<b>0</b> _I _<b>0</b> _I <b>Zone 3 Restoral FF</b> I _<b>0</b> _I _<b>0</b> _I <b>Keypad Fire Restoral (1 &amp; 3)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>FF</b> I _<b>0</b> _I _<b>0</b> _I <b>Zone 4 Restoral FF</b> I _<b>0</b> _I _<b>0</b> _I <b>Keypad Medical Restoral (4 &amp; 6)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[5]</b></font> <font face="Arial" color="#000000" size="1"><b>Open/Close Report (If O/C Reports needed use 61 to 63 for Closings, 51 to 53 for Openings)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>FF</b> I _<b>0</b> _I _<b>0</b> _I <b>Closing Access Code 1 FF</b> I _<b>0</b> _I _<b>0</b> _I <b>Opening Access Code 1</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>FF</b> I _<b>0</b> _I _<b>0</b> _I <b>Closing Access Code 2 FF</b> I _<b>0</b> _I _<b>0</b> _I <b>Opening Access Code 2</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>FF</b> I _<b>0</b> _I _<b>0</b> _I <b>Closing Access Code 3 FF</b> I _<b>0</b> _I _<b>0</b> _I <b>Opening Access Code 3</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>FF</b> I _<b>2</b> _I _<b>6</b> _I <b>Closing Access Code 4 (Duress) FF</b> I _<b>2</b> _I _<b>6</b> _I <b>Opening Access Code 4 (Duress)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[6]</b></font> <font face="Arial" color="#000000" size="1"><b>Miscellaneous Report Codes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>FF</b> I _<b>0</b> _I _<b>0</b> _I <b>Partial Closing Code FF</b> I _<b>0</b> _I _<b>0</b> _I <b>Battery Trouble Restoral</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>FF</b> I _<b>0</b> _I _<b>0</b> _I <b>Battery Trouble Alarm FF</b> I _<b>0</b> _I _<b>0</b> _I <b>AC Failure Restoral</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>FF</b> I _<b>7</b> _I _<b>9</b> _I <b>AC Failure Alarm FF</b> I _<b>0</b> _I _<b>0</b> _I <b>Smoke Trouble Restoral</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>FF</b> I _<b>7</b> _I _<b>6</b> _I <b>Smoke Trouble Alarm FF</b> I _<b>2</b> _I _<b>6</b> _I <b>24 Hour Test Code</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Low Battery report removed due to tendency for runaway signals)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[7]</b></font> <font face="Arial" color="#000000" size="1"><b>Zone/System Definitions</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default 1st digit 2nd digit</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>00</b> I _ _I _ _I <b>Zone 1 0 = Slow, Audible 0 = Delay</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1">I _ _I _ _I <b>Zone 2 1 = Slow, Silent 1 = Instant</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1">I _ _I _ _I <b>Zone 3 2 = Fast, Silent 2 = Instant</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>02</b> I _ _I _ _I <b>Zone 4 3 = Fast, Silent 3 = Interior Home Away</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4 = 24 Hour</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5 = Double Delay</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>12</b> I _<b>2</b> _I _<b>2</b> _I <b>1st Configuration Code 1 = PGM on Pre Alert Tone 2 = Restoral on Bell Timeout, Zn 4 = N/C</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 = PGM</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font><font face="Arial" color="#000000" size="1"><b>7 Reset 4 = Restoral on Disarm, Zn 4 = N/C</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4 = PGM if Armed A = Restoral on Bell Timeout, Zn 4 = EOL</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>8 = PGM Ground Start C = Restoral on Disarm, Zn 4 = EOL</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>42</b> I _<b>4</b> _I _<b>6</b> _I <b>2nd Configuration Code 0 = Keyswitch Only 0 = Aux Zone Silent/Keypad Panic Silent</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4 = Keypad Only 2 = Aux Zone Audible/Keypad Silent</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4 = Aux Zone Silent/Keypad Audible</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 = Aux Zone Audible/Keypad Audible</b></font>
+<p></p>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1">I _<b>0</b> _I _<b>1</b> _I <b>Communication Format</b> <b>00 = Silent Knight/Ademco Slow 10bps 1400HZ 3/1 4/1 4/2</b></font>
+<p></p>
+</li>
+</ol>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Sescoa/Franklin 20BPS 2300Hz 3/1 4/1 4/2 Non-Extended</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>If Radionics Receiver with 1400Hz 02 = Radionics Round 2300 3/1 4/2 Non Extended</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>Enter Programming 03 = Radionics Parity 2300 Formats 3/1 4/2 Non Extended</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Press 0 10 = Silent Knight/Ademco Slow 10BPS 1400 Hz 3/1 Extended</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Enter 074 9B 7D 11 = Sescoa/ Franklin/Vertex 20BPS 2300Hz 3/1 Extended</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Press # twice to exit 12 = Radionics Rounds Extended 2300Hz 3/1 Extended</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>13 = Radionics Parity 2300Hz 3/1 Extended</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>18</b> I _<b>1</b> _I _<b>8</b> _I <b>Test Code Timer 18 = 24 Hours</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>30 = 48 Hours</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>A8 = 1 Week</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>0F</b> I _<b>0</b> _I _<b>F</b> _I <b>Zone Bypass Mask 00 = No Zones bypassable 08 = Zone 4 bypassable</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>= Zone 1 bypassable 09 = Zone 1, 4 bypassable</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Zone 2 bypassable 0A = Zone 2, 4 bypassable</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Zone 1, 2 bypassable 0B = Zone 1, 2, 4 bypassable</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Zone 3 bypassable 0C = Zone 3, 4 bypassable</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Zone 1, 3 bypassable 0D = Zone 1, 2, 4 bypassable</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Zone 2, 3 bypassable 0E = Zones 2, 3, 4 bypassable</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>= Zone 1, 2, 3 bypassable 0F = All Zones bypassable</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#0000FF" size="1"><b>[8]</b></font> <font face="Arial" color="#000000" size="1"><b>System Times</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>30</b> I I__ _I <b>Entry Delay (01 to 99 seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>45</b> I I__ _I <b>Exit Delay (01 to 99 seconds)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>04</b> I I__ _I <b>Bell Timeout (01 to 99 minutes)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>04</b> I I__ _I <b>AC Failure Report Delay (01 to 99 minutes)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>[9]</b></font> <font face="Arial" color="#000000" size="1"><b>Installer Code</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Default</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>1000</b> I I__ _I I__ _I</font>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>

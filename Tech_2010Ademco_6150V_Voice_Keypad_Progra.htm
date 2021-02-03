@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>Ademco 6150V Voice Keypad Programming</title>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+
+			<script type="text/javascript" language="javascript1.2" src="whver.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+    			<script type="text/javascript" language="javascript1.2" src="whlang.js"></script> 
+    <meta name="generator" content="Adobe RoboHelp 9" />
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+	      //<!--
+	      RH_Document_Write("<p style=\"text-align:right\"> ");
+RH_AddMasterBreadcrumbs( "Tech_2010.htm", "", "/", "Home", "Tech_2010Main.htm");
+RH_Document_Write("<\/p>");
+//-->
+</script>
+<a name="040e92ff"></a><font face="Arial" color="#0000FF" size="3"><b>Ademco 6150V/6160V Voice Keypad Programming</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Information</b></font> <font face="Arial" color="#000000" size="1"><b>6150V can be used on all panels except very old Vector, 4160 and 4180</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6160V can be used on all panels except 4110, very old Vector, 4160 and 4180</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Power Rating</b></font> <font face="Arial" color="#000000" size="1"><b>6150V - 60mA standby 160mA active (Backlight, sounder and voice on)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6160V - 60mA standby 190mA active (Backlight, sounder and voice on)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Keypad Address</b></font> <font face="Arial" color="#000000" size="1"><b>1. Remove power from keypad then power back up</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. Hold 1 &amp; 3 for 3 seconds within 60 seconds, "ADDR = 31" or "31" should appear</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3. Within 10 seconds enter 00 to erase old address</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4. Enter new address (01 to 31) then press</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5. Display shows "VOICE CHIME" or "C" then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>Press 0 to disable Voice Chime</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Press 1 to enable Voice Chime</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6. Display shows "ADDITIONAL CON" or "A" Press 0 if only keypad is in system</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Press 1 if multiple voice keypads in system</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7. Press</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to save and exit</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>View Address</b></font> <font face="Arial" color="#000000" size="1"><b>Press 1 &amp; 3 at any time then</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font> <font face="Arial" color="#000000" size="1"><b>to exit</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Voice Chime</b></font> <font face="Arial" color="#000000" size="1"><b># + 0 + 2 + 4 to Enable or Disable (Keypad should say "ON" or "OFF")</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Detailed Status</b></font> <font face="Arial" color="#000000" size="1"><b># + 0 +</b></font> <font face="Courier" color="#000000" size="1"><b>*</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Show Zone Faults</b></font> <font face="Courier" color="#000000" size="1"><b>* *</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Record Message</b></font> <font face="Arial" color="#000000" size="1"><b>1. Press # + 0 + 1 (LED turns ON)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. Record message up to 2.5 minutes</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3. Press 1 to end (LED begins FLASHING)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Play Message</b></font> <font face="Arial" color="#000000" size="1"><b>1. Press # + 0 + 3</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2. Recorded message will play (LED turns OFF)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Adjust Volume</b></font> <font face="Arial" color="#000000" size="1"><b>Press # + 0 + 2 then 3 to raise or 6 to lower</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Word Dictionary</b></font> <font face="Arial" color="#000000" size="1"><b>6150V/6160V only supports descriptions listed below, will not speak words not listed</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>002 ALARM 071 EXIT 122 MAIN 173 SIDE</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>009 ATTIC 079 FIRE 123 MASTER 175 SLIDING</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>012 BABY 080 FLOOR 125 MEDICAL 176 SMOKE</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>013 BACK 085 FRONT 131 MOTION 185 STORAGE</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>016 BASEMENT 089 GARAGE 136 OFFICE 190 SUPERVISED</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>017 BATHROOM 094 GUN 138 OPEN 207 UPSTAIRS</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>BEDROOM 095 HALL 144 PANIC 208 UTILITY</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>040 CLOSED 099 HOUSE 146 PATIO 217 WINDOW</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>050 DEN 101 INSIDE 151 POLICE 223 YARD</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>052 DETECTOR 105 KITCHEN 152 POOL 225 ZONE</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>053 DINING 106 LAUNDRY 162 ROOM 228 1ST</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>057 DOOR 109 LIBRARY 168 SHED 230 2ND</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>067 EMERGENCY 113 LIVING 170 SHOP 232 3RD</b></font>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>

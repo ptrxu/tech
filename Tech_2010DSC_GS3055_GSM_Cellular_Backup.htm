@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>DSC GS3055 GSM Cellular Backup</title>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+
+			<script type="text/javascript" language="javascript1.2" src="whver.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+    			<script type="text/javascript" language="javascript1.2" src="whlang.js"></script> 
+    <meta name="generator" content="Adobe RoboHelp 9" />
+</head>
+<body><script type="text/javascript" language="javascript1.2">
+	      //<!--
+	      RH_Document_Write("<p style=\"text-align:right\"> ");
+RH_AddMasterBreadcrumbs( "Tech_2010.htm", "", "/", "Home", "Tech_2010Main.htm");
+RH_Document_Write("<\/p>");
+//-->
+</script>
+<font face="Arial" size="2">DSC GS3055-I GSM Cellular Backup</font>
+<p></p>
+<p></p>
+<form><font face="Arial" color="#800000" size="1"><b><input type="button" value="Programming" onclick="self.location='Tech_2010DSC_GS3055_GSM_Cellular_Backup.htm'" /> <input type="button" value="Wiring" onclick="self.location='Tech_2010DSC_GS3055_GSM_Cellular_Backup_W.htm'" /></b></font></form>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Information</b></font> <font face="Arial" color="#000000" size="1"><b>Similar to TelGuard TG-4, uses dialer capture to transfer signal only if phone lines are down</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Compatible with any panel that supports Contact ID</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Can decode 10-digit Contact ID however will only send 4-digit Contact ID to central station</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Sends directly by cellular to monitoring station via GPRS data channel across Internet to DSC Internet receiver</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>We cannot at this time monitor these</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Power</b></font> <font face="Arial" color="#000000" size="1"><b>9 to 14VDC</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>120mA standby</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>500mA transmitting</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Must use included 700mA power supply or a panel that can supply up to 500mA current</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(in addition to supplying power to keypads, motions, smoke detectors etc)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>LP3 Jumper</b></font> <font face="Arial" color="#000000" size="1"><b>OFF = 120mA current limited, must use backup battery (default)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ON = 70mA power required, do not connect backup battery</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000002783.gif" alt="Tech_201000002783.gif" border="0" width="192" height="117" /></b></font>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>LED Status</b></font> <font face="Arial" color="#000000" size="1"><b>(Units that are not yet registered will flash top Red and Yellow LED's)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Triangle (Red) 1 Flash = Backup Battery absent or low</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>2 Flashes = Radio/SIM failure (Try reseating SIM card)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>3 Flashes = GSM network problem (low signal strength, SIM card not activated)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>4 Flashes = Low signal strength</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>5 Flashes = Connect 24 configuration SMS failure (improper VRU programming)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>6 Flashes = Central station Receiver not available (improper VRU programming, no receiver)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>7 Flashes = Power Supply Trouble (DC power absent, running on battery)</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Phone (Yellow) ON = On GSM network, land-line absent (1 blink = GPRS transmit, 2 blinks = GPRS receive)</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>OFF = Phone line is active, GS3055-I is not active</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Signal Strength Both ON = Optimal</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Bottom Green LED's) Bottom ON = Good</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Bottom Flashing = Poor</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Both OFF = No Signal/No GSM network available</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Zone Triggers</b></font> <font face="Arial" color="#000000" size="1"><b>Default values</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ZN1 = Fire</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ZN2 = Audible Panic</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ZN3 = Burg</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>ZN4 = System Trouble</b></font>
+<p></p>
+<p></p>
+<font face="Arial" color="#0000FF" size="1"><b>Registration</b></font> <font face="Arial" color="#000000" size="1"><b>SIM card activation can take up to 24 hours</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>Activation is done on Connect 24 website at www.connect24.com or call DSC VRU at 866-910-3865</b></font>
+<p></p>
+<ol>
+<li><font face="Arial" color="#000000" size="1"><b>Press 6 for activation</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Enter Installer ID issued to dealer by Connect 24</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Enter 4-digit Installer PIN number issued to dealer by Connect 24</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Enter 19 or 20-digit SIM card number from sticker under GS3055-I</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#800000" size="1"><b><img src="Tech_201000002784.gif" alt="Tech_201000002784.gif" border="0" width="368" height="134" /></b></font>
+<p></p>
+<ol start="5">
+<li><font face="Arial" color="#000000" size="1"><b>Enter 0 for backup or 1 for primary communicator</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Enter 0 for No test transmissions, 1 for daily, 2 for weekly or 3 for monthly</b></font>
+<p></p>
+</li>
+<li><font face="Arial" color="#000000" size="1"><b>Press 1 to end call</b></font>
+<p></p>
+</li>
+</ol>
+<font face="Arial" color="#000000" size="1"><b>The GS3055-I should be powered up after the registration process</b></font>
+<p></p>
+<font face="Arial" color="#000000" size="1"><b>(Units that are not yet registered will flash top Red and Yellow LED's)</b></font>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>
